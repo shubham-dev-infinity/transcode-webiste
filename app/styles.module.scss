@@ -1,0 +1,72 @@
+.websiteBgImage{
+    width: 100%;    
+    background: url(../public/Assets/websiteImage.png) top center no-repeat;
+    background-color: #f2f2f2;
+    height: 700px;
+    background-size: 87%;
+    background-position: right;
+    position: relative;
+    // position: absolute;
+}
+
+.diamond_bgImage{
+    // background: url(https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=600);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    // background-color: #ff3;
+    transform: rotate(45deg);
+    border: 3px solid blue;
+}
+// .diamond_bgImage:before{
+//     content: '';
+//     background-image: url(https://unsplash.it/640/640?random;1);
+//         display: block;
+//     width: var(--grid-unit-width);
+//     height: var(--grid-unit-width);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: 100%;
+//     position: absolute;
+//     transform: rotate(314deg);
+//     object-fit: contain;
+// }
+
+.diamond_Image {
+       display: block;
+    width: var(--grid-unit-width);
+    height: var(--grid-unit-width);
+    // width: 150px;
+    // height: 150px;
+    transform: rotate(-40deg);
+}
+
+.main_img {
+            border: 5px solid rgb(65, 189, 238);
+            /* background-image: url(./Rectangle\ 8767.png); */
+            background-repeat: no-repeat;
+            width: 148px;
+            height: 149px;
+            position: relative;
+            transform: rotate(45deg);
+            // margin: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+ .main_imgs {
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            width: 317px;
+            height: 317px;
+            transform: rotate(-43deg);
+            /* background-color: black; */
+            position: absolute;
+            top: -22%;
+            left: -22%;
+        }
+
+
