@@ -35,9 +35,7 @@ const Home: React.FC<HomeProps> = () => {
       <div>
         <div className="relative mb-10">
           <div className="bg-gray">
-            <div className="container mx-auto flex flex-col justify-center pt-32">
-              {/* <h3 className="text-headertext text-2xl font-extrabold text-center mb-4 pb-4">YOUR PREMIER</h3>
-              <div className="w-36 h-1 bg-blue text-center mb-4"></div> */}
+            <div className="container mx-auto flex flex-col justify-center pt-32">             
               <div className="text-center pb-8">
                 <h3 className="text-headertext text-2xl font-extrabold pt-2">YOUR PREMIER</h3>
                 <div className="flex justify-center">
@@ -56,6 +54,8 @@ const Home: React.FC<HomeProps> = () => {
             </div>
           </div >
         </div>
+      
+
         <div className="">
           {/* <div className="container mx-auto gap-20 flex items-center justify-between">
             <div className="flex flex-col lg:flex-row gap-5">
@@ -147,7 +147,7 @@ const Home: React.FC<HomeProps> = () => {
           <div className="container mx-auto gap-20 mt-10 text-center">
             <h3 className="font-bold text-3xl mb-6">Driving rapid change with software solutions for enhanced <span className="text-blue">flexibility and expansion, focusing on scalability and fostering growth.</span></h3>
             <p className="text-lg mb-6">Utilizing cutting-edge software solutions, we are driving rapid transformation to enhance flexibility and accommodate expansion within our organization. Our primary focus lies in scalability, ensuring that oursystems can easily handle increased demand and growth</p>
-            <div className="flex text-center ">
+            {/* <div className="flex text-center ">
               <div className="flex flex-col	items-center gap-4 mx-auto">
                 <div className="w-24 h-24 bg-gray rounded-full flex items-center justify-center shadow-blue">
                   <h3 className=" text-black  text-3xl	 font-extrabold">
@@ -180,22 +180,60 @@ const Home: React.FC<HomeProps> = () => {
                 </div>
                 <h3 className="text-2xl mt-2">Countries Served</h3>
               </div>
+            </div>            */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-center mx-auto">
+              <div className="flex flex-col items-center gap-4">
+                <div className="w-24 h-24 bg-gray rounded-full flex items-center justify-center shadow-blue">
+                  <h3 className="text-black text-3xl font-extrabold">5+</h3>
+                </div>
+                <h3 className="text-2xl mt-2">Years of Experience</h3>
+              </div>
+              <div className="flex flex-col items-center gap-4">
+                <div className="w-24 h-24 bg-gray rounded-full flex items-center justify-center shadow-blue">
+                  <h3 className="text-black text-3xl font-extrabold">70+</h3>
+                </div>
+                <h3 className="text-2xl mt-2">Talented IT Professionals</h3>
+              </div>
+              <div className="flex flex-col items-center gap-4">
+                <div className="w-24 h-24 bg-gray rounded-full flex items-center justify-center shadow-blue">
+                  <h3 className="text-black text-3xl font-extrabold">100+</h3>
+                </div>
+                <h3 className="text-2xl mt-2">Successful Projects</h3>
+              </div>
+              <div className="flex flex-col items-center gap-4">
+                <div className="w-24 h-24 bg-gray rounded-full flex items-center justify-center shadow-blue">
+                  <h3 className="text-black text-3xl font-extrabold">30+</h3>
+                </div>
+                <h3 className="text-2xl mt-2">Countries Served</h3>
+              </div>
             </div>
-            <div className="mt-14">
+            {/* <div className="mt-14">
               <div className="mb-10">
                 <h3 className="text-3xl font-extrabold mb-4">What <span className="text-blue">We Do</span></h3>
                 <p className="text-3xl text-gray">OUR SPECIALIZED SERVICES ARE TAILORED EXCLUSIVELY FOR YOUR BUSINESS NEEDS.</p>
               </div>
               <div className="container mx-auto pt-24">
-                <div className="flex flex-wrap justify-center gap-9 mb-4">
+                <div className="flex flex-wrap justify-between gap-9 mb-4">
                   {cardData.map((data, index) => (
                     <CardWrapper key={index} {...data} />
                   ))}
                 </div>
               </div>
+            </div> */}
+            <div className="mt-14">
+              <div className="mb-10">
+                <h3 className="text-3xl font-extrabold mb-4">What <span className="text-blue">We Do</span></h3>
+                <p className="text-3xl text-gray">OUR SPECIALIZED SERVICES ARE TAILORED EXCLUSIVELY FOR YOUR BUSINESS NEEDS.</p>
+              </div>
+              <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9">
+                {cardData.map((data, index) => (
+                  <CardWrapper key={index} {...data} />
+                ))}
+              </div>
             </div>
+
             <div className="mb-4 border-b border-gray-200 dark:border-gray-700">
-              <ul className="flex flex-wrap text-sm font-medium text-center  justify-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+              <ul className="flex flex-wrap text-sm font-medium text-center justify-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
                 <li className="me-2" role="presentation">
                   <button
                     className={`inline-block p-4 border-b-2 rounded-t-lg text-2xl ${activeTab === 'webdevelopment' ? 'border-blue' : 'border-transparent'}`}
@@ -256,8 +294,8 @@ const Home: React.FC<HomeProps> = () => {
                 </li>
               </ul>
             </div>
-            <div className="container mx-auto pt-10" id="default-tab-content">
-              <div className="flex flex-wrap justify-center" >
+            {/* <div className="container mx-auto pt-10" id="default-tab-content">
+              <div className="flex flex-wrap justify-between" >
                 <div className="mb-10 bg-gray p-4 m-4 relative -z-10 w-2/12 h-345 rounded-3xl">
                   <div className="flex justify-center h-48">
                     <Image
@@ -311,58 +349,66 @@ const Home: React.FC<HomeProps> = () => {
                     <Image src={Process} alt="Process" width={556} height={556} />
                   </div>
                 </div>
+              </div>             
+            </div> */}
+            <div className="container mx-auto pt-10" id="default-tab-content">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                <div className="mb-10 bg-gray p-4 relative rounded-3xl">
+                  <div className="flex justify-center h-48">
+                    <Image
+                      src={NextJsIcon}
+                      alt="Your Name"
+                      className="absolute top-16 mx-auto z-10"
+                    />
+                  </div>
+                  <h2 className="text-xl font-semibold mb-2">React JS</h2>
+                </div>
+                <div className="mb-10 bg-gray p-4 relative rounded-3xl">
+                  <div className="flex justify-center h-48">
+                    <Image
+                      src={ReactJsIcon}
+                      alt="Your Name"
+                      className="absolute top-16 mx-auto z-10"
+                    />
+                  </div>
+                  <h2 className="text-xl font-semibold mb-2">Node JS</h2>
+                </div>
+                <div className="mb-10 bg-gray p-4 relative rounded-3xl">
+                  <div className="flex justify-center h-48">
+                    <Image
+                      src={NodeJsIcon}
+                      alt="Your Name"
+                      className="absolute top-16 mx-auto z-10"
+                    />
+                  </div>
+                  <h2 className="text-xl font-semibold mb-2">PHP</h2>
+                </div>
+                <div className="mb-10 bg-gray p-4 relative rounded-3xl">
+                  <div className="flex justify-center h-48">
+                    <Image
+                      src={PhpIcon}
+                      alt="Your Name"
+                      className="absolute top-16 mx-auto z-10"
+                    />
+                  </div>
+                  <h2 className="text-xl font-semibold mb-2">Next JS</h2>
+                </div>
               </div>
-              {/* <div className="">
-                <h3 className="text-3xl font-extrabold mb-4"><span className="text-blue">Client</span> Testimonials</h3>
-                <p className="text-3xl font-semibold text-center text-gray">Feedback and Statistics</p>
-                <div className="flex space-x-16 mt-32 text-left ">
-                  <div className="rounded-3xl border-2 border-blue p-4 w-[470px] h-[376px] relative">
-                    <div className={style.main_img}>
-                      <Image
-                        src={blackImages}
-                        alt=""
-                        width={180}
-                        height={120}
-                        className={style.main_imgs}
-                      />
-                    </div>
-                    <p className="text-gray text-base mt-28 pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta, veritatis vero deserunt aut error qui enim labore nihil harum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta.</p>
-                    <h3 className="text-blue font-semibold text-xl pb-4">mst. sadia akter</h3>
-                    <p className="text-black text-base ">dhaka</p>
+              <div className="bg-gray mb-16">
+                <h3 className="text-3xl font-extrabold mb-4"><span className="text-blue">Our work</span> Process</h3>
+                <p className="text-3xl font-semibold text-center text-gray">Transcode Solution an exclusive approach for building modern, secure solutions tailored to each of its
+                  clients individual requirements. </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                  <div className="flex justify-center">
+                    <Image src={workProcess} alt="workProcess" width={880} height={552} />
                   </div>
-                  <div className="rounded-lg border-2 border-blue p-4 w-[470px] h-[376px] relative">
-                    <div className="border-4 border-blue w-[150px] h-[150px] absolute -top-[86px] left-14 rotate-[39deg] overflow-hidden">
-                      <Image
-                        src="https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=600" // Remove the query string
-                        alt="Image 1"
-                        width={180}
-                        height={180}
-                        className=" w-full h-[150px] -rotate-[40deg]"
-                      />
-                    </div>
-                    <p className="text-gray text-base mt-28 pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta, veritatis vero deserunt aut error qui enim labore nihil harum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta.</p>
-                    <h3 className="text-blue font-semibold text-xl pb-4">Mizanur islam</h3>
-                    <p className="text-black text-base">khulna</p>
-                  </div>
-                  <div className="rounded-lg border-2 border-blue p-4 w-[470px] h-[376px] relative">
-                    <div className="border-4 border-blue w-[150px] h-[150px] absolute -top-[86px] left-14 rotate-[39deg] overflow-hidden">
-                      <Image
-                        src={images3} // Remove the query string
-                        alt="Image 1"
-                        width={180}
-                        height={180}
-                        className=" w-full h-[150px] -rotate-[40deg]"
-                      />
-                    </div>
-                    <p className="text-gray text-base mt-28 pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta, veritatis vero deserunt aut error qui enim labore nihil harum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta.</p>
-                    <h3 className="text-blue font-semibold text-xl pb-4">md. mahim miya</h3>
-                    <p className="text-black text-base">Chittagong</p>
+                  <div className="flex justify-center">
+                    <Image src={Process} alt="Process" width={556} height={556} />
                   </div>
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
-
           <div className="bg-sky mb-12">
             <div className="container mx-auto gap-20 mt-10 text-center">
               <div className=" mt-20 pb-12">
@@ -379,8 +425,30 @@ const Home: React.FC<HomeProps> = () => {
                 <div className="container mx-auto">
                   <h3 className="text-3xl font-extrabold mb-4 pt-6"><span className="text-blue">Our</span> Blog</h3>
                   <p className="text-3xl font-semibold text-center text-gray mb-4">Trending Custom Software Development Blog</p>
-                  <div className="container mx-auto">
+                  {/* <div className="container mx-auto">
                     <div className="grid grid-cols-3 justify-items-center gap-5">
+                      {blogItems.map((blog, index) => (
+                        <div key={index} className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                          <div className="p-2">
+                            <a href={blog.link}>
+                              <Image src={blog.image} alt="" className="rounded-t-lg" width={500} height={300} />
+                            </a>
+                          </div>
+                          <div className="p-5 text-left">
+                            <a href={blog.link}>
+                              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{blog.title}</h5>
+                            </a>
+                            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{blog.content}</p>
+                            <a href={blog.link} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                              See Full Article
+                            </a>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div> */}
+                  <div className="container mx-auto">
+                    <div className="grid max-w-4xl lg:max-w-6xl grid-cols-1 mx-auto mt-8 text-center gap-y-4 sm:gap-x-8 sm:grid-cols-2 lg:grid-cols-3 sm:mt-12 lg:mt-20 sm:text-left">
                       {blogItems.map((blog, index) => (
                         <div key={index} className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                           <div className="p-2">
