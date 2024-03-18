@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import style from "../styles.module.scss"
 import managedServices from "@public/Assets/managedServices.png"
 
-const services4 = () => {
+const managedservices = () => {
 
     return (
         <div
@@ -13,5 +13,5 @@ const services4 = () => {
     );
 };
 
-export default services4;
+export default managedservices;
 

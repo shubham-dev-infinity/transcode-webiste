@@ -33,16 +33,16 @@ const Home: React.FC<HomeProps> = () => {
   return (
     <main>
       <div>
-        <div className="relative mb-10">
+        {/* <div className="relative mb-10">
           <div className="bg-gray">
-            <div className="container mx-auto flex flex-col justify-center pt-32">             
+            <div className="container mx-auto flex flex-col justify-center pt-32">
               <div className="text-center pb-8">
                 <h3 className="text-headertext text-2xl font-extrabold pt-2">YOUR PREMIER</h3>
                 <div className="flex justify-center">
                   <div className="w-24 h-1 bg-blue mb-4"></div>
                 </div>
               </div>
-              <h4 className="text-black  text-6xl font-extrabold text-center mb-3">Destination for <span className="text-headertext  text-7xl font-extrabold text-center mb-3">Website & Mobile App</span></h4>
+              <h4 className="text-black text-6xl font-extrabold text-center mb-3">Destination for <span className="text-headertext  text-7xl font-extrabold text-center mb-3">Website & Mobile App</span></h4>
               <h4 className="text-black  text-6xl font-extrabold text-center mb-8">Innovation</h4>
               <p className="text-black text-3xl font-medium text-center mb-12">Our team offers expert design, development,
                 andstrategy services customized to your specific
@@ -53,8 +53,26 @@ const Home: React.FC<HomeProps> = () => {
               </div>
             </div>
           </div >
+        </div>        */}
+        <div className="relative mb-10">
+          <div className="bg-gray">
+            <div className="container mx-auto flex flex-col justify-center lg:pt-32">
+              <div className="text-center pb-8">
+                <h3 className="text-headertext text-2xl font-extrabold pt-2">YOUR PREMIER</h3>
+                <div className="flex justify-center">
+                  <div className="w-24 h-1 bg-blue mb-4"></div>
+                </div>
+              </div>
+              <h4 className="text-black text-3xl lg:text-6xl font-extrabold text-center mb-3">Destination for <span className="text-headertext text-4xl lg:text-7xl font-extrabold text-center mb-3">Website & Mobile App</span></h4>
+              <h4 className="text-black text-3xl lg:text-6xl font-extrabold text-center mb-8">Innovation</h4>
+              <p className="text-black text-lg lg:text-3xl font-medium text-center mb-12">Our team offers expert design, development, and strategy services customized to your specific requirements.</p>
+              <div className="flex flex-col lg:flex-row gap-7 justify-center mb-16">
+                <button className="bg-blue px-4 py-2 rounded-md text-white mb-2 lg:mb-0">Discover More</button>
+                <button className="bg-white px-4 py-2 rounded-md text-black">How It Works</button>
+              </div>
+            </div>
+          </div>
         </div>
-      
 
         <div className="">
           {/* <div className="container mx-auto gap-20 flex items-center justify-between">
@@ -225,7 +243,7 @@ const Home: React.FC<HomeProps> = () => {
                 <h3 className="text-3xl font-extrabold mb-4">What <span className="text-blue">We Do</span></h3>
                 <p className="text-3xl text-gray">OUR SPECIALIZED SERVICES ARE TAILORED EXCLUSIVELY FOR YOUR BUSINESS NEEDS.</p>
               </div>
-              <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9">
+              <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9">
                 {cardData.map((data, index) => (
                   <CardWrapper key={index} {...data} />
                 ))}
@@ -351,7 +369,7 @@ const Home: React.FC<HomeProps> = () => {
                 </div>
               </div>             
             </div> */}
-            <div className="container mx-auto pt-10" id="default-tab-content">
+            <div className="container mx-auto px-4 pt-10" id="default-tab-content">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                 <div className="mb-10 bg-gray p-4 relative rounded-3xl">
                   <div className="flex justify-center h-48">
@@ -407,7 +425,8 @@ const Home: React.FC<HomeProps> = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div>            
+
           </div>
           <div className="bg-sky mb-12">
             <div className="container mx-auto gap-20 mt-10 text-center">

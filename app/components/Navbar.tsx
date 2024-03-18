@@ -1,16 +1,35 @@
 "use client";
-
+import React, { useState } from "react";
 import Link from "next/link";
-import { useState } from "react";
 import { BsLinkedin } from "react-icons/bs";
 import { FaBehanceSquare, FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
+import Image from "next/image";
+import logo from "@public/Assets/logo.png";
 
 const Navbar = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
+
+    const closeMobileMenu = () => {
+        setIsMobileMenuOpen(false);
+    };
+
+    const handleDropdownClick = () => {
+        setIsDropdownOpen(!isDropdownOpen);
+    };
+
+    const handleSubmenuClick = () => {
+        setIsDropdownOpen(false); 
+        closeMobileMenu(); 
+    };
+   
     return (
         <nav>
-            <div className="flex text-white p-4 items-center justify-between bg-blue">
+            {/* <div className="flex text-white p-4 items-center justify-between bg-blue">
                 <div className="container mx-auto text-white py-0.5 flex items-center justify-between ">
                     <div className="text-white">
                         <Link href="mailto:company@example.com">
@@ -19,7 +38,38 @@ const Navbar = () => {
                     </div>
                     <div className="flex space-x-4">
                         <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
+                            <span className="text-xl hover:text-blue">
+                                <BsLinkedin />
+                            </span>
+                        </Link>
+                        <Link href="company-instagram" target="_blank" rel="noopener noreferrer">
+                            <span className="text-xl hover:text-pink-500">
+                                <FaInstagramSquare />
+                            </span>
+                        </Link>
+                        <Link href="company-facebook" target="_blank" rel="noopener noreferrer">
                             <span className="text-xl hover:text-blue-500">
+                                <FaFacebookSquare />
+                            </span>
+                        </Link>
+                        <Link href="company-behance" target="_blank" rel="noopener noreferrer">
+                            <span className="text-xl hover:text-blue-500">
+                                <FaBehanceSquare />
+                            </span>
+                        </Link>
+                    </div>
+                </div>
+            </div> */}
+            <div className="hidden sm:flex text-white p-4 items-center justify-between bg-blue">
+                <div className="container mx-auto text-white py-0.5 flex items-center justify-between ">
+                    <div className="text-white">
+                        <Link href="mailto:company@example.com">
+                            <span className="hover:underline">company@example123.com</span>
+                        </Link>
+                    </div>
+                    <div className="flex space-x-4">
+                        <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
+                            <span className="text-xl hover:text-blue">
                                 <BsLinkedin />
                             </span>
                         </Link>
@@ -41,21 +91,41 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
+
             <div className="flex">
-                <div className="container mx-auto flex justify-end space-x-4 p-4 items-center">
-                    <Link href="/">
-                        <span className="hover:underline hover:text-blue">HOME</span>
-                    </Link>
-                    <Link href="/about">
-                        <span className="hover:underline hover:text-blue">ABOUT US</span>
-                    </Link>
-                    {/* Dropdown Button */}
-                    <div
-                        onMouseEnter={() => setIsDropdownOpen(true)}
-                        onMouseLeave={() => setIsDropdownOpen(false)}
-                        className="relative"
-                    >
-                        <Link href="/services" passHref>
+                <div className="container mx-auto flex justify-between space-x-4 px-4 py-2 items-center">                   
+                        <div className="flex">
+                            <Image src={logo} width={80} alt="logo"  />
+                        </div>                
+                    <div className="lg:hidden">                        
+                        <button
+                            onClick={toggleMobileMenu}
+                            className="navbar-burger flex items-center text-blue p-3"
+                        >
+                            <svg
+                                className="block h-4 w-4 fill-current"
+                                viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <title>Mobile menu</title>
+                                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    {/* Navbar links */}
+                    <div className="hidden items-center	lg:flex space-x-4">
+                        <Link href="/" onClick={closeMobileMenu}>
+                            <span className="hover:underline hover:text-blue">HOME</span>
+                        </Link>
+                        <Link href="/about" onClick={closeMobileMenu}>
+                            <span className="hover:underline hover:text-blue">ABOUT US</span>
+                        </Link>
+                        {/* Dropdown Button */}
+                        <div
+                            onMouseEnter={handleDropdownClick}
+                            onMouseLeave={handleDropdownClick}
+                            className="relative"
+                        >
                             <button
                                 id="serviceDropdownButton"
                                 className="hover:underline hover:text-blue"
@@ -63,59 +133,132 @@ const Navbar = () => {
                             >
                                 SERVICES
                             </button>
+                            {/* Dropdown menu */}
+                            <div
+                                id="dropdownDelay"
+                                className={`z-10 ${isDropdownOpen ? 'block' : 'hidden'} bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute top-full right-0 mt-1`}
+                            >
+                                <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="serviceDropdownButton">
+                                    <li>
+                                        <Link href="/services/software" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handleSubmenuClick}>
+                                            Software Development
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/services/consulting" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handleSubmenuClick}>
+                                            Consulting Advisory
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/services/integration" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handleSubmenuClick}>
+                                            SystemIntegration
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/services/managedservices" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handleSubmenuClick}>
+                                            Managed Services
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/services/training" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handleSubmenuClick}>
+                                            Training
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/services/quality" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handleSubmenuClick}>
+                                            Quality Testing
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <Link href="/portfolio" onClick={closeMobileMenu}>
+                            <span className="hover:underline hover:text-blue">PORTFOLIO</span>
                         </Link>
-                        {/* <button
-                            id="serviceDropdownButton"
-                            className="hover:underline hover:text-blue"
+                        <Link href="/contactus" onClick={closeMobileMenu}>
+                            <span className="hover:underline hover:text-blue">CONTACT US</span>
+                        </Link>
+                        <button className="bg-blue px-4 py-2 rounded-md text-white">LET’S TALK</button>
+                    </div>
+                </div>
+            </div>
+            {/* Mobile menu */}
+            <div className={`navbar-menu ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
+                <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25" onClick={toggleMobileMenu}></div>
+                <div className="navbar-menu-content">                   
+                    <div
+                        onMouseEnter={toggleMobileMenu}
+                        onMouseLeave={toggleMobileMenu}
+                        className="relative">  
+                    <Link href="/" onClick={closeMobileMenu}>
+                        <span className="block py-2 px-4 text-black hover:bg-blue hover:text-white">HOME</span>
+                    </Link>                    
+                    <Link href="/about" onClick={closeMobileMenu}>
+                        <span className="block py-2 px-4 text-black hover:bg-blue hover:text-white">ABOUT US</span>
+                    </Link>
+                    </div>
+                    <div
+                        onMouseEnter={handleDropdownClick}
+                        onMouseLeave={handleDropdownClick}
+                        className="relative"
+                    >
+                        <button
+                            id="serviceDropdownButtonMobile"
+                            className="block py-2 px-4 text-black hover:bg-blue hover:text-white w-full text-left"
                         >
                             SERVICES
-                        </button> */}
-                        {/* Dropdown menu */}
+                        </button>                   
                         <div
                             id="dropdownDelay"
-                            className={`z-10 ${isDropdownOpen ? 'block' : 'hidden'} bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute top-full right-0 mt-1`}
+                            className={`z-10 ${isDropdownOpen ? 'block' : 'hidden'} bg-white divide-y
+                            divide-gray-100 rounded-lg shadow w-full dark:bg-gray-700 absolute top-full left-0 mt-1`}
                         >
-                            <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="serviceDropdownButton">
+                            <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="serviceDropdownButtonMobile">
                                 <li>
-                                    <Link href="/services/services1" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black">
-                                        Service-page1
+                                    <Link href="/services/software" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handleSubmenuClick}>
+                                        Software Development
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/services/services2" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black">
-                                        Service-page2
+                                    <Link href="/services/consulting" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handleSubmenuClick}>
+                                        Consulting Advisory
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/services/services3" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black">
-                                        Service-page3
+                                    <Link href="/services/integration" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handleSubmenuClick}>
+                                        SystemIntegration
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/services/services4" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black">
-                                        Service-page4
+                                    <Link href="/services/managedservices" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handleSubmenuClick}>
+                                        Managed Services
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/services/services5" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black">
-                                        Service-page5
+                                    <Link href="/services/training" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handleSubmenuClick}>
+                                        Training
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/services/services6" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black">
-                                        Service-page6
+                                    <Link href="/services/quality" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handleSubmenuClick}>
+                                        Quality Testing
                                     </Link>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <Link href="/portfolio">
-                        <span className="hover:underline hover:text-blue">PORTFOLIO</span>
-                    </Link>
-                    <Link href="/contactus">
-                        <span className="hover:underline hover:text-blue">CONTACT US</span>
-                    </Link>
-                    <button className="bg-blue px-4 py-2 rounded-md text-white">LET’S TALK</button>
+                    <div
+                        onMouseEnter={toggleMobileMenu}
+                        onMouseLeave={toggleMobileMenu}
+                        className="relative">                        
+                        <Link href="/portfolio" >
+                            <span className="block py-2 px-4 text-black hover:bg-blue hover:text-white">PORTFOLIO</span>
+                        </Link>
+                        <Link href="/contactus">
+                            <span className="block py-2 px-4 text-black hover:bg-blue hover:text-white">CONTACT US</span>
+                        </Link>
+                        <button className="bg-blue px-4 py-2 rounded-md text-white w-full">LET’S TALK</button>
+                    </div>                   
                 </div>
             </div>
         </nav>
@@ -123,9 +266,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-
-
-
-

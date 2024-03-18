@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import style from "../styles.module.scss"
 import trainingEducation from "@public/Assets/trainingEducation.png"
 
-const services5 = () => {
+const training = () => {
 
     return (
         <div
@@ -13,7 +13,7 @@ const services5 = () => {
     );
 };
 
-export default services5;
+export default training;
 
 
 

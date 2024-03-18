@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import style from "../styles.module.scss"
 import qualityTesting from "@public/Assets/qualityTesting.png"
 
-const services6 = () => {
+const quality = () => {
 
     return (
         <div
@@ -13,4 +13,4 @@ const services6 = () => {
     );
 };
 
-export default services6;
+export default quality;
