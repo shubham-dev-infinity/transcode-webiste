@@ -2,16 +2,16 @@ import HeroSection from "@/components/HeroSection";
 import style from "../styles.module.scss"
 import consultingAdvisory from "@public/Assets/consultingAdvisory.png"
 import Image from "next/image";
-import strategy from "@public/Assets/strategy.png"
-import server from "@public/Assets/server.png"
-import cyberSecurity from "@public/Assets/cyberSecurity.png"
-import data from "@public/Assets/data.png"
-import networking from "@public/Assets/networking.png"
-import systemIntegration1 from "@public/Assets/systemIntegration1.png"
-import projectManagement from "@public/Assets/projectManagement.png"
+import strategy from "@public/Assets/icon/strategy.png"
+import server from "@public/Assets/icon/server.png"
+import cyberSecurity from "@public/Assets/icon/cyberSecurity.png"
+import data from "@public/Assets/icon/data.png"
+import networking from "@public/Assets/icon/networking.png"
+import systemIntegration1 from "@public/Assets/icon/systemIntegration1.png"
+import projectManagement from "@public/Assets/icon/projectManagement.png"
 import Converted from "@public/Assets/Converted.png"
-import experience1 from "@public/Assets/experience1.png"
-import efficacy1 from "@public/Assets/efficacy1.png"
+import experience1 from "@public/Assets/icon/experience1.png"
+import efficacy1 from "@public/Assets/icon/efficacy1.png"
 const consulting = () => {
 
     return (
@@ -111,35 +111,38 @@ const consulting = () => {
                         />
                     </div>
                     <div className="col-span-12 md:col-span-6 p-12 text-left">
-                        <h2 className="font-extrabold text-3xl">
-                            Below are a few benefits associated with IT consulting and advisory services
+                        <h2 className="font-extrabold text-2xl" style={{ textTransform: 'capitalize' }}>
+                            Below are a few benefits associated<span className="text-blue"> with IT consulting and advisory services</span>
                         </h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div className="col-span-12 md:col-span-4  p-4">
-                                <div className="col-span-4 flex gap-10 pt-4">
+                        <div className="w-64 h-1 bg-blue mb-2"></div>
+                        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
+                            <div className="col-span-3">
+                                <div className="rounded-full bg-gray flex justify-center align-middle p-12">
                                     <Image
                                         src={experience1}
-                                        alt="email"
-                                        className="rounded-full"
-                                        style={{ width: '100px', height: '100px' }}
+                                        alt="experience1"
+                                        className="object-scale-down"
                                     />
-                                    <div className="items-center justify-center pt-4">
-                                        <h4 className="text-xl font-extrabold">Obtain expertise</h4>
-                                        <p className="text-lg">IT consultants and advisors possess extensive technical knowledge that allowsbusinesses to make well-informed decisions with regards to technology.</p>
-                                    </div>
                                 </div>
-                                <div className="col-span-4 flex gap-10 pt-4">
+                            </div>
+                            <div className="col-span-9">
+                                <h4 className="text-3xl font-extrabold">Obtain expertise</h4>
+                                <p className="text-lg text-gray">IT consultants and advisors possess extensive technical knowledge that allowsbusinesses to make well-informed decisions with regards to technology.</p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
+                            <div className="col-span-3">
+                                <div className="rounded-full bg-gray flex justify-center align-middle p-12">
                                     <Image
                                         src={efficacy1}
-                                        alt="letTalk"
-                                        className="rounded-full"
-                                        style={{ width: '100px', height: '100px' }}
+                                        alt="efficacy"
+                                        className="object-scale-down"
                                     />
-                                    <div className="items-center justify-center pt-4">
-                                        <h4 className="text-xl font-bold">Increased Efficiency</h4>
-                                        <p className="text-lg">IT consultants and advisors can assist businesses by streamlining IT operations toboost efficiency, while at the same time helping save money through findingopportunities to cut IT expenses.</p>
-                                    </div>
                                 </div>
+                            </div>
+                            <div className="col-span-9">
+                                <h4 className="text-3xl font-extrabold">Increased Efficiency</h4>
+                                <p className="text-lg text-gray">IT consultants and advisors can assist businesses by streamlining IT operations toboost efficiency, while at the same time helping save money through findingopportunities to cut IT expenses.</p>
                             </div>
                         </div>
                     </div>

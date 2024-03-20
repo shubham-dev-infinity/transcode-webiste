@@ -145,14 +145,14 @@ import style from "./styles.module.scss";
 import Image from "next/image";
 import letTalk from "@public/Assets/letTalk.png"
 import email from "@public/Assets/email.png"
-import homeLocation from "@public/Assets/homeLocation.png"
+import homeLocation from "@public/Assets/icon/homeLocation.png"
 import serviceImmediately from "@public/Assets/serviceImmediately.png"
 
 const ContactUs = () => {
     return (
         <main className="mb-10">
             <div className={style.heroBgImage}>
-                <HeroSection image={contact1} text={"Contact Us"} />
+                <HeroSection image={contact1} text={"Contact Us"} centerText={true} />
             </div>
             <div className="mt-12">
                 <div className="container mx-auto ">
@@ -205,7 +205,7 @@ const ContactUs = () => {
                         </div>
                         <div className="col-span-12 md:col-span-8 bg-gray p-12 text-left">
                             <h2 className="font-extrabold text-3xl pb-4">
-                                Contact Transcode Solution
+                                Contact <span className="text-blue">Transcode Solution</span>
                             </h2>
                             <h3 className="text-gray text-2xl font-semibold">
                                 Let&apos;s make a connection! Whether you choose to send a message or have a live conversation with us, we are available to assist you at all times.

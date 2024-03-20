@@ -7,10 +7,10 @@ import cardData from "./utils/cardData";
 import Link from "next/link";
 import vector from "@public/Assets/vector.png"
 import style from "./styles.module.scss"
-import NextJsIcon from "@public/Assets/nextJsIcon.png"
-import ReactJsIcon from "@public/Assets/reactJsIcon.png"
-import NodeJsIcon from "@public/Assets/NodeJsIcon.png"
-import PhpIcon from "@public/Assets/phpIcon.png"
+import NextJsIcon from "@public/Assets/icon/nextJsIcon.png"
+import ReactJsIcon from "@public/Assets/icon/reactJsIcon.png"
+import NodeJsIcon from "@public/Assets/icon/NodeJsIcon.png"
+import PhpIcon from "@public/Assets/icon/phpIcon.png"
 import workProcess from "@public/Assets/workProcess.png"
 import images3 from "@public/Assets/images3.jpg"
 import blogItems from "@/components/BlogCard";

@@ -3,15 +3,15 @@ import HeroSection from "@/components/HeroSection";
 import style from "../styles.module.scss"
 import softwareDevelopment from "@public/Assets/softwareDevelopment.png"
 import Image from "next/image";
-import softwareLicense from "@public/Assets/softwareLicense.png"
-import laptopCoding from "@public/Assets/laptopCoding.png"
-import Requirements from "@public/Assets/Requirements.png"
-import Design from "@public/Assets/Design.png"
+import softwareLicense from "@public/Assets/icon/softwareLicense.png"
+import laptopCoding from "@public/Assets/icon/laptopCoding.png"
+import Requirements from "@public/Assets/icon/Requirements.png"
+import Design from "@public/Assets/icon/Design.png"
 import commonTypes from "@public/Assets/commonTypes.png"
-import laptopCodings from "@public/Assets/LaptopCodings.png"
-import developer from "@public/Assets/developer.png"
-import Desktop from "@public/Assets/Desktop.png"
-import gameController from "@public/Assets/gameController.png"
+import laptopCodings from "@public/Assets/icon/LaptopCodings.png"
+import developer from "@public/Assets/icon/developer.png"
+import Desktop from "@public/Assets/icon/Desktop.png"
+import gameController from "@public/Assets/icon/gameController.png"
 
 
 const software = () => {
@@ -80,59 +80,67 @@ const software = () => {
                     </div>
                     <div className="col-span-12 md:col-span-6 p-12 text-left">
                         <h2 className="font-extrabold text-3xl">
-                            Contact Transcode Solution
-                        </h2>                       
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">                          
-                            <div className="col-span-12 md:col-span-4  p-4">
-                                <div className="col-span-4 flex gap-10 pt-4">
+                            Common <span className="text-blue">Types Include</span>
+                        </h2>
+                        <div className="w-64 h-1 bg-blue mb-2"></div>
+                        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
+                            <div className="col-span-3">
+                                <div className="rounded-full bg-gray flex justify-center align-middle p-12">
                                     <Image
                                         src={laptopCodings}
-                                        alt="email"
-                                        className="rounded-full"
-                                        style={{ width: '100px', height: '100px' }}
+                                        alt="laptopCodings"
+                                        className="object-scale-down"
                                     />
-                                    <div className="items-center justify-center pt-4">
-                                        <h4 className="text-xl font-bold">Web development</h4>
-                                        <p className="text-lg">encompasses creating software applicationsdesigned for use on the World Wide Web and in particular Web 2.0 applications.</p>
-                                    </div>
                                 </div>
-                                <div className="col-span-4 flex gap-10 pt-4">
+                            </div>
+                            <div className="col-span-9">
+                                <h4 className="text-3xl font-extrabold text-blue">Web development</h4>
+                                <p className="text-lg text-gray">encompasses creating software applicationsdesigned for use on the World Wide Web and in particular Web 2.0 applications.</p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
+                            <div className="col-span-3">
+                                <div className="rounded-full bg-gray flex justify-center align-middle p-12">
                                     <Image
                                         src={developer}
-                                        alt="letTalk"
-                                        className="rounded-full"
-                                        style={{ width: '100px', height: '100px' }}
+                                        alt="developer"
+                                        className="object-scale-down"
                                     />
-                                    <div className="items-center justify-center pt-4">
-                                        <h4 className="text-xl font-bold">Mobile development</h4>
-                                        <p className="text-lg">involves building apps to run on mobile devicessuch as phones or tablets.</p>
-                                    </div>
                                 </div>
-
-                                <div className="col-span-4 flex gap-10 pt-4">
+                            </div>
+                            <div className="col-span-9">
+                                <h4 className="text-3xl font-extrabold text-blue">Mobile development</h4>
+                                <p className="text-lg text-gray">involves building apps to run on mobile devicessuch as phones or tablets.</p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
+                            <div className="col-span-3">
+                                <div className="rounded-full bg-gray flex justify-center align-middle p-12">
                                     <Image
                                         src={Desktop}
-                                        alt="homeLocation"
-                                        className="rounded-full"
-                                        style={{ width: '100px', height: '100px' }}
+                                        alt="Desktop"
+                                        className="object-scale-down"
                                     />
-                                    <div className="items-center justify-center pt-4">
-                                        <h4 className="text-xl font-bold">Desktop development</h4>
-                                        <p className="text-lg">is concerned with creating software applications to run on desktop computers. &quot;Embedded System Development&quot; is used when software needs to be embedded within certain objects, like cars, medical devices, and appliances.</p>
-                                    </div>
                                 </div>
-                                <div className="col-span-4 flex gap-10 pt-4">
+                            </div>
+                            <div className="col-span-9">
+                                <h4 className="text-3xl font-extrabold text-blue">Desktop development</h4>
+                                <p className="text-lg text-gray">is concerned with creating software applications to run on desktop computers. &quot;Embedded System Development&quot; is used when software needs to be embedded within certain objects, like cars, medical devices, and appliances.</p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
+                            <div className="col-span-3">
+                                <div className="rounded-full bg-gray flex justify-center align-middle p-12">
                                     <Image
                                         src={gameController}
-                                        alt="homeLocation"
-                                        className="rounded-full"
-                                        style={{ width: '100px', height: '100px' }}
+                                        alt="gameController"
+                                        className="object-scale-down"
                                     />
-                                    <div className="items-center justify-center pt-4">
-                                        <h4 className="text-xl font-bold">Game development</h4>
-                                        <p className="text-lg">Game development involves designing software applications primarily usedfor entertainment purposes.</p>
-                                    </div>
                                 </div>
+                            </div>
+                            <div className="col-span-9">
+                                <h4 className="text-3xl font-extrabold text-blue">Game development</h4>
+                                <p className="text-lg text-gray">Game development involves designing software applications primarily usedfor entertainment purposes.</p>
                             </div>
                         </div>
                     </div>
