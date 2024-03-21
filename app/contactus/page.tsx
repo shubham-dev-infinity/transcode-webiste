@@ -141,7 +141,7 @@
 // import HeroSection from "../components/HeroSection";
 import HeroSection from "@/components/HeroSection";
 import contact1 from "@public/Assets/contact1.png";
-import style from "./styles.module.scss";
+import style from "../components/styles.module.scss"
 import Image from "next/image";
 import letTalk from "@public/Assets/letTalk.png"
 import email from "@public/Assets/email.png"

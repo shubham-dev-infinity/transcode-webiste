@@ -238,12 +238,12 @@ const Home: React.FC<HomeProps> = () => {
                 </div>
               </div>
             </div> */}
-            <div className="mt-14">
+            <div className="my-14">
               <div className="mb-10">
                 <h3 className="text-3xl font-extrabold mb-4">What <span className="text-blue">We Do</span></h3>
                 <p className="text-3xl text-gray">OUR SPECIALIZED SERVICES ARE TAILORED EXCLUSIVELY FOR YOUR BUSINESS NEEDS.</p>
               </div>
-              <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9">
+              <div className="container mx-auto mt-28 gap-y-24 px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9">
                 {cardData.map((data, index) => (
                   <CardWrapper key={index} {...data} />
                 ))}
@@ -251,6 +251,7 @@ const Home: React.FC<HomeProps> = () => {
             </div>
 
             <div className="mb-4 border-b border-gray-200 dark:border-gray-700">
+              <h3 className="text-center text-3xl font-extrabold"><span className="text-blue">OUR TECHNOLOGY</span> EXPERTISE</h3>
               <ul className="flex flex-wrap text-sm font-medium text-center justify-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
                 <li className="me-2" role="presentation">
                   <button

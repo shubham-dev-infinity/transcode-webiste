@@ -1,6 +1,5 @@
 import HeroSection from "../components/HeroSection"
-// import contact from "../../../public/Assets/contact.png";
-
+// import style from "../components/styles.module.scss";
 const About = () => {
     return (
         <div className="flex items-center justify-center p-4">
