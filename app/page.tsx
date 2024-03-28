@@ -269,20 +269,18 @@ const Home: React.FC<HomeProps> = () => {
                   </button>
                 </li>
                 <li className="me-2" role="presentation">
-                  <li className="me-2" role="presentation">
-                    <button
-                      className={`inline-block p-4 border-b-2 rounded-t-lg text-2xl hover:text-blue hover:border-b-4 hover:border-blue ${activeTab === 'mobiledevelopment' ? 'border-b-4 border-blue' : 'border-transparent'}`}
-                      id="mobiledevelopment-tab"
-                      data-tabs-target="#mobiledevelopment"
-                      type="button"
-                      role="tab"
-                      aria-controls="mobiledevelopment"
-                      aria-selected={activeTab === 'mobiledevelopment'}
-                      onClick={() => handleTabClick('mobiledevelopment')}
-                    >
-                      Mobile Development
-                    </button>
-                  </li>
+                  <button
+                    className={`inline-block p-4 border-b-2 rounded-t-lg text-2xl hover:text-blue hover:border-b-4 hover:border-blue ${activeTab === 'mobiledevelopment' ? 'border-b-4 border-blue' : 'border-transparent'}`}
+                    id="mobiledevelopment-tab"
+                    data-tabs-target="#mobiledevelopment"
+                    type="button"
+                    role="tab"
+                    aria-controls="mobiledevelopment"
+                    aria-selected={activeTab === 'mobiledevelopment'}
+                    onClick={() => handleTabClick('mobiledevelopment')}
+                  >
+                    Mobile Development
+                  </button>
                 </li>
                 <li className="me-2" role="presentation">
                   <button
@@ -313,8 +311,8 @@ const Home: React.FC<HomeProps> = () => {
                   </button>
                 </li>
               </ul>
-            {activeTab === 'webdevelopment' && <TechnologyTabs />}
-            </div>         
+              {activeTab === 'webdevelopment' && <TechnologyTabs />}
+            </div>
             <div className="bg-gray mb-16">
               <h3 className="text-3xl font-extrabold mb-4"><span className="text-blue">Our work</span> Process</h3>
               <p className="text-3xl font-semibold text-center text-gray">Transcode Solution an exclusive approach for building modern, secure solutions tailored to each of its

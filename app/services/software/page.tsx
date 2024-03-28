@@ -131,7 +131,7 @@ const software = () => {
                                 </div>
                             </div>
                             <div className="col-span-9">
-                                <h4 className="text-3xl font-extrabold text-blue">Web development</h4>
+                                <h4 className="text-2xl font-extrabold text-blue">Web development</h4>
                                 <p className="text-lg text-gray">encompasses creating software applicationsdesigned for use on the World Wide Web and in particular Web 2.0 applications.</p>
                             </div>
                         </div>
@@ -146,7 +146,7 @@ const software = () => {
                                 </div>
                             </div>
                             <div className="col-span-9">
-                                <h4 className="text-3xl font-extrabold text-blue">Mobile development</h4>
+                                <h4 className="text-2xl font-extrabold text-blue">Mobile development</h4>
                                 <p className="text-lg text-gray">involves building apps to run on mobile devicessuch as phones or tablets.</p>
                             </div>
                         </div>
@@ -161,7 +161,7 @@ const software = () => {
                                 </div>
                             </div>
                             <div className="col-span-9">
-                                <h4 className="text-3xl font-extrabold text-blue">Desktop development</h4>
+                                <h4 className="text-2xl font-extrabold text-blue">Desktop development</h4>
                                 <p className="text-lg text-gray">is concerned with creating software applications to run on desktop computers. &quot;Embedded System Development&quot; is used when software needs to be embedded within certain objects, like cars, medical devices, and appliances.</p>
                             </div>
                         </div>
@@ -176,7 +176,7 @@ const software = () => {
                                 </div>
                             </div>
                             <div className="col-span-9">
-                                <h4 className="text-3xl font-extrabold text-blue">Game development</h4>
+                                <h4 className="text-2xl font-extrabold text-blue">Game development</h4>
                                 <p className="text-lg text-gray">Game development involves designing software applications primarily usedfor entertainment purposes.</p>
                             </div>
                         </div>
