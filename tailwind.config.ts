@@ -10,7 +10,7 @@ const config: Config = {
     // "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
+    extend: {   
       fontFamily: {
         sans: ['Jost', 'sans-serif'],
       },
@@ -31,6 +31,8 @@ const config: Config = {
         gray:"#888888", 
         black:"#000000",
         headertext:'#278FBC',
+        white_hover:"#e3e6e8",
+        // white:"#babfc5"
       },     
       boxShadow: {
         blue: '1px 1px 20px 4px #277D9B',

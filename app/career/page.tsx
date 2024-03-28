@@ -61,7 +61,7 @@ const Career = () => {
                     <ul className="flex justify-center flex-wrap -mb-px text-center text-sm ">
                         <li className="me-2">
                             <div
-                                className={`inline-block px-8 py-4 border-b-2 text-2xl border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 cursor-pointer ${selectedTab === 'all' ? 'text-blue border-gray-600 dark:text-gray-300 dark:border-gray-300' : ''
+                                className={`inline-block px-8 py-4 border-b-2 text-2xl border-transparent rounded-t-lg hover:text-blue hover:border-b-4 hover:border-blue  dark:hover:text-gray-300 cursor-pointer ${selectedTab === 'all' ? 'text-blue border-gray-600 dark:text-gray-300 dark:border-gray-300' : ''
                                     }`}
                                 onClick={() => handleTabClick('all')}
                             >
@@ -70,7 +70,7 @@ const Career = () => {
                         </li>
                         <li className="me-2">
                             <div
-                                className={`inline-block px-8 py-4 border-b-2 text-2xl border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 cursor-pointer ${selectedTab === 'sales_Marketing' ? 'text-blue border-gray-600 dark:text-gray-300 dark:border-gray-300' : ''
+                                className={`inline-block px-8 py-4 border-b-2 text-2xl border-transparent rounded-t-lg hover:text-blue hover:border-b-4 hover:border-blue cursor-pointer ${selectedTab === 'sales_Marketing' ? 'text-blue border-gray-600 dark:text-gray-300 dark:border-gray-300' : ''
                                     }`}
                                 onClick={() => handleTabClick('sales_Marketing')}
                             >
@@ -79,7 +79,7 @@ const Career = () => {
                         </li>
                         <li className="me-2">
                             <div
-                                className={`inline-block px-8 py-4 border-b-2 text-2xl border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 cursor-pointer ${selectedTab === 'design' ? 'text-blue border-gray-600 dark:text-gray-300 dark:border-gray-300' : ''
+                                className={`inline-block px-8 py-4 border-b-2 text-2xl border-transparent rounded-t-lg hover:text-blue hover:border-b-4 hover:border-blue cursor-pointer ${selectedTab === 'design' ? 'text-blue border-gray-600 dark:text-gray-300 dark:border-gray-300' : ''
                                     }`}
                                 onClick={() => handleTabClick('design')}
                             >
@@ -88,7 +88,7 @@ const Career = () => {
                         </li>
                         <li className="me-2">
                             <div
-                                className={`inline-block px-8 py-4 border-b-2 text-2xl border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 cursor-pointer ${selectedTab === 'developers' ? 'text-blue border-gray-600 dark:text-gray-300 dark:border-gray-300' : ''
+                                className={`inline-block px-8 py-4 border-b-2 text-2xl border-transparent rounded-t-lg hover:text-blue hover:border-b-4 hover:border-blue cursor-pointer ${selectedTab === 'developers' ? 'text-blue border-gray-600 dark:text-gray-300 dark:border-gray-300' : ''
                                     }`}
                                 onClick={() => handleTabClick('developers')}
                             >
@@ -97,7 +97,7 @@ const Career = () => {
                         </li>
                         <li className="me-2">
                             <div
-                                className={`inline-block px-8 py-4 border-b-2 text-2xl border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 cursor-pointer ${selectedTab === 'engineering' ? 'text-blue border-gray-600 dark:text-gray-300 dark:border-gray-300' : ''
+                                className={`inline-block px-8 py-4 border-b-2 text-2xl border-transparent rounded-t-lg hover:text-blue hover:border-b-4 hover:border-blue cursor-pointer ${selectedTab === 'engineering' ? 'text-blue border-gray-600 dark:text-gray-300 dark:border-gray-300' : ''
                                     }`}
                                 onClick={() => handleTabClick('engineering')}
                             >

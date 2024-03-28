@@ -24,45 +24,82 @@ const software = () => {
             <div className="container mx-auto px-4 pt-10">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                     <div className="mb-10 bg-gray p-4 relative rounded-3xl">
-                        <div className="flex justify-center h-48">
+                        {/* <div className="flex justify-center h-48">
                             <Image
                                 src={Requirements}
                                 alt="Your Name"
                                 className="absolute top-16 mx-auto z-10"
                             />
+                        </div> */}
+                        <div className="my-4 flex justify-center">
+                            <div className=" border-4 border-blue rounded-full p-5">
+                                <Image
+                                    src={Requirements}
+                                    alt="Your Name"
+                                    className=" "
+                                />
+                            </div>
                         </div>
+
                         <h2 className="text-xl font-semibold text-blue text-center mb-2">Planning and Define Requirements</h2>
                         <p className="text-lg text-center">This stage requires understanding what the software must do as well as its intended users&apos; use case.</p>
                     </div>
                     <div className="mb-10 bg-gray p-4 relative rounded-3xl">
-                        <div className="flex justify-center h-48">
+                        {/* <div className="flex justify-center h-48">
                             <Image
                                 src={Design}
                                 alt="Your Name"
                                 className="absolute top-16 mx-auto z-10"
                             />
+                        </div> */}
+                        <div className="my-4 flex justify-center">
+                            <div className=" border-4 border-blue rounded-full p-5">
+                                <Image
+                                    src={Design}
+                                    alt="Your Name"
+                                    className=" "
+                                />
+                            </div>
                         </div>
                         <h2 className="text-xl font-semibold text-blue text-center mb-2">Design the Software</h2>
                         <p className="text-lg text-center">This involves developing its architecture, user interface design, and data structures as per PDR.</p>
                     </div>
                     <div className="mb-10 bg-gray p-4 relative rounded-3xl">
-                        <div className="flex justify-center h-48">
+                        {/* <div className="flex justify-center h-48">
                             <Image
                                 src={laptopCoding}
                                 alt="Your Name"
                                 className="absolute top-16 mx-auto z-10"
                             />
+                        </div> */}
+                        <div className="my-4 flex justify-center">
+                            <div className=" border-4 border-blue rounded-full p-5">
+                                <Image
+                                    src={laptopCoding}
+                                    alt="Your Name"
+                                    className=" "
+                                />
+                            </div>
                         </div>
                         <h2 className="text-xl font-semibold text-blue text-center mb-2">Coding Software</h2>
                         <p className="text-lg text-center">This involves writing the code needed to make itfunctional, while testing ensures it runs as expected and is free from bugs.Finally, deployment refers to making the software accessible for users.</p>
                     </div>
                     <div className="mb-10 bg-gray p-4 relative rounded-3xl">
-                        <div className="flex justify-center h-48">
+                        {/* <div className="flex justify-center h-48">
                             <Image
                                 src={softwareLicense}
                                 alt="Your Name"
                                 className="absolute top-16 mx-auto z-10 "
                             />
+                        </div> */}
+                        <div className="my-4 flex justify-center">
+                            <div className=" border-4 border-blue rounded-full p-5">
+                                <Image
+                                    src={softwareLicense}
+                                    alt="Your Name"
+                                    className=" "
+                                />
+                            </div>
                         </div>
                         <h2 className="text-xl font-semibold text-blue text-center mb-2">Maintaining Software</h2>
                         <p className="text-lg text-center">This entails fixing bugs, adding features, and keeping the softwarecurrent.</p>
@@ -83,7 +120,7 @@ const software = () => {
                             Common <span className="text-blue">Types Include</span>
                         </h2>
                         <div className="w-64 h-1 bg-blue mb-2"></div>
-                        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
+                        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mt-6 mb-4">
                             <div className="col-span-3">
                                 <div className="rounded-full bg-gray flex justify-center align-middle p-12">
                                     <Image

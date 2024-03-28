@@ -22,7 +22,7 @@ const integration = () => {
             <div className="container mx-auto px-4 mt-16">
                 <h2 className="text-2xl text-gray font-semibold text-center">Integration services help businesses overcome the difficulties inherent to connecting disparate parts of their IT infrastructure, including databases, applications and hardware - each acting in dependently from one another. Integration allows these islands to interact more seamlessly; communication data exchange between each other as part of one unified whole is enabled through this bridge of integration services.</h2>
 
-                <div className="grid grid-cols-12 gap-5 mt-8">
+                <div className="grid grid-cols-12 gap-5 mt-8 items-center">
                     <div className="col-span-12 md:col-span-6 p-4">
                         <Image
                             src={systemadmin}

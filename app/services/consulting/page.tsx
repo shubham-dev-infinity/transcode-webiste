@@ -22,78 +22,141 @@ const consulting = () => {
             <div className="container mx-auto px-4 mt-16">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                     <div className="mb-10 bg-gray p-4 relative rounded-3xl">
-                        <div className="flex justify-center h-48">
+                        {/* <div className="flex justify-center h-48">
                             <Image
                                 src={strategy}
                                 alt="Your Name"
                                 className="absolute top-16 mx-auto z-10"
                             />
+                        </div> */}
+                        <div className="my-4 flex justify-center">
+                            <div className=" border-4 border-blue rounded-full p-5">
+                                <Image
+                                    src={strategy}
+                                    alt="Your Name"
+                                    className=" "
+                                />
+                            </div>
                         </div>
                         <h2 className="text-xl font-semibold text-blue text-center mb-2">IT strategy</h2>
                         <p className="text-lg text-center">Assisting businesses in creating and executing long-term plans for their IT infrastructure and initiatives.</p>
                     </div>
                     <div className="mb-10 bg-gray p-4 relative rounded-3xl">
-                        <div className="flex justify-center h-48">
+                        {/* <div className="flex justify-center h-48">
                             <Image
                                 src={server}
                                 alt="Your Name"
                                 className="absolute top-16 mx-auto z-10"
                             />
+                        </div> */}
+                        <div className="my-4 flex justify-center">
+                            <div className=" border-4 border-blue rounded-full p-5">
+                                <Image
+                                    src={server}
+                                    alt="Your Name"
+                                    className=" "
+                                />
+                            </div>
                         </div>
                         <h2 className="text-xl font-semibold text-blue text-center mb-2">Cloud Computing</h2>
                         <p className="text-lg text-center">Assisting businesses in creating and executing long-term plans for their IT infrastructure and initiatives.</p>
                     </div>
                     <div className="mb-10 bg-gray p-4 relative rounded-3xl">
-                        <div className="flex justify-center h-48">
+                        {/* <div className="flex justify-center h-48">
                             <Image
                                 src={cyberSecurity}
                                 alt="Your Name"
                                 className="absolute top-16 mx-auto z-10"
                             />
+                        </div> */}
+                        <div className="my-4 flex justify-center">
+                            <div className=" border-4 border-blue rounded-full p-5">
+                                <Image
+                                    src={cyberSecurity}
+                                    alt="Your Name"
+                                    className=" "
+                                />
+                            </div>
                         </div>
                         <h2 className="text-xl font-semibold text-blue text-center mb-2">Cybersecurity</h2>
                         <p className="text-lg text-center">Assisting businesses in assessing cyber securityrisks, creating a security strategy, and implementing security controls.</p>
                     </div>
                     <div className="mb-10 bg-gray p-4 relative rounded-3xl">
-                        <div className="flex justify-center h-48">
+                        {/* <div className="flex justify-center h-48">
                             <Image
                                 src={data}
                                 alt="Your Name"
                                 className="absolute top-16 mx-auto z-10 "
                             />
+                        </div> */}
+                        <div className="my-4 flex justify-center">
+                            <div className=" border-4 border-blue rounded-full p-5">
+                                <Image
+                                    src={data}
+                                    alt="Your Name"
+                                    className=" "
+                                />
+                            </div>
                         </div>
                         <h2 className="text-xl font-semibold text-blue text-center mb-2">Data Analytics</h2>
                         <p className="text-lg text-center">Helping organizations collect, analyze, and use their data more effectively for making smarter decisions.</p>
                     </div>
                     <div className="mb-10 bg-gray p-4 relative rounded-3xl">
-                        <div className="flex justify-center h-48">
+                        {/* <div className="flex justify-center h-48">
                             <Image
                                 src={networking}
                                 alt="Your Name"
                                 className="absolute top-16 mx-auto z-10 "
                             />
+                        </div> */}
+                        <div className="my-4 flex justify-center">
+                            <div className=" border-4 border-blue rounded-full p-5">
+                                <Image
+                                    src={networking}
+                                    alt="Your Name"
+                                    className=" "
+                                />
+                            </div>
                         </div>
                         <h2 className="text-xl font-semibold text-blue text-center mb-2">Networking</h2>
                         <p className="text-lg text-center">Design, Implement, and Manage Business Networks.</p>
                     </div>
                     <div className="mb-10 bg-gray p-4 relative rounded-3xl">
-                        <div className="flex justify-center h-48">
+                        {/* <div className="flex justify-center h-48">
                             <Image
                                 src={systemIntegration1}
                                 alt="Your Name"
                                 className="absolute top-16 mx-auto z-10 "
                             />
+                        </div> */}
+                        <div className="my-4 flex justify-center">
+                            <div className=" border-4 border-blue rounded-full p-5">
+                                <Image
+                                    src={systemIntegration1}
+                                    alt="Your Name"
+                                    className=" "
+                                />
+                            </div>
                         </div>
                         <h2 className="text-xl font-semibold text-blue text-center mb-2">Systems Integration</h2>
                         <p className="text-lg text-center">Integrating various IT systems and apps into an interoperable solution environment.</p>
                     </div>
                     <div className="mb-10 bg-gray p-4 relative rounded-3xl">
-                        <div className="flex justify-center h-48">
+                        {/* <div className="flex justify-center h-48">
                             <Image
                                 src={projectManagement}
                                 alt="Your Name"
                                 className="absolute top-16 mx-auto z-10 "
                             />
+                        </div> */}
+                        <div className="my-4 flex justify-center">
+                            <div className=" border-4 border-blue rounded-full p-5">
+                                <Image
+                                    src={projectManagement}
+                                    alt="Your Name"
+                                    className=" "
+                                />
+                            </div>
                         </div>
                         <h2 className="text-xl font-semibold text-blue text-center mb-2">Project management</h2>
                         <p className="text-lg text-center">Ensuring IT projects are delivered on schedule and within budget is what project management entails.</p>

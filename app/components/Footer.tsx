@@ -268,33 +268,33 @@ const Footer = () => {
                     <h1 className="text-2xl font-bold">Quick Links</h1>
                     <div className="w-24 h-0.5 bg-white mb-2"></div>
                     <div className="flex flex-col">
-                        <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-                            <span className="text-base hover:text-blue-500 pb-2">
+                        <Link href="/" rel="noopener noreferrer">
+                            <span className="text-base hover:text-white_hover pb-10">
                                 Home
                             </span>
                         </Link>
-                        <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-                            <span className="text-base hover:text-blue-500 pb-2">
+                        <Link href="/about" rel="noopener noreferrer">
+                            <span className="text-base hover:text-white_hover pb-2">
                                 About Transcode
                             </span>
                         </Link>
-                        <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-                            <span className="text-base hover:text-blue-500 pb-2">
+                        <Link href="company-linkedin" rel="noopener noreferrer">
+                            <span className="text-base hover:text-white_hover pb-2">
                                 Services
                             </span>
                         </Link>
-                        <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-                            <span className="text-base hover:text-blue-500 pb-2">
+                        <Link href="company-linkedin" rel="noopener noreferrer">
+                            <span className="text-base hover:text-white_hover pb-2">
                                 Insight
                             </span>
                         </Link>
-                        <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-                            <span className="text-base hover:text-blue-500 pb-2">
+                        <Link href="/portfolio" rel="noopener noreferrer">
+                            <span className="text-base hover:text-white_hover pb-2">
                                 Client Portfolio
                             </span>
                         </Link>
-                        <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-                            <span className="text-base hover:text-blue-500 pb-2">
+                        <Link href="/contactus" rel="noopener noreferrer">
+                            <span className="text-base hover:text-white_hover pb-2">
                                 Contact
                             </span>
                         </Link>
@@ -304,33 +304,33 @@ const Footer = () => {
                     <h1 className="text-2xl font-bold">Services</h1>
                     <div className="w-28 h-0.5 bg-white mb-2"></div>
                     <div className="flex flex-col">
-                        <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-                            <span className="text-base hover:text-blue-500 pb-2">
+                        <Link href="/services/software" rel="noopener noreferrer">
+                            <span className="text-base hover:text-white_hover pb-2">
                                 Software Development
                             </span>
                         </Link>
-                        <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-                            <span className="text-base hover:text-blue-500 pb-2">
+                        <Link href="/services/consulting" rel="noopener noreferrer">
+                            <span className="text-base hover:text-white_hover pb-2">
                                 IT Consulting & Advisory
                             </span>
                         </Link>
-                        <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-                            <span className="text-base hover:text-blue-500 pb-2">
+                        <Link href="/services/integration" rel="noopener noreferrer">
+                            <span className="text-base hover:text-white_hover pb-2">
                                 System Integration Services
                             </span>
                         </Link>
-                        <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-                            <span className="text-base hover:text-blue-500 pb-2">
+                        <Link href="/services/managedservices" rel="noopener noreferrer">
+                            <span className="text-base hover:text-white_hover pb-2">
                                 Manage IT Services
                             </span>
                         </Link>
-                        <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-                            <span className="text-base hover:text-blue-500 pb-2">
+                        <Link href="/services/training" rel="noopener noreferrer">
+                            <span className="text-base hover:text-white_hover pb-2">
                                 Training & Education
                             </span>
                         </Link>
-                        <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-                            <span className="text-base hover:text-blue-500 pb-2">
+                        <Link href="/services/quality" rel="noopener noreferrer">
+                            <span className="text-base hover:text-white_hover pb-2">
                                 Quality Assurance & Testing
                             </span>
                         </Link>
@@ -344,23 +344,23 @@ const Footer = () => {
                     <h1 className="text-2xl font-bold">Resource</h1>
                     <div className="w-28 h-0.5 bg-white mb-2"></div>
                     <div className="flex flex-col">
-                        <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-                            <span className="text-base hover:text-blue-500 pb-2">
+                        <Link href="/career" rel="noopener noreferrer">
+                            <span className="text-base hover:text-white_hover pb-2">
                                 Careers
                             </span>
                         </Link>
-                        <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-                            <span className="text-base hover:text-blue-500 pb-2">
+                        <Link href="/workculture" rel="noopener noreferrer">
+                            <span className="text-base hover:text-white_hoverpb-2">
                                 Our Work Culture
                             </span>
                         </Link>
-                        <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-                            <span className="text-base hover:text-blue-500 pb-2">
+                        <Link href="/missionstory" rel="noopener noreferrer">
+                            <span className="text-base hover:text-white_hover pb-2">
                                 Our Mission Story
                             </span>
                         </Link>
-                        <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-                            <span className="text-base hover:text-blue-500 pb-2">
+                        <Link href="/sitemap" rel="noopener noreferrer">
+                            <span className="text-base hover:text-white_hover pb-2">
                                 Site Map
                             </span>
                         </Link>

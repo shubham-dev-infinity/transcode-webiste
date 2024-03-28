@@ -43,7 +43,7 @@ const quality = () => {
                     <p className="text-gray text-xl pb-3">Knowing that their software has been rigorously screened can increase confidence among investors, partners, and customers.</p>
                     <p className="text-gray text-xl pb-3">How can we assist you? Our range of quality& testing services has been tailored specifically to suit the unique requirements of each of our clients:</p>
                 </div>
-                <div className="grid grid-cols-12 gap-5 my-8">
+                <div className="grid grid-cols-12 gap-5 my-8 items-center">
                     <div className="col-span-12 md:col-span-6 p-4">
                         <Image
                             src={IncreaseStakeholder}

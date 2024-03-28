@@ -1,0 +1,19 @@
+
+const faqs = [
+
+    { title: "SOFTWARE DEVELOPMENT", question: "Q: WHAT PLATFORMS DO YOU DEVELOP CUSTOM SOFTWARE FOR?", answer: "To contact customer support, look for a button or link on the website or platform. You may be able to email, call, or chat with customer support for assistance." },
+    { question: "Q: HOW DO YOU ENSURE THE QUALITY OF THE SOFTWARE DEVELOPED?", answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley." },
+    { title: "IT CONSULTING AND ADVISORY SERVICES", question: "Q: HOW CAN YOUR TECHNOLOGY CONSULTING SERVICES BENEFIT MY BUSINESS?", answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley." },
+    { question: "Q: WHAT INDUSTRIES DO YOU SPECIALIZE IN FOR DIGITAL TRANSFORMATION CONSULTING?", answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley." },
+    { title: "SYSTEM INTEGRATION SERVICES", question: "Q: WHAT TYPES OF SYSTEM INTEGRATION SERVICES DO YOU OFFER?", answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley." },
+    { question: "Q: HOW DO YOU ENSURE A SMOOTH TRANSITION DURING SYSTEM INTEGRATION PROJECTS?", answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley." },
+    { title: "MANAGED IT SERVICES", question: "WHAT DOES YOUR IT INFRASTRUCTURE MANAGEMENT SERVICE INCLUDE?", answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley." }, 
+    { question: "Q: HOW DO YOU ENSURE THE SECURITY OF OUR IT INFRASTRUCTURE?", answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley." },
+    { title: "QUALITY ASSURANCE AND TESTING", question: "Q: WHAT TYPES OF TESTING SERVICES DO YOU OFFER?", answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley." },
+    { question: "Q: DO YOU PROVIDE TESTING SERVICES FOR THIRD-PARTY APPLICATIONS?", answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley." },
+    { title: "TRAINING AND EDUCATION", question: "Q: WHAT TOPICS ARE COVERED IN YOUR CORPORATE TRAINING PROGRAMS?", answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley." },
+    { question: "Q: DO YOU OFFER CERTIFICATION COURSES FOR IT PROFESSIONALS?", answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley." },
+
+];
+
+export default faqs;

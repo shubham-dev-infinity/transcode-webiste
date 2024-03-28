@@ -21,6 +21,7 @@ import cx from "clsx"
 import PortFolioImages from "./utils/PortFolioImages";
 import Portfolio from "@/components/PortFolio ";
 import blackImages from "@public/Assets/blackImages.jpg"
+import TechnologyTabs from "./utils/TechnologyTabs";
 
 interface HomeProps { }
 const Home: React.FC<HomeProps> = () => {
@@ -250,12 +251,12 @@ const Home: React.FC<HomeProps> = () => {
               </div>
             </div>
 
-            <div className="mb-4 border-b border-gray-200 dark:border-gray-700">
-              <h3 className="text-center text-3xl font-extrabold"><span className="text-blue">OUR TECHNOLOGY</span> EXPERTISE</h3>
+            <div className="mb-10 border-b border-gray-200 dark:border-gray-700">
+              <h3 className="text-center text-3xl font-extrabold pb-4"><span className="text-blue">OUR TECHNOLOGY</span> EXPERTISE</h3>
               <ul className="flex flex-wrap text-sm font-medium text-center justify-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
                 <li className="me-2" role="presentation">
                   <button
-                    className={`inline-block p-4 border-b-2 rounded-t-lg text-2xl ${activeTab === 'webdevelopment' ? 'border-blue' : 'border-transparent'}`}
+                    className={`inline-block p-4 border-b-2 rounded-t-lg text-2xl hover:text-blue hover:border-b-4 hover:border-blue ${activeTab === 'webdevelopment' ? 'border-b-4 border-blue' : 'border-transparent'}`}
                     id="webdevelopment-tab"
                     data-tabs-target="#webdevelopment"
                     type="button"
@@ -270,7 +271,7 @@ const Home: React.FC<HomeProps> = () => {
                 <li className="me-2" role="presentation">
                   <li className="me-2" role="presentation">
                     <button
-                      className={`inline-block p-4 border-b-2 rounded-t-lg text-2xl ${activeTab === 'mobiledevelopment' ? 'border-blue' : 'border-transparent'}`}
+                      className={`inline-block p-4 border-b-2 rounded-t-lg text-2xl hover:text-blue hover:border-b-4 hover:border-blue ${activeTab === 'mobiledevelopment' ? 'border-b-4 border-blue' : 'border-transparent'}`}
                       id="mobiledevelopment-tab"
                       data-tabs-target="#mobiledevelopment"
                       type="button"
@@ -285,7 +286,7 @@ const Home: React.FC<HomeProps> = () => {
                 </li>
                 <li className="me-2" role="presentation">
                   <button
-                    className={`inline-block p-4 border-b-2 rounded-t-lg text-2xl ${activeTab === 'database' ? 'border-blue' : 'border-transparent'}`}
+                    className={`inline-block p-4 border-b-2 rounded-t-lg text-2xl hover:text-blue hover:border-b-4 hover:border-blue ${activeTab === 'database' ? 'border-b-4 border-blue' : 'border-transparent'}`}
                     id="database-tab"
                     data-tabs-target="#database"
                     type="button"
@@ -299,7 +300,7 @@ const Home: React.FC<HomeProps> = () => {
                 </li>
                 <li role="presentation">
                   <button
-                    className={`inline-block p-4 border-b-2 rounded-t-lg text-2xl ${activeTab === 'UI/UX Design' ? 'border-blue' : 'border-transparent'}`}
+                    className={`inline-block p-4 border-b-2 rounded-t-lg text-2xl hover:text-blue hover:border-b-4 hover:border-blue ${activeTab === 'UI/UX Design' ? 'border-b-4 border-blue' : 'border-transparent'}`}
                     id="UI/UX Design-tab"
                     data-tabs-target="#UI/UX Design"
                     type="button"
@@ -312,122 +313,21 @@ const Home: React.FC<HomeProps> = () => {
                   </button>
                 </li>
               </ul>
+            {activeTab === 'webdevelopment' && <TechnologyTabs />}
+            </div>         
+            <div className="bg-gray mb-16">
+              <h3 className="text-3xl font-extrabold mb-4"><span className="text-blue">Our work</span> Process</h3>
+              <p className="text-3xl font-semibold text-center text-gray">Transcode Solution an exclusive approach for building modern, secure solutions tailored to each of its
+                clients individual requirements. </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div className="flex justify-center">
+                  <Image src={workProcess} alt="workProcess" width={880} height={552} />
+                </div>
+                <div className="flex justify-center">
+                  <Image src={Process} alt="Process" width={556} height={556} />
+                </div>
+              </div>
             </div>
-            {/* <div className="container mx-auto pt-10" id="default-tab-content">
-              <div className="flex flex-wrap justify-between" >
-                <div className="mb-10 bg-gray p-4 m-4 relative -z-10 w-2/12 h-345 rounded-3xl">
-                  <div className="flex justify-center h-48">
-                    <Image
-                      src={NextJsIcon}
-                      alt="Your Name"
-                      className="absolute top-16 mx-auto z-10"
-                    />
-                  </div>
-                  <h2 className="text-xl font-semibold mb-2">React JS</h2>
-                </div>
-                <div className="mb-10 bg-gray p-4 m-4 relative -z-10 w-2/12 h-345 rounded-3xl">
-                  <div className="flex justify-center h-48">
-                    <Image
-                      src={ReactJsIcon}
-                      alt="Your Name"
-                      className="absolute top-16 mx-auto z-10"
-                    />
-                  </div>
-                  <h2 className="text-xl font-semibold mb-2">Node JS</h2>
-                </div>
-                <div className="mb-10 bg-gray p-4 m-4 relative -z-10 w-2/12 h-345 rounded-3xl">
-                  <div className="flex justify-center h-48">
-                    <Image
-                      src={NodeJsIcon}
-                      alt="Your Name"
-                      className="absolute top-16 mx-auto z-10"
-                    />
-                  </div>
-                  <h2 className="text-xl font-semibold mb-2">PHP</h2>
-                </div>
-                <div className="mb-10 bg-gray p-4 m-4 relative -z-10 w-2/12 h-345 rounded-3xl">
-                  <div className="flex justify-center h-48">
-                    <Image
-                      src={PhpIcon}
-                      alt="Your Name"
-                      className="absolute top-16 mx-auto z-10"
-                    />
-                  </div>
-                  <h2 className="text-xl font-semibold mb-2">Next JS</h2>
-                </div>
-              </div>
-              <div className="bg-gray mb-16">
-                <h3 className="text-3xl font-extrabold mb-4"><span className="text-blue">Our work</span> Process</h3>
-                <p className="text-3xl font-semibold text-center text-gray">Transcode Solution an exclusive approach for building modern, secure solutions tailored to each of its
-                  clients individual requirements. </p>
-                <div className="flex">
-                  <div className="flex-1">
-                    <Image src={workProcess} alt="workProcess" width={880} height={552} />
-                  </div>
-                  <div className="">
-                    <Image src={Process} alt="Process" width={556} height={556} />
-                  </div>
-                </div>
-              </div>             
-            </div> */}
-            <div className="container mx-auto px-4 pt-10" id="default-tab-content">
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-                <div className="mb-10 bg-gray p-4 relative rounded-3xl">
-                  <div className="flex justify-center h-48">
-                    <Image
-                      src={NextJsIcon}
-                      alt="Your Name"
-                      className="absolute top-16 mx-auto z-10"
-                    />
-                  </div>
-                  <h2 className="text-xl font-semibold mb-2">React JS</h2>
-                </div>
-                <div className="mb-10 bg-gray p-4 relative rounded-3xl">
-                  <div className="flex justify-center h-48">
-                    <Image
-                      src={ReactJsIcon}
-                      alt="Your Name"
-                      className="absolute top-16 mx-auto z-10"
-                    />
-                  </div>
-                  <h2 className="text-xl font-semibold mb-2">Node JS</h2>
-                </div>
-                <div className="mb-10 bg-gray p-4 relative rounded-3xl">
-                  <div className="flex justify-center h-48">
-                    <Image
-                      src={NodeJsIcon}
-                      alt="Your Name"
-                      className="absolute top-16 mx-auto z-10"
-                    />
-                  </div>
-                  <h2 className="text-xl font-semibold mb-2">PHP</h2>
-                </div>
-                <div className="mb-10 bg-gray p-4 relative rounded-3xl">
-                  <div className="flex justify-center h-48">
-                    <Image
-                      src={PhpIcon}
-                      alt="Your Name"
-                      className="absolute top-16 mx-auto z-10"
-                    />
-                  </div>
-                  <h2 className="text-xl font-semibold mb-2">Next JS</h2>
-                </div>
-              </div>
-              <div className="bg-gray mb-16">
-                <h3 className="text-3xl font-extrabold mb-4"><span className="text-blue">Our work</span> Process</h3>
-                <p className="text-3xl font-semibold text-center text-gray">Transcode Solution an exclusive approach for building modern, secure solutions tailored to each of its
-                  clients individual requirements. </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                  <div className="flex justify-center">
-                    <Image src={workProcess} alt="workProcess" width={880} height={552} />
-                  </div>
-                  <div className="flex justify-center">
-                    <Image src={Process} alt="Process" width={556} height={556} />
-                  </div>
-                </div>
-              </div>
-            </div>            
-
           </div>
           <div className="bg-sky mb-12">
             <div className="container mx-auto gap-20 mt-10 text-center">

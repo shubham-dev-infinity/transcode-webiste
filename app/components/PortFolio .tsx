@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
 import { StaticImageData } from 'next/image';
-
+import { useRouter } from 'next/navigation';
 interface PortfolioProps {
     images: StaticImageData[];
 }
 
 const Portfolio: React.FC<PortfolioProps> = ({ images }) => {
     const [showAllImages, setShowAllImages] = useState(false);
+    const router = useRouter();
 
     // Function to handle "Show More" button click
     const handleShowMoreClick = () => {
-        setShowAllImages(true);
+        // setShowAllImages(true);
+        router.push('/portfolio');
     };
 
     // Decide which set of images to display based on the state
@@ -25,6 +27,11 @@ const Portfolio: React.FC<PortfolioProps> = ({ images }) => {
             ))}
             {/* Show more button */}
             {!showAllImages && (
+                // <div className="col-span-3">
+                //     <button onClick={handleShowMoreClick} className="bg-blue hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                //         Show More
+                //     </button>
+                // </div>
                 <div className="col-span-3">
                     <button onClick={handleShowMoreClick} className="bg-blue hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                         Show More
