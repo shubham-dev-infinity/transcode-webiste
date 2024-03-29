@@ -12,7 +12,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
-        console.log("open");        
+        console.log("open");
         setIsOpen(!isOpen);
     };
 
@@ -163,7 +163,7 @@ const Navbar = () => {
                                     </Link>
                                 </li>
                                 {/* Add more list items here */}
-                            </ul>                        
+                            </ul>
                         </div>
                         <Link href="/portfolio" onClick={closeMobileMenu}>
                             <span className="hover:text-blue hover:border-b-4 hover:border-blue font-bold text-lg">PORTFOLIO</span>
@@ -171,8 +171,8 @@ const Navbar = () => {
                         <Link href="/contactus" onClick={closeMobileMenu}>
                             <span className="hover:text-blue hover:border-b-4 hover:border-blue font-bold text-lg">CONTACT US</span>
                         </Link>
-                        <button className="bg-blue px-4 py-2 rounded-md font-bold text-white">LET’S TALK</button>
-                        </div>
+                        <button className="bg-blue px-4 py-2 rounded-md font-bold text-white hover:bg-white hover:text-blue hover:shadow-2xl hover:border-blue">LET’S TALK</button>
+                    </div>
                 </div>
             </div>
             {/* Mobile menu */}
@@ -335,7 +335,7 @@ const Navbar = () => {
                         <Link href="/contactus">
                             <span className="block py-2 px-4 text-blue hover:bg-blue hover:text-white font-semibold">CONTACT US</span>
                         </Link>
-                        <button className="bg-blue px-4 py-2 rounded-md text-white w-full">LET’S TALK</button>
+                        <button className="bg-blue px-4 py-2 rounded-md text-white w-full hover:bg-white hover:text-blue hover:shadow-2xl">LET’S TALK</button>
                     </div>
                 </div>
             </div>

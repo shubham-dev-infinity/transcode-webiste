@@ -12,7 +12,7 @@ const PortfolioTabs = () => {
 
     return (
         <div className="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
-            <ul className="flex justify-center flex-wrap -mb-px">
+            <ul className="flex justify-center flex-wrap -mb-px mt-10">
                 <li className="me-2">
                     <div
                         className={`inline-block px-8 py-4 border-b-2 text-2xl border-transparent rounded-t-lg hover:text-blue hover:border-b-4 hover:border-blue dark:hover:text-gray-300 cursor-pointer ${selectedTab === 'all' ? 'text-blue border-gray dark:text-gray-300 dark:border-gray-300' : ''
@@ -62,7 +62,7 @@ const PortfolioTabs = () => {
             {selectedTab === 'all' && <PortfolioTemplate />}
             {/* {selectedTab === 'web_design' && <WebDesignPortfolio />} */}
             {/* Render other PortfolioTemplates based on other tabs */}
-            <div className='mt-10 bg-gray'>
+            <div className='mt-16 bg-gray'>
             <h3 className='font-extrabold text-6xl text-center py-8'>Let&apos;s discuss your project!</h3>
                 <button className="bg-blue px-4 py-2 rounded-md text-white mb-8">Schedule Meeting</button>
             </div>

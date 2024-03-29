@@ -23,6 +23,7 @@ const config: Config = {
         blue: '#277D9B',
         gray: "#F2F2F2",
         sky: '#E8F8FF',
+        dark:"#2F404F",
         // radiant:"#A4E7EB"
         radiant: 'rgba(164, 231, 235, 0.55)'
       },

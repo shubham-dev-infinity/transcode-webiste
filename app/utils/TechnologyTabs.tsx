@@ -8,7 +8,7 @@ const TechnologyTabs = () => {
     return (
         <div className="container mx-auto px-4 pt-10" id="default-tab-content">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">                
-                <div className="mb-10 bg-gray p-4 relative rounded-3xl hover:shadow-lg hover:border-blue hover:border-2 hover:bg-white">
+                <div className="mb-10 bg-gray p-4 relative rounded-3xl hover:bg-white hover:shadow-2xl">
                     <div className="flex justify-center h-48">
                         <Image
                             src={NextJsIcon}
@@ -19,7 +19,7 @@ const TechnologyTabs = () => {
                     <h2 className="text-xl font-semibold mb-2">React JS</h2>
                 </div>
 
-                <div className="mb-10 bg-gray p-4 relative rounded-3xl hover:shadow-lg hover:border-blue hover:border-2 hover:bg-white">
+                <div className="mb-10 bg-gray p-4 relative rounded-3xl hover:bg-white hover:shadow-2xl">
                     <div className="flex justify-center h-48">
                         <Image
                             src={ReactJsIcon}
@@ -30,7 +30,7 @@ const TechnologyTabs = () => {
                     <h2 className="text-xl font-semibold mb-2">React JS</h2>
                 </div>
 
-                <div className="mb-10 bg-gray p-4 relative rounded-3xl hover:shadow-lg hover:border-blue hover:border-2 hover:bg-white">
+                <div className="mb-10 bg-gray p-4 relative rounded-3xl hover:bg-white hover:shadow-2xl">
                     <div className="flex justify-center h-48">
                         <Image
                             src={NodeJsIcon}
@@ -41,7 +41,7 @@ const TechnologyTabs = () => {
                     <h2 className="text-xl font-semibold mb-2">Node JS</h2>
                 </div>
 
-                <div className="mb-10 bg-gray p-4 relative rounded-3xl hover:shadow-lg hover:border-blue hover:border-2 hover:bg-white">
+                <div className="mb-10 bg-gray p-4 relative rounded-3xl hover:bg-white hover:shadow-2xl">
                     <div className="flex justify-center h-48">
                         <Image
                             src={PhpIcon}

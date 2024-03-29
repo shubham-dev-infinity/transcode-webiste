@@ -68,8 +68,8 @@ const Home: React.FC<HomeProps> = () => {
               <h4 className="text-black text-3xl lg:text-6xl font-extrabold text-center mb-8">Innovation</h4>
               <p className="text-black text-lg lg:text-3xl font-medium text-center mb-12">Our team offers expert design, development, and strategy services customized to your specific requirements.</p>
               <div className="flex flex-col lg:flex-row gap-7 justify-center mb-16">
-                <button className="bg-blue px-4 py-2 rounded-md text-white mb-2 lg:mb-0">Discover More</button>
-                <button className="bg-white px-4 py-2 rounded-md text-black">How It Works</button>
+                <button className="bg-blue px-4 py-2 rounded-md font-bold text-white mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">Discover More</button>
+                <button className="bg-white px-4 py-2 rounded-md font-bold text-black hover:bg-dark hover:text-white transition duration-300">How It Works</button>
               </div>
             </div>
           </div>
@@ -121,7 +121,7 @@ const Home: React.FC<HomeProps> = () => {
               <h3 className="leading-10 text-2xl pb-5 lg:text-2xl">MORE THAN 10+ YEARS PROVIDING IT SOLUTIONS</h3>
               <p className="pb-5 text-lg lg:text-sm">Our focus is primarily on software development, crafting custom solutions that align with our client&apos;s unique requirements.</p>
               <p className="pb-5 text-lg lg:text-sm">Our team of experienced developers works closely with each client to understand their business goals and objectives.</p>
-              <button className="bg-blue leading-7 text-lg rounded-md text-white p-2">Our Services</button>
+              <button className="bg-blue leading-7 text-lg rounded-md font-semibold text-white p-2 hover:bg-white hover:text-blue hover:shadow-2xl">Our Services</button>
             </div>
             <div className="flex-1 lg:order-3 lg:h-700 lg:w-470 bg-gray py-6 px-6 2xl:h-[700px] 2xl:py-6 xl:py-3 xl:h-[568px] lg:h-[443px] ">
               <h2 className="text-3xl lg:text-2xl">ABOUT <span className="text-blue">TRANSCODE</span></h2>
@@ -398,8 +398,8 @@ const Home: React.FC<HomeProps> = () => {
               <h3 className="pb-6 font-extrabold">Get IN TOUCH</h3>
               <p className="pb-6">Let’s collaborate and work something amazing together. Let’s discuss
                 and build something unforgettable together.</p>
-              {/* <button className="bg-white px-4 py-2 rounded-md text-black text-lg">Start Conversation</button> */}            
-              <button className="bg-blue px-4 py-2 rounded-md text-white text-lg border-2 border-white hover:bg-white hover:text-blue transition duration-300">Start Conversation</button>
+              {/* <button className="bg-white px-4 py-2 rounded-md text-black text-lg">Start Conversation</button> */}
+              <button className="bg-blue px-4 py-2 rounded-md font-semibold text-white text-lg border-2 border-white hover:bg-white hover:text-blue hover:shadow-xl">Start Conversation</button>
             </div>
           </div>
         </div>
