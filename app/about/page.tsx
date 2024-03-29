@@ -8,7 +8,8 @@ import Subscribe from "@public/Assets/Subscribe.png";
 import team from "@public/Assets/team.png";
 import FAQSection from "./FAQSection";
 import faqs from "./faqs ";
-
+import mission from "@public/Assets/mission.png"
+import goal from "@public/Assets/goal.png"
 
 const About = () => {
     return (
@@ -50,7 +51,10 @@ const About = () => {
                         <p className="text-xl pt-6 xl:pt-3 xl:text-lg lg:text-base lg:pt-1 sm:text-base sm:pt-4">At Transcode Solutions, we are more than just an IT firm - we are dreamers, creators, and problem solvers. We take great pride in our ability to craft customized software services that empower businesses for success in today&apos;s fast-paced environment. Our journey is fueled by a shared vision of pushing boundaries, embracing challenges, and delivering tangible results that make a difference. Join us on this exciting adventure as we continue to innovate and transform the digital landscape together</p>
                     </div>
                 </div>
-                <div className="container mx-auto grid grid-cols-1 gap-4 my-16 p-2">
+                <div className="container mx-auto grid grid-cols-1 gap-4 my-14 p-2">
+                    <Image src={goal} width={1470} height={826} alt="blogDetail" />
+                </div>
+                <div className="container mx-auto grid grid-cols-1 gap-4 my-14 p-2">
                     <Image src={team} width={1470} height={775} alt="blogDetail" />
                 </div>
                 <div className="p-4">

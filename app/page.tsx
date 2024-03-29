@@ -368,12 +368,13 @@ const Home: React.FC<HomeProps> = () => {
                   <div className="container mx-auto">
                     <div className="grid max-w-4xl lg:max-w-6xl grid-cols-1 mx-auto mt-8 text-center gap-y-4 sm:gap-x-8 sm:grid-cols-2 lg:grid-cols-3 sm:mt-12 lg:mt-20 sm:text-left">
                       {blogItems.map((blog, index) => (
-                        <div key={index} className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <div key={index} className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform transition-transform hover:scale-105">
                           <div className="p-2">
-                            <a href={blog.link}>
+                            <a href={blog.link} className="custom-hover">
                               <Image src={blog.image} alt="" className="rounded-t-lg" width={500} height={300} />
                             </a>
                           </div>
+
                           <div className="p-5 text-left">
                             <a href={blog.link}>
                               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{blog.title}</h5>
@@ -386,6 +387,7 @@ const Home: React.FC<HomeProps> = () => {
                         </div>
                       ))}
                     </div>
+
                   </div>
                 </div>
               </div>

@@ -40,6 +40,7 @@
 //     object-fit: contain;
 // }
 
+
 .diamond_Image {
        display: block;
     width: var(--grid-unit-width);
@@ -47,6 +48,10 @@
     // width: 150px;
     // height: 150px;
     transform: rotate(-40deg);
+}
+/* tailwind.css or your custom CSS file */
+.custom-hover:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
 .main_img {
