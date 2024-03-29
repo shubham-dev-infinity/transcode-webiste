@@ -63,8 +63,8 @@ const quality = () => {
                                 </div>
                             </div>
                             <div className="col-span-9">
-                                <h4 className="text-3xl font-extrabold text-blue">Manual and Automated Testing</h4>
-                                <p className="text-lg text-gray">Our highly skilled testers combine manual and automated testing tools for maximum coverage.</p>
+                                <h4 className="text-2xl font-extrabold text-blue">Manual and Automated Testing</h4>
+                                <p className="text-base text-gray">Our highly skilled testers combine manual and automated testing tools for maximum coverage.</p>
                             </div>
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
@@ -78,8 +78,8 @@ const quality = () => {
                                 </div>
                             </div>
                             <div className="col-span-9">
-                                <h4 className="text-3xl font-extrabold text-blue">Performance & Security Testing</h4>
-                                <p className="text-lg text-gray">We ensure your software performs optimally while meeting security compliance.</p>
+                                <h4 className="text-2xl font-extrabold text-blue">Performance & Security Testing</h4>
+                                <p className="text-base text-gray">We ensure your software performs optimally while meeting security compliance.</p>
                             </div>
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
@@ -93,8 +93,8 @@ const quality = () => {
                                 </div>
                             </div>
                             <div className="col-span-9">
-                                <h4 className="text-3xl font-extrabold text-blue">Mobile and Web Testing</h4>
-                                <p className="text-lg text-gray">Our tests encompass various devices and platforms to provide users with asmooth user experience. Our consulting & training experts share their expertise to establish an efficient QA culture within organizations of any size.</p>
+                                <h4 className="text-2xl font-extrabold text-blue">Mobile and Web Testing</h4>
+                                <p className="text-base text-gray">Our tests encompass various devices and platforms to provide users with asmooth user experience. Our consulting & training experts share their expertise to establish an efficient QA culture within organizations of any size.</p>
                             </div>
                         </div>
                     </div>

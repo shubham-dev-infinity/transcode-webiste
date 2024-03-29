@@ -17,7 +17,7 @@ const training = () => {
                 <HeroSection image={trainingEducation} text={"TRAINING AND EDUCATION"} discription={"Transforming Future Learners One at a Time"} />
             </div>
             <div className="container mx-auto px-4 mt-16">
-                <div className="text-2xl text-gray font-semibold mb-8">
+                <div className="text-xl text-gray font-semibold mb-8">
                     <p>
                         Training and education are vital pillars of a thriving society. Individuals gain the knowledge, skills, and values needed to navigate the complexity of modern society while contributing meaningfully to their communities. Through new technical abilities acquisition, expanding personal horizons exploration, or professional growth training and education provide pathways towards both personal and collective progress.
                     </p>
@@ -50,8 +50,8 @@ const training = () => {
                                 </div>
                             </div>
                             <div className="col-span-9">
-                                <h4 className="text-3xl font-extrabold text-blue">Enhanced employability</h4>
-                                <p className="text-lg text-gray">To equip individuals with the skills and qualifications desired by employers in order to increase their chances of securing jobs they desire while furthering their careers.</p>
+                                <h4 className="text-2xl font-extrabold text-blue">Enhanced employability</h4>
+                                <p className="text-base text-gray">To equip individuals with the skills and qualifications desired by employers in order to increase their chances of securing jobs they desire while furthering their careers.</p>
                             </div>
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
@@ -65,8 +65,8 @@ const training = () => {
                                 </div>
                             </div>
                             <div className="col-span-9">
-                                <h4 className="text-3xl font-extrabold text-blue">Personal Growth and Development</h4>
-                                <p className="text-lg text-gray">Foster the acquisition of new knowledge, widen perspectives, develop critical thinking abilities and problem-solving techniques, foster critical thinking abilities, and foster problem-solving abilities.</p>
+                                <h4 className="text-2xl font-extrabold text-blue">Personal Growth and Development</h4>
+                                <p className="text-base text-gray">Foster the acquisition of new knowledge, widen perspectives, develop critical thinking abilities and problem-solving techniques, foster critical thinking abilities, and foster problem-solving abilities.</p>
                             </div>
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
@@ -80,8 +80,8 @@ const training = () => {
                                 </div>
                             </div>
                             <div className="col-span-9">
-                                <h4 className="text-3xl font-extrabold text-blue">Enhanced communication and collaboration</h4>
-                                <p className="text-lg text-gray">These courses focus on building effective communication and collaborative strategies, helping individuals work better with others.</p>
+                                <h4 className="text-2xl font-extrabold text-blue">Enhanced communication and collaboration</h4>
+                                <p className="text-base text-gray">These courses focus on building effective communication and collaborative strategies, helping individuals work better with others.</p>
                             </div>
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
@@ -95,8 +95,8 @@ const training = () => {
                                 </div>
                             </div>
                             <div className="col-span-9">
-                                <h4 className="text-3xl font-extrabold text-blue">Civic engagement and positive social change</h4>
-                                <p className="text-lg text-gray">These courses focus on building effective communication and collaborative strategies, helping individuals work better with others.</p>
+                                <h4 className="text-2xl font-extrabold text-blue">Civic engagement and positive social change</h4>
+                                <p className="text-base text-gray">These courses focus on building effective communication and collaborative strategies, helping individuals work better with others.</p>
                             </div>
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
@@ -110,8 +110,8 @@ const training = () => {
                                 </div>
                             </div>
                             <div className="col-span-9">
-                                <h4 className="text-3xl font-extrabold text-blue">Innovation and economic growth</h4>
-                                <p className="text-lg text-gray">Foster a skilled, adaptable workforce capable of driving innovation and economic prosperity..</p>
+                                <h4 className="text-2xl font-extrabold text-blue">Innovation and economic growth</h4>
+                                <p className="text-base text-gray">Foster a skilled, adaptable workforce capable of driving innovation and economic prosperity..</p>
                             </div>
                         </div>                       
                     </div>
@@ -119,28 +119,28 @@ const training = () => {
                 <div className="mb-12">
                     <div className="my-4">
                         <h3 className="font-extrabold text-blue text-2xl pb-3">Challenges and Opportunities</h3>
-                        <p className="text-gray text-xl">Even with its many benefits, education and training present several unique obstacles:</p>
+                        <p className="text-gray text-base">Even with its many benefits, education and training present several unique obstacles:</p>
                     </div>
                     <div className="mb-4">
                         <h3 className="font-extrabold text-blue text-2xl pb-3">Accessibility and affordability :</h3>
-                        <p className="text-gray text-xl">Ensuring equal access to high-quality training and education regardlessof socioeconomic background is of utmost importance.</p>
+                        <p className="text-gray text-base">Ensuring equal access to high-quality training and education regardlessof socioeconomic background is of utmost importance.</p>
                     </div>
                     <div className="mb-4">
                         <h3 className="font-extrabold text-blue text-2xl pb-3">Project-Based Services :</h3>
-                        <p className="text-gray text-xl">Our project-based services address specific ITrequirements or challenges.</p>
+                        <p className="text-gray text-base">Our project-based services address specific ITrequirements or challenges.</p>
                     </div>
                     <div className="mb-4 ">
                         <h3 className="font-extrabold text-blue text-2xl">Relevance and responsiveness :</h3>
-                        <p className="text-gray text-xl py-3">Staying ahead of fast-evolved technological innovations and industry requirements to make sure skills taught remainapplicable and appropriate is of utmost importance for success in any work place environment.</p>
+                        <p className="text-gray text-base py-3">Staying ahead of fast-evolved technological innovations and industry requirements to make sure skills taught remainapplicable and appropriate is of utmost importance for success in any work place environment.</p>
                     </div>
                     <div className="mb-4">
                         <h3 className="font-extrabold text-blue text-2xl">Engagement and Motivation :</h3>
-                        <p className="text-gray text-xl py-3">Staying ahead of fast-evolved technological innovations and industry requirements to make sure skills taught remain applicable and appropriate is of utmost importance for success in any workplace environment.</p>
-                        <p className="text-gray text-xl">These challenges present opportunities for innovation and improvement. By harnessing technology, adapting multiple learning modalities, and cultivating partnerships between educators, employers, and policymakers we can build an education system that supports inclusive growth within individuals as well as societies alike in today&apos;s 21st Century society.</p>
+                        <p className="text-gray text-base py-3">Staying ahead of fast-evolved technological innovations and industry requirements to make sure skills taught remain applicable and appropriate is of utmost importance for success in any workplace environment.</p>
+                        <p className="text-gray text-base">These challenges present opportunities for innovation and improvement. By harnessing technology, adapting multiple learning modalities, and cultivating partnerships between educators, employers, and policymakers we can build an education system that supports inclusive growth within individuals as well as societies alike in today&apos;s 21st Century society.</p>
                     </div>
                     <div className="">
                         <h3 className="font-extrabold text-blue text-2xl">Conclusion :</h3>
-                        <p className="text-gray text-xl py-3">Education and training are investments that we all can benefit from today and in the future. By prioritizing learning, nurturing talent, and encouraging lifelong education, we can create a brighter tomorrow for ourselves all.</p>
+                        <p className="text-gray text-base py-3">Education and training are investments that we all can benefit from today and in the future. By prioritizing learning, nurturing talent, and encouraging lifelong education, we can create a brighter tomorrow for ourselves all.</p>
                     </div>
                 </div>
             </div>

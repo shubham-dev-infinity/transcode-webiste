@@ -19,7 +19,7 @@ const TechnologyTabs = () => {
                     </div>
                     <h2 className="text-xl font-semibold mb-2">React JS</h2>
                 </div> */}
-                <div className="mb-10 bg-gray p-4 relative rounded-3xl hover:shadow-lg">
+                <div className="mb-10 bg-gray p-4 relative rounded-3xl hover:shadow-lg hover:border-blue hover:border-2">
                     <div className="flex justify-center h-48">
                         <Image
                             src={NextJsIcon}
@@ -40,7 +40,7 @@ const TechnologyTabs = () => {
                     </div>
                     <h2 className="text-xl font-semibold mb-2">React JS</h2>
                 </div> */}
-                <div className="mb-10 bg-gray p-4 relative rounded-3xl hover:shadow-lg">
+                <div className="mb-10 bg-gray p-4 relative rounded-3xl hover:shadow-lg hover:border-blue hover:border-2">
                     <div className="flex justify-center h-48">
                         <Image
                             src={ReactJsIcon}
@@ -62,7 +62,7 @@ const TechnologyTabs = () => {
                     <h2 className="text-xl font-semibold mb-2">Node JS</h2>
                 </div> */}
 
-                <div className="mb-10 bg-gray p-4 relative rounded-3xl hover:shadow-lg">
+                <div className="mb-10 bg-gray p-4 relative rounded-3xl hover:shadow-lg hover:border-blue hover:border-2">
                     <div className="flex justify-center h-48">
                         <Image
                             src={NodeJsIcon}
@@ -84,7 +84,7 @@ const TechnologyTabs = () => {
                     <h2 className="text-xl font-semibold mb-2">PHP</h2>
                 </div> */}
 
-                <div className="mb-10 bg-gray p-4 relative rounded-3xl hover:shadow-lg">
+                <div className="mb-10 bg-gray p-4 relative rounded-3xl hover:shadow-lg hover:border-blue hover:border-2">
                     <div className="flex justify-center h-48">
                         <Image
                             src={PhpIcon}

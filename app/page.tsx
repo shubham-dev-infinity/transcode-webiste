@@ -398,7 +398,8 @@ const Home: React.FC<HomeProps> = () => {
               <h3 className="pb-6 font-extrabold">Get IN TOUCH</h3>
               <p className="pb-6">Let’s collaborate and work something amazing together. Let’s discuss
                 and build something unforgettable together.</p>
-              <button className="bg-white px-4 py-2 rounded-md text-black text-lg">Start Conversation</button>
+              {/* <button className="bg-white px-4 py-2 rounded-md text-black text-lg">Start Conversation</button> */}            
+              <button className="bg-blue px-4 py-2 rounded-md text-white text-lg border-2 border-white hover:bg-white hover:text-blue transition duration-300">Start Conversation</button>
             </div>
           </div>
         </div>
