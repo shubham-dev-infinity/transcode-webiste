@@ -319,7 +319,7 @@ const Home: React.FC<HomeProps> = () => {
                 clients individual requirements. </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <div className="flex justify-center">
-                  <Image src={workProcess} alt="workProcess" width={880} height={552} />
+                  <Image src={workProcess} alt="workProcess" width={880} height={540} />
                 </div>
                 <div className="flex justify-center">
                   <Image src={Process} alt="Process" width={556} height={556} />
