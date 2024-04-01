@@ -29,14 +29,14 @@ const managedservices = () => {
                 </div>
                 <h2 className="text-3xl font-extrabold text-center"><span className="text-blue font-extrabold text-3xl">Our Managed IT Services</span> consist of the following elements</h2>
                 <div className="grid grid-cols-12 gap-5">
-                    <div className="col-span-12 md:col-span-6 p-4">
+                    <div className="col-span-12 lg:col-span-6 p-4">
                         <Image
                             src={Converted}
                             alt="email"
                             width={656} height={656}
                         />
                     </div>
-                    <div className="col-span-12 md:col-span-6 p-12 text-left">
+                    <div className="col-span-12 lg:col-span-6 p-12 text-left">
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
                             <div className="col-span-3">
                                 <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden">

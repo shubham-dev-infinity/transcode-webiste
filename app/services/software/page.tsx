@@ -108,18 +108,19 @@ const software = () => {
                 <h3 className="text-xl font-semibold text-center text-gray mt-2 mb-6">Software development can be an intricate and time-consuming endeavor, yet its rewards can be immense. When done right, software can revolutionize our lives in many ways.</h3>
                 <p className="text-xl font-semibold text-center text-gray my-2">There are various kinds of software development,each offering different challenges and rewards.</p>
                 <div className="grid grid-cols-12 gap-5 mt-6">
-                    <div className="col-span-12 md:col-span-6 p-4">
+                    <div className="col-span-12 lg:col-span-6 p-4">
                         <Image
                             src={commonTypes}
                             alt="email"
                             className="rounded-full"
                         />
                     </div>
-                    <div className="col-span-12 md:col-span-6 p-12 text-left">
+                    <div className="col-span-12 lg:col-span-6 p-12 text-left">
                         <h2 className="font-extrabold text-2xl">
                             Common <span className="text-blue">Types Include</span>
                         </h2>
-                        <div className="w-64 h-1 bg-blue mb-2"></div>
+                        {/* <div className="w-64 h-1 bg-blue mb-2"></div> */}
+                        <div className="w-64 h-1 bg-blue mb-2 hidden sm:block "></div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mt-6 mb-4">
                             <div className="col-span-3">
                                 {/* <div className="">
