@@ -180,27 +180,31 @@ const consulting = () => {
                         <div className="w-64 h-1 bg-blue mb-6"></div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
                             <div className="col-span-3">
-                                <div className="rounded-full bg-gray flex justify-center align-middle p-12">
-                                    <Image
-                                        src={experience1}
-                                        alt="experience1"
-                                        className="object-scale-down"
-                                    />
+                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden">
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <Image
+                                            src={experience1}
+                                            alt="laptopCodings"
+                                            className="object-cover rounded-full"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-span-9">
-                                <h4 className="text-xl font-extrabold">Obtain expertise</h4>
+                                <h3 className="text-xl font-extrabold">Obtain expertise</h3>
                                 <p className="text-base text-gray">IT consultants and advisors possess extensive technical knowledge that allowsbusinesses to make well-informed decisions with regards to technology.</p>
                             </div>
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
                             <div className="col-span-3">
-                                <div className="rounded-full bg-gray flex justify-center align-middle p-12">
-                                    <Image
-                                        src={efficacy1}
-                                        alt="efficacy"
-                                        className="object-scale-down"
-                                    />
+                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden">
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <Image
+                                            src={efficacy1}
+                                            alt="laptopCodings"
+                                            className="object-cover rounded-full"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-span-9">

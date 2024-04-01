@@ -350,7 +350,7 @@ const Footer = () => {
                             </span>
                         </Link>
                         <Link href="/workculture" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hoverpb-2">
+                            <span className="text-base hover:text-white_hover pb-2">
                                 Our Work Culture
                             </span>
                         </Link>

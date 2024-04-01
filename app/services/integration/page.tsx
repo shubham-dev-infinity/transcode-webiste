@@ -37,12 +37,14 @@ const integration = () => {
                         <div className="w-64 h-1 bg-blue mb-4"></div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
                             <div className="col-span-3">
-                                <div className="rounded-full bg-gray flex justify-center align-middle p-12">
-                                    <Image
-                                        src={efficacy}
-                                        alt="efficacy"
-                                        className="object-scale-down"
-                                    />
+                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden">
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <Image
+                                            src={efficacy}
+                                            alt="laptopCodings"
+                                            className="object-cover rounded-full"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-span-9">
@@ -52,12 +54,14 @@ const integration = () => {
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 my-2">
                             <div className="col-span-3">
-                                <div className="rounded-full bg-gray flex justify-center align-middle p-12">
-                                    <Image
-                                        src={data}
-                                        alt="data"
-                                        className="object-scale-down"
-                                    />
+                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden">
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <Image
+                                            src={data}
+                                            alt="laptopCodings"
+                                            className="object-cover rounded-full"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-span-9">
@@ -67,12 +71,14 @@ const integration = () => {
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 my-2">
                             <div className="col-span-3">
-                                <div className="rounded-full bg-gray flex justify-center align-middle p-12">
-                                    <Image
-                                        src={rating}
-                                        alt="rating"
-                                        className="object-scale-down"
-                                    />
+                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden">
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <Image
+                                            src={rating}
+                                            alt="laptopCodings"
+                                            className="object-cover rounded-full"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-span-9">
@@ -82,12 +88,14 @@ const integration = () => {
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 my-2">
                             <div className="col-span-3">
-                                <div className="rounded-full bg-gray flex justify-center align-middle p-12">
-                                    <Image
-                                        src={discount}
-                                        alt="discount"
-                                        className="object-scale-down"
-                                    />
+                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden">
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <Image
+                                            src={discount}
+                                            alt="laptopCodings"
+                                            className="object-cover rounded-full"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-span-9">
@@ -97,12 +105,14 @@ const integration = () => {
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 my-2">
                             <div className="col-span-3">
-                                <div className="rounded-full bg-gray flex justify-center align-middle p-12">
-                                    <Image
-                                        src={agile}
-                                        alt="agile"
-                                        className="object-scale-down"
-                                    />
+                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden">
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <Image
+                                            src={agile}
+                                            alt="laptopCodings"
+                                            className="object-cover rounded-full"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-span-9">
@@ -120,12 +130,14 @@ const integration = () => {
                         <div className="w-96 h-1 bg-blue mb-4"></div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
                             <div className="col-span-3">
-                                <div className="rounded-full bg-gray flex justify-center align-middle p-12">
-                                    <Image
-                                        src={people}
-                                        alt="people"
-                                        className="object-scale-down"
-                                    />
+                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden">
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <Image
+                                            src={people}
+                                            alt="laptopCodings"
+                                            className="object-cover rounded-full"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-span-9">
@@ -135,12 +147,14 @@ const integration = () => {
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
                             <div className="col-span-3">
-                                <div className="rounded-full bg-gray flex justify-center align-middle p-12">
-                                    <Image
-                                        src={customize}
-                                        alt="customize"
-                                        className="object-scale-down"
-                                    />
+                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden">
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <Image
+                                            src={customize}
+                                            alt="laptopCodings"
+                                            className="object-cover rounded-full"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-span-9">
@@ -150,12 +164,14 @@ const integration = () => {
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
                             <div className="col-span-3">
-                                <div className="rounded-full bg-gray flex justify-center align-middle p-12">
-                                    <Image
-                                        src={method}
-                                        alt="method"
-                                        className="object-scale-down"
-                                    />
+                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden">
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <Image
+                                            src={method}
+                                            alt="laptopCodings"
+                                            className="object-cover rounded-full"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-span-9">

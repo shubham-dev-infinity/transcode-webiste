@@ -54,12 +54,14 @@ const quality = () => {
                     <div className="col-span-12 md:col-span-6 p-12 text-left">
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
                             <div className="col-span-3">
-                                <div className="rounded-full bg-gray flex justify-center align-middle p-12">
-                                    <Image
-                                        src={testing}
-                                        alt="testing"
-                                        className="object-scale-down"
-                                    />
+                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden">
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <Image
+                                            src={testing}
+                                            alt="laptopCodings"
+                                            className="object-cover rounded-full"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-span-9">
@@ -69,12 +71,14 @@ const quality = () => {
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
                             <div className="col-span-3">
-                                <div className="rounded-full bg-gray flex justify-center align-middle p-12">
-                                    <Image
-                                        src={performance}
-                                        alt="performance"
-                                        className="object-scale-down"
-                                    />
+                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden">
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <Image
+                                            src={performance}
+                                            alt="laptopCodings"
+                                            className="object-cover rounded-full"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-span-9">
@@ -84,12 +88,14 @@ const quality = () => {
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
                             <div className="col-span-3">
-                                <div className="rounded-full bg-gray flex justify-center align-middle p-12">
-                                    <Image
-                                        src={mobileApp}
-                                        alt="mobileApp"
-                                        className="object-scale-down"
-                                    />
+                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden">
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <Image
+                                            src={mobileApp}
+                                            alt="laptopCodings"
+                                            className="object-cover rounded-full"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-span-9">
