@@ -22,7 +22,7 @@ const AboutItem: React.FC<AccordionItemProps> = ({ title, question, answer }) =>
           <div className="w-40 h-1 bg-blue mb-2"></div>
         </>
       )}
-      <div className="accordion py-2 px-4 border-b border-solid border-gray-200 transition-all duration-500 rounded-2xl hover:bg-indigo-50 accordion-active:bg-indigo-50 active" onClick={toggleFAQ}>
+      <div className="accordion py-1.5 px-4 mb-1.5 border-b border-solid border-gray-200 transition-all duration-500 rounded-2xl hover:bg-indigo-50 accordion-active:bg-indigo-50 active" onClick={toggleFAQ}>
         <button className="accordion-toggle group inline-flex items-center justify-between leading-8 text-gray-900 w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:font-medium accordion-active:text-indigo-600" aria-controls="basic-collapse-one-with-arrow">
           <h5>{question}</h5>
           <svg className={`text-gray-500 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-${isFAQVisible ? "180" : "0"}`} width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
