@@ -10,6 +10,9 @@ import { useState } from "react";
 import PortFolioImages from "./utils/PortFolioImages";
 import Portfolio from "@/components/PortFolio ";
 import TechnologyTabs from "./utils/TechnologyTabs";
+import TechnologyUiuxTabs from "./utils/TechnologyUiuxTabs";
+import TechnologyMobileTabs from "./utils/TechnologyMobileTabs";
+import TechnologyDatabaseTabs from "./utils/TechnologyDatabaseTabs";
 
 interface HomeProps { }
 const Home: React.FC<HomeProps> = () => {
@@ -169,6 +172,9 @@ const Home: React.FC<HomeProps> = () => {
                 </li>
               </ul>
               {activeTab === 'webdevelopment' && <TechnologyTabs />}
+              {activeTab === 'UI/UX Design' && <TechnologyUiuxTabs />}
+              {activeTab === 'mobiledevelopment' && <TechnologyMobileTabs />}
+              {activeTab === 'database' && <TechnologyDatabaseTabs />}
             </div>
             <div className="bg-gray mb-16">
               <h3 className="text-3xl font-extrabold mb-4"><span className="text-blue">Our work</span> Process</h3>

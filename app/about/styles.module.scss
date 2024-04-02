@@ -1,0 +1,24 @@
+/* styles.module.scss */
+.gridItem {
+    width: 100%;
+    min-height: 815px; /* Use min-height instead of height to allow the grid item to expand as needed */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem; 
+}
+
+.vision {
+    background-image: url('../../public/Assets/Vision.png');
+}
+
+.coreValues {
+    background-image: url('../../public/Assets/CoreValues.png');
+}
+
+.missions {
+    background-image: url('../../public/Assets/Missions.png');
+}

@@ -283,7 +283,7 @@ const Footer = () => {
                                 Services
                             </span>
                         </Link>
-                        <Link href="company-linkedin" rel="noopener noreferrer">
+                        <Link href="/blog" rel="noopener noreferrer">
                             <span className="text-base hover:text-white_hover pb-2">
                                 Insight
                             </span>

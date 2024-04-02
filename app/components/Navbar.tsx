@@ -335,7 +335,7 @@ const Navbar = () => {
                         <Link href="/contactus">
                             <span className="block py-2 px-4 text-blue hover:bg-blue hover:text-white font-semibold">CONTACT US</span>
                         </Link>
-                        <button className="bg-blue px-4 py-2 rounded-md text-white w-full hover:bg-white hover:text-blue hover:shadow-2xl">LET’S TALK</button>
+                        <button className="bg-blue px-4 py-2 rounded-md text-white ml-3 hover:bg-white hover:text-blue hover:shadow-2xl">LET’S TALK</button>
                     </div>
                 </div>
             </div>
