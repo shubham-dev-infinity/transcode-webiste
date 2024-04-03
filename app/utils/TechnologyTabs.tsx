@@ -33,7 +33,6 @@ const TechnologyTabs = () => {
                     <h2 className="text-xl font-semibold mb-2">React Js</h2>
                 </div>
 
-
                 <div className="mb-10 bg-gray p-4 relative rounded-3xl hover:bg-white hover:shadow-2xl">
                     <div className="flex justify-center h-48">
                         <Image
@@ -44,7 +43,6 @@ const TechnologyTabs = () => {
                     </div>
                     <h2 className="text-xl font-semibold mb-2">Node Js</h2>
                 </div>
-
 
                 <div className="mb-10 bg-gray p-4 relative rounded-3xl hover:bg-white hover:shadow-2xl">
                     <div className="flex justify-center h-48">

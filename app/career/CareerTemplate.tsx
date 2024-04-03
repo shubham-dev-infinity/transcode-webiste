@@ -3,7 +3,7 @@
 const CareerTemplate = () => {
     return (
         <div>
-            <div className="grid grid-cols-12 gap-4 my-12">
+            <div className="grid grid-cols-12 gap-4 my-12 p-4">
                 <div className="col-span-12 md:col-span-6 border">
                     <div className="bg-gray p-3">
                         <h2 className="text-blue font-extrabold text-xl">PHP DEVELOPER</h2>
