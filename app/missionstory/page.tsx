@@ -6,7 +6,7 @@ import Image from "next/image";
 import ProblemsImage from "@public/Assets/ProblemsImage.png"
 import opportunitiesImage from "@public/Assets/opportunitiesImage.png"
 import ExperienceImage from "@public/Assets/ExperienceImage.png"
-import Doing from "@public/Assets/Doing.png"
+import Doing from "@public/Assets/Doing2.png"
 import Problems from "@public/Assets/Problems.png"
 import Opportunities from "@public/Assets/Opportunities.png"
 import Experience from "@public/Assets/Experience.png"
