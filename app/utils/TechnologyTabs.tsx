@@ -1,6 +1,6 @@
 import Image from "next/image";
 import NextJsIcon from "@public/Assets/icon/nextJsIcon.png"
-import ReactJsIcon from "../../public/Assets/icon/ReactJsIcon.png"
+import ReactJsIcon from "@public/Assets/icon/ReactJsIcon.png"
 import NodeJsIcon from "@public/Assets/icon/NodeJsIcon.png"
 import PhpIcon from "@public/Assets/icon/phpIcon.png"
 import java from "@public/Assets/java.png"
