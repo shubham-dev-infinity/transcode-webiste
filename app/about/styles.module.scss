@@ -1,14 +1,15 @@
 /* styles.module.scss */
 .gridItem {
     width: 100%;
-    min-height: 815px; /* Use min-height instead of height to allow the grid item to expand as needed */
-    background-size: cover;
+    min-height: 645px; /* Use min-height instead of height to allow the grid item to expand as needed */
+    background-size: contain;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 3rem; 
+    padding:  0 2rem; 
+    background-repeat: no-repeat;
 }
 
 .vision {
@@ -21,4 +22,43 @@
 
 .missions {
     background-image: url('../../public/Assets/Missions.png');
+}
+
+.overlayText{
+    padding: 2rem 1rem;
+    width: 495px;    
+}
+
+@media (max-width:1024px) {
+    .overlayText{
+        width: 320px;
+    }
+}
+.overlayText {
+    padding: 2rem 1rem;
+    width: 495px;    
+}
+
+@media (max-width: 1024px) {
+    .overlayText {
+        width: 320px;
+    }
+}
+
+@media (max-width: 640px) {
+    .overlayText h2 {
+        font-size: 1rem; /* Adjust font size for h2 */
+    }
+
+    .overlayText p {
+        font-size: 0.875rem; /* Adjust font size for p */
+        line-height: 1.2rem;
+    }
+    .overlayText{
+        padding: 2rem 2rem 0rem 2rem;
+        margin: 1rem -1rem;
+    }
+    .gridItem{
+        min-height: 527px;
+    }
 }

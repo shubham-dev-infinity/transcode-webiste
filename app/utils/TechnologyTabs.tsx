@@ -1,6 +1,5 @@
 import Image from "next/image";
 import NextJsIcon from "@public/Assets/icon/nextJsIcon.png"
-// import ReactJsIcon from "@public/Assets/icon/ReactJsIcon.png"
 import NodeJsIcon from "@public/Assets/icon/NodeJsIcon.png"
 import ReactjsIcon from "@public/Assets/icon/reactjsIcon.png"
 import PhpIcon from "@public/Assets/icon/phpIcon.png"
@@ -31,8 +30,9 @@ const TechnologyTabs = () => {
                             className="absolute top-16 mx-auto z-10"
                         />
                     </div>
-                    <h2 className="text-xl font-semibold mb-2">React JS</h2>
+                    <h2 className="text-xl font-semibold mb-2">React Js</h2>
                 </div>
+
 
                 <div className="mb-10 bg-gray p-4 relative rounded-3xl hover:bg-white hover:shadow-2xl">
                     <div className="flex justify-center h-48">
@@ -42,8 +42,9 @@ const TechnologyTabs = () => {
                             className="absolute top-16 mx-auto z-10"
                         />
                     </div>
-                    <h2 className="text-xl font-semibold mb-2">Node JS</h2>
+                    <h2 className="text-xl font-semibold mb-2">Node Js</h2>
                 </div>
+
 
                 <div className="mb-10 bg-gray p-4 relative rounded-3xl hover:bg-white hover:shadow-2xl">
                     <div className="flex justify-center h-48">

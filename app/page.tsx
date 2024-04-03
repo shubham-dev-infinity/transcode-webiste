@@ -192,6 +192,27 @@ const Home: React.FC<HomeProps> = () => {
             <div className="my-10">
               <h2 className="text-3xl font-extrabold text-center py-4"><span className="text-blue">Client</span> Testimonials</h2>
               <h2 className="text-3xl text-center text-gray ">Feedback and Statistics</h2>
+
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-20">
+                <div className="border-2 border-blue rounded-3xl text-left p-10">
+                  <p className="text-lg text-gray py-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta, veritatis vero deserunt aut error qui enim labore nihil harum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta.</p>
+                  <h3 className="text-xl text-blue">mst. sadia akter</h3>
+                  <h6 className="text-base text-gray py-4">dhaka</h6>
+                </div>
+                <div className="border-2 border-blue rounded-3xl text-left p-10">
+                  <p className="text-lg text-gray py-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta, veritatis vero deserunt aut error qui enim labore nihil harum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta.</p>
+                  <h3 className="text-xl text-blue">Mizanur islam</h3>
+                  <h6 className="text-base text-gray py-4">khulna</h6>
+                </div>
+                <div className="border-2 border-blue rounded-3xl text-left p-10">
+                  <p className="text-lg text-gray py-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta, veritatis vero deserunt aut error qui enim labore nihil harum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta.</p>
+                  <h3 className="text-xl text-blue">md. mahim miya</h3>
+                  <h6 className="text-base text-gray py-4">Chittagong</h6>
+                </div>
+              </div>
+
+
             </div>
           </div>
           <div className="bg-sky mb-12">
