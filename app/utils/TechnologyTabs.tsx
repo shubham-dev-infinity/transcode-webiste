@@ -1,7 +1,7 @@
 import Image from "next/image";
 import NextJsIcon from "@public/Assets/icon/nextJsIcon.png"
 import NodeJsIcon from "@public/Assets/icon/NodeJsIcon.png"
-// import ReactjsIcon from "@public/Assets/icon/reactjsIcon.png"
+import ReactjsIcon from "@public/Assets/icon/reactjsIcon.png"
 import PhpIcon from "@public/Assets/icon/phpIcon.png"
 import java from "@public/Assets/java.png"
 import wordpress from "@public/Assets/wordpress.png"
@@ -22,7 +22,7 @@ const TechnologyTabs = () => {
                     <h2 className="text-xl font-semibold mb-2">Next JS</h2>
                 </div>
 
-                {/* <div className="mb-10 bg-gray p-4 relative rounded-3xl hover:bg-white hover:shadow-2xl">
+                <div className="mb-10 bg-gray p-4 relative rounded-3xl hover:bg-white hover:shadow-2xl">
                     <div className="flex justify-center h-48">
                         <Image
                             src={ReactjsIcon}
@@ -31,7 +31,7 @@ const TechnologyTabs = () => {
                         />
                     </div>
                     <h2 className="text-xl font-semibold mb-2">React Js</h2>
-                </div> */}
+                </div>
 
 
                 <div className="mb-10 bg-gray p-4 relative rounded-3xl hover:bg-white hover:shadow-2xl">
