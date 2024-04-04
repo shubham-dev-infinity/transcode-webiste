@@ -15,7 +15,7 @@ const WorkCulture = () => {
             <div className={style.heroBgImage}>
                 <HeroSection image={culture} text={"Our Work Culture"} />
             </div>
-            <div className="container mx-auto my-16">
+            <div className="container mx-auto my-16 p-4">
                 <div className="grid grid-cols-12 gap-2 my-10">
                     <div className="col-span-12 md:col-span-7">
                         <Image src={office} alt="DreamJob" width={800} height={470} style={{ height: "100%" }} />
@@ -26,12 +26,12 @@ const WorkCulture = () => {
                     <div className="col-span-12 md:col-span-12">
                         <Image src={dinner} alt="DreamJob" width={1470} height={1102.5} style={{ height: "100%" }} />
                     </div>                  
-                </div>
+                </div>               
                 <div className="grid grid-cols-12 gap-2 my-10">
-                    <div className="col-span-12 md:col-span-4 ">
+                    <div className="col-span-12 md:col-span-5 flex justify-start">
                         <Image src={calibration} alt="DreamJob" width={640} height={470} style={{ height: "100%" }} />
                     </div>
-                    <div className="col-span-12 md:col-span-8">
+                    <div className="col-span-12 md:col-span-7 flex justify-end">
                         <Image src={working} alt="DreamJob" width={800} height={470} style={{ height: "100%" }} />
                     </div>
                 </div>

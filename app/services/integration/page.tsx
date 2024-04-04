@@ -127,8 +127,8 @@ const integration = () => {
                     <div className="col-span-12 md:col-span-6 p-12 text-left">
                         <h2 className="font-extrabold text-3xl">
                             Why should you select<span className="text-blue"> our system integration services</span>
-                        </h2>
-                        <div className="w-96 h-1 bg-blue mb-4"></div>
+                        </h2>                       
+                        <div className="w-96 h-1 bg-blue mb-4 hidden lg:block "></div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
                             <div className="col-span-3">
                                 <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden">
