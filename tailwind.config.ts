@@ -24,6 +24,7 @@ const config: Config = {
         gray: "#F2F2F2",
         sky: '#E8F8FF',
         dark:"#2F404F",
+        dark_gray:"D9D9D9",
         // radiant:"#A4E7EB"
         radiant: 'rgba(164, 231, 235, 0.55)'
       },

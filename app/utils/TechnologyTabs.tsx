@@ -56,36 +56,36 @@ const TechnologyTabs = () => {
                 </div>
 
                 <div className="mb-10 bg-gray p-4 relative rounded-3xl hover:bg-white hover:shadow-2xl">
-                    <div className="flex justify-center h-64">
+                    <div className="flex justify-center h-48">
                         <Image
                             src={java}
                             alt="Your Name"
-                            className="absolute top-16 mx-auto z-10"
+                            className="absolute  mx-auto z-10"
                         />
                     </div>
                     <h2 className="text-xl font-semibold mb-2">Java</h2>
                 </div>
 
                 <div className="mb-10 bg-gray p-4 relative rounded-3xl hover:bg-white hover:shadow-2xl">
-                    <div className="flex justify-center h-64">
-                        <Image
-                            src={net}
-                            alt="Your Name"
-                            className="absolute top-16 mx-auto z-10"
-                        />
-                    </div>
-                    <h2 className="text-xl font-semibold mb-2">Net</h2>
-                </div>
-
-                <div className="mb-10 bg-gray p-4 relative rounded-3xl hover:bg-white hover:shadow-2xl">
-                    <div className="flex justify-center h-64">
+                    <div className="flex justify-center h-48">
                         <Image
                             src={wordpress}
                             alt="Your Name"
-                            className="absolute top-16 mx-auto z-10"
+                            className="absolute  mx-auto z-10"
                         />
                     </div>
                     <h2 className="text-xl font-semibold mb-2">Wordpress</h2>
+                </div>
+
+                <div className="mb-10 bg-gray p-4 relative rounded-3xl hover:bg-white hover:shadow-2xl">
+                    <div className="flex justify-center h-48">
+                        <Image
+                            src={net}
+                            alt="Your Name"
+                            className="absolute  mx-auto z-10"
+                        />
+                    </div>
+                    <h2 className="text-xl font-semibold mb-2">Net</h2>
                 </div>
 
             </div>
