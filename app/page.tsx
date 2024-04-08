@@ -13,6 +13,11 @@ import TechnologyTabs from "./utils/TechnologyTabs";
 import TechnologyUiuxTabs from "./utils/TechnologyUiuxTabs";
 import TechnologyMobileTabs from "./utils/TechnologyMobileTabs";
 import TechnologyDatabaseTabs from "./utils/TechnologyDatabaseTabs";
+import staff from "@public/Assets/staff.png"
+import styles from "./styles.module.scss"
+import sadiaAkter from "@public/Assets/sadiaAkter.png"
+import Mizanur from "@public/Assets/Mizanur.png"
+import mahim from "@public/Assets/mahim.png"
 
 interface HomeProps { }
 const Home: React.FC<HomeProps> = () => {
@@ -195,17 +200,26 @@ const Home: React.FC<HomeProps> = () => {
 
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-20">
-                <div className="border-2 border-blue rounded-3xl text-left p-10">
-                  <p className="text-lg text-gray py-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta, veritatis vero deserunt aut error qui enim labore nihil harum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta.</p>
+                <div className="relative border-2 border-blue rounded-3xl text-left p-10">
+                  <div className="" >
+                    <Image className="absolute -top-17%" src={sadiaAkter} alt="staff" />
+                  </div>
+                  <p className="text-lg text-gray pt-28 pb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta, veritatis vero deserunt aut error qui enim labore nihil harum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta.</p>
                   <h3 className="text-xl text-blue">mst. sadia akter</h3>
                   <h6 className="text-base text-gray py-4">dhaka</h6>
                 </div>
                 <div className="border-2 border-blue rounded-3xl text-left p-10">
+                  <div className={styles.main_staff}>
+                    <Image className={styles.staff} src={Mizanur} alt="staff" />
+                  </div>
                   <p className="text-lg text-gray py-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta, veritatis vero deserunt aut error qui enim labore nihil harum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta.</p>
                   <h3 className="text-xl text-blue">Mizanur islam</h3>
                   <h6 className="text-base text-gray py-4">khulna</h6>
                 </div>
                 <div className="border-2 border-blue rounded-3xl text-left p-10">
+                  <div className={styles.main_staff}>
+                    <Image className={styles.staff} src={mahim} alt="staff" />
+                  </div>
                   <p className="text-lg text-gray py-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta, veritatis vero deserunt aut error qui enim labore nihil harum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta.</p>
                   <h3 className="text-xl text-blue">md. mahim miya</h3>
                   <h6 className="text-base text-gray py-4">Chittagong</h6>
@@ -274,4 +288,3 @@ const Home: React.FC<HomeProps> = () => {
 }
 
 export default Home;
-

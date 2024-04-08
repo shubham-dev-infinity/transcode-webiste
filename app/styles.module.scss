@@ -1,5 +1,14 @@
 
 /* global.css */
+// .main_staff{
+//     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+// }
+// .staff{
+//     border: 5px solid rgb(255, 0, 0);
+// }
+.staff{
+
+}   
 
 .websiteBgImage{
     width: 100%;    
@@ -12,33 +21,7 @@
     // position: absolute;
 }
 
-.diamond_bgImage{
-    // background: url(https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=600);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    // background-color: #ff3;
-    transform: rotate(45deg);
-    border: 3px solid blue;
-}
-// .diamond_bgImage:before{
-//     content: '';
-//     background-image: url(https://unsplash.it/640/640?random;1);
-//         display: block;
-//     width: var(--grid-unit-width);
-//     height: var(--grid-unit-width);
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-size: 100%;
-//     position: absolute;
-//     transform: rotate(314deg);
-//     object-fit: contain;
-// }
+
 
 
 .diamond_Image {

@@ -19,8 +19,8 @@ const integration = () => {
             <div className={style.heroBgImage}>
                 <HeroSection image={systemIntegration} text={"SYSTEM INTEGRATION SERVICES"} discription={"Bridging the Gap and Unlocking Your Potential"} />
             </div>
-            <div className="container mx-auto px-4 mt-16">
-                <h2 className="text-xl text-gray font-semibold text-center">Integration services help businesses overcome the difficulties inherent to connecting disparate parts of their IT infrastructure, including databases, applications and hardware - each acting in dependently from one another. Integration allows these islands to interact more seamlessly; communication data exchange between each other as part of one unified whole is enabled through this bridge of integration services.</h2>
+            <div className="container mx-auto px-4 mt-8 md:mt-16">
+                <h2 className="text-base text-gray font-semibold text-center md:text-xl">Integration services help businesses overcome the difficulties inherent to connecting disparate parts of their IT infrastructure, including databases, applications and hardware - each acting in dependently from one another. Integration allows these islands to interact more seamlessly; communication data exchange between each other as part of one unified whole is enabled through this bridge of integration services.</h2>
 
                 <div className="grid grid-cols-12 gap-5 mt-8 items-center">
                     <div className="col-span-12 md:col-span-6 p-4">
@@ -30,8 +30,8 @@ const integration = () => {
                             className="rounded-full"
                         />
                     </div>
-                    <div className="col-span-12 md:col-span-6 p-12 text-left">
-                        <h2 className="font-extrabold text-3xl">
+                    <div className="col-span-12 md:col-span-6  md:p-12 text-left">
+                        <h2 className="font-extrabold text-2xl md:text-3xl">
                             Benefits of<span className="text-blue"> System integration</span>
                         </h2>
                         {/* <div className="w-64 h-1 bg-blue mb-4"></div> */}
@@ -123,9 +123,9 @@ const integration = () => {
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-12 gap-5 mt-8">
+                <div className="grid grid-cols-12 gap-5">
                     <div className="col-span-12 md:col-span-6 p-12 text-left">
-                        <h2 className="font-extrabold text-3xl">
+                        <h2 className="font-extrabold text-2xl md:text-3xl">
                             Why should you select<span className="text-blue"> our system integration services</span>
                         </h2>                       
                         <div className="w-96 h-1 bg-blue mb-4 hidden lg:block "></div>
@@ -142,8 +142,8 @@ const integration = () => {
                                 </div>
                             </div>
                             <div className="col-span-9">
-                                <h4 className="text-xl font-extrabold text-blue">Our Experienced Team</h4>
-                                <p className="text-base text-gray">AOur experts possess considerable expertise across a range of technologiesand integrations.</p>
+                                <h4 className="text-base md:text-xl font-extrabold text-blue">Our Experienced Team</h4>
+                                <p className="text-sm md:text-base text-gray">AOur experts possess considerable expertise across a range of technologiesand integrations.</p>
                             </div>
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
@@ -159,8 +159,8 @@ const integration = () => {
                                 </div>
                             </div>
                             <div className="col-span-9">
-                                <h4 className="text-xl font-extrabold text-blue">Customizable Solutions</h4>
-                                <p className="text-base text-gray">Our experts possess considerable expertise across a range of technologies and integrations.</p>
+                                <h4 className="text-base md:text-xl  font-extrabold text-blue">Customizable Solutions</h4>
+                                <p className="text-sm md:text-base text-gray">Our experts possess considerable expertise across a range of technologies and integrations.</p>
                             </div>
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
@@ -176,8 +176,8 @@ const integration = () => {
                                 </div>
                             </div>
                             <div className="col-span-9">
-                                <h4 className="text-xl font-extrabold text-blue">Proven Methodology</h4>
-                                <p className="text-base text-gray">Our proven approach ensures smooth implementation and success and includes on going support to guarantee optimal performance.</p>
+                                <h4 className="text-base md:text-xl  font-extrabold text-blue">Proven Methodology</h4>
+                                <p className="text-sm md:text-base text-gray">Our proven approach ensures smooth implementation and success and includes on going support to guarantee optimal performance.</p>
                             </div>
                         </div>
                         {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -229,19 +229,19 @@ const integration = () => {
                         />
                     </div>
                 </div>
-                <div className="my-14">
-                    <h2 className="text-blue font-extrabold text-2xl pb-6">Are You Looking To Unlock The Potential Of Integrated Systems?</h2>
+                <div className="my-7 md:my-14">
+                    <h2 className="text-blue font-extrabold text-xl md:text-2xl pb-6">Are You Looking To Unlock The Potential Of Integrated Systems?</h2>
                     <ul className="list-disc list-inside text-blue p-2 leading-relaxed mb-6">
-                        <li className="text-gray text-base">Contact us now for a complimentary consultation to see how our system integration services can transform your business!</li>
-                        <li className="text-gray text-base">Additionally, consider these elements</li>
-                        <li className="text-gray text-base">Showcasing specific areas of expertise such as cloud integration or IoT integration</li>
-                        <li className="text-gray text-base">Showcasing successful case studies</li>
-                        <li className="text-gray text-base">Demonstrate how your services have made an impactful statement about itself</li>
-                        <li className="text-gray text-base">Providing industry insights as thought leaders</li>
-                        <li className="text-gray text-base">Providing invaluable resources</li>
-                        <li className="text-gray text-base">Offering free white papers and webinars as valuable resources is always something worthwhile!</li>
+                        <li className="text-gray text-sm md:text-base">Contact us now for a complimentary consultation to see how our system integration services can transform your business!</li>
+                        <li className="text-gray text-sm md:text-base">Additionally, consider these elements</li>
+                        <li className="text-gray text-sm md:text-base">Showcasing specific areas of expertise such as cloud integration or IoT integration</li>
+                        <li className="text-gray text-sm md:text-base">Showcasing successful case studies</li>
+                        <li className="text-gray text-sm md:text-base">Demonstrate how your services have made an impactful statement about itself</li>
+                        <li className="text-gray text-sm md:text-base">Providing industry insights as thought leaders</li>
+                        <li className="text-gray text-sm md:text-base">Providing invaluable resources</li>
+                        <li className="text-gray text-sm md:text-base">Offering free white papers and webinars as valuable resources is always something worthwhile!</li>
                     </ul>
-                    <p className="text-lg text-gray">By offering relevant information and emphasizing your unique value proposition, you can attract prospective clients while reaching your marketing objectives.</p>
+                    <p className="text-base md:text-lg text-gray">By offering relevant information and emphasizing your unique value proposition, you can attract prospective clients while reaching your marketing objectives.</p>
                 </div>
             </div>
         </main>
