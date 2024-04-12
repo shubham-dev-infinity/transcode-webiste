@@ -53,7 +53,7 @@ const Navbar = () => {
     }, [isMobileMenuOpen]);
 
     return (
-        <nav>
+        <nav className="shadow-md">
             <div className="hidden sm:flex text-white p-4 items-center justify-between bg-blue">
                 <div className="container mx-auto text-white py-0.5 flex items-center justify-between ">
                     <div className="text-white">

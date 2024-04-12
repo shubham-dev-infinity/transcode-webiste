@@ -20,8 +20,8 @@ const CardWrapper: React.FC<CardWrapperProps> = ({ title, description, image }) 
                 )}
             </div>
             <div className="mt-10">
-                <h3 className="text-xl font-semibold mb-4">{title}</h3>
-                <p className="text-gray">{description}</p>
+                <h3 className="text-lg sm:text-xl font-semibold mb-4">{title}</h3>
+                <p className="text-gray text-sm sm:text-base">{description}</p>
             </div>
         </div>
     );
