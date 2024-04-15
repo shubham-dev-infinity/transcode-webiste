@@ -215,7 +215,7 @@ import { MdLocationPin } from "react-icons/md";
 
 const Footer = () => {
     return (
-        <div className="bg-blue">
+        <div className="bg-footerbackground">
             <div className="container mx-auto text-white pt-8 grid grid-cols-2 lg:grid-cols-4 gap-8 p-3">
                 <div>
                     <Image

@@ -22,7 +22,15 @@ const Portfolio: React.FC<PortfolioProps> = ({ images }) => {
         <div className="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-3 gap-2 pr-2 sm:gap-2 sm:pr-2 md:pr-0 md:gap-6 text-center">
             {imagesToShow.map((image: StaticImageData, index: number) => (
                 <div key={index}>
-                    <img src={image.src} alt={`Portfolio Image ${index + 1}`} className="w-full h-full object-cover hover:scale-105 hover:shadow-2xl" />
+                    {/* <img src={image.src} alt={`Portfolio Image ${index + 1}`} className="w-full h-full object-cover hover:scale-105 hover:shadow-2xl " /> */}
+                    <img
+                        src={image.src}
+                        alt={`Portfolio Image ${index + 1}`}
+                        className="w-full h-full object-cover hover:scale-105 hover:shadow-2xl"
+                        data-aos="flip-right"
+                        data-aos-delay="100"
+                    />
+
                 </div>
             ))}
             {/* Show more button */}
