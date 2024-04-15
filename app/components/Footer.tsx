@@ -274,27 +274,27 @@ const Footer = () => {
                             </span>
                         </Link>
                         <Link href="/about" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-2">
+                            <span className="text-base hover:text-white_hover pb-3">
                                 About Transcode
                             </span>
                         </Link>
                         <Link href="company-linkedin" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-2">
+                            <span className="text-base hover:text-white_hover pb-3">
                                 Services
                             </span>
                         </Link>
                         <Link href="/blog" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-2">
+                            <span className="text-base hover:text-white_hover pb-3">
                                 Insight
                             </span>
                         </Link>
                         <Link href="/portfolio" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-2">
+                            <span className="text-base hover:text-white_hover pb-3">
                                 Client Portfolio
                             </span>
                         </Link>
                         <Link href="/contactus" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-2">
+                            <span className="text-base hover:text-white_hover pb-3">
                                 Contact
                             </span>
                         </Link>
@@ -305,32 +305,32 @@ const Footer = () => {
                     <div className="w-28 h-0.5 bg-white mb-2"></div>
                     <div className="flex flex-col">
                         <Link href="/services/software" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-2">
+                            <span className="text-base hover:text-white_hover pb-3">
                                 Software Development
                             </span>
                         </Link>
                         <Link href="/services/consulting" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-2">
+                            <span className="text-base hover:text-white_hover pb-3">
                                 IT Consulting & Advisory
                             </span>
                         </Link>
                         <Link href="/services/integration" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-2">
+                            <span className="text-base hover:text-white_hover pb-3">
                                 System Integration Services
                             </span>
                         </Link>
                         <Link href="/services/managedservices" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-2">
+                            <span className="text-base hover:text-white_hover pb-3">
                                 Manage IT Services
                             </span>
                         </Link>
                         <Link href="/services/training" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-2">
+                            <span className="text-base hover:text-white_hover pb-3">
                                 Training & Education
                             </span>
                         </Link>
                         <Link href="/services/quality" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-2">
+                            <span className="text-base hover:text-white_hover pb-3">
                                 Quality Assurance & Testing
                             </span>
                         </Link>
@@ -345,30 +345,30 @@ const Footer = () => {
                     <div className="w-28 h-0.5 bg-white mb-2"></div>
                     <div className="flex flex-col">
                         <Link href="/career" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-2">
+                            <span className="text-base hover:text-white_hover pb-3">
                                 Careers
                             </span>
                         </Link>
                         <Link href="/workculture" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-2">
+                            <span className="text-base hover:text-white_hover pb-3">
                                 Our Work Culture
                             </span>
                         </Link>
                         <Link href="/missionstory" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-2">
+                            <span className="text-base hover:text-white_hover pb-3">
                                 Our Mission Story
                             </span>
                         </Link>
                         <Link href="/sitemap" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-2">
+                            <span className="text-base hover:text-white_hover pb-3">
                                 Site Map
                             </span>
                         </Link>
                     </div>
                 </div>
             </div>
-            <hr className="border-t border-white my-6" />
-            <div className="pb-7 text-center text-sm">
+            {/* <hr className="border-t border-white my-6" /> */}
+            <div className="pb-7 text-center text-sm mt-6">
                 © 2024 All Rights Reserved - transcodesolution.com
             </div>
         </div>
