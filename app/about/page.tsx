@@ -99,7 +99,7 @@ const About = () => {
                         <div className="flex flex-col items-center mb-8">
                             <h3 className="text-white text-center mb-4">REGISTER FOR OUR NEWSLETTER FOR LATEST UPDATES</h3>
                             <input type="text" className="p-2 rounded-md w-full mb-4" placeholder="Email Address" />
-                            <button className="bg-white px-4 py-2 rounded-md text-blue">Submit</button>
+                            <button className="bg-white px-4 py-2 rounded-md text-blue hover:bg-blue hover:text-white hover:border-white border hover:border-solid">Submit</button>
                         </div>
                     </div>
                 </div>

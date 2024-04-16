@@ -64,7 +64,7 @@ const PortfolioTabs = () => {
             {/* Render other PortfolioTemplates based on other tabs */}
             <div className='mt-16 bg-gray'>
             <h3 className='font-extrabold text-6xl text-center py-8'>Let&apos;s discuss your project!</h3>
-                <button className="bg-blue px-4 py-2 rounded-md text-white mb-8">Schedule Meeting</button>
+                <button className="bg-blue px-4 py-2 rounded-md text-white mb-8 hover:bg-white hover:text-blue hover:border-blue border hover:border-solid">Schedule Meeting</button>
             </div>
         </div>
     );
