@@ -204,8 +204,7 @@ const Home: React.FC<HomeProps> = () => {
                     role="tab"
                     aria-controls="webdevelopment"
                     aria-selected={activeTab === 'webdevelopment'}
-                    onClick={() => handleTabClick('webdevelopment')}
-                    
+                    onClick={() => handleTabClick('webdevelopment')}                    
                   >
                     Web Development
                   </button>
@@ -363,7 +362,7 @@ const Home: React.FC<HomeProps> = () => {
                               <h5 className="mb-1 sm:mb-2 text-xl sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{blog.title}</h5>
                             </a>
                             <p className="mb-2 sm:mb-3 font-normal text-gray-700 dark:text-gray-400">{blog.content}</p>
-                            <a href={blog.link} className="mb-2 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            <a href={blog.link} className="mb-2 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue hover:bg-white hover:text-blue hover:border-blue border hover:border-solid">
                               See Full Article
                             </a>
                           </div>

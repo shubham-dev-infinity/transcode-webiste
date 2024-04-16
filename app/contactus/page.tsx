@@ -98,7 +98,7 @@ const ContactUs = () => {
                                 </div>
 
                                 <div className="md:col-span-2 flex justify-center">
-                                    <button className="bg-blue px-4 py-2 rounded-md text-white hover:bg-white hover:text-blue hover:border-black border hover:border-solid">Submit</button>
+                                    <button className="bg-blue px-4 py-2 rounded-md text-white hover:bg-white hover:text-blue hover:border-blue border hover:border-solid">Submit</button>
                                 </div>
                             </div>
 
@@ -126,7 +126,7 @@ const ContactUs = () => {
                                 <h2 className="font-extrabold text-3xl pb-8">Experience our service immediately!</h2>
                                 <h3 className="text-xl font-normal pb-8 text-gray">Our comprehensive transcode solutions seamlessly connect and efficiently address all your multimedia requirements.</h3>
                                 <div>
-                                    <button className="bg-blue px-4 py-2 rounded-md text-white hover:bg-white hover:text-blue hover:border-black border hover:border-solid">Get Started Now</button>
+                                    <button className="bg-blue px-4 py-2 rounded-md text-white hover:bg-white hover:text-blue hover:border-blue border hover:border-solid">Get Started Now</button>
                                 </div>
                             </div>
                         </div>

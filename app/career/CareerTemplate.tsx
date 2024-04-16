@@ -14,7 +14,7 @@ const CareerTemplate = () => {
                             <h4 className="italic">Experience: 1-4 Year</h4>
                         </div>
                         <div className="col-span-12 md:col-span-2 mt-4">
-                            <button className="bg-blue px-3 py-2 rounded-md text-white hover:bg-white hover:text-blue hover:border-black border hover:border-solid">Apply Now</button>
+                            <button className="bg-blue px-3 py-2 rounded-md text-white hover:bg-white hover:text-blue hover:border-blue border hover:border-solid">Apply Now</button>
                         </div>
                     </div>
                 </div>
@@ -28,7 +28,7 @@ const CareerTemplate = () => {
                             <h4 className="italic">Experience: 1-4 Year</h4>
                         </div>
                         <div className="col-span-12 md:col-span-2 mt-4">
-                            <button className="bg-blue px-3 py-2 rounded-md text-white hover:bg-white hover:text-blue hover:border-black border hover:border-solid">Apply Now</button>
+                            <button className="bg-blue px-3 py-2 rounded-md text-white hover:bg-white hover:text-blue hover:border-blue border hover:border-solid">Apply Now</button>
                         </div>
                     </div>
                 </div>
@@ -42,7 +42,7 @@ const CareerTemplate = () => {
                             <h4 className="italic">Experience: 1-4 Year</h4>
                         </div>
                         <div className="col-span-12 md:col-span-2 mt-4">
-                            <button className="bg-blue px-3 py-2 rounded-md text-white hover:bg-white hover:text-blue hover:border-black border hover:border-solid">Apply Now</button>
+                            <button className="bg-blue px-3 py-2 rounded-md text-white hover:bg-white hover:text-blue hover:border-blue border hover:border-solid">Apply Now</button>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ const CareerTemplate = () => {
                             <h4 className="italic">Experience: 1-4 Year</h4>
                         </div>
                         <div className="col-span-12 md:col-span-2 mt-4">
-                            <button className="bg-blue px-3 py-2 rounded-md text-white hover:bg-white hover:text-blue hover:border-black border hover:border-solid">Apply Now</button>
+                            <button className="bg-blue px-3 py-2 rounded-md text-white hover:bg-white hover:text-blue hover:border-blue border hover:border-solid">Apply Now</button>
                         </div>
                     </div>
                 </div>
