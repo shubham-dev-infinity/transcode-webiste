@@ -21,7 +21,7 @@ const consulting = () => {
             </div>
             <div className="mt-8 container mx-auto px-4 md:mt-16 lg:mt-16 xl:mt-16 2xl:mt-16">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-4">
-                    <div className="bg-gray p-4 relative rounded-3xl sm:mb-10 md:mb-10 lg:mb-10 xl:mb-10 2xl:mb-10">                      
+                    <div className="bg-gray p-4 relative rounded-3xl sm:mb-10 md:mb-10 lg:mb-10 xl:mb-10 2xl:mb-10" data-aos="zoom-in" data-aos-delay="100">                      
                         <div className="my-4 flex justify-center">
                             <div className=" border-4 border-blue rounded-full p-5">
                                 <Image
@@ -34,7 +34,7 @@ const consulting = () => {
                         <h2 className="text-lg font-semibold text-blue text-center mb-2 sm:text-xl md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">IT strategy</h2>
                         <p className="text-sm text-center sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base">Assisting businesses in creating and executing long-term plans for their IT infrastructure and initiatives.</p>
                     </div>
-                    <div className="bg-gray p-4 relative rounded-3xl sm:mb-10 md:mb-10 lg:mb-10 xl:mb-10 2xl:mb-10">                      
+                    <div className="bg-gray p-4 relative rounded-3xl sm:mb-10 md:mb-10 lg:mb-10 xl:mb-10 2xl:mb-10" data-aos="zoom-in" data-aos-delay="100">                      
                         <div className="my-4 flex justify-center">
                             <div className=" border-4 border-blue rounded-full p-5">
                                 <Image
@@ -47,7 +47,7 @@ const consulting = () => {
                         <h2 className="text-lg font-semibold text-blue text-center mb-2 sm:text-xl md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">Cloud Computing</h2>
                         <p className="text-sm text-center sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base">Assisting businesses in creating and executing long-term plans for their IT infrastructure and initiatives.</p>
                     </div>
-                    <div className="bg-gray p-4 relative rounded-3xl sm:mb-10 md:mb-10 lg:mb-10 xl:mb-10 2xl:mb-10">                     
+                    <div className="bg-gray p-4 relative rounded-3xl sm:mb-10 md:mb-10 lg:mb-10 xl:mb-10 2xl:mb-10" data-aos="zoom-in" data-aos-delay="100">                     
                         <div className="my-4 flex justify-center">
                             <div className=" border-4 border-blue rounded-full p-5">
                                 <Image
@@ -60,7 +60,7 @@ const consulting = () => {
                         <h2 className="text-lg font-semibold text-blue text-center mb-2 sm:text-xl md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">Cybersecurity</h2>
                         <p className="text-sm text-center sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base">Assisting businesses in assessing cyber securityrisks, creating a security strategy, and implementing security controls.</p>
                     </div>
-                    <div className="bg-gray p-4 relative rounded-3xl sm:mb-10 md:mb-10 lg:mb-10 xl:mb-10 2xl:mb-10">                       
+                    <div className="bg-gray p-4 relative rounded-3xl sm:mb-10 md:mb-10 lg:mb-10 xl:mb-10 2xl:mb-10" data-aos="zoom-in" data-aos-delay="100">                       
                         <div className="my-4 flex justify-center">
                             <div className=" border-4 border-blue rounded-full p-5">
                                 <Image
@@ -73,7 +73,7 @@ const consulting = () => {
                         <h2 className="text-lg font-semibold text-blue text-center mb-2 sm:text-xl md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">Data Analytics</h2>
                         <p className="text-sm text-center sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base">Helping organizations collect, analyze, and use their data more effectively for making smarter decisions.</p>
                     </div>
-                    <div className="bg-gray p-4 relative rounded-3xl sm:mb-10 md:mb-10 lg:mb-10 xl:mb-10 2xl:mb-10">                        
+                    <div className="bg-gray p-4 relative rounded-3xl sm:mb-10 md:mb-10 lg:mb-10 xl:mb-10 2xl:mb-10" data-aos="zoom-in" data-aos-delay="100">                        
                         <div className="my-4 flex justify-center">
                             <div className=" border-4 border-blue rounded-full p-5">
                                 <Image
@@ -86,7 +86,7 @@ const consulting = () => {
                         <h2 className="text-lg font-semibold text-blue text-center mb-2 sm:text-xl md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">Networking</h2>
                         <p className="text-sm text-center sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base">Design, Implement, and Manage Business Networks.</p>
                     </div>
-                    <div className="bg-gray p-4 relative rounded-3xl sm:mb-10 md:mb-10 lg:mb-10 xl:mb-10 2xl:mb-10">                        
+                    <div className="bg-gray p-4 relative rounded-3xl sm:mb-10 md:mb-10 lg:mb-10 xl:mb-10 2xl:mb-10" data-aos="zoom-in" data-aos-delay="100">                        
                         <div className="my-4 flex justify-center">
                             <div className=" border-4 border-blue rounded-full p-5">
                                 <Image
@@ -99,7 +99,7 @@ const consulting = () => {
                         <h2 className="text-lg font-semibold text-blue text-center mb-2 sm:text-xl md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">Systems Integration</h2>
                         <p className="text-sm text-center sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base">Integrating various IT systems and apps into an interoperable solution environment.</p>
                     </div>
-                    <div className="bg-gray p-4 relative rounded-3xl sm:mb-10 md:mb-10 lg:mb-10 xl:mb-10 2xl:mb-10">                      
+                    <div className="bg-gray p-4 relative rounded-3xl sm:mb-10 md:mb-10 lg:mb-10 xl:mb-10 2xl:mb-10" data-aos="zoom-in" data-aos-delay="100">                      
                         <div className="my-4 flex justify-center">
                             <div className=" border-4 border-blue rounded-full p-5">
                                 <Image
@@ -117,7 +117,7 @@ const consulting = () => {
                     IT consulting and advisory services can bring immense value to businesses of all shapes and sizes in various industries, saving money while improving efficiency, lowering risks, and cutting expenses.
                 </h3>
                 <div className="grid grid-cols-12 gap-5 mt-8">
-                    <div className="col-span-12 lg:col-span-6 p-4">
+                    <div className="col-span-12 lg:col-span-6 p-4" data-aos="slide-up" data-aos-delay="100">
                         <Image
                             src={Converted}
                             alt="email"
@@ -132,7 +132,7 @@ const consulting = () => {
                         <div className="w-64 h-1 bg-blue mb-6 hidden sm:block "></div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
                             <div className="col-span-3">
-                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden">
+                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden" data-aos="slide-up" data-aos-delay="100">
                                     <div className="absolute inset-0 flex items-center justify-center">
                                         <Image
                                             src={experience1}
@@ -149,7 +149,7 @@ const consulting = () => {
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
                             <div className="col-span-3">
-                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden">
+                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden" data-aos="slide-up" data-aos-delay="100">
                                     <div className="absolute inset-0 flex items-center justify-center">
                                         <Image
                                             src={efficacy1}

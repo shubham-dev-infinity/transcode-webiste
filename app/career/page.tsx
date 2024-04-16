@@ -11,8 +11,8 @@ import staff from "@public/Assets/staff.png"
 import CareerTemplate from "./CareerTemplate";
 
 const Career = () => {
-    const [selectedTab, setSelectedTab] = useState<string>('all');    
-    const handleTabClick = (tab: string) => { 
+    const [selectedTab, setSelectedTab] = useState<string>('all');
+    const handleTabClick = (tab: string) => {
         setSelectedTab(tab);
     };
     return (
@@ -21,9 +21,9 @@ const Career = () => {
                 <HeroSection image={career} text={"Career"} discription={"Establishing Trust and Achieving Excellence"} />
             </div>
             <div className="container mx-auto my-16">
-                <h2 className="text-3xl font-extrabold text-center">WHY CHOOSE <span className="text-blue">TRANSCODE</span> FOR YOUR <span className="text-blue">DREAM JOB?</span></h2>                  
+                <h2 className="text-3xl font-extrabold text-center">WHY CHOOSE <span className="text-blue">TRANSCODE</span> FOR YOUR <span className="text-blue">DREAM JOB?</span></h2>
                 <div className="grid grid-cols-12 gap-4 my-10 p-4">
-                    <div className="col-span-12 md:col-span-4 mx-auto flex items-center justify-center md:justify-start">
+                    <div className="col-span-12 md:col-span-4 mx-auto flex items-center justify-center md:justify-start" data-aos="zoom-in" data-aos-delay="100">
                         <Image src={DreamJob} alt="DreamJob" width={480} height={550} style={{ maxWidth: "100%", height: "auto", display: "block", margin: "0 auto" }} />
                     </div>
                     <div className="col-span-12 md:col-span-8">
@@ -33,22 +33,22 @@ const Career = () => {
                 </div>
                 <h2 className="text-3xl font-extrabold text-center">LIVE YOUR BEST <span className="text-blue">WORK LIFE</span></h2>
                 <div className="grid grid-cols-12 gap-y-8 my-12 p-4">
-                    <div className="col-span-12 md:col-span-4 flex items-center justify-center md:justify-start">
+                    <div className="col-span-12 md:col-span-4 flex items-center justify-center md:justify-start" data-aos="fade-right" data-aos-delay="100">
                         <Image src={bestWork} alt="bestWork" width={470} height={470} className="mx-auto" style={{ maxWidth: "100%", height: "auto", display: "block" }} />
                     </div>
-                    <div className="col-span-12 md:col-span-4 m-auto">
+                    <div className="col-span-12 md:col-span-4 m-auto" data-aos="fade-up" data-aos-delay="100">
                         <p className="text-center text-xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
-                    <div className="col-span-12 md:col-span-4 flex items-center justify-center md:justify-start">
+                    <div className="col-span-12 md:col-span-4 flex items-center justify-center md:justify-start" data-aos="fade-left" data-aos-delay="100">
                         <Image src={staff} alt="staff" width={470} height={470} className="mx-auto" style={{ maxWidth: "100%", height: "auto", display: "block" }} />
                     </div>
-                    <div className="col-span-12 md:col-span-4 m-auto">
+                    <div className="col-span-12 md:col-span-4 m-auto" data-aos="fade-up" data-aos-delay="100">
                         <p className="text-center text-xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
-                    <div className="col-span-12 md:col-span-4 flex items-center justify-center md:justify-start">
+                    <div className="col-span-12 md:col-span-4 flex items-center justify-center md:justify-start" data-aos="fade-up" data-aos-delay="100">
                         <Image src={staff} alt="staff" width={470} height={470} className="mx-auto" style={{ maxWidth: "100%", height: "auto", display: "block" }} />
                     </div>
-                    <div className="col-span-12 md:col-span-4 m-auto">
+                    <div className="col-span-12 md:col-span-4 m-auto" data-aos="fade-up" data-aos-delay="100">
                         <p className="text-center text-xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                 </div>

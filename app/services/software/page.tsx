@@ -23,7 +23,7 @@ const software = () => {
             </div>
             <div className="container mx-auto px-4 pt-10">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-                    <div className="bg-gray p-4 relative rounded-3xl sm:mb-10 ">
+                    <div className="bg-gray p-4 relative rounded-3xl sm:mb-10 " data-aos="zoom-in" data-aos-delay="100">
                         <div className="my-4 flex justify-center">
                             <div className=" border-4 border-blue rounded-full p-5">
                                 <Image
@@ -36,7 +36,7 @@ const software = () => {
                         <h2 className="text-lg font-semibold text-blue text-center mb-2 sm:text-xl md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">Planning and Define Requirements</h2>
                         <p className="text-sm text-center md:text-base">This stage requires understanding what the software must do as well as its intended users&apos; use case.</p>
                     </div>
-                    <div className="bg-gray p-4 relative rounded-3xl sm:mb-10 ">
+                    <div className="bg-gray p-4 relative rounded-3xl sm:mb-10 " data-aos="zoom-in" data-aos-delay="100">
                         <div className="my-4 flex justify-center">
                             <div className=" border-4 border-blue rounded-full p-5">
                                 <Image
@@ -49,7 +49,7 @@ const software = () => {
                         <h2 className="text-lg font-semibold text-blue text-center mb-2 sm:text-xl md:text-xl lg:text-xl xl:text-xl 2xl:text-xl ">Design the Software</h2>
                         <p className="text-sm text-center sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base">This involves developing its architecture, user interface design, and data structures as per PDR.</p>
                     </div>
-                    <div className="bg-gray p-4 relative rounded-3xl sm:mb-10 ">
+                    <div className="bg-gray p-4 relative rounded-3xl sm:mb-10 " data-aos="zoom-in" data-aos-delay="100">
                         <div className="my-4 flex justify-center">
                             <div className=" border-4 border-blue rounded-full p-5">
                                 <Image
@@ -62,7 +62,7 @@ const software = () => {
                         <h2 className="text-lg font-semibold text-blue text-center mb-2 sm:text-xl md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">Coding Software</h2>
                         <p className="text-sm text-center sm:text-base md:text-base lg:text-base xl:text-base 2xl:text-base">This involves writing the code needed to make itfunctional, while testing ensures it runs as expected and is free from bugs.Finally, deployment refers to making the software accessible for users.</p>
                     </div>
-                    <div className="mb-4 bg-gray p-4 relative rounded-3xl sm:mb-10 ">
+                    <div className="mb-4 bg-gray p-4 relative rounded-3xl sm:mb-10 " data-aos="zoom-in" data-aos-delay="100">
                         <div className="my-4 flex justify-center">
                             <div className=" border-4 border-blue rounded-full p-5">
                                 <Image
@@ -83,7 +83,7 @@ const software = () => {
                     There are various kinds of software development, each offering different challenges and rewards.
                 </p>
                 <div className="grid grid-cols-12 gap-5 mt-6">
-                    <div className="col-span-12 lg:col-span-6 p-4">
+                    <div className="col-span-12 lg:col-span-6 p-4" data-aos="slide-up" data-aos-delay="100">
                         <Image
                             src={commonTypes}
                             alt="email"
@@ -98,8 +98,8 @@ const software = () => {
                         <div className="w-64 h-1 bg-blue mb-2 hidden sm:block "></div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mt-6 mb-4">
                             <div className="col-span-3">
-                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden">
-                                    <div className="absolute inset-0 flex items-center justify-center">
+                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden" data-aos="slide-up" data-aos-delay="100">
+                                    <div className="absolute inset-0 flex items-center justify-center" >
                                         <Image
                                             src={laptopCodings}
                                             alt="laptopCodings"
@@ -116,8 +116,8 @@ const software = () => {
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
                             <div className="col-span-3">
-                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden">
-                                    <div className="absolute inset-0 flex items-center justify-center">
+                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden" data-aos="slide-up" data-aos-delay="100">
+                                    <div className="absolute inset-0 flex items-center justify-center" >
                                         <Image
                                             src={developer}
                                             alt="laptopCodings"
@@ -133,8 +133,8 @@ const software = () => {
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
                             <div className="col-span-3">
-                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden">
-                                    <div className="absolute inset-0 flex items-center justify-center">
+                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden" data-aos="slide-up" data-aos-delay="100">
+                                    <div className="absolute inset-0 flex items-center justify-center" >
                                         <Image
                                             src={Desktop}
                                             alt="laptopCodings"
@@ -150,7 +150,7 @@ const software = () => {
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
                             <div className="col-span-3">
-                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden">
+                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden" data-aos="slide-up" data-aos-delay="100">
                                     <div className="absolute inset-0 flex items-center justify-center">
                                         <Image
                                             src={gameController}

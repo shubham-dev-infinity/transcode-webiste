@@ -95,9 +95,9 @@ const PortfolioTemplate = () => {
 
     return (
         <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-14">
-            {projectsDetails.map(project => (
+            {projectsDetails.map((project, index) => (
                 <li key={project.id} className="element-item cat-1 hover:bg-white hover:scale-105 hover:shadow-2xl">
-                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="block w-full h-full" data-aos="zoom-in" >
                         <div className="pu bg-white p-4 rounded-lg shadow-md">
                             <div className="feeturre_image">
                                 <Image src={project.image} alt="" width={600} height={600} />
@@ -120,6 +120,7 @@ const PortfolioTemplate = () => {
                     </a>
                 </li>
             ))}
+
         </ul>
     );
 };

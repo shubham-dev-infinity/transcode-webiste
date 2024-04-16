@@ -23,13 +23,14 @@ const ContactUs = () => {
                         You can also reach out to us by phone or email in many variations.
                     </h3>
                     <div className="grid grid-cols-12 gap-4 mt-6">
-                        <div className="col-span-12 lg:col-span-4 bg-gray p-2">                           
+                        <div className="col-span-12 lg:col-span-4 bg-gray p-2">
                             <div className="col-span-4 flex gap-4 xl:gap-10 pt-4 md:pt-0">
                                 <Image
                                     src={email}
                                     alt="email"
                                     className="rounded-full"
                                     style={{ width: '100px', height: '100px' }}
+                                    data-aos="fade-up" data-aos-delay="100"
                                 />
                                 <div className="items-center justify-center pt-4">
                                     <h4 className="text-xl">Email</h4>
@@ -42,6 +43,7 @@ const ContactUs = () => {
                                     alt="letTalk"
                                     className="rounded-full"
                                     style={{ width: '100px', height: '100px' }}
+                                    data-aos="fade-up" data-aos-delay="100"
                                 />
                                 <div className="items-center justify-center pt-4">
                                     <h4 className="text-xl">Let’s Talk</h4>
@@ -54,6 +56,7 @@ const ContactUs = () => {
                                     alt="homeLocation"
                                     className="rounded-full"
                                     style={{ width: '100px', height: '100px' }}
+                                    data-aos="fade-up" data-aos-delay="100"
                                 />
                                 <div className="items-center justify-center pt-4">
                                     <h4 className="text-xl">Address</h4>
@@ -67,7 +70,7 @@ const ContactUs = () => {
                             </h2>
                             <h3 className="text-gray text-2xl font-semibold">
                                 Let&apos;s make a connection! Whether you choose to send a message or have a live conversation with us, we are available to assist you at all times.
-                            </h3>                         
+                            </h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
                                 <div>
                                     <label className="block text-gray text-lg font-semibold mb-1">First Name</label>
@@ -95,7 +98,7 @@ const ContactUs = () => {
                                 </div>
 
                                 <div className="md:col-span-2 flex justify-center">
-                                    <button className="bg-blue px-4 py-2 rounded-md text-white">Submit</button>
+                                    <button className="bg-blue px-4 py-2 rounded-md text-white hover:bg-white hover:text-blue hover:border-black border hover:border-solid">Submit</button>
                                 </div>
                             </div>
 
@@ -123,7 +126,7 @@ const ContactUs = () => {
                                 <h2 className="font-extrabold text-3xl pb-8">Experience our service immediately!</h2>
                                 <h3 className="text-xl font-normal pb-8 text-gray">Our comprehensive transcode solutions seamlessly connect and efficiently address all your multimedia requirements.</h3>
                                 <div>
-                                    <button className="bg-blue px-4 py-2 rounded-md text-white">Get Started Now</button>
+                                    <button className="bg-blue px-4 py-2 rounded-md text-white hover:bg-white hover:text-blue hover:border-black border hover:border-solid">Get Started Now</button>
                                 </div>
                             </div>
                         </div>

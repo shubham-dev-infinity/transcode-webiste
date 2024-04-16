@@ -9,7 +9,7 @@ interface CardWrapperProps {
 
 const CardWrapper: React.FC<CardWrapperProps> = ({ title, description, image }) => {
     return (
-        <div className="bg-gray px-7 pt-28 pb-8 rounded-3xl relative transform transition-transform hover:bg-white hover:scale-105 hover:shadow-2xl animated bounce">
+        <div className="bg-gray px-7 pt-28 pb-8 rounded-3xl relative transform transition-transform hover:bg-white hover:scale-105 hover:shadow-2xl animated bounce" >
             <div className="flex justify-center ">
                 {image && (
                     <Image

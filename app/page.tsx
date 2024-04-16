@@ -184,9 +184,11 @@ const Home: React.FC<HomeProps> = () => {
                 <h3 className="text-2xl sm:text-3xl font-extrabold mb-4">What <span className="text-blue">We Do</span></h3>
                 <p className="text-sm sm:text-2xl md:text-3xl text-gray">OUR SPECIALIZED SERVICES ARE TAILORED EXCLUSIVELY FOR YOUR BUSINESS NEEDS.</p>
               </div>
-              <div className="container mx-auto mt-28 gap-y-24 px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 ">
+              <div className="container mx-auto mt-28 gap-y-24 px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 What " >
                 {cardData.map((data, index) => (
-                  <CardWrapper key={index} {...data} />
+                  <div key={index} data-aos="flip-right">
+                  <CardWrapper {...data} />
+                  </div>
                 ))}
               </div>
             </div>
@@ -268,11 +270,11 @@ const Home: React.FC<HomeProps> = () => {
                   <Image src={Process} alt="Process" width={556} height={556} />
                 </div>
               </div> */}
-              <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
-                <div className="md:col-span-8">
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-4" >
+                <div className="md:col-span-8" data-aos="zoom-out">
                   <Image src={workProcess} alt="workProcess" width={880} height={552} />
                 </div>
-                <div className="md:col-span-4 md:mt-14">
+                <div className="md:col-span-4 md:mt-14" data-aos="zoom-out">
                   <Image src={Process} alt="Process" width={556} height={556} className="mt-14 md:mt-0" />
                 </div>
               </div>

@@ -44,7 +44,7 @@ const quality = () => {
                     <p className="text-gray text-lg md:text-xl pb-3">How can we assist you? Our range of quality& testing services has been tailored specifically to suit the unique requirements of each of our clients:</p>
                 </div>
                 <div className="grid grid-cols-12 gap-5 md:my-8 items-center">
-                    <div className="col-span-12 md:col-span-6 p-4">
+                    <div className="col-span-12 md:col-span-6 p-4" data-aos="slide-up" data-aos-delay="100">
                         <Image
                             src={IncreaseStakeholder}
                             alt="email"
@@ -54,7 +54,7 @@ const quality = () => {
                     <div className="col-span-12 md:col-span-6 px-12 md:p-12 text-left">
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
                             <div className="col-span-3">
-                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden">
+                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden" data-aos="slide-up" data-aos-delay="100">
                                     <div className="absolute inset-0 flex items-center justify-center">
                                         <Image
                                             src={testing}
@@ -71,7 +71,7 @@ const quality = () => {
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
                             <div className="col-span-3">
-                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden">
+                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden" data-aos="slide-up" data-aos-delay="100">
                                     <div className="absolute inset-0 flex items-center justify-center">
                                         <Image
                                             src={performance}
@@ -88,7 +88,7 @@ const quality = () => {
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
                             <div className="col-span-3">
-                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden">
+                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden" data-aos="slide-up" data-aos-delay="100">
                                     <div className="absolute inset-0 flex items-center justify-center">
                                         <Image
                                             src={mobileApp}

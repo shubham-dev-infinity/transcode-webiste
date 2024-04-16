@@ -45,7 +45,7 @@ const About = () => {
                     </div>
                 </div> */}
                 <div className="bg-blue grid grid-cols-12">
-                    <div className="col-span-12 lg:col-span-5 md:order-first p-6">
+                    <div className="col-span-12 lg:col-span-5 md:order-first p-6" data-aos="flip-up">
                         <Image src={officeStaff} alt="officeStaff" width={550} height={500} className="w-full" />
                     </div>
                     <div className="col-span-12 p-2 lg:col-span-7 md:order-last text-white pr-6 sm:p-4">
@@ -56,14 +56,14 @@ const About = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 mt-6 p-2">
                     {/* First Column */}
-                    <div className={`${styles.gridItem} ${styles.missions} lg:p-6 xl:p-8 md:p-8 sm:p-10 `}>
+                    <div className={`${styles.gridItem} ${styles.missions} lg:p-6 xl:p-8 md:p-8 sm:p-10 `} data-aos="zoom-in">
                         <div className={styles.overlayText}>
                             <h2 className="font-semibold text-xl mb-2 xl:mt-4 md:text-xl md:pt-10">Missions</h2>
                             <p className="text-gray font-semibold text-lg text-center xl:px-6 lg:text-base md:text-lg">Empower businesses with digital solutions to make their business processes more efficient. Bring utmost automation in software development lifecycle to have faster incremental software delivery with consistent quality.</p>
                         </div>
                     </div>
                     {/* Second Column */}
-                    <div className={`${styles.gridItem} ${styles.coreValues} lg:p-6 xl:p-8 md:p-40 sm:p-10`}>
+                    <div className={`${styles.gridItem} ${styles.coreValues} lg:p-6 xl:p-8 md:p-40 sm:p-10`} data-aos="zoom-in">
                         <div className={styles.overlayText}>
                             <h2 className="font-semibold text-xl mb-2 md:text-xl">Core Values</h2>
                             <p className="text-gray font-semibold text-lg text-center xl:px-8 lg:text-base md:text-lg">Creativity
@@ -74,17 +74,17 @@ const About = () => {
                         </div>
                     </div>
                     {/* Third Column */}
-                    <div className={`${styles.gridItem} ${styles.vision} lg:p-6 xl:p-8 md:p-8 sm:p-10`}>
+                    <div className={`${styles.gridItem} ${styles.vision} lg:p-6 xl:p-8 md:p-8 sm:p-10`} data-aos="zoom-in">
                         <div className={styles.overlayText}>
                             <h2 className="font-semibold text-xl mb-2 md:text-xl">Vision</h2>
                             <p className="text-gray font-semibold text-lg text-center xl:px-6 lg:text-base md:text-lg">To become a reliable technological partner that invents simpler solutions for complex problems.</p>
                         </div>
                     </div>
                 </div>
-                <div className="container mx-auto grid grid-cols-1 gap-4 mb-14 mt-p-2">
+                <div className="container mx-auto grid grid-cols-1 gap-4 mb-14 mt-p-2" data-aos="zoom-out">
                     <Image src={goal} width={1470} height={826} alt="blogDetail" />
                 </div>
-                <div className="container mx-auto grid grid-cols-1 gap-4 my-14 p-2">
+                <div className="container mx-auto grid grid-cols-1 gap-4 my-14 p-2" data-aos="flip-right">
                     <Image src={team} width={1470} height={775} alt="blogDetail" />
                 </div>
                 <div className="p-4">
