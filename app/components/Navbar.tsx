@@ -62,17 +62,17 @@ const Navbar = () => {
                         </Link>
                     </div>
                     <div className="flex space-x-4">
-                        <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-                            <span className="text-xl hover:text-blue">
+                        <Link href="https://www.linkedin.com/in/transcodesolution/" target="_blank" rel="noopener noreferrer">
+                            <span className="text-xl hover:text-white">
                                 <BsLinkedin />
                             </span>
                         </Link>
-                        <Link href="company-instagram" target="_blank" rel="noopener noreferrer">
+                        <Link href="https://www.instagram.com/nextorbitz" target="_blank" rel="noopener noreferrer">
                             <span className="text-xl hover:text-pink-500">
                                 <FaInstagramSquare />
                             </span>
                         </Link>
-                        <Link href="company-facebook" target="_blank" rel="noopener noreferrer">
+                        <Link href="https://m.facebook.com/profile.php/" target="_blank" rel="noopener noreferrer">
                             <span className="text-xl hover:text-blue-500">
                                 <FaFacebookSquare />
                             </span>

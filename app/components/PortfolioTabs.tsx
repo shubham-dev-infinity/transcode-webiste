@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import PortfolioTemplate from './PortfolioTemplate';
+import WebDesignPortfolio from './WebDesignPortfolio';
+import MobileAppDesign from './MobileAppDesign';
 
 const PortfolioTabs = () => {
     const [selectedTab, setSelectedTab] = useState<string>('all'); 
@@ -60,7 +62,9 @@ const PortfolioTabs = () => {
                 </li>
             </ul>
             {selectedTab === 'all' && <PortfolioTemplate />}
-            {/* {selectedTab === 'web_design' && <WebDesignPortfolio />} */}
+            {selectedTab === 'mobile_AppDesign' && <MobileAppDesign />}
+            {selectedTab === 'web_design' && <WebDesignPortfolio />}
+
             {/* Render other PortfolioTemplates based on other tabs */}
             <div className='mt-16 bg-gray'>
             <h3 className='font-extrabold text-6xl text-center py-8'>Let&apos;s discuss your project!</h3>

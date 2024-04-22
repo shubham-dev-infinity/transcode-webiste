@@ -216,26 +216,26 @@ import { MdLocationPin } from "react-icons/md";
 const Footer = () => {
     return (
         <div className="bg-footerbackground">
-            <div className="container mx-auto text-white pt-8 grid grid-cols-2 lg:grid-cols-4 gap-8 p-3">
+            <div className="container mx-auto text-white pt-16 grid grid-cols-2 lg:grid-cols-4 gap-8 p-3">
                 <div>
                     <Image
                         src={logo}
                         height={94}
                         width={116.51}
                         alt="Your Name"
-                        className="pb-4"
+                        className="pb-6"
                     />
-                    <span>
+                    <span className="">
                         Welcome to Transcode Solutions – Empowering your digital success with innovative solutions.
                     </span>
-                    <h1 className="text-2xl font-bold pt-4">Address</h1>
-                    <div className="w-24 h-0.5 bg-white mb-4"></div>
+                    <h1 className="text-2xl font-bold pt-6">Address</h1>
+                    <div className="w-24 h-0.5 bg-white mb-5"></div>
                     <p className="text-lg">
                         301, Ambika Pinnacle, beside Lajamni Chowk, Maruti Dham Society, Mota Varachha, Surat, Gujarat 394101
                     </p>
-                    <div className="flex gap-5 mt-4">
+                    <div className="flex gap-5 mt-6">
                         <div className="flex">
-                            <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
+                            <Link href="https://m.facebook.com/profile.php/" target="_blank" rel="noopener noreferrer">
                                 <span className="text-xl hover:text-blue-500">
                                     <FaFacebookSquare className="w-6 h-6 rounded-md" />
                                 </span>
@@ -266,10 +266,10 @@ const Footer = () => {
                 </div>
                 <div>
                     <h1 className="text-2xl font-bold">Quick Links</h1>
-                    <div className="w-24 h-0.5 bg-white mb-2"></div>
-                    <div className="flex flex-col">
+                    <div className="w-24 h-0.5 bg-white mb-4"></div>
+                    <div className="flex flex-col leading-8">
                         <Link href="/" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-10">
+                            <span className="text-base hover:text-white_hover">
                                 Home
                             </span>
                         </Link>
@@ -302,8 +302,8 @@ const Footer = () => {
                 </div>
                 <div>
                     <h1 className="text-2xl font-bold">Services</h1>
-                    <div className="w-28 h-0.5 bg-white mb-2"></div>
-                    <div className="flex flex-col">
+                    <div className="w-28 h-0.5 bg-white mb-4"></div>
+                    <div className="flex flex-col leading-8">
                         <Link href="/services/software" rel="noopener noreferrer">
                             <span className="text-base hover:text-white_hover pb-3">
                                 Software Development
@@ -335,15 +335,15 @@ const Footer = () => {
                             </span>
                         </Link>
                     </div>
-                    <h1 className="text-2xl font-bold pt-6">Project Inquiry</h1>
-                    <div className="w-28 h-0.5 bg-white mb-2"></div>
-                    <p className="pb-1">Call: +1 4758123694</p>
-                    <p>Email: info@transcodesolution.com</p>
+                    <h1 className="text-2xl font-bold pt-12">Project Inquiry</h1>
+                    <div className="w-28 h-0.5 bg-white mb-6"></div>
+                    <p className="leading-8">Call: +1 4758123694</p>
+                    <p className="leading-8">Email: info@transcodesolution.com</p>
                 </div>
                 <div>
                     <h1 className="text-2xl font-bold">Resource</h1>
-                    <div className="w-28 h-0.5 bg-white mb-2"></div>
-                    <div className="flex flex-col">
+                    <div className="w-28 h-0.5 bg-white mb-4"></div>
+                    <div className="flex flex-col leading-8">
                         <Link href="/career" rel="noopener noreferrer">
                             <span className="text-base hover:text-white_hover pb-3">
                                 Careers
@@ -365,9 +365,9 @@ const Footer = () => {
                             </span>
                         </Link>
                     </div>
-                </div>
-            </div>
-            {/* <hr className="border-t border-white my-6" /> */}
+                </div>                
+            </div>    
+            <hr className="container mx-auto border-t border-white my-6" />        
             <div className="pb-7 text-center text-sm mt-6">
                 © 2024 All Rights Reserved - transcodesolution.com
             </div>
