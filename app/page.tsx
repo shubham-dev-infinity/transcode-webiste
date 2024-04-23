@@ -83,25 +83,25 @@ const Home: React.FC<HomeProps> = () => {
       <div>
         <div className="relative mb-10 overflow-hidden">
           <div className="bg-gray">
-            <div className="container mx-auto flex flex-col justify-center lg:pt-32">
-              <div className="text-center pb-8">
+            <div className="container mx-auto flex flex-col justify-center pt-8 sm:pt-16 lg:pt-32">
+              <div className="text-center pb-0 md:pb-8">
                 <h3 className="text-headertext text-xl sm:text-2xl font-extrabold pt-2" data-aos="fade-up" data-aos-delay="100">{slides[currentSlide].heading}</h3>
                 <div className="flex justify-center">
                   <div className="w-24 h-1 bg-blue mb-4"></div>
                 </div>
               </div>
               <div className="absolute inset-y-0 left-0 flex items-center">
-                {/* <button onClick={goToPrevSlide} className="bg-gray-300 text-gray-800 rounded-full w-10 h-10 mr-4 focus:outline-none lg:w-12 lg:h-12">
+                <button onClick={goToPrevSlide} className="bg-blue text-white rounded-full w-6 sm:w-10 h-6 sm:h-10  focus:outline-none lg:w-12 lg:h-12">
                   &#10094;
-                </button> */}
-                <button onClick={goToPrevSlide} className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-blue text-white rounded-full w-10 h-10 lg:w-12 lg:h-12 focus:outline-none">&#10094;</button>
+                </button>
+                {/* <button onClick={goToPrevSlide} className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-blue text-white rounded-full w-10 h-10 lg:w-12 lg:h-12 focus:outline-none">&#10094;</button> */}
               </div>
               <h4 className="text-black text-xl sm:text-2xl lg:text-5xl font-extrabold text-center mb-3" data-aos="fade-up" data-aos-delay="100">
-                {slides[currentSlide].title1} <span className="text-headertext text-2xl sm:text-3xl lg:text-6xl font-extrabold text-center mb-3 wow fadeOutDownBig">{slides[currentSlide].title2}</span>{slides[currentSlide].title3}
+                {slides[currentSlide].title1} <span className="text-headertext text-2xl sm:text-3xl lg:text-5xl xl:text-6xl font-extrabold text-center mb-3 wow fadeOutDownBig">{slides[currentSlide].title2}</span>{slides[currentSlide].title3}
               </h4>
               <h4 className="text-black text-2xl sm:text-3xl lg:text-6xl font-extrabold text-center mb-8" data-aos="fade-up" data-aos-delay="100">{slides[currentSlide].title4}</h4>
               <p className="text-black text-sm sm:text-base lg:text-xl font-medium text-center px-6 mb-12 sm:px-32 md:px-40 lg:px-56 xl:px-96" data-aos="fade-up" data-aos-delay="100">{slides[currentSlide].description}</p>
-              <div className="flex  flex-row sm:flex-row gap-7 justify-center mb-16" data-aos="fade-up" data-aos-delay="100">
+              <div className="flex flex-row sm:flex-row gap-7 justify-center mb-16" data-aos="fade-up" data-aos-delay="100">
                 <Link href={slides[currentSlide].href}>
                   <button className="bg-blue px-2 py-1 lg:px-4 lg:py-2 rounded-md font-bold text-white mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">
                     {slides[currentSlide].buttonText}
@@ -114,10 +114,10 @@ const Home: React.FC<HomeProps> = () => {
                 </Link>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center">
-                {/* <button onClick={goToNextSlide} className="bg-gray-300 text-gray-800 rounded-full w-10 h-10 focus:outline-none lg:w-12 lg:h-12" data-aos="fade-up" data-aos-delay="100">
+                <button onClick={goToNextSlide} className="bg-blue text-white rounded-full w-6 sm:w-10 h-6 sm:h-10 focus:outline-none lg:w-12 lg:h-12" data-aos="fade-up" data-aos-delay="100">
                   &#10095;
-                </button> */}
-                <button className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-blue text-white rounded-full w-10 h-10 lg:w-12 lg:h-12 focus:outline-none" onClick={goToNextSlide} data-aos="fade-up" data-aos-delay="100">&#10095;</button>
+                </button>
+                {/* <button className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-blue text-white rounded-full w-10 h-10 lg:w-12 lg:h-12 focus:outline-none" onClick={goToNextSlide} data-aos="fade-up" data-aos-delay="100">&#10095;</button> */}
               </div>
             </div>
           </div>
@@ -133,19 +133,19 @@ const Home: React.FC<HomeProps> = () => {
                 data-aos="fade-up" data-aos-delay="100"
               />
             </div>
-            <div className="flex-1 lg:order-1 lg:h-700 lg:w-[270px] bg-gray py-6 px-6 2xl:h-[700px] 2xl:py-6 xl:py-3 xl:h-[568px] lg:h-[443px]  wow fadeIn" data-wow-duration="2s">
+            <div className="flex-1 lg:order-1 lg:h-700 lg:w-[270px] bg-gray py-6 px-6 2xl:h-[700px] 2xl:py-7 xl:py-3 xl:h-[568px] lg:h-[443px]  wow fadeIn" data-wow-duration="2s">
               <h2 className="text-xl xl:text-3xl lg:text-2xl">Who <span className="text-blue">We Are</span></h2>
               <div className="w-36 h-1 bg-blue mb-2 sm:mb-4"></div>
-              <h3 className="sm:leading-10 text-sm sm:text-2xl pb-1 sm:pb-5 lg:text-2xl">MORE THAN 10+ YEARS PROVIDING IT SOLUTIONS</h3>
-              <p className="pb-1 sm:pb-5 text-sm sm:text-lg lg:text-sm">Our focus is primarily on software development, crafting custom solutions that align with our client&apos;s unique requirements.</p>
-              <p className="pb-2 sm:pb-5 text-sm sm:text-lg lg:text-sm">Our team of experienced developers works closely with each client to understand their business goals and objectives.</p>
+              <h3 className="sm:leading-10 font-bold text-sm sm:text-xl pb-1 sm:pb-5 lg:text-2xl">MORE THAN 10+ YEARS PROVIDING IT SOLUTIONS</h3>
+              <p className="pb-1 sm:pb-5 text-sm sm:text-lg lg:text-sm xl:text-lg lg:pb-7">Our focus is primarily on software development, crafting custom solutions that align with our client&apos;s unique requirements.</p>
+              <p className="pb-2 sm:pb-5 text-sm sm:text-lg lg:text-sm xl:text-lg lg:pb-7">Our team of experienced developers works closely with each client to understand their business goals and objectives.</p>
               <button className="bg-blue sm:leading-7 text-lg rounded-md font-semibold text-white p-1 sm:p-2 hover:bg-white hover:text-blue hover:shadow-2xl">Our Services</button>
             </div>
-            <div className="flex-1 lg:order-3 lg:h-700 lg:w-470 bg-gray py-6 px-6 2xl:h-[700px] 2xl:py-6 xl:py-3 xl:h-[568px] lg:h-[443px] ">
+            <div className="flex-1 lg:order-3 lg:h-700 lg:w-470 bg-gray py-6 px-6 2xl:h-[700px] 2xl:py-7 xl:py-3 xl:h-[568px] lg:h-[443px] ">
               <h2 className="text-lg sm:text-xl lg:text-3xl">ABOUT <span className="text-blue">TRANSCODE</span></h2>
               <div className="w-36 h-1 bg-blue mb-4"></div>
-              <p className="pb-5 text-sm sm:text-lg lg:text-sm lg:pb-1 wow fadeOutDownBig">Welcome to Transcode Solutions – where innovation meets excellence.</p>
-              <p className="text-sm sm:text-lg lg:text-sm">
+              <p className="pb-5 text-sm sm:text-lg lg:text-sm xl:text-lg xl:pb-7 lg:pb-1 wow fadeOutDownBig">Welcome to Transcode Solutions – where innovation meets excellence.</p>
+              <p className="text-sm sm:text-lg lg:text-sm xl:text-lg lg:pb-7">
                 Transcode Solutions is dedicated to transforming the digital realm with advanced software solutions. As a leading IT firm, we specialize in crafting customized software services to suit each client&apos;s specific requirements. Our experienced team utilizes cutting-edge technologies and industry standards to bring concepts to life. Our goal is to equip businesses for success in the digital era by offering innovative, scalable, and cost-efficient solutions. Fueled by a commitment to excellence, we aim to surpass expectations and deliver concrete outcomes.
               </p>
             </div>
@@ -182,12 +182,12 @@ const Home: React.FC<HomeProps> = () => {
             <div className="my-14">
               <div className="mb-10">
                 <h3 className="text-2xl sm:text-3xl font-extrabold mb-4">What <span className="text-blue">We Do</span></h3>
-                <p className="text-sm sm:text-2xl md:text-3xl text-gray">OUR SPECIALIZED SERVICES ARE TAILORED EXCLUSIVELY FOR YOUR BUSINESS NEEDS.</p>
+                <p className="text-sm sm:text-lg md:text-xl text-gray">OUR SPECIALIZED SERVICES ARE TAILORED EXCLUSIVELY FOR YOUR BUSINESS NEEDS.</p>
               </div>
               <div className="container mx-auto mt-28 gap-y-24 px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 What " >
                 {cardData.map((data, index) => (
                   <div key={index} data-aos="flip-right">
-                  <CardWrapper {...data} />
+                    <CardWrapper {...data} />
                   </div>
                 ))}
               </div>
@@ -204,7 +204,7 @@ const Home: React.FC<HomeProps> = () => {
                     role="tab"
                     aria-controls="webdevelopment"
                     aria-selected={activeTab === 'webdevelopment'}
-                    onClick={() => handleTabClick('webdevelopment')}                    
+                    onClick={() => handleTabClick('webdevelopment')}
                   >
                     Web Development
                   </button>
@@ -259,7 +259,7 @@ const Home: React.FC<HomeProps> = () => {
             </div>
             <div className="bg-gray sm:mb-16 p-2">
               <h3 className="text-2xl md:text-3xl font-extrabold mb-4 pt-8"><span className="text-blue">Our work</span> Process</h3>
-              <p className="text-base sm:text-xl md:text-3xl font-semibold text-center text-gray">Transcode Solution an exclusive approach for building modern, secure solutions tailored to each of its
+              <p className="text-base sm:text-base md:text-lg xl:text-xl font-semibold text-center text-gray">Transcode Solution an exclusive approach for building modern, secure solutions tailored to each of its
                 clients individual requirements. </p>
               {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="flex justify-center">
@@ -273,15 +273,15 @@ const Home: React.FC<HomeProps> = () => {
                 <div className="md:col-span-8" data-aos="zoom-out">
                   <Image src={workProcess} alt="workProcess" width={880} height={552} />
                 </div>
-                <div className="md:col-span-4 md:mt-14" data-aos="zoom-out">
-                  <Image src={Process} alt="Process" width={556} height={556} className="mt-14 md:mt-0" />
+                <div className="md:col-span-4 mt-0 md:mt-14" data-aos="zoom-out">
+                  <Image src={Process} alt="Process" width={556} height={556} className=" md:mt-0" />
                 </div>
               </div>
             </div>
             <div className="my-10">
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-center py-4"><span className="text-blue">Client</span> Testimonials</h2>
-              <h2 className="text-xl sm:text-2xl md:text-3xl text-center text-gray pb-10">Feedback and Statistics</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 mt-28">
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-center py-2"><span className="text-blue">Client</span> Testimonials</h2>
+              <h2 className="text-sm sm:text-base md:text-xl text-center font-semibold text-gray pb-10">Feedback and Statistics</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-2 gap-16 mt-28">
                 <div className="relative border-2 border-blue rounded-3xl text-left p-4 md:p-6 xl:p-10" data-aos="fade-up" data-aos-delay="100">
                   <div className="" >
                     <Image className="absolute top-[-34%] sm:top-[-26%] lg:top-[-24%] xl:top-[-25%]" src={sadiaAkter} alt="staff" />
@@ -311,9 +311,9 @@ const Home: React.FC<HomeProps> = () => {
           </div>
           <div className="bg-sky sm:mb-12">
             <div className="container mx-auto gap-20 mt-10 text-center">
-              <div className="mt-6 sm:mt-20 pb-12">
+              <div className="mt-6 sm:mt-20 pb-2 sm:pb-12">
                 <div className="container mx-auto">
-                  <h3 className="text-2xl sm:text-3xl font-extrabold mb-4 pt-6 "><span className="text-blue">Our</span> Portfolio</h3>
+                  <h3 className="text-2xl sm:text-3xl font-extrabold pt-0 sm:py-20 "><span className="text-blue">Our</span> Portfolio</h3>
                   <Portfolio images={PortFolioImages} />
                 </div>
               </div>
@@ -321,12 +321,12 @@ const Home: React.FC<HomeProps> = () => {
           </div>
           <div className="bg-gray mb-12">
             <div className="container mx-auto gap-20 mt-10 text-center">
-              <div className=" mt-20 pb-12">
+              <div className="sm:mt-20 sm:pb-12">
                 <div className="container mx-auto">
-                  <h3 className="text-2xl sm:text-3xl font-extrabold mb-4 pt-6"><span className="text-blue">Our</span> Blog</h3>
-                  <p className="text-lg sm:text-3xl font-semibold text-center text-gray mb-4">Trending Custom Software Development Blog</p>
+                  <h3 className="text-xl sm:text-3xl font-extrabold mb-4 pt-6"><span className="text-blue">Our</span> Blog</h3>
+                  <p className="text-base sm:text-xl font-semibold text-center text-gray mb-4">Trending Custom Software Development Blog</p>
                   <div className="container mx-auto">
-                    <div className="grid max-w-4xl lg:max-w-6xl grid-cols-1 mx-auto mt-8 text-center gap-y-4 sm:gap-x-8 sm:grid-cols-2 lg:grid-cols-3 sm:mt-12 lg:mt-20 sm:text-left" >
+                    <div className="grid max-w-4xl lg:max-w-6xl grid-cols-1 mx-auto mt-2 text-center gap-y-4 sm:gap-x-8 sm:grid-cols-2 lg:grid-cols-3 sm:mt-4 2xl:mt-8 sm:text-left" >
                       {/* {blogItems.map((blog, index) => (
                         <div key={index} className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform transition-transform hover:scale-105" data-aos="zoom-in-up" data-aos-delay="100" >
                           <div className="p-2">
@@ -357,18 +357,18 @@ const Home: React.FC<HomeProps> = () => {
                               <Image src={blog.image} alt="" className="rounded-t-lg" width={500} height={300} />
                             </a>
                           </div>
-                          <div className="px-2 sm:p-5 text-left">
-                            <a href={blog.link}>
-                              <h5 className="mb-1 sm:mb-2 text-xl sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{blog.title}</h5>
-                            </a>
+                          <div className="px-2 sm:p-4 text-left">
+                            <p className="mb-2  text-base font-normal text-gray">{blog.date}</p>
+                            {/* <a href={blog.link}>
+                              <h5 className="mb-1 sm:mb-2 text-xl sm:text-lg font-bold tracking-tight text-gray-900 dark:text-white">{blog.title}</h5>
+                            </a> */}
                             <p className="mb-2 sm:mb-3 font-normal text-gray-700 dark:text-gray-400">{blog.content}</p>
-                            <a href={blog.link} className="mb-2 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue hover:bg-white hover:text-blue hover:border-blue border hover:border-solid">
+                            <a href={blog.link} className="inline-flex items-center mb-1 sm:mb-0 px-3 py-2 text-sm font-medium text-center text-white bg-blue rounded-lg hover:bg-white hover:text-blue hover:border-blue border hover:border-solid">
                               See Full Article
                             </a>
                           </div>
                         </div>
                       ))}
-
                     </div>
                   </div>
                 </div>
@@ -376,13 +376,13 @@ const Home: React.FC<HomeProps> = () => {
             </div>
           </div>
           <div className="container mx-auto">
-            <div className="bg-blue text-white text-center mb-12 pb-4 pt-4">
-              <h3 className="pb-6 font-extrabold">Get IN TOUCH</h3>
-              <p className="pb-6">Let’s collaborate and work something amazing together. Let’s discuss
+            <div className="bg-blue text-white text-center mb-12 pb-4 pt-2 sm:pt-12">
+              <h3 className="font-extrabold text-lg sm:text-2xl lg:text-3xl">Get IN TOUCH</h3>
+              <p className="text-center text-sm sm:text-xl lg:text-2xl sm:px-40 xl:px-80 my-2 sm:my-6">Let’s collaborate and work something amazing together. Let’s discuss
                 and build something unforgettable together.</p>
               {/* <button className="bg-white px-4 py-2 rounded-md text-black text-lg">Start Conversation</button> */}
               <Link href="/contactus">
-                <button className="bg-blue px-4 py-2 rounded-md font-semibold text-white text-lg border-2 border-white hover:bg-white hover:text-blue hover:shadow-xl">Start Conversation</button>
+                <button className="bg-blue px-2 sm:px-4 py-1 sm:py-2 rounded-md font-semibold text-white text-sm sm:text-lg border-2 border-white hover:bg-white hover:text-blue hover:shadow-xl">Start Conversation</button>
               </Link>
             </div>
           </div>

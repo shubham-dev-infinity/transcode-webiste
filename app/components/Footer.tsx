@@ -225,12 +225,12 @@ const Footer = () => {
                         alt="Your Name"
                         className="pb-6"
                     />
-                    <span className="">
+                    <span className="text-sm sm:text-base">
                         Welcome to Transcode Solutions – Empowering your digital success with innovative solutions.
                     </span>
-                    <h1 className="text-2xl font-bold pt-6">Address</h1>
-                    <div className="w-24 h-0.5 bg-white mb-5"></div>
-                    <p className="text-lg">
+                    <h1 className="text-sm sm:text-2xl font-bold pt-6">Address</h1>
+                    <div className="w-24 h-0.5 bg-white mb-2 sm:mb-5"></div>
+                    <p className="text-sm sm:text-lg">
                         301, Ambika Pinnacle, beside Lajamni Chowk, Maruti Dham Society, Mota Varachha, Surat, Gujarat 394101
                     </p>
                     <div className="flex gap-5 mt-6">
@@ -265,102 +265,102 @@ const Footer = () => {
                     </div>
                 </div>
                 <div>
-                    <h1 className="text-2xl font-bold">Quick Links</h1>
-                    <div className="w-24 h-0.5 bg-white mb-4"></div>
-                    <div className="flex flex-col leading-8">
+                    <h1 className="text-base sm:text-2xl font-bold">Quick Links</h1>
+                    <div className="w-24 h-0.5 bg-white mb-0 sm:mb-4"></div>
+                    <div className="flex flex-col leading-0 sm:leading-8">
                         <Link href="/" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover">
+                            <span className="text-sm sm:text-base hover:text-white_hover">
                                 Home
                             </span>
                         </Link>
                         <Link href="/about" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-3">
+                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
                                 About Transcode
                             </span>
                         </Link>
                         <Link href="company-linkedin" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-3">
+                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
                                 Services
                             </span>
                         </Link>
                         <Link href="/blog" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-3">
+                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
                                 Insight
                             </span>
                         </Link>
                         <Link href="/portfolio" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-3">
+                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
                                 Client Portfolio
                             </span>
                         </Link>
                         <Link href="/contactus" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-3">
+                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
                                 Contact
                             </span>
                         </Link>
                     </div>
                 </div>
                 <div>
-                    <h1 className="text-2xl font-bold">Services</h1>
-                    <div className="w-28 h-0.5 bg-white mb-4"></div>
-                    <div className="flex flex-col leading-8">
+                    <h2 className="text-base sm:text-2xl font-bold">Services</h2>
+                    <div className="w-28 h-0.5 bg-white mb-1 sm:mb-4"></div>
+                    <div className="flex flex-col leading-0 sm:leading-8">
                         <Link href="/services/software" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-3">
+                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
                                 Software Development
                             </span>
                         </Link>
                         <Link href="/services/consulting" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-3">
+                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
                                 IT Consulting & Advisory
                             </span>
                         </Link>
                         <Link href="/services/integration" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-3">
+                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
                                 System Integration Services
                             </span>
                         </Link>
                         <Link href="/services/managedservices" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-3">
+                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
                                 Manage IT Services
                             </span>
                         </Link>
                         <Link href="/services/training" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-3">
+                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
                                 Training & Education
                             </span>
                         </Link>
                         <Link href="/services/quality" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-3">
+                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
                                 Quality Assurance & Testing
                             </span>
                         </Link>
                     </div>
-                    <h1 className="text-2xl font-bold pt-12">Project Inquiry</h1>
-                    <div className="w-28 h-0.5 bg-white mb-6"></div>
-                    <p className="leading-8">Call: +1 4758123694</p>
-                    <p className="leading-8">Email: info@transcodesolution.com</p>
+                    <h1 className="text-lg sm:text-2xl font-bold pt-6 sm:pt-12">Project Inquiry</h1>
+                    <div className="w-28 h-0.5 bg-white mb-2 sm:mb-6"></div>
+                    <p className="text-sm sm:text-base leading-0 sm:leading-8">Call: +1 4758123694</p>
+                    <p className="text-sm sm:text-base leading-0 sm:leading-8">Email: info@transcodesolution.com</p>
                 </div>
                 <div>
-                    <h1 className="text-2xl font-bold">Resource</h1>
-                    <div className="w-28 h-0.5 bg-white mb-4"></div>
-                    <div className="flex flex-col leading-8">
+                    <h1 className="text-lg sm:text-2xl font-bold">Resource</h1>
+                    <div className="w-28 h-0.5 bg-white mb-2 sm:mb-4"></div>
+                    <div className="flex flex-col leading-0 sm:leading-8">
                         <Link href="/career" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-3">
+                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
                                 Careers
                             </span>
                         </Link>
                         <Link href="/workculture" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-3">
+                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
                                 Our Work Culture
                             </span>
                         </Link>
                         <Link href="/missionstory" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-3">
+                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
                                 Our Mission Story
                             </span>
                         </Link>
                         <Link href="/sitemap" rel="noopener noreferrer">
-                            <span className="text-base hover:text-white_hover pb-3">
+                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
                                 Site Map
                             </span>
                         </Link>

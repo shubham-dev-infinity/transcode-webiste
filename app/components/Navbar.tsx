@@ -5,17 +5,23 @@ import { BsLinkedin } from "react-icons/bs";
 import { FaBehanceSquare, FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
 import Image from "next/image";
 import logo from "@public/Assets/logo.png";
-
+import style from "../styles.module.scss"
+// import classNames from "classnames";
 const Navbar = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const [isDropdownOpens, setIsDropdownOpens] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
+    const [isOpens, setIsOpens] = useState(false);
 
-    const toggleMenu = () => {
-        console.log("open");
+
+    const toggleMenu = () => {        
         setIsOpen(!isOpen);
     };
 
+    const toggleIndustryMenu = () => {
+        setIsOpens(!isOpens);
+    }
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
@@ -25,18 +31,24 @@ const Navbar = () => {
     };
 
     const handleDropdownClick = () => {
-        setIsDropdownOpen(!isDropdownOpen);
+        setIsDropdownOpen(!isDropdownOpen);       
     };
 
-    const handleDropClick = () => {
-        setIsDropdownOpen(false);
-    };
+    const handleDropdownsClick = () => {       
+        setIsDropdownOpens(!isDropdownOpens)
+    };   
     const handleSubmenuClick = () => {
         setIsDropdownOpen(false);
         closeMobileMenu();
         toggleMenu();
+
     };
 
+    const handlesSubmenuClick = () => {
+        setIsDropdownOpens(false);
+        closeMobileMenu();
+        toggleIndustryMenu();
+    };
     useEffect(() => {
         const handleResize = () => {
             // Close the mobile menu if it's open when the screen size increases
@@ -109,14 +121,10 @@ const Navbar = () => {
                     </div>
                     {/* Navbar links */}
                     <div className="hidden items-center lg:flex space-x-4">
-                        <Link href="/" onClick={closeMobileMenu}>
-                            {/* <span className="hover:underline hover:text-blue">HOME</span> */}
+                        {/* <Link href="/" onClick={closeMobileMenu}>                      
                             <span className="hover:text-blue hover:border-b-4 hover:border-blue font-bold text-lg">HOME</span>
+                        </Link>                         */}
 
-                        </Link>
-                        <Link href="/about" onClick={closeMobileMenu}>
-                            <span className="hover:text-blue hover:border-b-4 hover:border-blue font-bold text-lg">ABOUT US</span>
-                        </Link>
                         {/* Dropdown Button */}
                         <div
                             onMouseEnter={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)}
@@ -165,115 +173,82 @@ const Navbar = () => {
                                 {/* Add more list items here */}
                             </ul>
                         </div>
+
+                        <div
+                            onMouseEnter={() => setIsOpens(true)} onMouseLeave={() => setIsOpens(false)}
+                            className="relative"
+                        >
+                            <button
+                                aria-expanded={isOpens} onClick={toggleIndustryMenu}
+                                id="industryDropdownButton"
+                                className="hover:text-blue hover:border-b-4 hover:border-blue font-bold text-lg"
+                                type="button"
+                            >
+                                INDUSTRY
+                            </button>
+                            {/* Dropdown menu */}
+                            <ul className={`origin-top-right z-50 absolute top-full left-1/2 -translate-x-1/2 min-w-[240px] bg-white border border-slate-200 p-2 rounded-lg shadow-xl ${isOpens ? 'block' : 'hidden'}`}>
+                                <li>
+                                    <Link href="/" className="block px-4 py-2 hover:bg-gray dark:hover:bg-gray dark:hover:text-black font-semibold" onClick={handlesSubmenuClick}>
+                                        Health Care
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/" className="block px-4 py-2 hover:bg-gray dark:hover:bg-gray dark:hover:text-black font-semibold" onClick={handlesSubmenuClick}>
+                                        Fintech
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="" className="block px-4 py-2 hover:bg-gray dark:hover:bg-gray dark:hover:text-black font-semibold" onClick={handlesSubmenuClick}>
+                                        Retail & E-commerce
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/" className="block px-4 py-2 hover:bg-gray dark:hover:bg-gray dark:hover:text-black font-semibold" onClick={handlesSubmenuClick}>
+                                        Travel & Hospitality
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/" className="block px-4 py-2 hover:bg-gray dark:hover:bg-gray dark:hover:text-black font-semibold" onClick={handlesSubmenuClick}>
+                                        Real Estate
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/" className="block px-4 py-2 hover:bg-gray dark:hover:bg-gray dark:hover:text-black font-semibold" onClick={handlesSubmenuClick}>
+                                        Any Beyond
+                                    </Link>
+                                </li>
+                                {/* Add more list items here */}
+                            </ul>
+                        </div>
                         <Link href="/portfolio" onClick={closeMobileMenu}>
                             <span className="hover:text-blue hover:border-b-4 hover:border-blue font-bold text-lg">PORTFOLIO</span>
                         </Link>
+                        <Link href="/blog" onClick={closeMobileMenu}>
+                            <span className="hover:text-blue hover:border-b-4 hover:border-blue font-bold text-lg">BLOG</span>
+                        </Link>
+                        <Link href="/about" onClick={closeMobileMenu}>
+                            <span className="hover:text-blue hover:border-b-4 hover:border-blue font-bold text-lg">ABOUT US</span>
+                        </Link>
                         <Link href="/contactus" onClick={closeMobileMenu}>
-                            <span className="hover:text-blue hover:border-b-4 hover:border-blue font-bold text-lg">CONTACT US</span>
+                            <span className="hover:text-blue hover:border-b-4 hover:border-blue font-bold text-lg">CONTACT</span>
                         </Link>
                         <button className="bg-blue px-4 py-2 rounded-md font-bold text-white hover:bg-white hover:text-blue hover:shadow-2xl hover:border-blue">LET’S TALK</button>
                     </div>
                 </div>
             </div>
-            {/* Mobile menu */}
-            {/* <div className={`navbar-menu ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
-                <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25" onClick={toggleMobileMenu}></div>
-                <div className="navbar-menu-content">
-                    <div
-                        onMouseEnter={toggleMobileMenu}
-                        onMouseLeave={toggleMobileMenu}
-                        className="relative">
-                        <Link href="/" onClick={closeMobileMenu}>
-                            <span className="block py-2 px-4 text-black hover:bg-blue hover:text-white">HOME</span>
-                        </Link>
-                        <Link href="/about" onClick={closeMobileMenu}>
-                            <span className="block py-2 px-4 text-black hover:bg-blue hover:text-white">ABOUT US</span>
-                        </Link>
-                    </div>
-                    <div
-                        onMouseEnter={handleDropdownClick}
-                        onMouseLeave={handleDropdownClick}
-                        className="relative"
-                    >
-                        <button
-                            id="serviceDropdownButtonMobile"
-                            className="block py-2 px-4 text-black hover:bg-blue hover:text-white w-full text-left"
-                            aria-expanded={isOpen} onClick={toggleMenu}
-                        >
-                            SERVICES
-                        </button>
-                        <div
-                            id="dropdownDelay"
-                            className={`z-10 ${isOpen ? 'block' : 'hidden'} bg-white divide-y
-                            divide-gray-100 rounded-lg shadow w-full dark:bg-gray-700 absolute top-full left-0 mt-1`}
-                        >
-                            <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="serviceDropdownButtonMobile">
-                                <li>
-                                    <Link href="/services/software" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handleSubmenuClick}>
-                                        Software Development
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/services/consulting" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handleSubmenuClick}>
-                                        Consulting Advisory
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/services/integration" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handleSubmenuClick}>
-                                        SystemIntegration
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/services/managedservices" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handleSubmenuClick}>
-                                        Managed Services
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/services/training" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handleSubmenuClick}>
-                                        Training
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/services/quality" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handleSubmenuClick}>
-                                        Quality Testing
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div
-                        onMouseEnter={toggleMobileMenu}
-                        onMouseLeave={toggleMobileMenu}
-                        className="relative">
-                        <Link href="/portfolio" >
-                            <span className="block py-2 px-4 text-black hover:bg-blue hover:text-white">PORTFOLIO</span>
-                        </Link>
-                        <Link href="/contactus">
-                            <span className="block py-2 px-4 text-black hover:bg-blue hover:text-white">CONTACT US</span>
-                        </Link>
-                        <button className="bg-blue px-4 py-2 rounded-md text-white w-full">LET’S TALK</button>
-                    </div>
-                </div>
-            </div> */}
-
-
-
-
             {/* Mobile Menu */}
             <div className={`navbar-menu ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
                 <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25" onClick={toggleMobileMenu}></div>
                 <div className="navbar-menu-content">
-                    <div
+                    {/* <div
                         onMouseEnter={toggleMobileMenu}
                         onMouseLeave={toggleMobileMenu}
                         className="relative">
                         <Link href="/" onClick={closeMobileMenu}>
                             <span className="block py-2 px-4 text-blue hover:bg-blue hover:text-white font-semibold">HOME</span>
-                        </Link>
-                        <Link href="/about" onClick={closeMobileMenu}>
-                            <span className="block py-2 px-4 text-blue hover:bg-blue hover:text-white font-semibold">ABOUT US</span>
-                        </Link>
-                    </div>
+                        </Link>                      
+                    </div> */}
                     <div
                         onMouseEnter={handleDropdownClick}
                         onMouseLeave={handleDropdownClick}
@@ -326,11 +301,67 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div
+                        onMouseEnter={handleDropdownsClick}
+                        onMouseLeave={handleDropdownsClick}
+                        className="relative">
+                        <button
+                            id="industryDropdownButtonMobile"
+                            className="block py-2 px-4 text-blue hover:bg-blue hover:text-white w-full text-left font-semibold"
+                            aria-expanded={isOpens} onClick={toggleIndustryMenu}
+                        >
+                            INDUSTRY
+                        </button>
+                        <div
+                            id="dropdownDelay"
+                            className={`z-10 ${isOpens ? 'block' : 'hidden'} bg-white divide-y
+                             divide-gray-100 rounded-lg shadow w-full dark:bg-gray-700 absolute top-full left-0 mt-1`}
+                        >
+                            <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="industryDropdownButtonMobile">
+                                <li>
+                                    <Link href="/" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesSubmenuClick}>
+                                        Health Care
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesSubmenuClick}>
+                                        Fintech
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/retail" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesSubmenuClick}>
+                                        Retail & E-commerce
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesSubmenuClick}>
+                                        Travel & Hospitality
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesSubmenuClick}>
+                                        Real Estate
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesSubmenuClick}>
+                                        Any Beyond
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
                         onMouseEnter={toggleMobileMenu}
                         onMouseLeave={toggleMobileMenu}
                         className="relative">
                         <Link href="/portfolio" >
                             <span className="block py-2 px-4 text-blue hover:bg-blue hover:text-white font-semibold">PORTFOLIO</span>
+                        </Link>
+                        <Link href="/blog" >
+                            <span className="block py-2 px-4 text-blue hover:bg-blue hover:text-white font-semibold">BLOG</span>
+                        </Link>
+                        <Link href="/about" onClick={closeMobileMenu}>
+                            <span className="block py-2 px-4 text-blue hover:bg-blue hover:text-white font-semibold">ABOUT US</span>
                         </Link>
                         <Link href="/contactus">
                             <span className="block py-2 px-4 text-blue hover:bg-blue hover:text-white font-semibold">CONTACT US</span>

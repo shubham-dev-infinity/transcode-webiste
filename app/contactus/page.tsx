@@ -104,7 +104,7 @@ const ContactUs = () => {
 
                         </div>
                     </div>
-                    <div className="mt-10 w-full h-full">
+                    <div className="mt-10 w-full h-full" data-aos="zoom-in" data-aos-delay="100">
                         <iframe
                             className="w-full border-0"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.8386097921216!2d72.88554337600243!3d21.23824748054903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b85f9dd4c092aa7%3A0x848f6ed51a191ad8!2sTranscode%20Solution!5e0!3m2!1sen!2sin!4v1710241320652!5m2!1sen!2sin"
@@ -114,7 +114,7 @@ const ContactUs = () => {
                         />
                     </div>
                     <div className="bg-radiant pl-2 mt-10">
-                        <div className="grid grid-cols-12 lg:gap-10">
+                        <div className="grid grid-cols-12 lg:gap-10" data-aos="zoom-out" data-aos-delay="100">
                             <div className="col-span-12 md:col-span-4">
                                 <Image
                                     src={serviceImmediately}

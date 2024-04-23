@@ -10,7 +10,7 @@ const BlogDetail = () => {
         <main className="mb-10">
             <div className={style.heroBgImage}>
                 <HeroSection image={portfolio} text={"Blog Detail"} />
-            </div>
+            </div>  
             <div className="container mx-auto my-10">
                 <div className="container mx-auto grid grid-cols-1 gap-4">
                     <Image src={blogDetail} width={1470} height={906.5} alt="blogDetail" />
@@ -49,5 +49,47 @@ const BlogDetail = () => {
 }
 
 export default BlogDetail;
+
+
+
+
+
+// "use client"
+// import { useRouter } from 'next/router';
+// import HeroSection from "@/components/HeroSection";
+// import style from "../components/styles.module.scss";
+// import portfolio from "@public/Assets/portfolio.png";
+// import Image from "next/image";
+
+// const BlogDetail = () => {
+//     const router = useRouter();
+//     const { title, content, image } = router.query;
+
+//     // Handle case when query parameters are arrays
+//     const defaultTitle = Array.isArray(title) ? title[0] : title || "Default Title";
+//     const defaultContent = Array.isArray(content) ? content[0] : content || "Default Content";
+//     const defaultImage = Array.isArray(image) ? image[0] : image || "/default-image.jpg";
+
+//     return (
+//         <main className="mb-10">
+//             <div className={style.heroBgImage}>
+//                 <HeroSection image={portfolio} text={"Blog Detail"} />
+//             </div>
+//             <div className="container mx-auto my-10">
+//                 <div className="container mx-auto grid grid-cols-1 gap-4">
+//                     <Image src={defaultImage} width={1470} height={906.5} alt="blogDetail" />
+//                 </div>
+//                 <div className="mt-10">
+//                     <p className="text-xl font-extrabold">{defaultTitle}</p>
+//                 </div>
+//                 <div className="font-sans p-20">
+//                     <p className="text-xl text-center">{defaultContent}</p>
+//                 </div>
+//             </div>
+//         </main>
+//     );
+// }
+
+// export default BlogDetail;
 
 
