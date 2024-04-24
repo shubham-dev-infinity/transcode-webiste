@@ -131,9 +131,10 @@ const Home: React.FC<HomeProps> = () => {
                 width={470}
                 alt="Your Name"
                 data-aos="fade-up" data-aos-delay="100"
+                className="2xl:h-[652.33px] xl:h-[568px] lg:h-[443px] "
               />
             </div>
-            <div className="flex-1 lg:order-1 lg:h-700 lg:w-[270px] bg-gray py-6 px-6 2xl:h-[700px] 2xl:py-7 xl:py-3 xl:h-[568px] lg:h-[443px]  wow fadeIn" data-wow-duration="2s">
+            <div className="flex-1 lg:order-1 lg:h-700 lg:w-[270px] bg-gray py-6 px-6 2xl:h-[652.33px] 2xl:py-7 xl:py-3 xl:h-[568px] lg:h-[443px]  wow fadeIn" data-wow-duration="2s">
               <h2 className="text-xl xl:text-3xl lg:text-2xl">Who <span className="text-blue">We Are</span></h2>
               <div className="w-36 h-1 bg-blue mb-2 sm:mb-4"></div>
               <h3 className="sm:leading-10 font-bold text-sm sm:text-xl pb-1 sm:pb-5 lg:text-2xl">MORE THAN 10+ YEARS PROVIDING IT SOLUTIONS</h3>
@@ -141,7 +142,7 @@ const Home: React.FC<HomeProps> = () => {
               <p className="pb-2 sm:pb-5 text-sm sm:text-lg lg:text-sm xl:text-lg lg:pb-7">Our team of experienced developers works closely with each client to understand their business goals and objectives.</p>
               <button className="bg-blue sm:leading-7 text-lg rounded-md font-semibold text-white p-1 sm:p-2 hover:bg-white hover:text-blue hover:shadow-2xl">Our Services</button>
             </div>
-            <div className="flex-1 lg:order-3 lg:h-700 lg:w-470 bg-gray py-6 px-6 2xl:h-[700px] 2xl:py-7 xl:py-3 xl:h-[568px] lg:h-[443px] ">
+            <div className="flex-1 lg:order-3 lg:h-700 lg:w-470 bg-gray py-6 px-6 2xl:h-[652.33px] 2xl:py-7 xl:py-3 xl:h-[568px] lg:h-[443px] ">
               <h2 className="text-lg sm:text-xl lg:text-3xl">ABOUT <span className="text-blue">TRANSCODE</span></h2>
               <div className="w-36 h-1 bg-blue mb-4"></div>
               <p className="pb-5 text-sm sm:text-lg lg:text-sm xl:text-lg xl:pb-7 lg:pb-1 wow fadeOutDownBig">Welcome to Transcode Solutions – where innovation meets excellence.</p>

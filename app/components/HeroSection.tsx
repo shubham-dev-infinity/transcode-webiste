@@ -76,7 +76,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ image, text, discription, cen
     return (
         <div className="flex flex-col-reverse lg:flex-row justify-between items-center pb-6"> {/* Adjust flex direction based on screen size */}
             <div className="container mx-auto px-8">
-                <div className={centerText ? "text-center" : "text-left"}>
+                <div className={centerText ? "text-center" : "lg:pl-8 xl:pl-16 2xl:pl-32"}>
                     <h1 className="text-headertext xl:text-5xl lg:text-4xl md:text-4xl text-2xl font-extrabold mb-3 sm:mb-5"> {/* Adjust text size for smaller screens */}
                         {text}
                     </h1>

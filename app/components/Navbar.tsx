@@ -6,7 +6,8 @@ import { FaBehanceSquare, FaFacebookSquare, FaInstagramSquare } from "react-icon
 import Image from "next/image";
 import logo from "@public/Assets/logo.png";
 import style from "../styles.module.scss"
-// import classNames from "classnames";
+import { SlArrowRight } from "react-icons/sl";
+
 const Navbar = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [isDropdownOpens, setIsDropdownOpens] = useState(false);
@@ -14,8 +15,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isOpens, setIsOpens] = useState(false);
 
-
-    const toggleMenu = () => {        
+    const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
 
@@ -31,12 +31,12 @@ const Navbar = () => {
     };
 
     const handleDropdownClick = () => {
-        setIsDropdownOpen(!isDropdownOpen);       
+        setIsDropdownOpen(!isDropdownOpen);
     };
 
-    const handleDropdownsClick = () => {       
+    const handleDropdownsClick = () => {
         setIsDropdownOpens(!isDropdownOpens)
-    };   
+    };
     const handleSubmenuClick = () => {
         setIsDropdownOpen(false);
         closeMobileMenu();
@@ -140,33 +140,39 @@ const Navbar = () => {
                             </button>
                             {/* Dropdown menu */}
                             <ul className={`origin-top-right z-50 absolute top-full left-1/2 -translate-x-1/2 min-w-[240px] bg-white border border-slate-200 p-2 rounded-lg shadow-xl ${isOpen ? 'block' : 'hidden'}`}>
-                                <li>
-                                    <Link href="/services/software" className="block px-4 py-2 hover:bg-gray dark:hover:bg-gray dark:hover:text-black font-semibold" onClick={handleSubmenuClick}>
+                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} />
+                                    <Link href="/services/software" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handleSubmenuClick}>
                                         Software Development
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link href="/services/consulting" className="block px-4 py-2 hover:bg-gray dark:hover:bg-gray dark:hover:text-black font-semibold" onClick={handleSubmenuClick}>
+                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} />
+                                    <Link href="/services/consulting" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handleSubmenuClick}>
                                         Consulting Advisory
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link href="/services/integration" className="block px-4 py-2 hover:bg-gray dark:hover:bg-gray dark:hover:text-black font-semibold" onClick={handleSubmenuClick}>
+                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} />
+                                    <Link href="/services/integration" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handleSubmenuClick}>
                                         SystemIntegration
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link href="/services/managedservices" className="block px-4 py-2 hover:bg-gray dark:hover:bg-gray dark:hover:text-black font-semibold" onClick={handleSubmenuClick}>
+                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} />
+                                    <Link href="/services/managedservices" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handleSubmenuClick}>
                                         Managed Services
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link href="/services/training" className="block px-4 py-2 hover:bg-gray dark:hover:bg-gray dark:hover:text-black font-semibold" onClick={handleSubmenuClick}>
+                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} />
+                                    <Link href="/services/training" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handleSubmenuClick}>
                                         Training
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link href="/services/quality" className="block px-4 py-2 hover:bg-gray dark:hover:bg-gray dark:hover:text-black font-semibold" onClick={handleSubmenuClick}>
+                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} />
+                                    <Link href="/services/quality" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handleSubmenuClick}>
                                         Quality Testing
                                     </Link>
                                 </li>
@@ -188,33 +194,39 @@ const Navbar = () => {
                             </button>
                             {/* Dropdown menu */}
                             <ul className={`origin-top-right z-50 absolute top-full left-1/2 -translate-x-1/2 min-w-[240px] bg-white border border-slate-200 p-2 rounded-lg shadow-xl ${isOpens ? 'block' : 'hidden'}`}>
-                                <li>
-                                    <Link href="/" className="block px-4 py-2 hover:bg-gray dark:hover:bg-gray dark:hover:text-black font-semibold" onClick={handlesSubmenuClick}>
+                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} />
+                                    <Link href="/" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesSubmenuClick}>
                                         Health Care
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link href="/" className="block px-4 py-2 hover:bg-gray dark:hover:bg-gray dark:hover:text-black font-semibold" onClick={handlesSubmenuClick}>
+                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} />
+                                    <Link href="/" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesSubmenuClick}>
                                         Fintech
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link href="" className="block px-4 py-2 hover:bg-gray dark:hover:bg-gray dark:hover:text-black font-semibold" onClick={handlesSubmenuClick}>
+                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} />
+                                    <Link href="/retail" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesSubmenuClick}>
                                         Retail & E-commerce
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link href="/" className="block px-4 py-2 hover:bg-gray dark:hover:bg-gray dark:hover:text-black font-semibold" onClick={handlesSubmenuClick}>
+                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} />
+                                    <Link href="/" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesSubmenuClick}>
                                         Travel & Hospitality
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link href="/" className="block px-4 py-2 hover:bg-gray dark:hover:bg-gray dark:hover:text-black font-semibold" onClick={handlesSubmenuClick}>
+                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} />
+                                    <Link href="/" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesSubmenuClick}>
                                         Real Estate
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link href="/" className="block px-4 py-2 hover:bg-gray dark:hover:bg-gray dark:hover:text-black font-semibold" onClick={handlesSubmenuClick}>
+                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} />
+                                    <Link href="/" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesSubmenuClick}>
                                         Any Beyond
                                     </Link>
                                 </li>
