@@ -368,7 +368,7 @@ const Footer = () => {
                 </div>
             </div>
             <hr className="container mx-auto border-t border-white my-6" />
-            <div className="pb-7 text-center text-sm mt-6">
+            <div className="pb-7 text-center text-white text-sm mt-6">
                 © 2024 All Rights Reserved - transcodesolution.com
             </div>
         </div>
