@@ -20,14 +20,22 @@ import Mizanur from "@public/Assets/Mizanur.png"
 import mahim from "@public/Assets/mahim.png"
 import Link from "next/link";
 import { title } from "process";
-
+import { useRouter } from 'next/navigation';
 interface HomeProps { }
 const Home: React.FC<HomeProps> = () => {
   const [activeTab, setActiveTab] = useState<string>('webdevelopment');
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const router = useRouter();
+
+  const handleShowMoreClick = () => {
+    // setShowAllImages(true);
+    router.push('/blog');
+  };
 
   const handleTabClick = (tabId: string) => {
     setActiveTab(tabId);
   };
+
 
   const slides = [
     {
@@ -67,8 +75,6 @@ const Home: React.FC<HomeProps> = () => {
       buttonText1: "Contact Us"
     }
   ];
-
-  const [currentSlide, setCurrentSlide] = useState(0);
 
   const goToNextSlide = () => {
     setCurrentSlide(currentSlide === slides.length - 1 ? 0 : currentSlide + 1);
@@ -304,7 +310,7 @@ const Home: React.FC<HomeProps> = () => {
             <div className="container mx-auto gap-20 mt-10 text-center">
               <div className="mt-6 sm:mt-20 pb-2 sm:pb-12">
                 <div className="container mx-auto">
-                  <h3 className="text-2xl sm:text-3xl font-extrabold pt-0 sm:py-20 "><span className="text-blue">Our</span> Portfolio</h3>
+                  <h3 className="text-2xl sm:text-3xl font-extrabold pt-4 sm:py-20 "><span className="text-blue">Our</span> Portfolio</h3>
                   <Portfolio images={PortFolioImages} />
                 </div>
               </div>
@@ -315,9 +321,9 @@ const Home: React.FC<HomeProps> = () => {
               <div className="sm:mt-20 sm:pb-12">
                 <div className="container mx-auto">
                   <h3 className="text-xl sm:text-3xl font-extrabold mb-4 pt-6"><span className="text-blue">Our</span> Blog</h3>
-                  <p className="text-base sm:text-xl font-semibold text-center text-gray mb-4">Trending Custom Software Development Blog</p>
-                  <div className="container mx-auto">
-                    <div className="grid max-w-4xl lg:max-w-6xl grid-cols-1 mx-auto mt-2 text-center gap-y-4 sm:gap-x-8 sm:grid-cols-2 lg:grid-cols-3 sm:mt-4 2xl:mt-8 sm:text-left" >
+                  <p className="text-base sm:text-xl font-semibold text-center text-gray mb-4 p-1 sm:p-0">Trending Custom Software Development Blog</p>
+                  <div className="container mx-auto pl-3 pr-2 sm:pl-0 sm:pr-0">
+                    <div className="grid max-w-4xl lg:max-w-6xl grid-cols-1 mx-auto mt-2 text-center gap-y-4 sm:gap-x-8 sm:grid-cols-2 lg:grid-cols-3 sm:mt-4 2xl:mt-8 sm:text-left">
                       {blogItems.map((blog, index) => (
                         <div
                           key={index}
@@ -340,13 +346,18 @@ const Home: React.FC<HomeProps> = () => {
                         </div>
                       ))}
                     </div>
+                    <div className="col-span-3 py-6 sm:mt-10">
+                      <button onClick={handleShowMoreClick} className="bg-blue hover:bg-blue-700 text-white font-bold px-2 py-1 sm:py-2 sm:px-4 rounded hover:bg-white hover:text-blue transition duration-300 hover:shadow-xl">
+                        Show Blog
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="container mx-auto">
-            <div className="bg-blue text-white text-center mb-12 pb-6 pt-2 sm:pt-12">
+            <div className="bg-blue text-white text-center mb-12 pb-6 pt-4 sm:pt-12">
               <h3 className="font-extrabold text-lg sm:text-2xl lg:text-3xl">Get IN TOUCH</h3>
               <p className="text-center text-sm sm:text-xl lg:text-2xl sm:px-40 xl:px-80 my-2 sm:my-6">Let’s collaborate and work something amazing together. Let’s discuss
                 and build something unforgettable together.</p>

@@ -19,7 +19,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ images }) => {
     const imagesToShow = showAllImages ? images : images.slice(0, 6);
 
     return (
-        <div className="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-3 gap-2 pr-2 sm:gap-2 sm:pr-2 md:pr-0 md:gap-6 text-center">
+        <div className="grid grid-cols-2 sm:grid-cols-1 xl:grid-cols-3 2xl:grid px-1 py-2  lg:pr-4 2xl:px-0 sm:px-0 sm:py-0 gap-2 pr-3.5 sm:gap-2 sm:pr-2 md:pr-4 lg:px-2 md:gap-6 text-center">
             {imagesToShow.map((image: StaticImageData, index: number) => (
                 <div key={index}>
                     {/* <img src={image.src} alt={`Portfolio Image ${index + 1}`} className="w-full h-full object-cover hover:scale-105 hover:shadow-2xl " /> */}

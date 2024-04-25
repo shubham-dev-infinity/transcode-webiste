@@ -277,7 +277,7 @@ const Navbar = () => {
                                 </li>
                                 <li className="flex items-center hover:translate-x-4 hover:text-blue">
                                     <SlArrowRight size={10} />
-                                    <Link href="/" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesAboutSubmenuClick}>
+                                    <Link href="/workculture" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesAboutSubmenuClick}>
                                         Our Culture
                                     </Link>
                                 </li>
@@ -289,7 +289,7 @@ const Navbar = () => {
                                 </li>
                                 <li className="flex items-center hover:translate-x-4 hover:text-blue">
                                     <SlArrowRight size={10} />
-                                    <Link href="/" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesAboutSubmenuClick}>
+                                    <Link href="/missionstory" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesAboutSubmenuClick}>
                                         Our Story
                                     </Link>
                                 </li>
@@ -470,7 +470,7 @@ const Navbar = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesAboutSubmenuClick}>
+                                        <Link href="/workculture" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesAboutSubmenuClick}>
                                             Our Culture
                                         </Link>
                                     </li>
@@ -480,7 +480,7 @@ const Navbar = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesAboutSubmenuClick}>
+                                        <Link href="/missionstory" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesAboutSubmenuClick}>
                                             Our Story
                                         </Link>
                                     </li>
