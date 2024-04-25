@@ -94,7 +94,6 @@ const Home: React.FC<HomeProps> = () => {
                 <button onClick={goToPrevSlide} className="bg-blue text-white rounded-full w-6 sm:w-10 h-6 sm:h-10  focus:outline-none lg:w-12 lg:h-12">
                   &#10094;
                 </button>
-                {/* <button onClick={goToPrevSlide} className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-blue text-white rounded-full w-10 h-10 lg:w-12 lg:h-12 focus:outline-none">&#10094;</button> */}
               </div>
               <h4 className="text-black text-xl sm:text-2xl lg:text-5xl font-extrabold text-center mb-3" data-aos="fade-up" data-aos-delay="100">
                 {slides[currentSlide].title1} <span className="text-headertext text-2xl sm:text-3xl lg:text-5xl xl:text-6xl font-extrabold text-center mb-3 wow fadeOutDownBig">{slides[currentSlide].title2}</span>{slides[currentSlide].title3}
@@ -113,11 +112,10 @@ const Home: React.FC<HomeProps> = () => {
                   </button>
                 </Link>
               </div>
-              <div className="absolute inset-y-0 right-0 flex items-center">
+              <div className="absolute inset-y-0 pr-1 sm:pr-0 right-0 flex items-center">
                 <button onClick={goToNextSlide} className="bg-blue text-white rounded-full w-6 sm:w-10 h-6 sm:h-10 focus:outline-none lg:w-12 lg:h-12" data-aos="fade-up" data-aos-delay="100">
                   &#10095;
                 </button>
-                {/* <button className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-blue text-white rounded-full w-10 h-10 lg:w-12 lg:h-12 focus:outline-none" onClick={goToNextSlide} data-aos="fade-up" data-aos-delay="100">&#10095;</button> */}
               </div>
             </div>
           </div>
@@ -153,37 +151,37 @@ const Home: React.FC<HomeProps> = () => {
           </div>
           <div className="container mx-auto gap-20 mt-10 text-center p-2">
             <h3 className="font-bold text-lg sm:text-2xl md:text-3xl mb-6">Driving rapid change with software solutions for enhanced <span className="text-blue">flexibility and expansion, focusing on scalability and fostering growth.</span></h3>
-            <p className="text-sm sm:text-lg mb-6">Utilizing cutting-edge software solutions, we are driving rapid transformation to enhance flexibility and accommodate expansion within our organization. Our primary focus lies in scalability, ensuring that oursystems can easily handle increased demand and growth</p>
+            <p className="text-sm text-gray sm:text-lg mb-6">Utilizing cutting-edge software solutions, we are driving rapid transformation to enhance flexibility and accommodate expansion within our organization. Our primary focus lies in scalability, ensuring that oursystems can easily handle increased demand and growth</p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-center mx-auto">
               <div className="flex flex-col items-center gap-4" data-aos="fade-right" data-aos-delay="100" >
                 <div className="w-24 h-24 bg-gray rounded-full flex items-center justify-center shadow-blue wow animated bounce infinite delay-1s">
                   <h3 className="text-black text-3xl font-extrabold">5+</h3>
                 </div>
-                <h3 className="text-base sm:text-2xl" >Years of Experience</h3>
+                <h3 className="text-base text-gray_Light sm:text-2xl" >Years of Experience</h3>
               </div>
               <div className="flex flex-col items-center gap-4" data-aos="fade-right" data-aos-delay="100" >
                 <div className="w-24 h-24 bg-gray rounded-full flex items-center justify-center shadow-blue wow animated bounce infinite delay-1s">
                   <h3 className="text-black text-3xl font-extrabold">70+</h3>
                 </div>
-                <h3 className="text-base sm:text-2xl">Talented IT Professionals</h3>
+                <h3 className="text-base text-gray_Light sm:text-2xl">Talented IT Professionals</h3>
               </div>
               <div className="flex flex-col items-center gap-4" data-aos="fade-right" data-aos-delay="100" >
                 <div className="w-24 h-24 bg-gray rounded-full flex items-center justify-center shadow-blue wow animated bounce infinite delay-1s">
                   <h3 className="text-black text-3xl font-extrabold">100+</h3>
                 </div>
-                <h3 className="text-base sm:text-2xl mt-2">Successful Projects</h3>
+                <h3 className="text-base text-gray_Light sm:text-2xl mt-2">Successful Projects</h3>
               </div>
               <div className="flex flex-col items-center gap-4" data-aos="fade-right" data-aos-delay="100" >
                 <div className="w-24 h-24 bg-gray rounded-full flex items-center justify-center shadow-blue wow animated bounce infinite delay-1s">
                   <h3 className="text-black text-3xl font-extrabold">30+</h3>
                 </div>
-                <h3 className="text-base sm:text-2xl mt-2">Countries Served</h3>
+                <h3 className="text-base text-gray_Light sm:text-2xl mt-2">Countries Served</h3>
               </div>
             </div>
             <div className="my-14">
               <div className="mb-10">
                 <h3 className="text-2xl sm:text-3xl font-extrabold mb-4">What <span className="text-blue">We Do</span></h3>
-                <p className="text-sm sm:text-lg md:text-xl text-gray">OUR SPECIALIZED SERVICES ARE TAILORED EXCLUSIVELY FOR YOUR BUSINESS NEEDS.</p>
+                <p className="text-sm sm:text-lg md:text-xl text-gray">Our specialized services are tailored exclusively for your business needs.</p>
               </div>
               <div className="container mx-auto mt-28 gap-y-24 px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 What " >
                 {cardData.map((data, index) => (
@@ -198,7 +196,7 @@ const Home: React.FC<HomeProps> = () => {
               <ul className="mb-2 flex flex-wrap text-sm font-medium text-center justify-center" id="default-tab" role="tablist">
                 <li className="me-2" role="presentation">
                   <button
-                    className={`inline-block p-2 sm:p-4 border-b-2 rounded-t-lg text-lg sm:text-2xl hover:text-blue hover:border-b-4 hover:border-blue ${activeTab === 'webdevelopment' ? 'border-b-4 border-blue' : 'border-transparent'}`}
+                    className={`inline-block p-2 sm:p-4 border-b-2 rounded-t-lg text-lg sm:text-xl hover:text-blue hover:border-b-4 hover:border-blue ${activeTab === 'webdevelopment' ? 'border-b-4 border-blue' : 'border-transparent'}`}
                     id="webdevelopment-tab"
                     data-tabs-target="#webdevelopment"
                     type="button"
@@ -212,7 +210,7 @@ const Home: React.FC<HomeProps> = () => {
                 </li>
                 <li className="me-2" role="presentation">
                   <button
-                    className={`inline-block p-2 sm:p-4 border-b-2 rounded-t-lg text-lg sm:text-2xl hover:text-blue hover:border-b-4 hover:border-blue ${activeTab === 'mobiledevelopment' ? 'border-b-4 border-blue' : 'border-transparent'}`}
+                    className={`inline-block p-2 sm:p-4 border-b-2 rounded-t-lg text-lg sm:text-xl hover:text-blue hover:border-b-4 hover:border-blue ${activeTab === 'mobiledevelopment' ? 'border-b-4 border-blue' : 'border-transparent'}`}
                     id="mobiledevelopment-tab"
                     data-tabs-target="#mobiledevelopment"
                     type="button"
@@ -226,7 +224,7 @@ const Home: React.FC<HomeProps> = () => {
                 </li>
                 <li className="me-2" role="presentation">
                   <button
-                    className={`inline-block p-2 sm:p-4 border-b-2 rounded-t-lg text-lg sm:text-2xl hover:text-blue hover:border-b-4 hover:border-blue ${activeTab === 'database' ? 'border-b-4 border-blue' : 'border-transparent'}`}
+                    className={`inline-block p-2 sm:p-4 border-b-2 rounded-t-lg text-lg sm:text-xl hover:text-blue hover:border-b-4 hover:border-blue ${activeTab === 'database' ? 'border-b-4 border-blue' : 'border-transparent'}`}
                     id="database-tab"
                     data-tabs-target="#database"
                     type="button"
@@ -240,7 +238,7 @@ const Home: React.FC<HomeProps> = () => {
                 </li>
                 <li role="presentation">
                   <button
-                    className={`inline-block p-2 sm:p-4 border-b-2 rounded-t-lg text-lg sm:text-2xl hover:text-blue hover:border-b-4 hover:border-blue ${activeTab === 'UI/UX Design' ? 'border-b-4 border-blue' : 'border-transparent'}`}
+                    className={`inline-block p-2 sm:p-4 border-b-2 rounded-t-lg text-lg sm:text-xl hover:text-blue hover:border-b-4 hover:border-blue ${activeTab === 'UI/UX Design' ? 'border-b-4 border-blue' : 'border-transparent'}`}
                     id="UI/UX Design-tab"
                     data-tabs-target="#UI/UX Design"
                     type="button"
@@ -262,14 +260,6 @@ const Home: React.FC<HomeProps> = () => {
               <h3 className="text-2xl md:text-3xl font-extrabold mb-4 pt-8"><span className="text-blue">Our work</span> Process</h3>
               <p className="text-base sm:text-base md:text-lg xl:text-xl font-semibold text-center text-gray">Transcode Solution an exclusive approach for building modern, secure solutions tailored to each of its
                 clients individual requirements. </p>
-              {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="flex justify-center">
-                  <Image src={workProcess} alt="workProcess" width={880} height={552} />
-                </div>
-                <div className="flex justify-center">
-                  <Image src={Process} alt="Process" width={556} height={556} />
-                </div>
-              </div> */}
               <div className="grid grid-cols-1 md:grid-cols-12 gap-4" >
                 <div className="md:col-span-8" data-aos="zoom-out">
                   <Image src={workProcess} alt="workProcess" width={880} height={552} />
@@ -328,30 +318,12 @@ const Home: React.FC<HomeProps> = () => {
                   <p className="text-base sm:text-xl font-semibold text-center text-gray mb-4">Trending Custom Software Development Blog</p>
                   <div className="container mx-auto">
                     <div className="grid max-w-4xl lg:max-w-6xl grid-cols-1 mx-auto mt-2 text-center gap-y-4 sm:gap-x-8 sm:grid-cols-2 lg:grid-cols-3 sm:mt-4 2xl:mt-8 sm:text-left" >
-                      {/* {blogItems.map((blog, index) => (
-                        <div key={index} className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform transition-transform hover:scale-105" data-aos="zoom-in-up" data-aos-delay="100" >
-                          <div className="p-2">
-                            <a href={blog.link} className="custom-hover">
-                              <Image src={blog.image} alt="" className="rounded-t-lg" width={500} height={300}  />
-                            </a>
-                          </div>
-                          <div className="px-2 sm:p-5 text-left">
-                            <a href={blog.link}>
-                              <h5 className="mb-1 sm:mb-2 text-xl sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{blog.title}</h5>
-                            </a>
-                            <p className="mb-2 sm:mb-3 font-normal text-gray-700 dark:text-gray-400">{blog.content}</p>
-                            <a href={blog.link} className="mb-2 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                              See Full Article
-                            </a>
-                          </div>
-                        </div>
-                      ))} */}
                       {blogItems.map((blog, index) => (
                         <div
                           key={index}
                           className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transform transition-transform hover:scale-105"
                           data-aos="zoom-in-up"
-                          data-aos-delay={(index + 1) * 100} // Delay increases for each blog item
+                          data-aos-delay={(index + 1) * 100}
                         >
                           <div className="p-2">
                             <a href={blog.link} className="custom-hover">
@@ -360,9 +332,6 @@ const Home: React.FC<HomeProps> = () => {
                           </div>
                           <div className="px-2 sm:p-4 text-left">
                             <p className="mb-2  text-base font-normal text-gray">{blog.date}</p>
-                            {/* <a href={blog.link}>
-                              <h5 className="mb-1 sm:mb-2 text-xl sm:text-lg font-bold tracking-tight text-gray-900 dark:text-white">{blog.title}</h5>
-                            </a> */}
                             <p className="mb-2 sm:mb-3 font-normal text-gray-700 dark:text-gray-400">{blog.content}</p>
                             <a href={blog.link} className="inline-flex items-center mb-1 sm:mb-0 px-3 py-2 text-sm font-medium text-center text-white bg-blue rounded-lg hover:bg-white hover:text-blue hover:border-blue border hover:border-solid">
                               See Full Article
@@ -377,11 +346,10 @@ const Home: React.FC<HomeProps> = () => {
             </div>
           </div>
           <div className="container mx-auto">
-            <div className="bg-blue text-white text-center mb-12 pb-4 pt-2 sm:pt-12">
+            <div className="bg-blue text-white text-center mb-12 pb-6 pt-2 sm:pt-12">
               <h3 className="font-extrabold text-lg sm:text-2xl lg:text-3xl">Get IN TOUCH</h3>
               <p className="text-center text-sm sm:text-xl lg:text-2xl sm:px-40 xl:px-80 my-2 sm:my-6">Let’s collaborate and work something amazing together. Let’s discuss
                 and build something unforgettable together.</p>
-              {/* <button className="bg-white px-4 py-2 rounded-md text-black text-lg">Start Conversation</button> */}
               <Link href="/contactus">
                 <button className="bg-blue px-2 sm:px-4 py-1 sm:py-2 rounded-md font-semibold text-white text-sm sm:text-lg border-2 border-white hover:bg-white hover:text-blue hover:shadow-xl">Start Conversation</button>
               </Link>

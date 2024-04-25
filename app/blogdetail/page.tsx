@@ -1,26 +1,40 @@
+"use client"
 import HeroSection from "@/components/HeroSection";
 import portfolio from "@public/Assets/portfolio.png"
 // import style from "./styles.module.scss";
 import style from "../components/styles.module.scss";
 import Image from "next/image";
 import blogDetail from "@public/Assets/blogDetail.png"
+import blogImage from "@/blog/BlogImage";
+import { useParams } from "next/navigation";
+import { CgLayoutGrid } from "react-icons/cg";
+import { log } from "console";
+
 
 const BlogDetail = () => {
+    const { id } = useParams(); // Get the id parameter from the URL
+    // console.log("id", id);
+
+    const selectedBlog = typeof id === 'string' ? blogImage.find(blog => blog.id === parseInt(id)) : null;
+
+    if (!selectedBlog) {
+        // Handle case where no blog is found for the given ID
+        return <div>Blog not found</div>;
+    }
     return (
         <main className="mb-10">
             <div className={style.heroBgImage}>
                 <HeroSection image={portfolio} text={"Blog Detail"} />
-            </div>  
+            </div>
             <div className="container mx-auto my-10">
                 <div className="container mx-auto grid grid-cols-1 gap-4">
-                    <Image src={blogDetail} width={1470} height={906.5} alt="blogDetail" />
+                    <Image src={selectedBlog.image} width={1470} height={906.5} alt="blogDetail" />
                 </div>
                 <div className="mt-10">
-                    <p className="text-xl font-extrabold">Welcome to our blog details page, your gateway to in-depth captivating narratives. Dive into thought-provoking articles,and engaging content that goes beyond the surface
-                        Whether you seek inspiration, industry trends, or informative guides, this is where knowledge meets curiosity. Explore, discover, and enrich your understanding as we navigate diverse topics, all tailored to ignite your intellect and keep you informed. Join us on this journey of exploration, where every click opens a new world of information, ideas, and inspiration.Embark on a journey of discovery as you delve into our blog&apos;s rich tapestry of content. From the latest trends to expert advice, we curate information that sparks curiosity and fuels your quest for knowledge.</p>
+                    <p className="text-xl font-extrabold">{selectedBlog.title}</p>
                 </div>
                 <div className="font-sans p-20">
-                    <p className="text-xl text-center">&ldquo;I work with Alguneb Johnl on many projects, he always toldagona exceeds my expectations with his quality work and fastestopa tope service, very smooth and simple communication.&rdquo;</p>
+                    <p className="text-xl text-center">{selectedBlog.content}</p>
                 </div>
                 <div className="bg-gray mb-14">
                     <h2 className="text-center text-blue text-3xl font-extrabold pt-12">Leave Your Comment</h2>
@@ -49,47 +63,3 @@ const BlogDetail = () => {
 }
 
 export default BlogDetail;
-
-
-
-
-
-// "use client"
-// import { useRouter } from 'next/router';
-// import HeroSection from "@/components/HeroSection";
-// import style from "../components/styles.module.scss";
-// import portfolio from "@public/Assets/portfolio.png";
-// import Image from "next/image";
-
-// const BlogDetail = () => {
-//     const router = useRouter();
-//     const { title, content, image } = router.query;
-
-//     // Handle case when query parameters are arrays
-//     const defaultTitle = Array.isArray(title) ? title[0] : title || "Default Title";
-//     const defaultContent = Array.isArray(content) ? content[0] : content || "Default Content";
-//     const defaultImage = Array.isArray(image) ? image[0] : image || "/default-image.jpg";
-
-//     return (
-//         <main className="mb-10">
-//             <div className={style.heroBgImage}>
-//                 <HeroSection image={portfolio} text={"Blog Detail"} />
-//             </div>
-//             <div className="container mx-auto my-10">
-//                 <div className="container mx-auto grid grid-cols-1 gap-4">
-//                     <Image src={defaultImage} width={1470} height={906.5} alt="blogDetail" />
-//                 </div>
-//                 <div className="mt-10">
-//                     <p className="text-xl font-extrabold">{defaultTitle}</p>
-//                 </div>
-//                 <div className="font-sans p-20">
-//                     <p className="text-xl text-center">{defaultContent}</p>
-//                 </div>
-//             </div>
-//         </main>
-//     );
-// }
-
-// export default BlogDetail;
-
-

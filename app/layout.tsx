@@ -83,7 +83,7 @@ export default function RootLayout({
         {/* Additional Head Content */}
       </head>
       <body className={inter.className}>
-        <header>
+        <header className='sticky top-0 bg-white z-50'>
           <Navbar />
         </header>
           {children}
@@ -101,3 +101,4 @@ export default function RootLayout({
     </html>
   );
 }
+// className = 'mt-20 sm:mt-28'

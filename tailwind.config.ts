@@ -34,6 +34,7 @@ const config: Config = {
         // blue: '#277D9B', 
         blue: '#278FBC', 
         gray:"#888888", 
+        gray_Light: "#4C4C4C",
         black:"#000000",
         headertext:'#278FBC',
         white_hover:"#e3e6e8",

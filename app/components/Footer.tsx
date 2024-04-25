@@ -242,21 +242,21 @@ const Footer = () => {
                             </Link>
                         </div>
                         <div className="flex">
-                            <Link href="company-instagram" target="_blank" rel="noopener noreferrer">
-                                <span className="text-xl hover:text-pink-500">
+                            <Link href="dharmeshkumbhani3@gmail.com" target="_blank" rel="noopener noreferrer">
+                                <span className="text-xl hover:text-blue-500">
                                     <FaTwitter className="w-6 h-6 rounded-md" />
                                 </span>
                             </Link>
                         </div>
                         <div className="flex">
-                            <Link href="company-facebook" target="_blank" rel="noopener noreferrer">
+                            <Link href="https://youtube.com/@Dharmeshkumbhani2580?si=Ek-XLWVTscwtpP8p" target="_blank" rel="noopener noreferrer">
                                 <span className="text-xl hover:text-blue-500">
                                     <FaYoutube className="w-6 h-6 rounded-md" />
                                 </span>
                             </Link>
                         </div>
                         <div className="flex">
-                            <Link href="company-behance" target="_blank" rel="noopener noreferrer">
+                            <Link href="https://in.pinterest.com/transcodesolution/" target="_blank" rel="noopener noreferrer">
                                 <span className="text-xl hover:text-blue-500">
                                     <FaPinterest className="w-6 h-6 rounded-md" />
                                 </span>
@@ -365,9 +365,9 @@ const Footer = () => {
                             </span>
                         </Link>
                     </div>
-                </div>                
-            </div>    
-            <hr className="container mx-auto border-t border-white my-6" />        
+                </div>
+            </div>
+            <hr className="container mx-auto border-t border-white my-6" />
             <div className="pb-7 text-center text-sm mt-6">
                 © 2024 All Rights Reserved - transcodesolution.com
             </div>

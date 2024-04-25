@@ -112,8 +112,17 @@ import BlogWordpressCard7 from "@public/Assets/blogs/wordpress/BlogWordpressCard
 import BlogWordpressCard8 from "@public/Assets/blogs/wordpress/BlogWordpressCard8.jpg";
 import BlogWordpressCard9 from "@public/Assets/blogs/wordpress/BlogWordpressCard9.jpg";
 import BlogWordpressCard10 from "@public/Assets/blogs/wordpress/BlogWordpressCard10.jpg";
+import { StaticImageData } from "next/image"
 
-const blogImage = [
+interface Blog {
+    id: number;
+    image: StaticImageData; // Assuming image is a string path
+    title: string;
+    content: string;
+    link: string;
+    slug?: string; // Making slug property optional
+}
+const blogImage: Blog[] = [
     {
         id:1,
         image: BlogNextCard1,
