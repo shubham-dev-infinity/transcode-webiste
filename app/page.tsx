@@ -346,7 +346,7 @@ const Home: React.FC<HomeProps> = () => {
                         </div>
                       ))}
                     </div>
-                    <div className="col-span-3 py-6 sm:mt-10">
+                    <div className="col-span-3 py-6 sm:py-0 sm:mt-10">
                       <button onClick={handleShowMoreClick} className="bg-blue hover:bg-blue-700 text-white font-bold px-2 py-1 sm:py-2 sm:px-4 rounded hover:bg-white hover:text-blue transition duration-300 hover:shadow-xl">
                         Show Blog
                       </button>
