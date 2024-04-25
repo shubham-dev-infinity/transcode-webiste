@@ -18,7 +18,7 @@ const About = () => {
     return (
         <main className="mb-10">
             <div className={style.heroBgImage}>
-                <HeroSection image={AboutImage} text={"About Transcode"} centerText={true} />
+                <HeroSection image={AboutImage} text={"About Transcode"}/>
             </div>
             <div className="container mx-auto my-12">
                 <h1 className="text-center text-3xl font-extrabold">Our <span className="text-blue">Client</span></h1>

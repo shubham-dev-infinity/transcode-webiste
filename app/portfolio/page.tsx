@@ -7,7 +7,7 @@ const Portfolio = () => {
     return (
         <div className="mb-20">
             <div className={style.heroBgImage}>
-                <HeroSection image={portfolio} text={"Portfolio"} /> {/* Pass centerText prop */}
+                <HeroSection image={portfolio} text={"Portfolio"} /> 
             </div>
             <div className="container mx-auto">
                 <PortfolioTabs />

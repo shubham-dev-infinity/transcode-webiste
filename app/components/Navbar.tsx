@@ -1,11 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { BsLinkedin } from "react-icons/bs";
-import { FaBehanceSquare, FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
 import Image from "next/image";
 import logo from "@public/Assets/logo.png";
-import style from "../styles.module.scss"
 import { SlArrowRight } from "react-icons/sl";
 
 const Navbar = () => {
@@ -80,65 +77,16 @@ const Navbar = () => {
     }, [isMobileMenuOpen]);
 
     return (
-        <nav>
-            <div className="hidden sm:flex text-white p-4 items-center justify-between h-[50px] bg-blue">
-                <div className="container mx-auto text-white py-0.5 flex items-center justify-between ">
-                    <div className="text-white">
-                        <Link href="mailto:company@example.com">
-                            <span className="hover:underline">company@example123.com</span>
-                        </Link>
-                    </div>
-                    <div className="flex space-x-4">
-                        <Link href="https://www.linkedin.com/in/transcodesolution/" target="_blank" rel="noopener noreferrer">
-                            <span className="text-xl hover:text-white">
-                                <BsLinkedin />
-                            </span>
-                        </Link>
-                        <Link href="https://www.instagram.com/nextorbitz" target="_blank" rel="noopener noreferrer">
-                            <span className="text-xl hover:text-pink-500">
-                                <FaInstagramSquare />
-                            </span>
-                        </Link>
-                        <Link href="https://m.facebook.com/profile.php/" target="_blank" rel="noopener noreferrer">
-                            <span className="text-xl hover:text-blue-500">
-                                <FaFacebookSquare />
-                            </span>
-                        </Link>
-                        <Link href="company-behance" target="_blank" rel="noopener noreferrer">
-                            <span className="text-xl hover:text-blue-500">
-                                <FaBehanceSquare />
-                            </span>
-                        </Link>
-                    </div>
-                </div>
-            </div>
+        <nav>           
             <div className="flex">
                 <div className="container mx-auto flex justify-between h-[100px] space-x-4 px-4 py-2 items-center">
                     <div className="flex">
                         <Link href="/">
                             <Image src={logo} width={80} alt="logo" />
                         </Link>
-                    </div>
-                    {/* <div className="lg:hidden">
-                        <button
-                            onClick={toggleMobileMenu}
-                            className="navbar-burger flex items-center text-blue p-3"
-                        >
-                            <svg
-                                className="block h-4 w-4 fill-current"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <title>Mobile menu</title>
-                                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                            </svg>
-                        </button>
-                    </div> */}
+                    </div>                  
                     {/* Navbar links */}
-                    <div className="hidden items-center lg:flex">
-                        {/* <Link href="/" onClick={closeMobileMenu}>                      
-                            <span className="hover:text-blue hover:border-b-4 hover:border-blue font-bold text-lg">HOME</span>
-                        </Link>                         */}
+                    <div className="hidden items-center lg:flex">                      
                         {/* Dropdown Button */}
                         <div
                             onMouseEnter={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)}
@@ -251,10 +199,7 @@ const Navbar = () => {
                         </Link>
                         <Link href="/blog" onClick={closeMobileMenu}>
                             <span className="hover:text-blue hover:border-b-4 px-3.5  hover:border-blue font-bold text-lg">BLOG</span>
-                        </Link>
-                        {/* <Link href="/about" onClick={closeMobileMenu}>
-                            <span className="hover:text-blue hover:border-b-4 px-3.5  hover:border-blue font-bold text-lg">ABOUT US</span>
-                        </Link> */}
+                        </Link>                       
                         <div
                             onMouseEnter={() => setIsOpenAbout(true)} onMouseLeave={() => setIsOpenAbout(false)}
                             className="relative"
@@ -315,24 +260,13 @@ const Navbar = () => {
                                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
                             </svg>
                         </button>
-                    </div>
-                    {/* <div className="">
-                        <button className="bg-blue px-4 py-2 rounded-md font-bold text-white hover:bg-white hover:text-blue hover:shadow-2xl hover:border-blue">LET’S TALK</button>
-                    </div> */}
+                    </div>                  
                 </div>
             </div>
             {/* Mobile Menu */}
             <div className={`navbar-menu ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
                 <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25" onClick={toggleMobileMenu}></div>
-                <div className="navbar-menu-content">
-                    {/* <div
-                        onMouseEnter={toggleMobileMenu}
-                        onMouseLeave={toggleMobileMenu}
-                        className="relative">
-                        <Link href="/" onClick={closeMobileMenu}>
-                            <span className="block py-2 px-4 text-blue hover:bg-blue hover:text-white font-semibold">HOME</span>
-                        </Link>                      
-                    </div> */}
+                <div className="navbar-menu-content">                   
                     <div
                         onMouseEnter={handleDropdownClick}
                         onMouseLeave={handleDropdownClick}
@@ -443,10 +377,7 @@ const Navbar = () => {
                         </Link>
                         <Link href="/blog" >
                             <span className="block py-2 px-4 text-blue hover:bg-blue hover:text-white font-semibold">BLOG</span>
-                        </Link>
-                        {/* <Link href="/about" onClick={closeMobileMenu}>
-                            <span className="block py-2 px-4 text-blue hover:bg-blue hover:text-white font-semibold">ABOUT US</span>
-                        </Link> */}
+                        </Link>                       
                         <div
                             onMouseEnter={handleAboutDropdownsClick}
                             onMouseLeave={handleAboutDropdownsClick}

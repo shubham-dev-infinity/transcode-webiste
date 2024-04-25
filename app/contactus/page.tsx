@@ -11,7 +11,7 @@ const ContactUs = () => {
     return (
         <main className="mb-10">
             <div className={style.heroBgImage}>
-                <HeroSection image={contact1} text={"Contact Us"} centerText={true} />
+                <HeroSection image={contact1} text={"Contact Us"}/>
             </div>
             <div className="mt-12">
                 <div className="container mx-auto ">

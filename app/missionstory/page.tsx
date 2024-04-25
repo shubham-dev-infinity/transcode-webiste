@@ -29,15 +29,15 @@ const MissionStory = () => {
                     <div className="grid grid-cols-12 gap-8 mb-8 p-6 text-2xl font-bold">
                         <div className="col-span-12 md:col-span-4 flex flex-col items-center justify-center" data-aos="zoom-in" data-aos-delay="100">
                             <Image src={Problems} alt="Problems" width={300} height={300} />
-                            <h3 className="text-blue mt-4">Problems In The World</h3>
+                            <h3 className="hover:text-blue mt-4">Problems In The World</h3>
                         </div>
                         <div className="col-span-12 md:col-span-4 flex flex-col items-center justify-center" data-aos="zoom-in" data-aos-delay="100">
                             <Image src={Opportunities} alt="Opportunities" width={300} height={300} />
-                            <h3 className="mt-4">Opportunities</h3>
+                            <h3 className="hover:text-blue mt-4">Opportunities</h3>
                         </div>
                         <div className="col-span-12 md:col-span-4 flex flex-col items-center justify-center" data-aos="zoom-in" data-aos-delay="100">
                             <Image src={Experience} alt="Experience" width={300} height={300} />
-                            <h3 className="mt-4">My Past Experience</h3>
+                            <h3 className="hover:text-blue mt-4">My Past Experience</h3>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@ const MissionStory = () => {
                     </div>
                     <div className="md:col-span-1 flex flex-col justify-center" data-aos="zoom-in" data-aos-delay="100">
                         <h2 className="text-blue font-extrabold text-3xl pt-8 md:pt-0">PROBLEMS IN THE WORLD</h2>
-                        <h3 className="text-xl font-extrabold py-6">Most custom software built in this world is not launched or crosses the curve of early adopters that causes waste of resources and money. It is due to</h3>
+                        <h3 className="text-xl font-semibold py-6">Most custom software built in this world is not launched or crosses the curve of early adopters that causes waste of resources and money. It is due to</h3>
                         <p className="text-gray text-xl">A. The software offers all the features of fantasy except the effective solution for the core problem it was supposed to solve.</p>
                         <p className="text-gray text-xl py-6">B. The software is designed with investors in mind rather than the user who will use it.</p>
                         <p className="text-gray text-xl">C. It takes a long time to get the software in front of the user, at the time it is launched either does not exist anymore or is no longer relevant.</p>
@@ -67,12 +67,12 @@ const MissionStory = () => {
                         <Image src={ExperienceImage} alt="" width={720} height={500} />
                     </div>
                     <div className="md:col-span-1 flex flex-col justify-center" data-aos="zoom-in" data-aos-delay="100">
-                        <h2 className="text-blue font-extrabold text-3xl py-8 md:py-0">MY PAST EXPERIENCES</h2>
+                        <h2 className="text-blue font-extrabold text-2xl py-8 md:pb-6 md:py-0">MY PAST EXPERIENCES</h2>
                         <p className="text-gray text-xl">In the past, I have seen and also have contributed to failed custom software missions. I have seen and worked with companies who have spent millions and years of valuable time in a failed attempt to build custom software or upgrade an existing system to the latest technology. This led the company to major layoffs and to stick to old and inefficient systems compared to current times. This impacted their customer to be away from better possible services. It also had an impact on the world by inefficient use of resources which could be used to solve the world&apos;s common problems. It also slows down innovation in companies because they are now more resistant to change as well as experiment.</p>
                     </div>
                 </div>
-                <div className="my-10">
-                    <h2 className="text-center font-extrabold text-3xl mb-10"><span className="text-blue">WHAT AM</span> I DOING</h2>
+                <div className="my-16">
+                    <h2 className="text-center font-extrabold text-3xl mb-14"><span className="text-blue">WHAT AM</span> I DOING</h2>
                     {/* <div className="grid grid-cols-12 gap-8 mb-8">
                         <div className="col-span-12 sm:col-span-6">
                             <div className="hidden xl:block">
