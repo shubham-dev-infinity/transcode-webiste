@@ -12,6 +12,8 @@ import Maskgroup from "@public/Assets/Maskgroup.png"
 import people from "@public/Assets/icon/people1.png"
 import customize from "@public/Assets/icon/customize.png"
 import method from "@public/Assets/icon/method.png"
+import Styles from "../../components/styles.module.scss"
+
 const integration = () => {
 
     return (
@@ -231,15 +233,15 @@ const integration = () => {
                 </div>
                 <div className="my-7 md:my-14">
                     <h2 className="text-blue font-extrabold text-xl md:text-2xl pb-6">Are You Looking To Unlock The Potential Of Integrated Systems?</h2>
-                    <ul className="list-disc list-inside text-blue p-2 leading-relaxed mb-6">
-                        <li className="text-gray text-sm md:text-base">Contact us now for a complimentary consultation to see how our system integration services can transform your business!</li>
-                        <li className="text-gray text-sm md:text-base">Additionally, consider these elements</li>
-                        <li className="text-gray text-sm md:text-base">Showcasing specific areas of expertise such as cloud integration or IoT integration</li>
-                        <li className="text-gray text-sm md:text-base">Showcasing successful case studies</li>
-                        <li className="text-gray text-sm md:text-base">Demonstrate how your services have made an impactful statement about itself</li>
-                        <li className="text-gray text-sm md:text-base">Providing industry insights as thought leaders</li>
-                        <li className="text-gray text-sm md:text-base">Providing invaluable resources</li>
-                        <li className="text-gray text-sm md:text-base">Offering free white papers and webinars as valuable resources is always something worthwhile!</li>
+                    <ul className={Styles.list_Style}>
+                        <li className="text-gray">Contact us now for a complimentary consultation to see how our system integration services can transform your business!</li>
+                        <li className="text-gray">Additionally, consider these elements</li>
+                        <li className="text-gray">Showcasing specific areas of expertise such as cloud integration or IoT integration</li>
+                        <li className="text-gray">Showcasing successful case studies</li>
+                        <li className="text-gray">Demonstrate how your services have made an impactful statement about itself</li>
+                        <li className="text-gray">Providing industry insights as thought leaders</li>
+                        <li className="text-gray">Providing invaluable resources</li>
+                        <li className="text-gray">Offering free white papers and webinars as valuable resources is always something worthwhile!</li>
                     </ul>
                     <p className="text-base md:text-lg text-gray">By offering relevant information and emphasizing your unique value proposition, you can attract prospective clients while reaching your marketing objectives.</p>
                 </div>

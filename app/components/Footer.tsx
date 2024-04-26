@@ -1,376 +1,297 @@
-// import Link from "next/link";
-// import { FaFacebookSquare, FaPinterest, FaTwitter, FaYoutube } from "react-icons/fa";
-// import Image from 'next/image';
-// import logo from "@public/Assets/logo.png"
-// import { MdLocationPin } from "react-icons/md";
-// const Footer = () => {
-//     return (
-//         <div className="bg-blue">
-//             <div className="container mx-auto text-white pt-8">
-//                 <div className="flex">
-//                     <div className="flex-1">
-//                         <Image
-//                             src={logo}
-//                             height={94}
-//                             width={116.51}
-//                             alt="Your Name"
-//                             className="pb-4"
-//                         />
-//                         <span>
-//                             Welcome to Transcode Solutions – Empowering your digital success with innovative solutions.
-//                         </span>
-//                         <h1 className="text-2xl font-bold pt-4">Address</h1>
-//                         <div className="w-24 h-0.5 bg-white mb-4"></div>
-//                         <p className="text-lg">
-//                             301, Ambika Pinnacle, beside Lajamni Chowk, Maruti Dham Society, Mota Varachha, Surat, Gujarat 394101
-//                         </p>
-//                         <div className="flex gap-5 mt-4">
-//                             <div className="flex">
-//                                 <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-//                                     <span className="text-xl hover:text-blue-500">
-//                                         <FaFacebookSquare className="w-6 h-6 rounded-md" />
-//                                     </span>
-//                                 </Link>
-//                             </div>
-//                             <div className="flex">
-//                                 <Link href="company-instagram" target="_blank" rel="noopener noreferrer">
-//                                     <span className="text-xl hover:text-pink-500">
-//                                         <FaTwitter className="w-6 h-6 rounded-md" />
-//                                     </span>
-//                                 </Link>
-//                             </div>
-//                             <div className="flex">
-//                                 <Link href="company-facebook" target="_blank" rel="noopener noreferrer">
-//                                     <span className="text-xl hover:text-blue-500">
-//                                         <FaYoutube className="w-6 h-6 rounded-md" />
-//                                     </span>
-//                                 </Link>
-//                             </div>
-//                             <div className="flex">
-//                                 <Link href="company-behance" target="_blank" rel="noopener noreferrer">
-//                                     <span className="text-xl hover:text-blue-500">
-//                                         <FaPinterest className="w-6 h-6 rounded-md" />
-//                                     </span>
-//                                 </Link>
-//                             </div>
-//                         </div>
-//                     </div>
-//                     <div className="flex-1">
-//                         <h1 className="text-2xl font-bold">Quick Links</h1>
-//                         <div className="w-24 h-0.5 bg-white mb-2"></div>
-//                         {/* <div className="flex gap-4">    
-//                             <Link href="company-facebook" target="_blank" rel="noopener noreferrer">
-//                                 <span className="text-base hover:text-blue-500">
-//                                     <MdLocationPin className="w-8 h-9 rounded-md" />
-//                                 </span>
-//                             </Link>
-//                             <p>
-//                                 301, Ambika Pinnacle, beside Lajamni Chowk, Maruti Dham Society, Mota Varachha, Surat, Gujarat 394101
-//                             </p>
-//                         </div> */}
-//                         <div className="flex-1 pb-2">
-//                             <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-//                                 <span className="text-base hover:text-blue-500">
-//                                     Home
-//                                 </span>
-//                             </Link>
-//                         </div>
-//                         <div className="flex-1 pb-2">
-//                             <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-//                                 <span className="text-base hover:text-blue-500">
-//                                     About Transcode
-//                                 </span>
-//                             </Link>
-//                         </div>
-//                         <div className="flex-1 pb-2">
-//                             <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-//                                 <span className="text-base hover:text-blue-500">
-//                                     Services
-//                                 </span>
-//                             </Link>
-//                         </div>
-//                         <div className="flex-1 pb-2">
-//                             <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-//                                 <span className="text-base hover:text-blue-500">
-//                                     Insight
-//                                 </span>
-//                             </Link>
-//                         </div>
-//                         <div className="flex-1 pb-2">
-//                             <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-//                                 <span className="text-base hover:text-blue-500">
-//                                     Client Portfolio
-//                                 </span>
-//                             </Link>
-//                         </div>
-//                         <div className="flex-1">
-//                             <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-//                                 <span className="text-base hover:text-blue-500">
-//                                     Contact
-//                                 </span>
-//                             </Link>
-//                         </div>
-//                     </div>
-//                     <div className="flex-1">
-//                         <h1 className="text-2xl font-bold">Services</h1>
-//                         <div className="w-28 h-0.5 bg-white mb-2"></div>
-//                         <div className="flex-1 pb-2">
-//                             <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-//                                 <span className="text-base hover:text-blue-500">
-//                                     Software Development
-//                                 </span>
-//                             </Link>
-//                         </div>
-//                         <div className="flex-1 pb-2">
-//                             <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-//                                 <span className="text-base hover:text-blue-500">
-//                                     IT Consulting & Advisory
-//                                 </span>
-//                             </Link>
-//                         </div>
-//                         <div className="flex-1 pb-2">
-//                             <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-//                                 <span className="text-base hover:text-blue-500">
-//                                     System Integration Services
-//                                 </span>
-//                             </Link>
-//                         </div>
-//                         <div className="flex-1 pb-2">
-//                             <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-//                                 <span className="text-base hover:text-blue-500">
-//                                     Manage IT Services
-//                                 </span>
-//                             </Link>
-//                         </div>
-//                         <div className="flex-1 pb-2">
-//                             <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-//                                 <span className="text-base hover:text-blue-500">
-//                                     Training & Education
-//                                 </span>
-//                             </Link>
-//                         </div>
-//                         <div className="flex-1">
-//                             <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-//                                 <span className="text-base hover:text-blue-500">
-//                                     Quality Assurance & Testing
-//                                 </span>
-//                             </Link>
-//                         </div>
-//                         <h1 className="text-2xl font-bold pt-6">Project Inquiry</h1>
-//                         <div className="w-28 h-0.5 bg-white mb-2"></div>
-//                         <p className="pb-1">Call: +1 4758123694</p>
-//                         <p>Email: info@transcodesolution.com</p>
-//                     </div>
-//                     <div className="flex-1">
-//                         <h1 className="text-2xl font-bold">Resource</h1>
-//                         <div className="w-28 h-0.5 bg-white mb-2"></div>
-//                         <div className="flex-1 pb-2">
-//                             <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-//                                 <span className="text-base hover:text-blue-500">
-//                                     Careers
-//                                 </span>
-//                             </Link>
-//                         </div>
-//                         <div className="flex-1 pb-2">
-//                             <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-//                                 <span className="text-base hover:text-blue-500">
-//                                     Our Work Culture
-//                                 </span>
-//                             </Link>
-//                         </div>
-//                         <div className="flex-1 pb-2">
-//                             <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-//                                 <span className="text-base hover:text-blue-500">
-//                                     Our Mission Story
-//                                 </span>
-//                             </Link>
-//                         </div>
-//                         <div className="flex-1">
-//                             <Link href="company-linkedin" target="_blank" rel="noopener noreferrer">
-//                                 <span className="text-base hover:text-blue-500">
-//                                     Site Map
-//                                 </span>
-//                             </Link>
-//                         </div>
-//                     </div>
-//                 </div>
-//                 <hr className="border-t border-white my-6" />
-//                 <div className="pb-7 text-center text-sm">
-//                     © 2024 All Rights Reserved - transcodesolution.com
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// };
-
-// export default Footer;
-
-
-
 import Link from "next/link";
 import { FaFacebookSquare, FaPinterest, FaTwitter, FaYoutube } from "react-icons/fa";
 import Image from 'next/image';
 import logo from "@public/Assets/logo.png"
 import { MdLocationPin } from "react-icons/md";
-
+import Oman from "@public/Assets/Oman.png";
+import FlagOfIndia from "@public/Assets/Flag_of_India.png";
+import Facebook from "@public/Assets/Facebook.png"
+import Twitter from "@public/Assets/Twitter.png"
+import YouTube from "@public/Assets/YouTube.png"
+import Pinterest from "@public/Assets/Pinterest.png"
 const Footer = () => {
     return (
         <div className="bg-footerbackground">
-            <div className="container mx-auto text-white pt-16 grid grid-cols-2 lg:grid-cols-4 gap-8 p-3">
+            <div className="container mx-auto text-white pt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 p-3">
                 <div>
                     <Image
                         src={logo}
                         height={94}
                         width={116.51}
                         alt="Your Name"
-                        className="pb-6"
                     />
-                    <span className="text-sm sm:text-base">
+                    <span className="text-sm sm:text-sm">
                         Welcome to Transcode Solutions – Empowering your digital success with innovative solutions.
                     </span>
-                    <h1 className="text-sm sm:text-2xl font-bold pt-6">Address</h1>
-                    <div className="w-24 h-0.5 bg-white mb-2 sm:mb-5"></div>
-                    <p className="text-sm sm:text-lg">
-                        301, Ambika Pinnacle, beside Lajamni Chowk, Maruti Dham Society, Mota Varachha, Surat, Gujarat 394101
-                    </p>
-                    <div className="flex gap-5 mt-6">
-                        <div className="flex">
-                            <Link href="https://m.facebook.com/profile.php/" target="_blank" rel="noopener noreferrer">
-                                <span className="text-xl hover:text-blue-500">
-                                    <FaFacebookSquare className="w-6 h-6 rounded-md" />
-                                </span>
-                            </Link>
+                    <h1 className="text-lg sm:text-xl font-bold pt-4">Project Inquiry</h1>
+                    <div className="w-28 h-0.5 bg-white mb-2"></div>
+                    <p className="text-sm leading-0 sm:leading-8">Call: +91 9879868908</p>
+                    <p className="text-sm leading-0 sm:leading-8">Email: info@transcodesolution.com</p>
+                    {/* <div className="grid grid-cols-12 items-start mt-10">
+                        <Image src={FlagOfIndia} alt="Flag_of_India" width={50} height={33.34} className="col-span-2" />
+                        <div className="ml-3 col-span-10">
+                            <p className="text-sm col-span-12">
+                                301, Ambika Pinnacle, beside Lajamni Chowk, Maruti Dham Society, Mota Varachha, Surat, Gujarat 394101
+                            </p>
+                            <p className="text-sm my-2 col-span-12">Call: +91 9510249833</p>
+                            <p className="text-sm my-2 col-span-12">Email: ceo@transcodesolution.com</p>
                         </div>
-                        <div className="flex">
-                            <Link href="dharmeshkumbhani3@gmail.com" target="_blank" rel="noopener noreferrer">
-                                <span className="text-xl hover:text-blue-500">
-                                    <FaTwitter className="w-6 h-6 rounded-md" />
-                                </span>
-                            </Link>
+                    </div> */}
+                    {/* <div className="grid grid-cols-12 items-start mt-10">
+                        <Image src={FlagOfIndia} alt="Flag_of_India" width={50} height={33.34} className="col-span-12 sm:col-span-2 lg:col-span-12 xl:col-span-2 mb-3 sm:mb-0 lg:pb-2 xl:pb-0" />
+                        <div className="ml-3 col-span-12 sm:col-span-10">
+                            <p className="text-sm col-span-12">
+                                301, Ambika Pinnacle, beside Lajamni Chowk, Maruti Dham Society, Mota Varachha, Surat, Gujarat 394101
+                            </p>
+                            <p className="text-sm my-2 col-span-12">Call: +91 9510249833</p>
+                            <p className="text-sm my-2 col-span-12">Email: ceo@transcodesolution.com</p>
                         </div>
-                        <div className="flex">
-                            <Link href="https://youtube.com/@Dharmeshkumbhani2580?si=Ek-XLWVTscwtpP8p" target="_blank" rel="noopener noreferrer">
-                                <span className="text-xl hover:text-blue-500">
-                                    <FaYoutube className="w-6 h-6 rounded-md" />
-                                </span>
-                            </Link>
-                        </div>
-                        <div className="flex">
-                            <Link href="https://in.pinterest.com/transcodesolution/" target="_blank" rel="noopener noreferrer">
-                                <span className="text-xl hover:text-blue-500">
-                                    <FaPinterest className="w-6 h-6 rounded-md" />
-                                </span>
-                            </Link>
-                        </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div>
-                    <h1 className="text-base sm:text-2xl font-bold">Quick Links</h1>
+                    <h1 className="text-base sm:text-xl font-bold">Quick Links</h1>
                     <div className="w-24 h-0.5 bg-white mb-0 sm:mb-4"></div>
                     <div className="flex flex-col leading-0 sm:leading-8">
                         <Link href="/" rel="noopener noreferrer">
-                            <span className="text-sm sm:text-base hover:text-white_hover">
+                            <span className="text-sm hover:text-white_hover">
                                 Home
                             </span>
                         </Link>
                         <Link href="/about" rel="noopener noreferrer">
-                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
+                            <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
                                 About Transcode
                             </span>
                         </Link>
                         <Link href="company-linkedin" rel="noopener noreferrer">
-                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
+                            <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
                                 Services
                             </span>
                         </Link>
                         <Link href="/blog" rel="noopener noreferrer">
-                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
+                            <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
                                 Insight
                             </span>
                         </Link>
                         <Link href="/portfolio" rel="noopener noreferrer">
-                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
+                            <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
                                 Client Portfolio
                             </span>
                         </Link>
                         <Link href="/contactus" rel="noopener noreferrer">
-                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
+                            <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
                                 Contact
                             </span>
                         </Link>
                     </div>
                 </div>
                 <div>
-                    <h2 className="text-base sm:text-2xl font-bold">Services</h2>
+                    <h2 className="text-base sm:text-xl font-bold">Services</h2>
                     <div className="w-28 h-0.5 bg-white mb-1 sm:mb-4"></div>
                     <div className="flex flex-col leading-0 sm:leading-8">
                         <Link href="/services/software" rel="noopener noreferrer">
-                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
+                            <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
                                 Software Development
                             </span>
                         </Link>
                         <Link href="/services/consulting" rel="noopener noreferrer">
-                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
+                            <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
                                 IT Consulting & Advisory
                             </span>
                         </Link>
                         <Link href="/services/integration" rel="noopener noreferrer">
-                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
+                            <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
                                 System Integration Services
                             </span>
                         </Link>
                         <Link href="/services/managedservices" rel="noopener noreferrer">
-                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
+                            <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
                                 Manage IT Services
                             </span>
                         </Link>
                         <Link href="/services/training" rel="noopener noreferrer">
-                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
+                            <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
                                 Training & Education
                             </span>
                         </Link>
                         <Link href="/services/quality" rel="noopener noreferrer">
-                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
+                            <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
                                 Quality Assurance & Testing
                             </span>
                         </Link>
                     </div>
-                    <h1 className="text-lg sm:text-2xl font-bold pt-6 sm:pt-12">Project Inquiry</h1>
+                    {/* <h1 className="text-lg sm:text-xl font-bold pt-6 sm:pt-12">Project Inquiry</h1>
                     <div className="w-28 h-0.5 bg-white mb-2 sm:mb-6"></div>
-                    <p className="text-sm sm:text-base leading-0 sm:leading-8">Call: +1 4758123694</p>
-                    <p className="text-sm sm:text-base leading-0 sm:leading-8">Email: info@transcodesolution.com</p>
+                    <p className="text-sm leading-0 sm:leading-8">Call: +91 9879868908</p>
+                    <p className="text-sm leading-0 sm:leading-8">Email: info@transcodesolution.com</p> */}
                 </div>
-                <div>
-                    <h1 className="text-lg sm:text-2xl font-bold">Resource</h1>
+                <div >
+                    <h1 className="text-lg sm:text-xl font-bold">Resource</h1>
                     <div className="w-28 h-0.5 bg-white mb-2 sm:mb-4"></div>
-                    <div className="flex flex-col leading-0 sm:leading-8">
+                    <div className="flex flex-col leading-0 sm:leading-8 md:mb-10 lg:mb-52 xl:mb-36">
                         <Link href="/career" rel="noopener noreferrer">
-                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
+                            <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
                                 Careers
                             </span>
                         </Link>
                         <Link href="/workculture" rel="noopener noreferrer">
-                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
+                            <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
                                 Our Work Culture
                             </span>
                         </Link>
                         <Link href="/missionstory" rel="noopener noreferrer">
-                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
+                            <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
                                 Our Mission Story
                             </span>
                         </Link>
                         <Link href="/sitemap" rel="noopener noreferrer">
-                            <span className="text-sm sm:text-base hover:text-white_hover pb-0 sm:pb-3">
+                            <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
                                 Site Map
                             </span>
                         </Link>
                     </div>
+                    {/* <div className="grid grid-cols-12 items-start mt-10">
+                        <Image src={Oman} alt="Oman" width={60} height={30} className="col-span-12 sm:col-span-2 lg:col-span-12 xl:col-span-2 mb-3 sm:mb-0 lg:pb-2 xl:pb-0" />
+                        <div className="sm:ml-3 col-span-12 sm:col-span-10">
+                            <p className="text-sm col-span-12">
+                                P.O.Box:1890, PC:130, Ruwi, Muscat, Sultanate of Oman.
+                            </p>
+                            <p className="text-sm my-2 col-span-12">Call: +968-91945242</p>
+                            <p className="text-sm my-2 col-span-12">Email: cso@transcodesolution.com</p>
+                        </div>
+                    </div> */}
                 </div>
             </div>
-            <hr className="container mx-auto border-t border-white my-6" />
-            <div className="pb-7 text-center text-white text-sm mt-6">
-                © 2024 All Rights Reserved - transcodesolution.com
+            <div className="text-center text-white">
+                <h2 className="text-lg sm:text-xl font-bold">Connect With Us</h2>
+                <div className="w-24 h-0.5 bg-white mx-auto"></div>
             </div>
+
+            <div className="container mx-auto text-white grid grid-cols-1 sm:grid-cols-2 gap-8 p-3">
+                <div className="sm:col-start-1">                
+                    <div className="grid grid-cols-12 items-start mt-6">
+                        <Image src={FlagOfIndia} alt="Flag_of_India" width={50} height={33.34} className="col-span-12 sm:col-span-2 lg:col-span-12 xl:col-span-1 mb-3 sm:mb-0 lg:pb-2 xl:pb-0" />
+                        <div className="ml-3 col-span-12 sm:col-span-5">
+                            <p className="text-sm col-span-12">
+                                301, Ambika Pinnacle, beside Lajamni Chowk, Maruti Dham Society, Digital Valley (Mota Varachha), Surat, Gujarat, India
+                            </p>
+                            <p className="text-sm my-2 col-span-12">Call: +91 9510249833</p>
+                            <p className="text-sm my-2 col-span-12">Email: ceo@transcodesolution.com</p>
+                        </div>
+                    </div>
+                </div>              
+                <div className="grid grid-cols-12 sm:items-start mt-6 justify-end">
+                    <Image src={Oman} alt="Oman" width={60} height={30} className="col-span-12 sm:col-span-2 lg:col-span-12 xl:ml-[340px] xl:col-span-7 mb-3 sm:mb-0 lg:pb-2 xl:pb-0" />
+                    <div className="ml-3 col-span-12 sm:col-span-5 float-right">
+                        <p className="text-sm col-span-12">
+                            P.O.Box:1890, PC:130, Ruwi, Muscat, Sultanate of Oman.
+                        </p>
+                        <p className="text-sm my-2 col-span-12">Call: +968-91945242</p>
+                        <p className="text-sm my-2 col-span-12">Email: cso@transcodesolution.com</p>
+                    </div>
+                </div>
+            </div>    
+            <hr className="container mx-auto border-t border-white mt-6 mb-4" />
+            {/* <div className="container mx-auto">
+                <p className="text-white text-sm">© 2024 All Rights Reserved - transcodesolution.com</p>
+                <div className="flex gap-5 mt-2 text-white">
+                    <div className="flex ">
+                        <Link href="https://m.facebook.com/profile.php/" target="_blank" rel="noopener noreferrer">
+                            <span className="text-xl hover:text-blue-500">
+                                <FaFacebookSquare className="w-6 h-6 rounded-md" />
+                            </span>
+                        </Link>
+                    </div>
+                    <div className="flex">
+                        <Link href="dharmeshkumbhani3@gmail.com" target="_blank" rel="noopener noreferrer">
+                            <span className="text-xl hover:text-blue-500">
+                                <FaTwitter className="w-6 h-6 rounded-md" />
+                            </span>
+                        </Link>
+                    </div>
+                    <div className="flex">
+                        <Link href="https://youtube.com/@Dharmeshkumbhani2580?si=Ek-XLWVTscwtpP8p" target="_blank" rel="noopener noreferrer">
+                            <span className="text-xl hover:text-blue-500">
+                                <FaYoutube className="w-6 h-6 rounded-md" />
+                            </span>
+                        </Link>
+                    </div>
+                    <div className="flex">
+                        <Link href="https://in.pinterest.com/transcodesolution/" target="_blank" rel="noopener noreferrer">
+                            <span className="text-xl hover:text-blue-500">
+                                <FaPinterest className="w-6 h-6 rounded-md" />
+                            </span>
+                        </Link>
+                    </div>
+                </div>
+            </div> */}
+            {/* <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 items-center mb-4">
+                <p className="text-white text-sm mb-2 sm:mb-4 sm:text-left col-start-1 sm:col-start">© 2024 All Rights Reserved - transcodesolution.com</p>
+                <div className="flex justify-between sm:justify-end gap-5 mb-4 text-white col-start-1 sm:col-start-auto sm:col-end-auto">
+                    <div className="flex">
+                        <Link href="https://m.facebook.com/profile.php/" target="_blank" rel="noopener noreferrer">
+                            <span className="text-xl hover:text-blue-500">
+                                <FaFacebookSquare className="w-6 h-6 rounded-md" />
+                            </span>
+                        </Link>
+                    </div>
+                    <div className="flex">
+                        <Link href="dharmeshkumbhani3@gmail.com" target="_blank" rel="noopener noreferrer">
+                            <span className="text-xl hover:text-blue-500">
+                                <FaTwitter className="w-6 h-6 rounded-md" />
+                            </span>
+                        </Link>
+                    </div>
+                    <div className="flex">
+                        <Link href="https://youtube.com/@Dharmeshkumbhani2580?si=Ek-XLWVTscwtpP8p" target="_blank" rel="noopener noreferrer">
+                            <span className="text-xl hover:text-blue-500">
+                                <FaYoutube className="w-6 h-6 rounded-md" />
+                            </span>
+                        </Link>
+                    </div>
+                    <div className="flex">
+                        <Link href="https://in.pinterest.com/transcodesolution/" target="_blank" rel="noopener noreferrer">
+                            <span className="text-xl hover:text-blue-500">
+                                <FaPinterest className="w-6 h-6 rounded-md" />
+                            </span>
+                        </Link>
+                    </div>
+                </div>
+            </div> */}
+
+            <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 items-center mb-4">
+                <p className="text-white text-sm mb-2 sm:mb-4 sm:text-left col-start-1 sm:col-start px-2 sm:px-0">© 2024 All Rights Reserved - transcodesolution.com</p>
+                <div className="flex justify-start sm:justify-end px-2 sm:px-0 gap-5 mb-4 text-white col-start-1 sm:col-start-auto sm:col-end-auto">
+                    <div className="flex items-center justify-center">
+                        <Link href="https://m.facebook.com/profile.php/" target="_blank" rel="noopener noreferrer">
+                            <div className="rounded-full bg-white p-1 hover:bg-gray-200">                              
+                                <Image src={Facebook} alt="Facebook" w-6 h-6 className="w-6 h-6 text-black" />
+                            </div>
+                        </Link>
+                    </div>
+                    <div className="flex items-center justify-center">
+                        <Link href="dharmeshkumbhani3@gmail.com" target="_blank" rel="noopener noreferrer">
+                            <div className="rounded-full bg-white p-1 hover:bg-gray-200">                               
+                                <Image src={Twitter} alt="Twitter" w-6 h-6 className="w-6 h-6 text-black" />
+                            </div>
+                        </Link>
+                    </div>
+                    <div className="flex items-center justify-center">
+                        <Link href="https://youtube.com/@Dharmeshkumbhani2580?si=Ek-XLWVTscwtpP8p" target="_blank" rel="noopener noreferrer">
+                            <div className="rounded-full bg-white p-1 hover:bg-gray-200">                              
+                                <Image src={YouTube} alt="YouTube" w-6 h-6 className="w-6 h-6 text-black" />
+                            </div>
+                        </Link>
+                    </div>
+                    <div className="flex items-center justify-center">
+                        <Link href="https://in.pinterest.com/transcodesolution/" target="_blank" rel="noopener noreferrer">
+                            <div className="rounded-full bg-white p-1 hover:bg-gray-200">                                
+                                <Image src={Pinterest} alt="Pinterest" w-6 h-6 className="w-6 h-6 text-black" />
+                            </div>
+                        </Link>
+                    </div>
+                </div>
+            </div>
+
         </div>
     );
 };
