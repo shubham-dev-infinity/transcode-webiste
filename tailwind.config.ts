@@ -10,6 +10,9 @@ const config: Config = {
     // "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+     container: {
+      padding: '0.5rem',
+    },
     extend: {   
       fontFamily: {
         sans: ['Jost', 'sans-serif'],

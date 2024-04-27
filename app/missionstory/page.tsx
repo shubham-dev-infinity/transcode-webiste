@@ -15,7 +15,7 @@ import fasterServices from "@public/Assets/fasterServices.png"
 import resource from "@public/Assets/resource.png"
 import experimenting from "@public/Assets/experimenting.png"
 import development from "@public/Assets/development.png"
-
+import Maskgroups from "@public/Assets/Maskgroups.png"
 
 const MissionStory = () => {
 
@@ -25,6 +25,23 @@ const MissionStory = () => {
                 <HeroSection image={missionStory} text={"Our Mission Story"} />
             </div>
             <div className="container mx-auto my-10 p-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <div className="md:col-span-1 flex items-center justify-center" data-aos="fade-right" data-aos-delay="100">
+                        <Image src={Maskgroups} alt="" width={720} height={500} />
+                    </div>
+                    <div className="md:col-span-1 flex flex-col justify-center" data-aos="zoom-in" data-aos-delay="100">
+                        <h2 className="text-blue font-extrabold text-xl sm:text-2xl xl:text-3xl">Mission Statement</h2>
+                        <h3 className="text-lg sm:text-xl xl:text-2xl text-gray py-2 sm:py-6">At Transcode Solutions, we empower every startup and entrepreneur to achieve their unique vision. Our mission is to provide innovative, scalable, and tailored IT solutions that enable our clients to transform their ideas into reality, ensuring they have the tools and support necessary to thrive in a dynamic global marketplace.</h3>                      
+                    </div>
+                </div>
+                <div className="mb-16">
+                    <h2 className="text-blue text-center text-xl sm:text-2xl xl:text-3xl font-extrabold">Mission Story</h2>
+                    <p className="text-gray text-lg md:text-xl 2xl:text-2xl py-4">In the heart of the bustling tech industry, Transcode Solutions was founded with a singular purpose: to serve as a catalyst for innovation and success for startups and entrepreneurs across the globe. Recognizing the challenges and hurdles that new ventures face, we set out to create a company that not only provides cutting-edge IT solutions but also partners with our clients to help them realize their visions.</p>
+                    <p className="text-gray text-lg md:text-xl xl:text-2xl py-4">Our journey began with a small team of passionate IT professionals who believed in the transformative power of technology. As we grew, so did our capabilities and our understanding of the unique needs of startups. We learned that beyond just technical solutions, these companies needed a partner who could understand their vision, anticipate their needs, and provide support at every step of their growth.</p>
+                    <p className="text-gray text-lg md:text-xl xl:text-2xl py-4">Today, Transcode Solutions stands as a beacon of innovation and support for entrepreneurs. We have helped hundreds of startups to launch, scale, and succeed in competitive markets. Our approach is simple yet powerful: listen to our clients, understand their vision, and deliver solutions that are not just effective but transformative.</p>
+                    <p className="text-gray text-lg md:text-xl xl:text-2xl py-4">Our mission is not just about technology; it&apos;s about people and their dreams. Every project we undertake is a step towards fulfilling this mission, helping each entrepreneur to not just navigate the complex world of technology but to master it. We are more than just a service provider; we are a partner in innovation, a supporter of dreams, and a believer in the potential of every startup to change the world.</p>
+                    <p className="text-gray text-lg md:text-xl xl:text-2xl py-4">By aligning our expertise with the aspirations of our clients, we continue to forge paths towards a future where every entrepreneur can achieve their vision. This is not just our mission; it &apos;s our commitment to the world.</p>
+                </div>
                 <div className={styles.BgImage}>
                     <div className="grid grid-cols-12 gap-8 mb-8 p-6 text-2xl font-bold">
                         <div className="col-span-12 md:col-span-4 flex flex-col items-center justify-center" data-aos="zoom-in" data-aos-delay="100">

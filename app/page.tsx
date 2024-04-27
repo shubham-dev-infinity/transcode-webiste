@@ -21,10 +21,17 @@ import mahim from "@public/Assets/mahim.png"
 import Link from "next/link";
 import { title } from "process";
 import { useRouter } from 'next/navigation';
+import style from "./styles.module.scss"
+import MaskgroupSlider from "@public/Assets/MaskgroupSlider.png"
+import MaskgroupSliderse from "@public/Assets/MaskgroupSliderse.png"
+import MaskgroupSliderth from "@public/Assets/MaskgroupSliderth.png"
+
+
+
 interface HomeProps { }
 const Home: React.FC<HomeProps> = () => {
   const [activeTab, setActiveTab] = useState<string>('webdevelopment');
-  const [currentSlide, setCurrentSlide] = useState(0); 
+  const [currentSlide, setCurrentSlide] = useState(0);
   const router = useRouter();
 
   const handleShowMoreClick = () => {
@@ -48,7 +55,8 @@ const Home: React.FC<HomeProps> = () => {
       buttonText: "Discover More",
       href: "/services/software",
       href1: "/contactus",
-      buttonText1: "Contact Us"
+      buttonText1: "Contact Us",
+      img: MaskgroupSlider
     },
     {
       heading: "MASTERING IT SERVICES:",
@@ -60,7 +68,8 @@ const Home: React.FC<HomeProps> = () => {
       buttonText: "Explore Now",
       href: "/services/mobile",
       href1: "/contactus",
-      buttonText1: "Contact Us"
+      buttonText1: "Contact Us",
+      img: MaskgroupSliderth
     },
     {
       heading: "INNOVATE TO ELEVATE:",
@@ -72,9 +81,10 @@ const Home: React.FC<HomeProps> = () => {
       buttonText: "Discover More",
       href: "/services/web-design",
       href1: "/contactus",
-      buttonText1: "Contact Us"
+      buttonText1: "Contact Us",
+      img: MaskgroupSliderse
     }
-  ]; 
+  ];
 
 
   useEffect(() => {
@@ -135,44 +145,50 @@ const Home: React.FC<HomeProps> = () => {
                 </button>
               </div>
             </div>
-          </div> */}
-          <div className="bg-gray">
-            <div className="container mx-auto flex flex-col justify-center pt-8 sm:pt-16 lg:pt-32">
-              <div className="text-center pb-0 md:pb-8">
-                <h3 className="text-headertext text-xl sm:text-2xl font-extrabold pt-2" data-aos="fade-up" data-aos-delay="100">{slides[currentSlide].heading}</h3>
-                <div className="flex justify-center">
-                  <div className="w-24 h-1 bg-blue mb-4"></div>
+          </div> */}          
+          <div className={style.heroBgImage}>
+            <div className="container mx-auto flex flex-col lg:flex-row justify-center items-center lg:items-start pt-8 sm:pt-16 lg:pt-32">             
+              <div className="lg:w-1/2 lg:mr-8">
+                <div className="pb-0 md:pb-8">
+                  <h3 className="text-headertext text-center lg:text-start text-xl sm:text-2xl font-extrabold pt-2" data-aos="fade-up" data-aos-delay="100">{slides[currentSlide].heading}</h3>
+                  <div className="flex justify-center lg:justify-start">
+                    <div className="w-24 h-1 bg-blue mb-4"></div>
+                  </div>
                 </div>
-              </div>
-              <div className="absolute inset-y-0 left-0 flex items-center">
-                <button onClick={goToPrevSlide} className="bg-blue text-white rounded-full w-6 sm:w-10 h-6 sm:h-10  focus:outline-none lg:w-12 lg:h-12">
-                  &#10094;
-                </button>
-              </div>
-              <h4 className="text-black text-xl sm:text-2xl lg:text-5xl font-extrabold text-center mb-3" data-aos="fade-up" data-aos-delay="100">
-                {slides[currentSlide].title1} <span className="text-headertext text-2xl sm:text-3xl lg:text-5xl xl:text-6xl font-extrabold text-center mb-3 wow fadeOutDownBig">{slides[currentSlide].title2}</span>{slides[currentSlide].title3}
-              </h4>
-              <h4 className="text-black text-2xl sm:text-3xl lg:text-6xl font-extrabold text-center mb-8" data-aos="fade-up" data-aos-delay="100">{slides[currentSlide].title4}</h4>
-              <p className="text-black text-sm sm:text-base lg:text-xl font-medium text-center px-6 mb-12 sm:px-32 md:px-40 lg:px-56 xl:px-96" data-aos="fade-up" data-aos-delay="100">{slides[currentSlide].description}</p>
-              <div className="flex flex-row sm:flex-row gap-7 justify-center mb-16" data-aos="fade-up" data-aos-delay="100">
-                <Link href={slides[currentSlide].href}>
-                  <button className="bg-blue px-2 py-1 lg:px-4 lg:py-2 rounded-md font-bold text-white mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">
-                    {slides[currentSlide].buttonText}
+                {/* <div className="absolute inset-y-0 pr-1 sm:pr-0 right-0 flex items-center">
+                  <button onClick={goToNextSlide} className="bg-blue text-white rounded-full w-6 sm:w-10 h-6 sm:h-10 focus:outline-none lg:w-12 lg:h-12" data-aos="fade-up" data-aos-delay="100">
+                    &#10095;
                   </button>
-                </Link>
-                <Link href={slides[currentSlide].href1} className="wow fadeInRight">
-                  <button className="bg-white px-2 py-1 lg:px-4 lg:py-2 rounded-md font-bold text-black hover:bg-dark hover:text-white transition duration-300">
-                    {slides[currentSlide].buttonText1}
-                  </button>
-                </Link>
-              </div>
-              <div className="absolute inset-y-0 pr-1 sm:pr-0 right-0 flex items-center">
-                <button onClick={goToNextSlide} className="bg-blue text-white rounded-full w-6 sm:w-10 h-6 sm:h-10 focus:outline-none lg:w-12 lg:h-12" data-aos="fade-up" data-aos-delay="100">
-                  &#10095;
-                </button>
-              </div>
+                </div>               */}
+                <h4 className="text-black text-center lg:text-start text-xl sm:text-2xl lg:text-4xl xl:text-5xl font-extrabold mb-3" data-aos="fade-up" data-aos-delay="100">
+                  {slides[currentSlide].title1} <span className="text-headertext text-2xl sm:text-3xl lg:text-5xl xl:text-6xl font-extrabold  mb-3 wow fadeOutDownBig">{slides[currentSlide].title2}</span>{slides[currentSlide].title3}
+                </h4>
+                <h4 className="text-black text-center lg:text-start text-2xl sm:text-3xl lg:text-5xl xl:text-6xl font-extrabold mb-8" data-aos="fade-up" data-aos-delay="100">{slides[currentSlide].title4}</h4>
+                <p className="text-black text-sm sm:text-base lg:text-xl font-medium px-6 mb-12 sm:px-32 md:px-40 lg:px-0 xl:px-0" data-aos="fade-up" data-aos-delay="100">{slides[currentSlide].description}</p>
+                <div className="flex flex-row sm:flex-row gap-7 justify-center mb-16" data-aos="fade-up" data-aos-delay="100">
+                  <Link href={slides[currentSlide].href}>
+                    <button className="bg-blue px-2 py-1 lg:px-4 lg:py-2 rounded-md font-bold text-white mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">
+                      {slides[currentSlide].buttonText}
+                    </button>
+                  </Link>
+                  <Link href={slides[currentSlide].href1} className="wow fadeInRight">
+                    <button className="bg-white px-2 py-1 lg:px-4 lg:py-2 rounded-md font-bold text-black hover:bg-dark hover:text-white transition duration-300">
+                      {slides[currentSlide].buttonText1}
+                    </button>
+                  </Link>
+                </div>
+              </div>              
+              <div className="lg:w-1/2 lg:ml-8 relative ">
+                <Image src={slides[currentSlide].img} alt="img" width={979} height={575} />                
+              </div>              
             </div>
+            {/* <div className="absolute inset-y-0 left-0 flex items-center">
+              <button onClick={goToPrevSlide} className="bg-blue text-white rounded-full w-6 sm:w-10 h-6 sm:h-10  focus:outline-none lg:w-12 lg:h-12">
+                &#10094;
+              </button>
+            </div> */}
           </div>
+
         </div>
         <div className="">
           <div className="container mx-auto gap-5 flex flex-col lg:gap-5 lg:flex-row items-center justify-between">
