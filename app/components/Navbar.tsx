@@ -155,38 +155,38 @@ const Navbar = () => {
                             </button>
                             {/* Dropdown menu */}
                             <ul className={`origin-top-right z-50 absolute top-full left-1/2 -translate-x-1/2 min-w-[240px] bg-white border border-slate-200 p-2 rounded-lg shadow-xl ${isOpens ? 'block' : 'hidden'}`}>
-                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
-                                    <SlArrowRight size={10} />
+                                <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} className="ml-2" />
                                     <Link href="/" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesSubmenuClick}>
                                         Health Care
                                     </Link>
                                 </li>
-                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
-                                    <SlArrowRight size={10} />
+                                <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} className="ml-2" />
                                     <Link href="/" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesSubmenuClick}>
                                         Fintech
                                     </Link>
                                 </li>
-                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
-                                    <SlArrowRight size={10} />
+                                <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} className="ml-2" />
                                     <Link href="/retail" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesSubmenuClick}>
                                         Retail & E-commerce
                                     </Link>
                                 </li>
-                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
-                                    <SlArrowRight size={10} />
+                                <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} className="ml-2" />
                                     <Link href="/" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesSubmenuClick}>
                                         Travel & Hospitality
                                     </Link>
                                 </li>
-                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
-                                    <SlArrowRight size={10} />
+                                <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} className="ml-2" />
                                     <Link href="/" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesSubmenuClick}>
                                         Real Estate
                                     </Link>
                                 </li>
-                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
-                                    <SlArrowRight size={10} />
+                                <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} className="ml-2" />
                                     <Link href="/" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesSubmenuClick}>
                                         Any Beyond
                                     </Link>
@@ -214,26 +214,26 @@ const Navbar = () => {
                             </button>
                             {/* Dropdown menu */}
                             <ul className={`origin-top-right z-50 absolute top-full left-1/2 -translate-x-1/2 min-w-[240px] bg-white border border-slate-200 p-2 rounded-lg shadow-xl ${isOpenAbout ? 'block' : 'hidden'}`}>
-                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
-                                    <SlArrowRight size={10} />
+                                <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} className="ml-2" />
                                     <Link href="/about" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesAboutSubmenuClick}>
                                         About Us
                                     </Link>
                                 </li>
-                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
-                                    <SlArrowRight size={10} />
+                                <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} className="ml-2" />
                                     <Link href="/workculture" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesAboutSubmenuClick}>
                                         Our Culture
                                     </Link>
                                 </li>
-                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
-                                    <SlArrowRight size={10} />
+                                <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} className="ml-2" />
                                     <Link href="/" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesAboutSubmenuClick}>
                                         Our Team
                                     </Link>
                                 </li>
-                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
-                                    <SlArrowRight size={10} />
+                                <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} className="ml-2" />
                                     <Link href="/missionstory" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesAboutSubmenuClick}>
                                         Our Story
                                     </Link>
