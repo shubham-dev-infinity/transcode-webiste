@@ -102,38 +102,38 @@ const Navbar = () => {
                             </button>
                             {/* Dropdown menu */}
                             <ul className={`origin-top-right z-50 absolute top-full left-1/2 -translate-x-1/2 min-w-[240px] bg-white border border-slate-200 p-2 rounded-lg shadow-xl ${isOpen ? 'block' : 'hidden'}`}>
-                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
-                                    <SlArrowRight size={10} />
+                                <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} className="ml-2" />
                                     <Link href="/services/software" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handleSubmenuClick}>
                                         Software Development
                                     </Link>
                                 </li>
-                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
-                                    <SlArrowRight size={10} />
+                                <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} className="ml-2" />
                                     <Link href="/services/consulting" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handleSubmenuClick}>
                                         Consulting Advisory
                                     </Link>
                                 </li>
-                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
-                                    <SlArrowRight size={10} />
+                                <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} className="ml-2" />
                                     <Link href="/services/integration" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handleSubmenuClick}>
                                         SystemIntegration
                                     </Link>
                                 </li>
-                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
-                                    <SlArrowRight size={10} />
+                                <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} className="ml-2" />
                                     <Link href="/services/managedservices" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handleSubmenuClick}>
                                         Managed Services
                                     </Link>
                                 </li>
-                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
-                                    <SlArrowRight size={10} />
+                                <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} className="ml-2" />
                                     <Link href="/services/training" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handleSubmenuClick}>
                                         Training
                                     </Link>
                                 </li>
-                                <li className="flex items-center hover:translate-x-4 hover:text-blue">
-                                    <SlArrowRight size={10} />
+                                <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} className="ml-2"/>
                                     <Link href="/services/quality" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handleSubmenuClick}>
                                         Quality Testing
                                     </Link>
