@@ -228,7 +228,7 @@ const Navbar = () => {
                                 </li>
                                 <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
                                     <SlArrowRight size={10} className="ml-2" />
-                                    <Link href="/" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesAboutSubmenuClick}>
+                                    <Link href="/ourteam" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesAboutSubmenuClick}>
                                         Our Team
                                     </Link>
                                 </li>
