@@ -167,7 +167,7 @@ const Footer = () => {
             </div>
 
             <div className="container mx-auto text-white grid grid-cols-1 sm:grid-cols-2 gap-8 p-3">
-                <div className="sm:col-start-1">                
+                <div className="sm:col-start-1">
                     <div className="grid grid-cols-12 items-start mt-6">
                         <Image src={FlagOfIndia} alt="Flag_of_India" width={50} height={33.34} className="col-span-12 sm:col-span-2 lg:col-span-12 xl:col-span-1 mb-3 sm:mb-0 lg:pb-2 xl:pb-0" />
                         <div className="ml-3 col-span-12 sm:col-span-5">
@@ -178,7 +178,7 @@ const Footer = () => {
                             <p className="text-sm my-2 col-span-12">Email: ceo@transcodesolution.com</p>
                         </div>
                     </div>
-                </div>              
+                </div>
                 <div className="grid grid-cols-12 sm:items-start mt-6 justify-end">
                     <Image src={Oman} alt="Oman" width={60} height={30} className="col-span-12 sm:col-span-2 lg:col-span-12 xl:ml-[340px] xl:col-span-7 mb-3 sm:mb-0 lg:pb-2 xl:pb-0" />
                     <div className="ml-3 col-span-12 sm:col-span-5 float-right">
@@ -189,7 +189,7 @@ const Footer = () => {
                         <p className="text-sm my-2 col-span-12">Email: cso@transcodesolution.com</p>
                     </div>
                 </div>
-            </div>    
+            </div>
             <hr className="container mx-auto border-t border-white mt-6 mb-4" />
             {/* <div className="container mx-auto">
                 <p className="text-white text-sm">© 2024 All Rights Reserved - transcodesolution.com</p>
@@ -262,31 +262,23 @@ const Footer = () => {
                 <p className="text-white text-sm mb-2 sm:mb-4 sm:text-left col-start-1 sm:col-start px-2 sm:px-0">© 2024 All Rights Reserved - transcodesolution.com</p>
                 <div className="flex justify-start sm:justify-end px-2 sm:px-0 gap-5 mb-4 text-white col-start-1 sm:col-start-auto sm:col-end-auto">
                     <div className="flex items-center justify-center">
-                        <Link href="https://m.facebook.com/profile.php/" target="_blank" rel="noopener noreferrer">
-                            <div className="rounded-full bg-white p-1 hover:bg-gray-200">                              
-                                <Image src={Facebook} alt="Facebook" w-6 h-6 className="w-6 h-6 text-black" />
-                            </div>
+                        <Link href="https://m.facebook.com/profile.php/" target="_blank" rel="noopener noreferrer" className="rounded-full bg-white p-1">
+                            <Image src={Facebook} alt="Facebook" width={24} height={24} className="w-6 h-6 text-black transform transition-transform hover:scale-110" />
                         </Link>
                     </div>
                     <div className="flex items-center justify-center">
-                        <Link href="dharmeshkumbhani3@gmail.com" target="_blank" rel="noopener noreferrer">
-                            <div className="rounded-full bg-white p-1 hover:bg-gray-200">                               
-                                <Image src={Twitter} alt="Twitter" w-6 h-6 className="w-6 h-6 text-black" />
-                            </div>
+                        <Link href="https://twitter.com/dharmeshkumbhani3" target="_blank" rel="noopener noreferrer" className="rounded-full bg-white p-1">
+                            <Image src={Twitter} alt="Twitter" width={24} height={24} className="w-6 h-6 text-black transform transition-transform hover:scale-110" />
                         </Link>
                     </div>
                     <div className="flex items-center justify-center">
-                        <Link href="https://youtube.com/@Dharmeshkumbhani2580?si=Ek-XLWVTscwtpP8p" target="_blank" rel="noopener noreferrer">
-                            <div className="rounded-full bg-white p-1 hover:bg-gray-200">                              
-                                <Image src={YouTube} alt="YouTube" w-6 h-6 className="w-6 h-6 text-black" />
-                            </div>
+                        <Link href="https://youtube.com/@Dharmeshkumbhani2580?si=Ek-XLWVTscwtpP8p" target="_blank" rel="noopener noreferrer" className="rounded-full bg-white p-1">
+                            <Image src={YouTube} alt="YouTube" width={24} height={24} className="w-6 h-6 text-black transform transition-transform hover:scale-110" />
                         </Link>
                     </div>
                     <div className="flex items-center justify-center">
-                        <Link href="https://in.pinterest.com/transcodesolution/" target="_blank" rel="noopener noreferrer">
-                            <div className="rounded-full bg-white p-1 hover:bg-gray-200">                                
-                                <Image src={Pinterest} alt="Pinterest" w-6 h-6 className="w-6 h-6 text-black" />
-                            </div>
+                        <Link href="https://in.pinterest.com/transcodesolution/" target="_blank" rel="noopener noreferrer" className="rounded-full bg-white p-1">
+                            <Image src={Pinterest} alt="Pinterest" width={24} height={24} className="w-6 h-6 text-black transform transition-transform hover:scale-110" />
                         </Link>
                     </div>
                 </div>

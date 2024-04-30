@@ -3,6 +3,7 @@ import style from "../components/styles.module.scss"
 import Ourteam from "@public/Assets/OurTeam.png"
 import Image from "next/image";
 import DharmeshKumbhani from "@public/Assets/DharmeshKumbhani.png"
+
 const OurTeam = () => {
     return (
         <main className="mb-20">

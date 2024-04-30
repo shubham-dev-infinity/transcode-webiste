@@ -4,10 +4,11 @@ import React, { useState } from "react";
 import WorkCulture from "./workCulture";
 import growth from "./growth";
 import hiringModel from "./hiringModel"
-import style from "../components/styles.module.scss"
+import style from "./styles.module.scss"
 import FrontEndTable from "@/utils/FrontEndTable";
 import Image from "next/image";
-import development from "./development"
+import development from "./development";
+import HiringProcess from "@public/Assets/HiringProcess.png"
 
 const RetailEcommerce = () => {
     const [selectedTab, setSelectedTab] = useState<string>('front_End');
@@ -17,18 +18,20 @@ const RetailEcommerce = () => {
     };
     return (
         <main>
-            <div className="bg-gray px-4 lg:px-28 pb-12 sm:pb-24 pt-20 sm:pt-44 mb-5 sm:mb-10">
-                <div className="container mx-auto">
-                    <h2 className="text-xl sm:text-2xl md:text-4xl font-extrabold text-center">Retail & E-commerce Software </h2>
-                    <h2 className="text-xl sm:text-2xl md:text-4xl font-extrabold text-center">Development</h2>
-                    <h4 className="text-lg sm:text-xl text-center py-3 sm:py-6">Crafting a Seamless Retail & E-commerce Experience</h4>
-                    <p className="text-sm sm:text-lg text-center px-2 sm:px-40">Transcode Solutions provides retailers with user-friendly, feature-rich e-commerce software development. Effortless integrations and adaptable scalability ensure smooth growth, helping you exceed customer expectations and capture every revenue opportunity.</p>
-                    <div className="text-center	  pt-4">
-                        <button className="bg-blue px-4 py-2 rounded-md font-bold text-white mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">Talk to an Expert</button>
+            <div className={style.heroBgImage}>
+                <div className="px-4 lg:px-28 pb-12 sm:pb-52 pt-20 sm:pt-64 mb-5 sm:mb-10 text-white">
+                    <div className="container mx-auto">
+                        <h2 className="text-xl sm:text-2xl md:text-4xl font-extrabold text-center">Retail & E-commerce Software </h2>
+                        <h2 className="text-xl sm:text-2xl md:text-4xl font-extrabold text-center">Development</h2>
+                        <h4 className="text-lg sm:text-xl text-center py-3 sm:py-6">Crafting a Seamless Retail & E-commerce Experience</h4>
+                        <p className="text-sm sm:text-lg text-center px-2 sm:px-40">Transcode Solutions provides retailers with user-friendly, feature-rich e-commerce software development. Effortless integrations and adaptable scalability ensure smooth growth, helping you exceed customer expectations and capture every revenue opportunity.</p>
+                        <div className="text-center	  pt-4">
+                            <button className="bg-blue px-4 py-2 rounded-md font-bold text-white mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">Talk to an Expert</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className="container mx-auto p-2 sm:p-4">
+            <div className="container mx-auto px-2 sm:px-4">
                 <div className="text-center mb-6 sm:mb-12">
                     <h3 className="text-lg sm:text-3xl font-extrabold mb-6 sm:mb-14"><span className="text-blue">Trusted Partner of Over 35 Satisfied Clients</span>, Including Fortune Companies</h3>
                     <h3 className="text-lg sm:text-3xl font-extrabold mb-2 sm:mb-4">Overview</h3>
@@ -186,6 +189,11 @@ const RetailEcommerce = () => {
                     <h3 className="text-2xl text-center font-extrabold pb-4">Hiring Process - A Three-Day Journey</h3>
                     <p className="text-center text-base text-gray">Develop Your Retail & E-commerce Software in 5 Simple Steps with Our Expert Developers</p>
                     <p className="text-center text-base text-blue py-6">Experience a 7-Day Trial Period for Full Satisfaction with Your Resource*.</p>
+                    <div className="flex justify-center items-center">
+                        <div className="max-w-screen-lg w-full">
+                            <Image src={HiringProcess} alt="HiringProcess" width={926} height={926} />
+                        </div>
+                    </div>
                     <div>
                         <h3 className="text-center font-extrabold text-2xl">Adaptable Hiring Model for Retail & E-commerce Software</h3>
                         <h3 className="text-center font-extrabold text-2xl">Development</h3>
@@ -231,7 +239,7 @@ const RetailEcommerce = () => {
                                 <div className="flex">
                                     <div className="col-span-6 md:col-span-3 sm:col-span-3 pl-36">
                                         <div className="relative w-10 sm:w-32 h-16 sm:h-32 rounded-full overflow-hidden border-gray shadow-md flex items-center justify-center">
-                                            <Image src={item.image} alt={item.title} className="w-full h-full"/>
+                                            <Image src={item.image} alt={item.title} className="w-full h-full" />
                                         </div>
                                     </div>
                                 </div>
@@ -267,6 +275,7 @@ const RetailEcommerce = () => {
                             );
                         })}
                     </div> */}
+
                 </div>
             </div>
         </main>
