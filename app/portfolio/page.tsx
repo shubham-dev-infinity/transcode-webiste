@@ -7,7 +7,11 @@ const Portfolio = () => {
     return (
         <div className="mb-20">
             <div className={style.heroBgImage}>
-                <HeroSection image={portfolio} text={"Portfolio"} /> 
+                <HeroSection
+                    image={portfolio}
+                    text={"Portfolio"}
+                    link="asestudy.transcodesolution.com" // Provide the link prop here
+                />
             </div>
             <div className="container mx-auto">
                 <PortfolioTabs />

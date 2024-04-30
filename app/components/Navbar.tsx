@@ -8,11 +8,14 @@ import { SlArrowRight } from "react-icons/sl";
 const Navbar = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [isDropdownOpens, setIsDropdownOpens] = useState(false);
+    const [isDropdownOpenPortfolio, setIsDropdownOpenPortfolio] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isAboutDropdownOpens, setIsAboutDropdownOpens] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
     const [isOpens, setIsOpens] = useState(false);
     const [isOpenAbout, setIsOpenAbout] = useState(false)
+    const [isOpenPortfolio, setIsOpenPortfolio] = useState(false)
+    const externalUrl = "https://casestudy.transcodesolution.com";
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
@@ -22,6 +25,10 @@ const Navbar = () => {
     }
     const toggleAboutMenu = () => {
         setIsOpenAbout(!isOpenAbout);
+    }
+
+    const togglePortfolioMenu = () => {
+        setIsOpenPortfolio(!isOpenPortfolio)
     }
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -60,6 +67,13 @@ const Navbar = () => {
         closeMobileMenu();
         toggleAboutMenu();
     };
+
+
+    const handlesPortFolioSubmenuClick = () => {
+        setIsDropdownOpenPortfolio(false);
+        closeMobileMenu();
+        togglePortfolioMenu();
+    }
 
     useEffect(() => {
         const handleResize = () => {
@@ -175,7 +189,7 @@ const Navbar = () => {
                                 </li>
                                 <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
                                     <SlArrowRight size={10} className="ml-2" />
-                                    <Link href="/" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesSubmenuClick}>
+                                    <Link href="/travelhospitality" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesSubmenuClick}>
                                         Travel & Hospitality
                                     </Link>
                                 </li>
@@ -194,9 +208,37 @@ const Navbar = () => {
                                 {/* Add more list items here */}
                             </ul>
                         </div>
-                        <Link href="/portfolio" onClick={closeMobileMenu}>
+                        {/* <Link href="/portfolio" onClick={closeMobileMenu}>
                             <span className="hover:text-blue hover:border-b-4 px-3.5  hover:border-blue font-bold text-lg">PORTFOLIO</span>
-                        </Link>
+                        </Link> */}
+                        <div
+                            onMouseEnter={() => setIsOpenPortfolio(true)} onMouseLeave={() => setIsOpenPortfolio(false)}
+                            className="relative"
+                        >
+                            <button
+                                aria-expanded={isOpenPortfolio} onClick={togglePortfolioMenu}
+                                id="portfolioDropdownButton"
+                                className="hover:text-blue hover:border-b-4 px-3.5  hover:border-blue font-bold text-lg"
+                                type="button"
+                            >
+                                PORTFOLIO
+                            </button>
+                            {/* Dropdown menu */}
+                            <ul className={`origin-top-right z-50 absolute top-full left-1/2 -translate-x-1/2 min-w-[240px] bg-white border border-slate-200 p-2 rounded-lg shadow-xl ${isOpenPortfolio ? 'block' : 'hidden'}`}>
+                                <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} className="ml-2" />
+                                    <Link href="/portfolio" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesPortFolioSubmenuClick}>
+                                        PortFolio
+                                    </Link>
+                                </li>
+                                <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
+                                    <SlArrowRight size={10} className="ml-2" />
+                                    <Link href={externalUrl} target="_blank" rel="noopener noreferrer" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesPortFolioSubmenuClick}>
+                                        CaseStudy
+                                    </Link>
+                                </li>                               
+                            </ul>
+                        </div>
                         <Link href="/blog" onClick={closeMobileMenu}>
                             <span className="hover:text-blue hover:border-b-4 px-3.5  hover:border-blue font-bold text-lg">BLOG</span>
                         </Link>                       
@@ -351,7 +393,7 @@ const Navbar = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesSubmenuClick}>
+                                    <Link href="/travelhospitality" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesSubmenuClick}>
                                         Travel & Hospitality
                                     </Link>
                                 </li>
@@ -372,9 +414,39 @@ const Navbar = () => {
                         onMouseEnter={toggleMobileMenu}
                         onMouseLeave={toggleMobileMenu}
                         className="relative">
-                        <Link href="/portfolio" >
+                        {/* <Link href="/portfolio" >
                             <span className="block py-2 px-4 text-blue hover:bg-blue hover:text-white font-semibold">PORTFOLIO</span>
-                        </Link>
+                        </Link> */}
+                        <div
+                            onMouseEnter={handleAboutDropdownsClick}
+                            onMouseLeave={handleAboutDropdownsClick}
+                            className="relative">
+                            <button
+                                id="portfolioDropdownButtonMobile"
+                                className="block py-2 px-4 text-blue hover:bg-blue hover:text-white w-full text-left font-semibold"
+                                aria-expanded={isOpenPortfolio} onClick={togglePortfolioMenu}
+                            >
+                                PORTFOLIO
+                            </button>
+                            <div
+                                id="dropdownDelay"
+                                className={`z-10 ${isOpenPortfolio ? 'block' : 'hidden'} bg-white divide-y
+                             divide-gray-100 rounded-lg shadow w-full dark:bg-gray-700 absolute top-full left-0 mt-1`}
+                            >
+                                <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="portfolioDropdownButtonMobile">
+                                    <li>
+                                        <Link href="/portfolio" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesPortFolioSubmenuClick}>
+                                            PortFolio
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="https://casestudy.transcodesolution.com" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesPortFolioSubmenuClick}>
+                                            CaseStudy
+                                        </Link>
+                                    </li>                                    
+                                </ul>
+                            </div>
+                        </div>
                         <Link href="/blog" >
                             <span className="block py-2 px-4 text-blue hover:bg-blue hover:text-white font-semibold">BLOG</span>
                         </Link>                       

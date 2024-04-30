@@ -45,14 +45,14 @@ const RetailEcommerce = () => {
                         <div key={index} className="col-span-12 md:col-span-6 p-2 bg-gray rounded-3xl">
                             <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 mt-3 mb-2 sm:mb-4">
                                 <div className="col-span-3 sm:col-span-3 pl-4 flex justify-center">
-                                    <div className="relative w-20 h-20 sm:w-20 sm:h-20 rounded-full overflow-hidden border-4 sm:border-6 border-gray shadow-md flex items-center justify-center">
+                                    <div className="relative w-20 h-20 sm:w-20 sm:h-20 rounded-full overflow-hidden border-2 border-blue border-gray shadow-md flex items-center justify-center">
                                         <Image src={item.image} alt={item.title} className="w-full h-full object-none" />
                                     </div>
                                 </div>
                                 <div className="col-span-9 sm:col-span-9 pr-2">
                                     <h4 className="text-sm sm:text-xl font-semibold pt-1 sm:pt-3">{item.title}</h4>
                                     <p className="text-xs sm:text-base text-gray pt-3 sm:pt-6 pb-4">{item.description}</p>
-                                    <button className="bg-blue px-2 sm:px-4 py-1 sm:py-2 rounded-md font-bold text-white mb-1 sm:mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl pb-">{item.buttonText}</button>
+                                    <button className="bg-blue text-sm sm:text-base px-2 sm:px-4 py-1 sm:py-2 rounded-md font-bold text-white mb-1 sm:mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl pb-">{item.buttonText}</button>
                                 </div>
                             </div>
                         </div>
@@ -85,18 +85,18 @@ const RetailEcommerce = () => {
                         <p className="text-xs sm:text-base text-gray py-2 sm:pb-4">Our Ecommerce solutions seamlessly integrate with third-party services and APIs, increasing the capabilities of your platform. In addition, our future-ready services ensure seamless upgrades, accommodating module introductions, and migration from legacy systems to updated versions ensuring the future of your online store.</p>
                     </div>
                 </div>
-                <div className="text-center mt-8 mb-16">
-                    <button className="bg-blue px-2 sm:px-4 py-1 sm:py-2 rounded-md font-bold text-white mb-1 sm:mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">Consult Transcode</button>
+                <div className="text-center mt-4 sm:mt-8 mb-4 sm:mb-16">
+                    <button className="bg-blue px-2 sm:px-4 py-1 sm:py-2 text-sm sm:text-base rounded-md font-bold text-white mb-1 sm:mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">Consult Transcode</button>
                 </div>
                 <div className="text-center">
-                    <h3 className="text-2xl font-extrabold pb-4">Technologies</h3>
-                    <h3 className="text-blue text-xl"> Technologies & Platforms We Engage With</h3>
+                    <h3 className="text-lg sm:text-2xl font-extrabold pb-4">Technologies</h3>
+                    <h3 className="text-blue text-base sm:text-xl"> Technologies & Platforms We Engage With</h3>
                 </div>
                 <div className="text-sm font-medium text-center text-gray-500 mb-10">
                     <ul className="flex justify-center flex-wrap mt-6 mb-3">
                         <li className="me-2">
                             <div
-                                className={`inline-block px-8 py-4 border-b-2 text-xl border-transparent rounded-t-lg hover:text-blue hover:border-b-4 hover:border-blue dark:hover:text-gray-300 cursor-pointer ${selectedTab === 'front_End' ? 'text-blue border-gray dark:text-gray-300 dark:border-gray-300' : ''
+                                className={`inline-block px-2 sm:px-8 py-1 sm:py-4  border-b-2 text-base sm:text-xl border-transparent rounded-t-lg hover:text-blue hover:border-b-4 hover:border-blue dark:hover:text-gray-300 cursor-pointer ${selectedTab === 'front_End' ? 'text-blue border-gray dark:text-gray-300 dark:border-gray-300' : ''
                                     }`}
                                 onClick={() => handleTabClick('front_End')}
                             >
@@ -105,7 +105,7 @@ const RetailEcommerce = () => {
                         </li>
                         <li className="me-2">
                             <div
-                                className={`inline-block px-8 py-4 border-b-2 text-xl border-transparent rounded-t-lg hover:text-blue hover:border-b-4 hover:border-blue dark:hover:text-gray-300 cursor-pointer ${selectedTab === 'back_End' ? 'text-blue border-gray dark:text-gray-300 dark:border-gray-300' : ''
+                                className={`inline-block px-2 sm:px-8 py-1 sm:py-4  border-b-2 text-base sm:text-xl border-transparent rounded-t-lg hover:text-blue hover:border-b-4 hover:border-blue dark:hover:text-gray-300 cursor-pointer ${selectedTab === 'back_End' ? 'text-blue border-gray dark:text-gray-300 dark:border-gray-300' : ''
                                     }`}
                                 onClick={() => handleTabClick('back_End')}
                             >
@@ -114,7 +114,7 @@ const RetailEcommerce = () => {
                         </li>
                         <li className="me-2">
                             <div
-                                className={`inline-block px-8 py-4 border-b-2 text-xl border-transparent rounded-t-lg hover:text-blue hover:border-b-4 hover:border-blue dark:hover:text-gray-300 cursor-pointer ${selectedTab === 'Mobile' ? 'text-blue border-blue dark:text-gray-300 dark:border-gray-300' : ''
+                                className={`inline-block px-2 sm:px-8 py-1 sm:py-4  border-b-2 text-base sm:text-xl border-transparent rounded-t-lg hover:text-blue hover:border-b-4 hover:border-blue dark:hover:text-gray-300 cursor-pointer ${selectedTab === 'Mobile' ? 'text-blue border-blue dark:text-gray-300 dark:border-gray-300' : ''
                                     }`}
                                 onClick={() => handleTabClick('Mobile')}
                             >
@@ -123,7 +123,7 @@ const RetailEcommerce = () => {
                         </li>
                         <li className="me-2">
                             <div
-                                className={`inline-block px-8 py-4 border-b-2 text-xl border-transparent rounded-t-lg hover:text-blue hover:border-b-4 hover:border-blue dark:hover:text-gray-300 cursor-pointer ${selectedTab === 'CMS' ? 'text-blue border-blue dark:text-gray-300 dark:border-gray-300' : ''
+                                className={`inline-block px-2 sm:px-8 py-1 sm:py-4  border-b-2 text-base sm:text-xl border-transparent rounded-t-lg hover:text-blue hover:border-b-4 hover:border-blue dark:hover:text-gray-300 cursor-pointer ${selectedTab === 'CMS' ? 'text-blue border-blue dark:text-gray-300 dark:border-gray-300' : ''
                                     }`}
                                 onClick={() => handleTabClick('CMS')}
                             >
@@ -132,7 +132,7 @@ const RetailEcommerce = () => {
                         </li>
                         <li className="me-2">
                             <div
-                                className={`inline-block px-8 py-4 border-b-2 text-xl border-transparent rounded-t-lg hover:text-blue hover:border-b-4 hover:border-blue dark:hover:text-gray-300 cursor-pointer ${selectedTab === 'Database' ? 'text-blue border-blue dark:text-gray-300 dark:border-gray-300' : ''
+                                className={`inline-block px-2 sm:px-8 py-1 sm:py-4 border-b-2 text-base sm:text-xl border-transparent rounded-t-lg hover:text-blue hover:border-b-4 hover:border-blue dark:hover:text-gray-300 cursor-pointer ${selectedTab === 'Database' ? 'text-blue border-blue dark:text-gray-300 dark:border-gray-300' : ''
                                     }`}
                                 onClick={() => handleTabClick('Database')}
                             >
@@ -146,26 +146,26 @@ const RetailEcommerce = () => {
                     {/* Render other PortfolioTemplates based on other tabs */}
                 </div>
                 <div className="text-center">
-                    <button className=" bg-blue text-white rounded-lg p-2">Schedule a Developers Interview</button>
+                    <button className=" bg-blue text-white text-sm sm:text-lg rounded-lg p-2 mt-4">Schedule a Developers Interview</button>
                 </div>
-                <div className="text-center mb-4 mt-16">
-                    <h3 className="text-2xl font-extrabold">Overview</h3>
-                    <p className="text-gray text-lg py-4">Enhance Your Retail & E-commerce with Our Software Solutions</p>
-                    <p className="text-blue text-lg">Transcode Solution: Empowering Your Retail & E-commerce Success</p>
-                    <h3 className="text-xl font-extrabold py-5">Embark on a journey of digital transformation with Transcode Solution &apos;s end-to-end retail and e-commerce software development solutions. Our process begins with strategic consulting to craft your winning strategy and extends to expert website development, tailored mobile app creation, B2C expertise, cloud solutions, WooCommerce proficiency, seamless payment gateway integrations, and robust marketplace builds.</h3>
-                    <h3 className="text-xl font-extrabold ">Transform your product offerings into seamless digital experiences that engage customers and boost revenue. Choose Transcode Solution as your partner for the software solutions driving your retail and e-commerce growth.</h3>
+                <div className="text-center mb-4 mt-6 sm:mt-16">
+                    <h3 className="text-lg sm:text-2xl font-extrabold">Overview</h3>
+                    <p className="text-gray text-sm sm:text-lg py-4">Enhance Your Retail & E-commerce with Our Software Solutions</p>
+                    <p className="text-blue text-sm sm:text-lg">Transcode Solution: Empowering Your Retail & E-commerce Success</p>
+                    <h3 className="text-base sm:text-xl font-extrabold py-5">Embark on a journey of digital transformation with Transcode Solution &apos;s end-to-end retail and e-commerce software development solutions. Our process begins with strategic consulting to craft your winning strategy and extends to expert website development, tailored mobile app creation, B2C expertise, cloud solutions, WooCommerce proficiency, seamless payment gateway integrations, and robust marketplace builds.</h3>
+                    <h3 className="text-base sm:text-xl font-extrabold ">Transform your product offerings into seamless digital experiences that engage customers and boost revenue. Choose Transcode Solution as your partner for the software solutions driving your retail and e-commerce growth.</h3>
                 </div>
                 <div className="grid grid-cols-12 gap-6 sm:gap-10 my-4 sm:my-10">
                     {growth.map((item, index) => (
                         <div key={index} className="col-span-12 md:col-span-4 p-2 bg-gray rounded-3xl">
                             <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 mt-3 mb-2 sm:mb-4">
                                 <div className="col-span-3 sm:col-span-3 pl-4 flex justify-center">
-                                    <div className="relative w-10 sm:w-20 h-16 sm:h-20 rounded-full overflow-hidden border-4 sm:border-6 border-gray shadow-md flex items-center justify-center">
+                                    <div className="relative w-16 sm:w-20 h-16 sm:h-20 rounded-full overflow-hidden border-2 border-blue border-gray shadow-md flex items-center justify-center">
                                         <Image src={item.image} alt={item.title} className="w-full h-full object-none" />
                                     </div>
                                 </div>
                                 <div className="col-span-8 sm:col-span-8 ">
-                                    <h4 className="text-sm sm:text-lg text-blue font-semibold pt-1 pl-6 sm:pt-3">{item.title}</h4>
+                                    <h4 className="text-base sm:text-lg text-blue font-semibold pt-1 pl-6 sm:pt-3">{item.title}</h4>
                                     <ul className="list-disc pl-10">
                                         <li className="text-xs sm:text-sm">
                                             {item.list1}
@@ -185,25 +185,25 @@ const RetailEcommerce = () => {
                         </div>
                     ))}
                 </div>
-                <div className="mt-16">
-                    <h3 className="text-2xl text-center font-extrabold pb-4">Hiring Process - A Three-Day Journey</h3>
-                    <p className="text-center text-base text-gray">Develop Your Retail & E-commerce Software in 5 Simple Steps with Our Expert Developers</p>
-                    <p className="text-center text-base text-blue py-6">Experience a 7-Day Trial Period for Full Satisfaction with Your Resource*.</p>
+                <div className="mt-8 sm:mt-16">
+                    <h3 className="text-base sm:text-2xl text-center font-extrabold pb-2 sm:pb-4">Hiring Process - A Three-Day Journey</h3>
+                    <p className="text-center text-sm sm:text-base text-gray">Develop Your Retail & E-commerce Software in 5 Simple Steps with Our Expert Developers</p>
+                    <p className="text-center text-sm sm:text-base text-blue py-3 sm:py-6">Experience a 7-Day Trial Period for Full Satisfaction with Your Resource*.</p>
                     <div className="flex justify-center items-center">
                         <div className="max-w-screen-lg w-full">
                             <Image src={HiringProcess} alt="HiringProcess" width={926} height={926} />
                         </div>
                     </div>
                     <div>
-                        <h3 className="text-center font-extrabold text-2xl">Adaptable Hiring Model for Retail & E-commerce Software</h3>
-                        <h3 className="text-center font-extrabold text-2xl">Development</h3>
+                        <h3 className="text-center font-extrabold text-base sm:text-2xl">Adaptable Hiring Model for Retail & E-commerce Software</h3>
+                        <h3 className="text-center font-extrabold text-base sm:text-2xl">Development</h3>
                     </div>
                     <div className="grid grid-cols-12 gap-6 sm:gap-10 my-4 sm:my-10">
                         {hiringModel.map((item, index) => (
                             <div key={index} className="col-span-12 md:col-span-3 pl-4 pt-4 bg-gray rounded-3xl">
                                 <div className="flex">
                                     <div className="col-span-6 md:col-span-3 sm:col-span-3">
-                                        <div className="relative w-10 sm:w-20 h-16 sm:h-20 rounded-full overflow-hidden border-4 sm:border-6 border-gray shadow-md flex items-center justify-center">
+                                        <div className="relative w-16 sm:w-20 h-16 sm:h-20 rounded-full overflow-hidden border-2 border-blue border-gray shadow-md flex items-center justify-center">
                                             <Image src={item.image} alt={item.title} className="w-full h-full object-none" />
                                         </div>
                                     </div>
@@ -231,21 +231,21 @@ const RetailEcommerce = () => {
                     </div>
                 </div>
                 <div>
-                    <h3 className="text-center text-2xl font-extrabold">Why Us</h3>
-                    <h3 className="text-center text-base text-gray">Why Clients Trust Us for Retail & E-commerce Software Development?</h3>
+                    <h3 className="text-center text-lg sm:text-2xl font-extrabold">Why Us</h3>
+                    <h3 className="text-center text-lg sm:text-2xl text-gray">Why Clients Trust Us for Retail & E-commerce Software Development?</h3>
                     <div className="grid grid-cols-12 gap-6 sm:gap-20 my-4 sm:my-10">
                         {development.map((item, index) => (
                             <div key={index} className="col-span-12 md:col-span-4 pt-4 bg-gray rounded-3xl">
                                 <div className="flex">
-                                    <div className="col-span-6 md:col-span-3 sm:col-span-3 pl-36">
-                                        <div className="relative w-10 sm:w-32 h-16 sm:h-32 rounded-full overflow-hidden border-gray shadow-md flex items-center justify-center">
+                                    <div className="col-span-6 md:col-span-3 sm:col-span-3 pl-32 sm:pl-36">
+                                        <div className="relative w-16 h-16 sm:w-32 sm:h-32 rounded-full overflow-hidden border-gray shadow-md flex items-center justify-center">
                                             <Image src={item.image} alt={item.title} className="w-full h-full" />
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-span-8 sm:col-span-8 pt-3 mb-10">
-                                    <h4 className="text-center text-sm sm:text-lg font-extrabold pt-1 ">{item.title}</h4>
-                                    <p className="text-center sm:text-sm text-lg ">
+                                <div className="col-span-8 sm:col-span-8 pt-3 mb-10 px-4">
+                                    <h4 className="text-center text-base sm:text-lg font-extrabold pt-1 ">{item.title}</h4>
+                                    <p className="text-center text-sm sm:text-lg">
                                         {item.list1}
                                     </p>
                                 </div>

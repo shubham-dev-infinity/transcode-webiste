@@ -9,7 +9,7 @@ const NavSocialMedia = () => {
             <div className="container mx-auto text-white py-0.5 flex items-center justify-between ">
                 <div className="text-white">
                     <Link href="mailto:company@example.com">
-                        <span className="hover:underline">company@example123.com</span>
+                        <span className="hover:underline">Email : info@transcodesolution.com</span>
                     </Link>
                 </div>
                 <div className="flex space-x-4">
