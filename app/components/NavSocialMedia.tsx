@@ -19,17 +19,17 @@ const NavSocialMedia = () => {
                         </span>
                     </Link>
                     <Link href="https://www.instagram.com/nextorbitz" target="_blank" rel="noopener noreferrer">
-                        <span className="text-xl hover:text-pink-500">
+                        <span className="text-xl hover:text-white">
                             <FaInstagramSquare />
                         </span>
                     </Link>
                     <Link href="https://m.facebook.com/profile.php/" target="_blank" rel="noopener noreferrer">
-                        <span className="text-xl hover:text-blue-500">
+                        <span className="text-xl hover:text-white">
                             <FaFacebookSquare />
                         </span>
                     </Link>
                     <Link href="company-behance" target="_blank" rel="noopener noreferrer">
-                        <span className="text-xl hover:text-blue-500">
+                        <span className="text-xl hover:text-white">
                             <FaBehanceSquare />
                         </span>
                     </Link>
