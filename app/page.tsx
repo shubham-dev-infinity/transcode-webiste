@@ -108,6 +108,14 @@ const Home: React.FC<HomeProps> = () => {
   return (
     <main>
       <div className="relative mb-10 overflow-hidden">
+        <Image
+          src="/Assets/BgSlider.png"
+          alt="Hero Background Image"
+          layout="fill"
+          objectFit="cover"
+          className="hidden"
+          priority={true}
+        />
         <div className={style.heroBgImage}>
           <div className="container mx-auto flex flex-col lg:flex-row justify-center items-center lg:items-start pt-8 sm:pt-16 lg:pt-32">
             <div className="lg:w-1/2 lg:mr-8">
@@ -226,7 +234,7 @@ const Home: React.FC<HomeProps> = () => {
             <h3 className="text-center text-2xl md:text-3xl font-extrabold pb-4"><span className="text-blue">OUR TECHNOLOGY</span> EXPERTISE</h3>
             <ul className="mb-2 flex flex-wrap text-sm font-medium text-center justify-center" id="default-tab" role="tablist">
               <li className="me-2" role="presentation">
-                <button
+                {/* <button
                   className={`inline-block p-2 sm:p-4 border-b-2 rounded-t-lg text-lg sm:text-xl hover:text-blue hover:border-b-4 hover:border-blue ${activeTab === 'webdevelopment' ? 'border-b-4 border-blue' : 'border-transparent'}`}
                   id="webdevelopment-tab"
                   data-tabs-target="#webdevelopment"
@@ -234,6 +242,18 @@ const Home: React.FC<HomeProps> = () => {
                   role="tab"
                   aria-controls="webdevelopment"
                   aria-selected={activeTab === 'webdevelopment'}
+                  onClick={() => handleTabClick('webdevelopment')}
+                >
+                  Web Development
+                </button> */}
+                <button
+                  className={`inline-block p-2 sm:p-4 border-b-2 rounded-t-lg text-lg sm:text-xl hover:text-blue hover:border-b-4 hover:border-blue ${activeTab === 'webdevelopment' ? 'border-b-4 border-blue' : 'border-transparent'}`}
+                  id="webdevelopment-tab"
+                  data-tabs-target="#webdevelopment"
+                  type="button"
+                  role="tab"
+                  aria-controls="webdevelopment-content" // Updated ID to match corresponding content
+                  aria-selected={activeTab === 'webdevelopment' ? 'true' : 'false'} // Converted to string value
                   onClick={() => handleTabClick('webdevelopment')}
                 >
                   Web Development
