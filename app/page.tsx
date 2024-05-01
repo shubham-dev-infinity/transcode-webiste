@@ -151,7 +151,7 @@ const Home: React.FC<HomeProps> = () => {
             </div> */}
         </div>
       </div>
-      <div className="container mx-auto overflow-x-hidden">
+      <div className="container mx-auto overflow-hidden">
         <div className="gap-5 flex flex-col lg:gap-5 lg:flex-row items-center justify-between">
           <div className="flex-1 lg:order-2" >
             <Image
