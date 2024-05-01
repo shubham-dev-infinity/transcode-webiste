@@ -72,7 +72,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ image, text, discription, lin
                                 CaseStudy
                             </Link>
                         )}
-                        {(externalUrl1) && (
+                        {(link && externalUrl1) && (
                             <Link href={externalUrl1} target="_blank" rel="noopener noreferrer" className="bg-blue px-4 py-2 sm:px-14 sm:py-4 sm:mt-5 rounded-md font-bold text-white mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">
                                 PortFolio
                             </Link>
