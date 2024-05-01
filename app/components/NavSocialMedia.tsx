@@ -8,7 +8,7 @@ const NavSocialMedia = () => {
         <div className="hidden sm:flex text-white p-4 items-center justify-between h-[50px] bg-blue">
             <div className="container mx-auto text-white py-0.5 flex items-center justify-between ">
                 <div className="text-white">
-                    <Link href="mailto:company@example.com">
+                    <Link href="mailto:company@example.com" aria-label="Email: info@transcodesolution.com">
                         <span className="hover:underline" >Email : info@transcodesolution.com</span>
                     </Link>
                 </div>
