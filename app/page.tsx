@@ -246,18 +246,19 @@ const Home: React.FC<HomeProps> = () => {
                 >
                   Web Development
                 </button> */}
-                <button
-                  className={`inline-block p-2 sm:p-4 border-b-2 rounded-t-lg text-lg sm:text-xl hover:text-blue hover:border-b-4 hover:border-blue ${activeTab === 'webdevelopment' ? 'border-b-4 border-blue' : 'border-transparent'}`}
-                  id="webdevelopment-tab"
-                  data-tabs-target="#webdevelopment"
-                  type="button"
-                  role="tab"
-                  aria-controls="webdevelopment-content" // Updated ID to match corresponding content
-                  aria-selected={activeTab === 'webdevelopment' ? 'true' : 'false'} // Converted to string value
-                  onClick={() => handleTabClick('webdevelopment')}
-                >
+                <div className={`inline-block p-2 sm:p-4 border-b-2 rounded-t-lg text-lg sm:text-xl hover:text-blue hover:border-b-4 hover:border-blue ${activeTab === 'webdevelopment' ? 'border-b-4 border-blue' : 'border-transparent'}`}>
+                  <button
+                    id="webdevelopment-tab"
+                    data-tabs-target="#webdevelopment"
+                    type="button"
+                    role="tab"
+                    aria-controls="webdevelopment-content"
+                    aria-selected={activeTab === 'webdevelopment' ? 'true' : 'false'}
+                    onClick={() => handleTabClick('webdevelopment')}
+                  >
                   Web Development
-                </button>
+                  </button>
+                </div>
               </li>
               <li className="me-2" role="presentation">
                 <button
