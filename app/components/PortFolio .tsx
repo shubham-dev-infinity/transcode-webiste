@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StaticImageData } from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { useRouter } from 'next/navigation';
 interface PortfolioProps {
     images: StaticImageData[];
@@ -23,14 +23,19 @@ const Portfolio: React.FC<PortfolioProps> = ({ images }) => {
             {imagesToShow.map((image: StaticImageData, index: number) => (
                 <div key={index}>
                     {/* <img src={image.src} alt={`Portfolio Image ${index + 1}`} className="w-full h-full object-cover hover:scale-105 hover:shadow-2xl " /> */}
-                    <img
+                    {/* <img
                         src={image.src}
                         alt={`Portfolio Image ${index + 1}`}
                         className="w-full h-full object-cover hover:scale-105 hover:shadow-2xl"
                         data-aos="flip-right"
                         data-aos-delay="100"
+                    /> */}
+                    <Image src={image.src} alt={`Portfolio Image ${index + 1}`}
+                        className="w-full h-full object-cover hover:scale-105 hover:shadow-2xl"
+                        data-aos="flip-right"
+                        data-aos-delay="100"
+                        width={500} height={500}
                     />
-
                 </div>
             ))}
             {/* Show more button */}
