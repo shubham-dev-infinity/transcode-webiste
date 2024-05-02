@@ -294,7 +294,7 @@ const Navbar = () => {
                     <div className=" flex">
                         {/* <button className="bg-blue px-4 py-2 rounded-md font-bold text-white hover:bg-white hover:text-blue hover:shadow-2xl hover:border-blue">LET’S TALK</button> */}
                         <Link href="/contactus">
-                            <span className="bg-blue px-4 py-2 rounded-md font-bold text-white hover:bg-white hover:text-blue hover:shadow-2xl hover:border-blue">LET’S TALK</span>
+                            <span className="bg-black px-4 py-2 rounded-md font-bold text-white hover:bg-white hover:text-blue hover:shadow-2xl hover:border-blue">LET’S TALK</span>
                         </Link>
                         <button
                             onClick={toggleMobileMenu}
