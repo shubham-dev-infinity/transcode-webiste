@@ -10,6 +10,7 @@ import Script from 'next/script';
 // import "../public/Assets/vender/aos/css/animate.css"
 import "../public/Assets/vender/aos/css/aos.css"
 import NavSocialMedia from './components/NavSocialMedia';
+import BackToTopButton from './components/BackToTopButton';
 declare global {
   interface Window {
     AOS: any; // Adjust the type as needed, using `any` for simplicity here
@@ -50,6 +51,7 @@ export default function RootLayout({
         </header>
           {children}
         <Footer />
+        <BackToTopButton />
         {/* <Script src="/Assets/vender/aos/js/aos.js"></Script>*/}
         <Script
           src="/Assets/vender/aos/js/aos.js"
