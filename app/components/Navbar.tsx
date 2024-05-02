@@ -237,7 +237,7 @@ const Navbar = () => {
                                 </li>
                                 <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
                                     <SlArrowRight size={10} className="ml-2" />
-                                    <Link href={externalUrl} target="_blank" rel="noopener noreferrer" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesPortFolioSubmenuClick}>
+                                    <Link href={externalUrl} rel="noopener noreferrer" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesPortFolioSubmenuClick}>
                                         CaseStudy
                                     </Link>
                                 </li>
@@ -440,7 +440,7 @@ const Navbar = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="https://casestudy.transcodesolution.com" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesPortFolioSubmenuClick}>
+                                    <Link href={externalUrl} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesPortFolioSubmenuClick}>
                                         CaseStudy
                                     </Link>
                                 </li>
