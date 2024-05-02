@@ -58,7 +58,7 @@ interface HeroSectionProps {
 
 const HeroSection: React.FC<HeroSectionProps> = ({ image, text, discription, link }) => {
     const externalUrl = "https://casestudy.transcodesolution.com"; // External URL
-    const externalUrl1 = "https://casestudy.transcodesolution.com";
+    const externalUrl1 = "https://portfolio.transcodesolution.com/";
     return (
         <div className="flex flex-col-reverse lg:flex-row justify-between items-center pb-6">
             <div className="container mx-auto px-8">
@@ -68,12 +68,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({ image, text, discription, lin
                     </h1>
                     <div className="flex flex-col gap-4 lg:flex-row lg:gap-8">
                         {(link && externalUrl) && (
-                            <Link href={externalUrl} target="_blank" rel="noopener noreferrer" className="bg-blue px-4 py-2 sm:px-14 sm:py-4 sm:mt-5 rounded-md font-bold text-white mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">
+                            <Link href={externalUrl}  rel="noopener noreferrer" className="bg-blue text-center text-sm sm:text-base px-4 py-2 sm:px-8 sm:py-2 sm:mt-5 rounded-md font-bold text-white mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">
                                 CaseStudy
                             </Link>
                         )}
                         {(link && externalUrl1) && (
-                            <Link href={externalUrl1} target="_blank" rel="noopener noreferrer" className="bg-blue px-4 py-2 sm:px-14 sm:py-4 sm:mt-5 rounded-md font-bold text-white mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">
+                            <Link href={externalUrl1} rel="noopener noreferrer" className="bg-blue text-center text-sm sm:text-base px-4 py-2 sm:px-8 sm:py-2 sm:mt-5 rounded-md font-bold text-white mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">
                                 PortFolio
                             </Link>
                         )}
