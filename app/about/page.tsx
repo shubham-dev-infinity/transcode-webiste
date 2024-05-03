@@ -16,7 +16,7 @@ import Mission from "@public/Assets/Missions.png"
 import styles from "./styles.module.scss";
 const About = () => {
     return (
-        <main className="mb-10">
+        <main className="mb-10 overflow-hidden">
             <div className={style.heroBgImage}>
                 <HeroSection image={AboutImage} text={"About Transcode"}/>
             </div>

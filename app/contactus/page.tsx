@@ -9,7 +9,7 @@ import serviceImmediately from "@public/Assets/serviceImmediately.png"
 
 const ContactUs = () => {
     return (
-        <main className="mb-10">
+        <main className="mb-10 overflow-hidden">
             <div className={style.heroBgImage}>
                 <HeroSection image={contact1} text={"Contact Us"}/>
             </div>
