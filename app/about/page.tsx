@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import HeroSection from "../components/HeroSection";
 import style from "../components/styles.module.scss";
@@ -14,7 +16,52 @@ import Vision from "@public/Assets/Vision.png"
 import CoreValues from "@public/Assets/CoreValues.png"
 import Mission from "@public/Assets/Missions.png"
 import styles from "./styles.module.scss";
+import emailjs from 'emailjs-com';
+import { useEffect, useState } from "react";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 const About = () => {
+    const [formData, setFormData] = useState({        
+        blog_email: ''      
+    });
+
+    useEffect(() => {
+        emailjs.init("hUUTxBactnTc1S5Xa");
+    }, []);
+
+    const handleChange = (e: any) => {
+        const { name, value } = e.target;
+        setFormData(prevData => ({
+            ...prevData,
+            [name]: value
+        }));
+    };
+
+    const validateAndSendEmail = () => {
+        const { blog_email } = formData;
+        if (!blog_email) {
+            // Handle validation error, maybe show a toast message
+            return;
+        }
+        sendEmail();
+    };
+
+    const sendEmail = () => {
+        emailjs.send("service_6tboroy", "template_k6dbrws", formData)
+            .then((response) => {
+                console.log("Email sent successfully:", response);
+                toast.success('Email sent successfully!');
+                setFormData({                    
+                    blog_email: ''                   
+                });
+            })
+            .catch((error) => {
+                console.error("Error sending email:", error);
+                toast.error('Error sending email. Please try again later.');
+            });
+    };
     return (
         <main className="mb-10 overflow-hidden">
             <div className={style.heroBgImage}>
@@ -98,8 +145,8 @@ const About = () => {
                     <div className="flex justify-center">
                         <div className="flex flex-col items-center mb-8">
                             <h3 className="text-white text-center mb-4">REGISTER FOR OUR NEWSLETTER FOR LATEST UPDATES</h3>
-                            <input type="text" className="p-2 rounded-md w-full mb-4" placeholder="Email Address" />
-                            <button className="bg-white px-4 py-2 rounded-md text-blue hover:bg-blue hover:text-white hover:border-white border hover:border-solid">Submit</button>
+                            <input type="text" className="p-2 rounded-md w-full mb-4" placeholder="Email Address" name="blog_email" value={formData.blog_email} onChange={handleChange} />
+                            <button className="bg-white px-4 py-2 rounded-md text-blue hover:bg-blue hover:text-white hover:border-white border hover:border-solid" onClick={validateAndSendEmail}>Submit</button>
                         </div>
                     </div>
                 </div>

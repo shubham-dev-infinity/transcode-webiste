@@ -59,7 +59,9 @@ export default function RootLayout({
             // Dispatch custom event once AOS script is loaded
             document.dispatchEvent(new Event('AOSLoaded'));
           }}
-        />      
+        /> 
+        <Script src="https://cdn.emailjs.com/dist/email.min.js"/>
+        <Script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"/>          
       </body>
     </html>
   );
