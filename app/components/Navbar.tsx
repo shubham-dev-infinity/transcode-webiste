@@ -16,7 +16,7 @@ const Navbar = () => {
     const [isOpenAbout, setIsOpenAbout] = useState(false)
     const [isOpenPortfolio, setIsOpenPortfolio] = useState(false)
     const externalUrl = "https://casestudy.transcodesolution.com";
-
+    const externalUrl1 = "https://portfolio.transcodesolution.com/";
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
@@ -211,27 +211,24 @@ const Navbar = () => {
                                 </li>
                                 {/* Add more list items here */}
                             </ul>
-                        </div>
-                        {/* <Link href="/portfolio" onClick={closeMobileMenu}>
-                            <span className="hover:text-blue hover:border-b-4 px-3.5  hover:border-blue font-bold text-lg">PORTFOLIO</span>
-                        </Link> */}
+                        </div>                     
                         <div
                             onMouseEnter={() => setIsOpenPortfolio(true)} onMouseLeave={() => setIsOpenPortfolio(false)}
                             className="relative"
                         >
-                            <button
+                            <Link href="/portfolio"
                                 aria-expanded={isOpenPortfolio} onClick={togglePortfolioMenu}
                                 id="portfolioDropdownButton"
                                 className="hover:text-blue hover:border-b-4 px-3.5  hover:border-blue font-bold text-lg"
                                 type="button"
                             >
                                 PORTFOLIO
-                            </button>
+                            </Link>
                             {/* Dropdown menu */}
                             <ul className={`origin-top-right z-50 absolute top-full left-1/2 -translate-x-1/2 min-w-[240px] bg-white border border-slate-200 p-2 rounded-lg shadow-xl ${isOpenPortfolio ? 'block' : 'hidden'}`}>
                                 <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
                                     <SlArrowRight size={10} className="ml-2" />
-                                    <Link href="/portfolio" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesPortFolioSubmenuClick}>
+                                    <Link href={externalUrl1} className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesPortFolioSubmenuClick}>
                                         PortFolio
                                     </Link>
                                 </li>
@@ -250,22 +247,22 @@ const Navbar = () => {
                             onMouseEnter={() => setIsOpenAbout(true)} onMouseLeave={() => setIsOpenAbout(false)}
                             className="relative"
                         >
-                            <button
+                            <Link href="/about"
                                 aria-expanded={isOpenAbout} onClick={toggleAboutMenu}
                                 id="aboutDropdownButton"
                                 className="hover:text-blue hover:border-b-4 px-3.5  hover:border-blue font-bold text-lg"
                                 type="button"
                             >
                                 ABOUT US
-                            </button>
+                            </Link>
                             {/* Dropdown menu */}
                             <ul className={`origin-top-right z-50 absolute top-full left-1/2 -translate-x-1/2 min-w-[240px] bg-white border border-slate-200 p-2 rounded-lg shadow-xl ${isOpenAbout ? 'block' : 'hidden'}`}>
-                                <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
+                                {/* <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
                                     <SlArrowRight size={10} className="ml-2" />
                                     <Link href="/about" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesAboutSubmenuClick}>
                                         About Us
                                     </Link>
-                                </li>
+                                </li> */}
                                 <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
                                     <SlArrowRight size={10} className="ml-2" />
                                     <Link href="/workculture" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesAboutSubmenuClick}>
@@ -421,13 +418,13 @@ const Navbar = () => {
                         onMouseEnter={handlePortFolioDropdownsClick}
                         onMouseLeave={handlePortFolioDropdownsClick}
                         className="relative">
-                        <button
+                        <Link href="/portfolio"
                             id="portfolioDropdownButtonMobile"
                             className="block py-2 px-4 text-blue hover:bg-blue hover:text-white w-full text-left font-semibold"
                             aria-expanded={isOpenPortfolio} onClick={togglePortfolioMenu}
                         >
                             PORTFOLIO
-                        </button>
+                        </Link>
                         <div
                             id="dropdownDelay"
                             className={`z-10 ${isOpenPortfolio ? 'block' : 'hidden'} bg-white divide-y
@@ -435,7 +432,7 @@ const Navbar = () => {
                         >
                             <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="portfolioDropdownButtonMobile">
                                 <li>
-                                    <Link href="/portfolio" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesPortFolioSubmenuClick}>
+                                    <Link href={externalUrl1} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesPortFolioSubmenuClick}>
                                         PortFolio
                                     </Link>
                                 </li>
@@ -462,31 +459,31 @@ const Navbar = () => {
                         onMouseEnter={handleAboutDropdownsClick}
                         onMouseLeave={handleAboutDropdownsClick}
                         className="relative">
-                        <button
+                        <Link href="/about"
                             id="aboutDropdownButtonMobile"
                             className="block py-2 px-4 text-blue hover:bg-blue hover:text-white w-full text-left font-semibold"
                             aria-expanded={isOpenAbout} onClick={toggleAboutMenu}
                         >
                             ABOUT US
-                        </button>
+                        </Link>
                         <div
                             id="dropdownDelay"
                             className={`z-10 ${isOpenAbout ? 'block' : 'hidden'} bg-white divide-y
                              divide-gray-100 rounded-lg shadow w-full dark:bg-gray-700 absolute top-full left-0 mt-1`}
                         >
                             <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="aboutDropdownButtonMobile">
-                                <li>
+                                {/* <li>
                                     <Link href="/about" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesAboutSubmenuClick}>
                                         About Us
                                     </Link>
-                                </li>
+                                </li> */}
                                 <li>
                                     <Link href="/workculture" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesAboutSubmenuClick}>
                                         Our Culture
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/retail" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesAboutSubmenuClick}>
+                                    <Link href="/ourteam" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesAboutSubmenuClick}>
                                         Our Team
                                     </Link>
                                 </li>
