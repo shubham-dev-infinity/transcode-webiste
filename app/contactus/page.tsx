@@ -263,7 +263,7 @@ const ContactUs = () => {
                         </div>
                         <div className="col-span-12 lg:col-span-8 bg-gray p-12 text-left">
                             <h2 className="font-extrabold text-3xl pb-4">
-                                Contact <span className="text-blue">Transcode Solution</span>
+                                Contact <span className="text-blue">transcodezy Solution</span>
                             </h2>
                             <h3 className="text-gray text-2xl font-semibold">
                                 Let&apos;s make a connection! Whether you choose to send a message or have a live conversation with us, we are available to assist you at all times.
