@@ -180,7 +180,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="grid grid-cols-12 sm:items-start mt-6 justify-end">
-                    <Image src={Oman} alt="Oman" width={60} height={30} className="col-span-12 sm:col-span-2 lg:col-span-12 xl:ml-[340px] xl:col-span-7 mb-3 sm:mb-0 lg:pb-2 xl:pb-0" />
+                    <Image src={Oman} alt="Oman" width={60} height={30} className="col-span-12 sm:col-span-2 lg:col-span-12 xl:ml-[302px] xl:col-span-7 mb-3 sm:mb-0 lg:pb-2 xl:pb-0" />
                     <div className="ml-3 col-span-12 sm:col-span-5 float-right">
                         <p className="text-sm col-span-12">
                             P.O.Box:1890, PC:130, Ruwi, Muscat, Sultanate of Oman.
