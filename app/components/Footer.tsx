@@ -21,7 +21,7 @@ const Footer = () => {
                         alt="Your Name"
                     />
                     <span className="text-sm sm:text-sm">
-                        Welcome to Transcode Solutions – Empowering your digital success with innovative solutions.
+                        Welcome to Transcodezy  Solutions – Empowering your digital success with innovative solutions.
                     </span>
                     <h1 className="text-lg sm:text-xl font-bold pt-4">Project Inquiry</h1>
                     <div className="w-28 h-0.5 bg-white mb-2"></div>
@@ -59,7 +59,7 @@ const Footer = () => {
                         </Link>
                         <Link href="/about" rel="noopener noreferrer">
                             <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
-                                About Transcode
+                                About Transcodezy 
                             </span>
                         </Link>
                         <Link href="company-linkedin" rel="noopener noreferrer">

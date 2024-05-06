@@ -182,9 +182,9 @@ const Home: React.FC<HomeProps> = () => {
           <div className="flex-1 lg:order-3 lg:h-700 lg:w-470 bg-gray py-6 px-6 2xl:h-[652.33px] 2xl:py-7 xl:py-3 xl:h-[568px] lg:h-[443px] ">
             <h2 className="text-lg sm:text-xl lg:text-3xl">ABOUT <span className="text-blue">TRANSCODE</span></h2>
             <div className="w-36 h-1 bg-blue mb-4"></div>
-            <p className="pb-5 text-sm sm:text-lg lg:text-sm xl:text-lg xl:pb-7 lg:pb-1 wow fadeOutDownBig">Welcome to Transcode Solutions – where innovation meets excellence.</p>
+            <p className="pb-5 text-sm sm:text-lg lg:text-sm xl:text-lg xl:pb-7 lg:pb-1 wow fadeOutDownBig">Welcome to Transcodezy  Solutions – where innovation meets excellence.</p>
             <p className="text-sm sm:text-lg lg:text-sm xl:text-lg lg:pb-7">
-              Transcode Solutions is dedicated to transforming the digital realm with advanced software solutions. As a leading IT firm, we specialize in crafting customized software services to suit each client&apos;s specific requirements. Our experienced team utilizes cutting-edge technologies and industry standards to bring concepts to life. Our goal is to equip businesses for success in the digital era by offering innovative, scalable, and cost-efficient solutions. Fueled by a commitment to excellence, we aim to surpass expectations and deliver concrete outcomes.
+              Transcodezy  Solutions is dedicated to transforming the digital realm with advanced software solutions. As a leading IT firm, we specialize in crafting customized software services to suit each client&apos;s specific requirements. Our experienced team utilizes cutting-edge technologies and industry standards to bring concepts to life. Our goal is to equip businesses for success in the digital era by offering innovative, scalable, and cost-efficient solutions. Fueled by a commitment to excellence, we aim to surpass expectations and deliver concrete outcomes.
             </p>
           </div>
         </div>
@@ -309,7 +309,7 @@ const Home: React.FC<HomeProps> = () => {
           </div>
           <div className="bg-gray sm:mb-16 p-2">
             <h3 className="text-2xl md:text-3xl font-extrabold mb-4 pt-8"><span className="text-blue">Our work</span> Process</h3>
-            <p className="text-base sm:text-base md:text-lg xl:text-xl font-semibold text-center text-gray">Transcode Solution an exclusive approach for building modern, secure solutions tailored to each of its
+            <p className="text-base sm:text-base md:text-lg xl:text-xl font-semibold text-center text-gray">Transcodezy  Solution an exclusive approach for building modern, secure solutions tailored to each of its
               clients individual requirements. </p>
             <div className="grid grid-cols-1 md:grid-cols-12 gap-4" >
               <div className="md:col-span-8" data-aos="zoom-out">

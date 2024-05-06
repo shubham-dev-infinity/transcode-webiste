@@ -24,7 +24,7 @@ const RetailEcommerce = () => {
                         <h2 className="text-xl sm:text-2xl md:text-4xl font-extrabold text-center">Retail & E-commerce Software </h2>
                         <h2 className="text-xl sm:text-2xl md:text-4xl font-extrabold text-center">Development</h2>
                         <h4 className="text-lg sm:text-xl text-center py-3 sm:py-6">Crafting a Seamless Retail & E-commerce Experience</h4>
-                        <p className="text-sm sm:text-lg text-center px-2 sm:px-40">Transcode Solutions provides retailers with user-friendly, feature-rich e-commerce software development. Effortless integrations and adaptable scalability ensure smooth growth, helping you exceed customer expectations and capture every revenue opportunity.</p>
+                        <p className="text-sm sm:text-lg text-center px-2 sm:px-40">Transcodezy  Solutions provides retailers with user-friendly, feature-rich e-commerce software development. Effortless integrations and adaptable scalability ensure smooth growth, helping you exceed customer expectations and capture every revenue opportunity.</p>
                         <div className="text-center	  pt-4">
                             <button className="bg-blue px-4 py-2 rounded-md font-bold text-white mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">Talk to an Expert</button>
                         </div>
@@ -36,9 +36,9 @@ const RetailEcommerce = () => {
                     <h3 className="text-lg sm:text-3xl font-extrabold mb-6 sm:mb-14"><span className="text-blue">Trusted Partner of Over 35 Satisfied Clients</span>, Including Fortune Companies</h3>
                     <h3 className="text-lg sm:text-3xl font-extrabold mb-2 sm:mb-4">Overview</h3>
                     <h6 className="text-sm sm:text-base text-gray font-semibold">Enhance Your Retail & E-commerce with Our Software Solutions</h6>
-                    <h6 className="text-sm sm:text-base text-blue font-semibold my-2 sm:my-4">Transcode Solution: Empowering Your Retail & E-commerce Success</h6>
-                    <h5 className="text-xs sm:text-xl font-semibold">Embark on a journey of digital transformation with Transcode Solution&apos;s end-to-end retail and e-commerce software development solutions. Our process begins with strategic consulting to craft your winning strategy and extends to expert website development, tailored mobile app creation, B2C expertise, cloud solutions, WooCommerce proficiency, seamless payment gateway integrations, and robust marketplace builds.</h5>
-                    <h5 className="text-xs sm:text-xl font-semibold mt-2 sm:mt-6">Transform your product offerings into seamless digital experiences that engage customers and boost revenue. Choose Transcode Solution as your partner for the software solutions driving your retail and e-commerce growth.</h5>
+                    <h6 className="text-sm sm:text-base text-blue font-semibold my-2 sm:my-4">Transcodezy  Solution: Empowering Your Retail & E-commerce Success</h6>
+                    <h5 className="text-xs sm:text-xl font-semibold">Embark on a journey of digital transformation with Transcodezy  Solution&apos;s end-to-end retail and e-commerce software development solutions. Our process begins with strategic consulting to craft your winning strategy and extends to expert website development, tailored mobile app creation, B2C expertise, cloud solutions, WooCommerce proficiency, seamless payment gateway integrations, and robust marketplace builds.</h5>
+                    <h5 className="text-xs sm:text-xl font-semibold mt-2 sm:mt-6">Transform your product offerings into seamless digital experiences that engage customers and boost revenue. Choose Transcodezy  Solution as your partner for the software solutions driving your retail and e-commerce growth.</h5>
                 </div>
                 <div className="grid grid-cols-12 gap-2 sm:gap-10 my-4 sm:my-10">
                     {WorkCulture.map((item, index) => (
@@ -86,7 +86,7 @@ const RetailEcommerce = () => {
                     </div>
                 </div>
                 <div className="text-center mt-4 sm:mt-8 mb-4 sm:mb-16">
-                    <button className="bg-blue px-2 sm:px-4 py-1 sm:py-2 text-sm sm:text-base rounded-md font-bold text-white mb-1 sm:mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">Consult Transcode</button>
+                    <button className="bg-blue px-2 sm:px-4 py-1 sm:py-2 text-sm sm:text-base rounded-md font-bold text-white mb-1 sm:mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">Consult Transcodezy </button>
                 </div>
                 <div className="text-center">
                     <h3 className="text-lg sm:text-2xl font-extrabold pb-4">Technologies</h3>
@@ -151,9 +151,9 @@ const RetailEcommerce = () => {
                 <div className="text-center mb-4 mt-6 sm:mt-16">
                     <h3 className="text-lg sm:text-2xl font-extrabold">Overview</h3>
                     <p className="text-gray text-sm sm:text-lg py-4">Enhance Your Retail & E-commerce with Our Software Solutions</p>
-                    <p className="text-blue text-sm sm:text-lg">Transcode Solution: Empowering Your Retail & E-commerce Success</p>
-                    <h3 className="text-base sm:text-xl font-extrabold py-5">Embark on a journey of digital transformation with Transcode Solution &apos;s end-to-end retail and e-commerce software development solutions. Our process begins with strategic consulting to craft your winning strategy and extends to expert website development, tailored mobile app creation, B2C expertise, cloud solutions, WooCommerce proficiency, seamless payment gateway integrations, and robust marketplace builds.</h3>
-                    <h3 className="text-base sm:text-xl font-extrabold ">Transform your product offerings into seamless digital experiences that engage customers and boost revenue. Choose Transcode Solution as your partner for the software solutions driving your retail and e-commerce growth.</h3>
+                    <p className="text-blue text-sm sm:text-lg">Transcodezy  Solution: Empowering Your Retail & E-commerce Success</p>
+                    <h3 className="text-base sm:text-xl font-extrabold py-5">Embark on a journey of digital transformation with Transcodezy  Solution &apos;s end-to-end retail and e-commerce software development solutions. Our process begins with strategic consulting to craft your winning strategy and extends to expert website development, tailored mobile app creation, B2C expertise, cloud solutions, WooCommerce proficiency, seamless payment gateway integrations, and robust marketplace builds.</h3>
+                    <h3 className="text-base sm:text-xl font-extrabold ">Transform your product offerings into seamless digital experiences that engage customers and boost revenue. Choose Transcodezy  Solution as your partner for the software solutions driving your retail and e-commerce growth.</h3>
                 </div>
                 <div className="grid grid-cols-12 gap-6 sm:gap-10 my-4 sm:my-10">
                     {growth.map((item, index) => (

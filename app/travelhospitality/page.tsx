@@ -22,7 +22,7 @@ const TravelandHospitality = () => {
                 <div className="text-center mb-6 sm:mb-12">                  
                     <h3 className="text-lg sm:text-3xl font-extrabold mb-2 sm:mb-4">Overview</h3>
                     <h6 className="text-sm sm:text-base text-gray font-semibold">Travel & Hospitality Software Development</h6>
-                    <h6 className="text-sm sm:text-base text-blue font-semibold my-2 sm:my-4">Transcode Solution: Empowering Your Retail & E-commerce Success</h6>
+                    <h6 className="text-sm sm:text-base text-blue font-semibold my-2 sm:my-4">Transcodezy  Solution: Empowering Your Retail & E-commerce Success</h6>
                     <h5 className="text-base sm:text-xl font-semibold">At the heart of our operations lies a commitment to driving digital transformation, tackling business hurdles head-on through our proficient team of travel app developers. Our repertoire includes a diverse array of customized travel and hospitality software solutions, empowering businesses to thrive in the digital age.</h5>
                     <div className="text-center	  pt-4">
                         <button className="bg-blue px-4 py-2 rounded-md font-bold text-white mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">Free Consultation</button>
