@@ -66,7 +66,7 @@ const Home: React.FC<HomeProps> = () => {
       title4: " User Experience",
       description: "Goals include cost reduction, security enhancement,and improved user experience",
       buttonText: "Explore Now",
-      href: "/services/mobile",
+      href: "/services/software",
       href1: "/contactus",
       buttonText1: "Contact Us",
       img: MaskgroupSliderth
@@ -79,7 +79,7 @@ const Home: React.FC<HomeProps> = () => {
       title4: " Business ",
       description: "Goals include cost reduction, security enhancement,and improved user experience",
       buttonText: "Discover More",
-      href: "/services/web-design",
+      href: "/services/software",
       href1: "/contactus",
       buttonText1: "Contact Us",
       img: MaskgroupSliderse

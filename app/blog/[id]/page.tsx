@@ -24,7 +24,8 @@ const BlogDetail = () => {
     }, []);
 
     console.log("slug", params);
-    const selectedBlog = blogData.find(blog => blog.id === parseInt(params?.id[0]));
+    // const selectedBlog = blogData.find(blog => blog.id === parseInt(params?.id));
+    const selectedBlog = blogData.find(blog => blog.id === parseInt(Array.isArray(params?.id) ? params?.id[0] : params?.id));
     console.log("selectedBlog", selectedBlog);   
 
     if (!selectedBlog) {        
