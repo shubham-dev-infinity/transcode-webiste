@@ -1,29 +1,27 @@
+
+
 "use client";
+
 import React, { useEffect, useState } from 'react';
 import { Inter } from 'next/font/google';
-import { Metadata } from 'next';
-
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Script from 'next/script';
-// import "../public/Assets/vender/aos/css/animate.css"
 import "../public/Assets/vender/aos/css/aos.css"
 import NavSocialMedia from './components/NavSocialMedia';
 import BackToTopButton from './components/BackToTopButton';
 declare global {
   interface Window {
-    AOS: any; // Adjust the type as needed, using `any` for simplicity here
+    AOS: any; 
   }
 }
 const inter = Inter({ subsets: ['latin'] });
+interface RootLayoutProps {
+  children: React.ReactNode;  
+}
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  const [wowInitialized, setWowInitialized] = useState(false);
+const RootLayout: React.FC<RootLayoutProps> = ({ children}) => { 
   useEffect(() => {
     // Check if AOS is available on window, then initialize
     if (window.AOS) {
@@ -36,14 +34,10 @@ export default function RootLayout({
     }
   }, []);
   
-  
+
+
   return (
-    <html lang="en">
-      <head>
-        {/* <link href="/Assets/vender/aos/aos.css" rel="stylesheet" />
-        <link href="/Assets/vender/aos/animate.css" rel="stylesheet" /> */}
-        {/* Additional Head Content */}
-      </head>
+    <html lang="en">      
       <body className={inter.className}>
         <NavSocialMedia/>
         <header className='sticky top-0 bg-white z-50'>
@@ -66,3 +60,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+export default RootLayout;

@@ -1,20 +1,21 @@
 
 'use client'
 
+import Link from "next/link";
+import style from "../travelhospitality/styles.module.scss"
 import Image from "next/image";
-import style from "./styles.module.scss"
-import TransformingData from "./TransformingData"
-import { useState } from "react";
+import development from "./development"
 import TechnologyTabs from "@/utils/TechnologyTabs";
 import TechnologyUiuxTabs from "@/utils/TechnologyUiuxTabs";
 import TechnologyMobileTabs from "@/utils/TechnologyMobileTabs";
 import TechnologyDatabaseTabs from "@/utils/TechnologyDatabaseTabs";
-import DevelopmentProcess from "./DevelopmentProcess";
+import { useState } from "react";
+import DevelopmentProcess from "./DevelopmentProcess"
 import HiringProcessTravel from "@public/Assets/HiringProcessTravel.png"
-import hiringModel from "./hiringModel";
-import development from "./development";
+import hiringModel from "./hiringModel"
+import SoftwareDevelopment from "./SoftwareDevelopment"
 
-const TravelandHospitality = () => {
+const RealEstate = () => {
     const [activeTab, setActiveTab] = useState<string>('webdevelopment');
     const handleTabClick = (tabId: string) => {
         setActiveTab(tabId);
@@ -24,69 +25,82 @@ const TravelandHospitality = () => {
             <div className={style.heroBgImage}>
                 <div className="px-4 lg:px-28 pb-12 sm:pb-52 pt-20 sm:pt-64 mb-5 sm:mb-10 text-white">
                     <div className="container mx-auto">
-                        <h2 className="text-xl sm:text-2xl md:text-4xl font-extrabold text-center">Travel and Hospitality Software Solution</h2>
-                        <h2 className="text-xl sm:text-2xl md:text-4xl font-extrabold text-center">Company</h2>
-                        <h4 className="text-lg sm:text-xl text-center py-3 sm:py-6">Building Your Own Brand in the Travel Industry</h4>
-                        <p className="text-sm sm:text-lg text-center px-2 sm:px-40">Collaborating with us extends beyond mere travel software development — it entails forging a strategic alliance aimed at crafting bespoke software solutions for the travel and hospitality sector. Our focus lies in tailoring each project to precisely match your unique requirements, ensuring an unparalleled fit for your business needs.</p>
-                        <div className="text-center	  pt-4">
-                            <button className="bg-blue px-4 py-2 rounded-md font-bold text-white mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">Talk to an Expert</button>
+                        <h2 className="text-xl sm:text-2xl md:text-4xl font-extrabold text-center">Real Estate Software Development Services</h2>
+                        <p className="text-base sm:text-xl font-semibold mt-4">We create real estate software solutions that connect businesses with their customers, streamlining property management, transactions, and data tracking for smooth real estate operations.</p>
+                        <div className="text-center pt-4">
+                            <button className="bg-blue px-4 py-2 rounded-md font-bold text-white mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">Consult Transcode→</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="container mx-auto px-2 sm:px-4">
-                <div className="text-center mb-6 sm:mb-12">
-                    <h3 className="text-lg sm:text-3xl font-extrabold mb-2 sm:mb-4">Overview</h3>
-                    <h6 className="text-sm sm:text-base text-gray font-semibold">Travel & Hospitality Software Development</h6>
-                    <h6 className="text-sm sm:text-base text-blue font-semibold my-2 sm:my-4">Transcodezy  Solution: Empowering Your Retail & E-commerce Success</h6>
-                    <h5 className="text-base sm:text-xl font-semibold">At the heart of our operations lies a commitment to driving digital transformation, tackling business hurdles head-on through our proficient team of travel app developers. Our repertoire includes a diverse array of customized travel and hospitality software solutions, empowering businesses to thrive in the digital age.</h5>
-                    <div className="text-center	  pt-4">
-                        <button className="bg-blue px-4 py-2 rounded-md font-bold text-white mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">Free Consultation</button>
-                    </div>
+            <div className="container mx-auto mt-12">
+                <div className="text-center mb-4 sm:mb-12">
+                    <h3 className="text-xl sm:text-3xl font-extrabold">Overview</h3>
+                    <p className="text-base sm:text-xl font-semibold my-1 sm:my-8 text-gray">Custom Real Estate Software Development</p>
+                    <p className="font-semibold text-sm sm:text-lg my-1 sm:my-6">Revolutionize the process of buying, selling, and renting real estate properties by developing your custom real estate software solutions. Whether you need a CRM system to manage leads, a website to showcase listings, or a mobile app for convenient property searches, we can tailor a solution to your specifications.
+                    </p>
+                    <p className="font-semibold text-sm sm:text-lg my-1 sm:my-6">From startups to established enterprises, our secure and flexible real estate solutions enable seamless digital transformation. Find the right real estate solution for your business today, whether you&apos;re focusing on local operations or expanding globally.</p>
+                    <p className="font-semibold text-sm sm:text-lg my-1 sm:my-6">Our software adheres to industry regulations, ensuring your data remains safe and secure. With ongoing support, you can count on us to provide assistance whenever you need it.</p>
+                    <button className="bg-blue px-4 py-2 rounded-md font-bold text-white lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">Free Consultation</button>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 rounded-3xl mb-10">
-                    {TransformingData.map((step, index) => (
-                        <div key={index} className={`p-16 shadow-lg rounded-lg bg-gray ${TransformingData.length % 2 !== 0 && index === TransformingData.length - 1 ? 'md:col-start-1 md:col-span-2 lg:col-start-1 lg:col-span-2 text-center' : 'md:mx-11'}`}>
-                            <div className="mb-2">
-                                {/* Placeholder for image, add actual image path in `src` */}
-                                {/* <Image src={step.image || "path/to/default/image.png"} alt={step.title} className="w-full h-auto object-cover rounded-md" /> */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-20 my-4 sm:my-10">
+                    {development.map((item, index) => (
+                        <div key={index} className="pt-4 bg-gray rounded-3xl">
+                            <div className="flex">
+                                <div className=" pl-28 sm:pl-24 md:pl-28 lg:pl-44 xl:pl-60">
+                                    <div className="relative w-20 h-20 sm:w-32 sm:h-32 rounded-full overflow-hidden border-gray shadow-md flex items-center justify-center">
+                                        <Image src={item.image} alt={item.title} className="w-full h-full" />
+                                    </div>
+                                </div>
                             </div>
-                            <h4 className="text-base sm:text-xl font-bold text-gray">{step.title}</h4>
-                            <p className="text-gray text-sm sm:text-lg">{step.description}</p>
+                            <div className="col-span-8 sm:col-span-8 pt-3 mb-10 px-4">
+                                <h4 className="text-center text-base sm:text-lg font-extrabold pt-1 ">{item.title}</h4>
+                                <p className="text-center text-sm sm:text-base">
+                                    {item.list1}
+                                </p>
+                                <p className="text-center text-sm sm:text-base mt-1 sm:mt-4">
+                                    {item.list2}
+                                </p>
+                            </div>
                         </div>
                     ))}
                 </div>
-                <div className="text-center">
-                    <h2 className="text-3xl font-extrabold">We Offer</h2>
-                    <p className="text-blue text-xl font-semibold">Our Commitment to Excellence in Travel App/Software Development</p>
-                    <p className="font-semibold text-xl">Our offerings are all-encompassing, designed to meet your every requirement. From travel App/Software development and rigorous testing to end-to-end support & maintenance, we&apos;ve got you covered. Additionally, we specialize in providing cloud services, crafting AI solutions, and beyond. With our comprehensive suite of services, rest assured that your needs are in expert hands.</p>
+                <div className="text-center mb-1 sm:mb-4">
+                    <h3 className="text-lg sm:text-3xl font-extrabold mb-2 sm:mb-4">Overview</h3>
+                    <h6 className="text-sm sm:text-base text-blue font-semibold">The Value We Provide in the Real Estate Industry</h6>
+                    <h6 className="text-sm sm:text-base font-semibold my-2 sm:my-4">From real estate software development to seamless functionality, continuous support, secure cloud storage, and AI solutions, we offer a comprehensive range of real estate services tailored to meet all your needs.</h6>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-6 p-1 sm:p-2 mb-2 sm:mb-6">
                     <div className="bg-gray rounded-3xl p-2 sm:p-4">
-                        <h3 className="text-sm sm:text-base md:text-xl font-semibold"><span className="text-blue">Tailored Travel </span>App Development Solutions</h3>
+                        <h3 className="text-sm sm:text-base md:text-xl font-semibold">Custom Real Estate Software Development</h3>
                         <div className="w-16 sm:w-64 h-0.5 sm:h-1 bg-blue  sm:mb-6 hidden sm:block "></div>
-                        <p className="text-xs sm:text-base text-gray py-2 sm:pb-4">Craft scalable, industry-tailored software solutions specifically designed to meet the unique needs of your travel and hospitality business. Our goal is to ensure efficiency and future readiness, empowering you to stay ahead in a rapidly evolving industry landscape.</p>
+                        <p className="text-xs sm:text-base text-gray py-2 sm:pb-4">We design scalable, future-ready software solutions customized to your specific business needs, industry trends, and changing user demands. Our solutions are engineered for efficiency and scalability, optimizing your real estate processes.</p>
                     </div>
                     <div className="bg-gray rounded-3xl p-2 sm:p-4">
-                        <h3 className="text-sm sm:text-base md:text-xl font-semibold">Continuous <span className="text-blue">Continuous Support and Maintenance </span><span>Solutions</span></h3>
+                        <h3 className="text-sm sm:text-base md:text-xl font-semibold">Support and Maintenance Services</h3>
                         <div className="w-16 sm:w-64 h-0.5 sm:h-1 bg-blue  sm:mb-6 hidden sm:block "></div>
-                        <p className="text-sm sm:text-base text-gray py-2 sm:pb-4">Our dedication lies in maintaining the seamless operation of your travel and hospitality software. From handling modifications to resolving bugs and implementing performance enhancements, our team is committed to ensuring that your travel software remains efficient and reliable.</p>
+                        <p className="text-xs sm:text-base text-gray py-2 sm:pb-4">After launch, we offer essential support, including modifications, glitch-free operations, and performance enhancements, to keep your software or app running at peak efficiency.</p>
                     </div>
                     <div className="bg-gray rounded-3xl p-2 sm:p-4">
-                        <h3 className="text-sm sm:text-base md:text-xl font-semibold">Innovative <span className="text-blue">AI & ML Solutions</span></h3>
+                        <h3 className="text-sm sm:text-base md:text-xl font-semibold"><span className="text-blue">Teleradiology</span> Solutions</h3>
                         <div className="w-16 sm:w-64 h-0.5 sm:h-1 bg-blue  sm:mb-6 hidden sm:block "></div>
-                        <p className="text-xs sm:text-base text-gray py-2 sm:pb-4">Leverage the capabilities of Artificial Intelligence and Machine Learning to unlock valuable insights, streamline operations, and deliver innovative solutions tailored for the travel and hospitality industry.</p>
+                        <p className="text-sm sm:text-base text-gray py-2 sm:pb-4">Transcode Solution provides advanced Picture Archiving and Communication Systems (PACS) and Digital Imaging and Communications in Medicine (DICOM) viewer networks. These solutions facilitate effortless sharing and storage of medical imaging, clips, and reports, fostering real-time collaboration between patients and physicians for agile care delivery.</p>
                     </div>
                     <div className="bg-gray rounded-3xl p-2 sm:p-4">
-                        <h3 className="text-sm sm:text-base md:text-xl font-semibold">Seamless<span className="text-blue"> Integration and Upgrade </span><span>Solutions</span></h3>
+                        <h3 className="text-sm sm:text-base md:text-xl font-semibold text-blue">AI and ML-Powered Solutions</h3>
+                        <div className="w-16 sm:w-64 h-0.5 sm:h-1 bg-blue  sm:mb-6 hidden sm:block "></div>
+                        <p className="text-xs sm:text-base text-gray py-2 sm:pb-4">Leverage AI & ML for Enhanced Real Estate Operations with Analytics, Predictive Insights, and More</p>
+                    </div>
+                    <div className="bg-gray rounded-3xl p-2 sm:p-4">
+                        <h3 className="text-sm sm:text-base md:text-xl font-semibold text-blue">Integration and Upgrades</h3>
                         <div className="w-16 sm:w-64 h-0.5 sm:h-1 bg-blue m:mb-4 hidden sm:block"></div>
-                        <p className="text-xs sm:text-base text-gray py-2 sm:pb-4">Effortlessly expand and enhance your current travel and hospitality software. We provide seamless API integrations and thorough upgrade planning to enrich your system without any hassle or complications.</p>
+                        <p className="text-xs sm:text-base text-gray py-2 sm:pb-4">For existing solutions, we integrate APIs, develop extensible modules, and perform smooth upgrades, guaranteeing efficiency while avoiding unnecessary complexity.</p>
                     </div>
                 </div>
-                <div className="text-center mt-4 sm:mt-8 mb-4 sm:mb-16">
-                    <button className="bg-blue px-2 sm:px-4 py-1 sm:py-2 text-sm sm:text-base rounded-md font-bold text-white mb-1 sm:mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">Consult Transcodezy </button>
+                <div className="text-center	py-1 sm:pb-4">
+                    <button className="bg-blue px-4 py-2 rounded-md font-bold text-white mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">Consult Transcode</button>
                 </div>
-                <div className="text-center">
+                <div className="text-center pt-0 sm:pt-6">
                     <h3 className="text-lg sm:text-2xl font-extrabold pb-4">Technologies</h3>
                     <h3 className="text-blue text-base sm:text-xl"> Technologies & Platforms We Engage With</h3>
                 </div>
@@ -155,51 +169,48 @@ const TravelandHospitality = () => {
                     {activeTab === 'database' && <TechnologyDatabaseTabs />}
                 </div>
                 <div className="text-center">
-                    <button className="bg-blue text-white text-sm sm:text-lg rounded-lg p-2">Schedule a Developers Interview</button>
-                </div>
-                <div className="text-center mt-5">
                     <h3 className="text-xl sm:text-3xl font-extrabold">Development Process</h3>
-                    <p className="text-sm sm:text-lg font-semibold text-gray">The Journey of Travel App/Software Development</p>
-                    <div className="grid grid-cols-12 gap-6 sm:gap-20 my-4 sm:my-10">
-                        {DevelopmentProcess.map((item, index) => (
-                            <div key={index} className="col-span-12 md:col-span-4 pt-4 bg-gray rounded-3xl">
-                                <div className="flex">
-                                    <div className="col-span-6 sm:col-span-3 md:col-span-6 pl-28 md:pl-20 xl:pl-32">
-                                        <div className="relative w-20 h-20 sm:w-32 sm:h-32 rounded-full overflow-hidden border-blue shadow-md flex items-center justify-center">
-                                            <Image src={item.image} alt={item.title} className="w-full h-full" />
-                                        </div>
+                    <p className="text-sm sm:text-xl text-gray">Our Real Estate Software Development Approach</p>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-20 my-4 sm:my-10">
+                    {DevelopmentProcess.map((item, index) => (
+                        <div key={index} className="pt-4 bg-gray rounded-3xl">
+                            <div className="flex">
+                                <div className="pl-28 sm:pl-8 lg:pl-20 xl:pl-32">
+                                    <div className="relative w-20 h-20 sm:w-32 sm:h-32 rounded-full overflow-hidden border-gray shadow-md flex items-center justify-center">
+                                        <Image src={item.image} alt={item.title} className="w-full h-full" />
                                     </div>
                                 </div>
-                                <div className="col-span-8 sm:col-span-8 pt-3 mb-10 px-4">
-                                    <h4 className="text-center text-base text-blue sm:text-lg font-extrabold pt-1 ">{item.title}</h4>
-                                    <p className="text-center text-sm sm:text-lg">
-                                        {item.description}
-                                    </p>
-                                </div>
                             </div>
-                        ))}
-                    </div>
+                            <div className="col-span-8 sm:col-span-8 pt-3 mb-10 px-4">
+                                <h4 className="text-center text-base sm:text-lg font-extrabold py-1 text-blue">{item.title}</h4>
+                                <p className="text-center text-sm sm:text-lg">
+                                    {item.list1}
+                                </p>
+                            </div>
+                        </div>
+                    ))}
                 </div>
                 <div className="text-center">
-                    <h3 className="text-3xl font-extrabold">Hiring Process - A Three-Day Journey</h3>
-                    <p className="text-gray text-2xl font-semibold">Develop Your Healthcare Software in 5 Simple Steps with Our Expert Developers</p>
-                    <p className="text-2xl font-semibold">Experience a 7-Day Trial Period for Full Satisfaction with Your Resource*.</p>
+                    <h3 className="text-xl sm:text-3xl font-extrabold">Hiring Process - A Three-Day Journey</h3>
+                    <p className="text-gray text-base sm:text-xl font-semibold my-2 sm:my-4">Develop Your Healthcare Software in 5 Simple Steps with Our Expert Developers</p>
+                    <p className="text-lg sm:text-2xl font-semibold text-blue">Experience a 7-Day Trial Period for Full Satisfaction with Your Resource*.</p>
                 </div>
                 <div className="flex justify-center">
-                    <Image src={HiringProcessTravel} alt="HiringProcessTravel" width={926} height={926} />                    
+                    <Image src={HiringProcessTravel} alt="HiringProcessTravel" width={926} height={926} />
                 </div>
                 <div className="text-center">
                     <button className="bg-blue text-white text-sm sm:text-lg rounded-lg p-2">Discuss With Our Expert Team</button>
                 </div>
                 <div>
-                    <h3 className="text-xl sm:text-3xl text-center">Adaptable Hiring Model for Travel & Hospitality Software Development</h3>
+                    <h3 className="text-xl sm:text-3xl text-center mt-4 sm:mt-16">Business-Friendly Engagement Models We Offer</h3>
                     <div className="grid grid-cols-12 gap-6 sm:gap-10 my-4 sm:my-10">
                         {hiringModel.map((item, index) => (
                             <div key={index} className="col-span-12 md:col-span-3 pl-4 pt-4 bg-gray rounded-3xl">
                                 <div className="flex">
                                     <div className="col-span-6 md:col-span-3 sm:col-span-3">
                                         <div className="relative w-16 sm:w-20 h-16 sm:h-20 rounded-full overflow-hidden border-2 border-blue border-gray shadow-md flex items-center justify-center">
-                                            <Image src={item.image} alt={item.title} className="w-full h-full object-none" />
+                                            <Image src={item.image} alt={item.title} className="w-full h-full object-scale-down" />
                                         </div>
                                     </div>
                                     <div className="">
@@ -207,15 +218,15 @@ const TravelandHospitality = () => {
                                     </div>
                                 </div>
                                 <div className="col-span-8 sm:col-span-8 pl-6 pt-3 mb-4">
-                                    <ul className="list-disc">
-                                        <li className="sm:text-sm text-base font-extrabold">
+                                    <ul className="list-disc text-gray">
+                                        <li className="sm:text-sm text-base">
                                             {item.list1}
                                         </li>
-                                        <li className="sm:text-sm text-base font-extrabold">
+                                        <li className="sm:text-sm text-base">
                                             {item.list2}
                                         </li>
                                         {item.list3 && (
-                                            <li className="sm:text-sm text-base font-extrabold">
+                                            <li className="sm:text-sm text-base">
                                                 {item.list3}
                                             </li>
                                         )}
@@ -226,10 +237,10 @@ const TravelandHospitality = () => {
                     </div>
                 </div>
                 <div>
-                    <h3 className="text-center text-lg sm:text-2xl font-extrabold">Why Us</h3>
-                    <h3 className="text-center text-lg sm:text-2xl text-gray">Why Clients Trust Us for Retail & E-commerce Software Development?</h3>
+                    <h3 className="text-center text-lg sm:text-2xl font-extrabold mt-0 sm:mt-14">Why Us</h3>
+                    <h3 className="text-center text-lg sm:text-2xl text-gray">Why Clients Trust Us for Travel app/Software Development?</h3>
                     <div className="grid grid-cols-12 gap-6 sm:gap-20 my-4 sm:my-10">
-                        {development.map((item, index) => (
+                        {SoftwareDevelopment.map((item, index) => (
                             <div key={index} className="col-span-12 md:col-span-4 pt-4 bg-gray rounded-3xl">
                                 <div className="flex">
                                     <div className="col-span-6 md:col-span-3 sm:col-span-3 pl-28 sm:pl-32">
@@ -246,11 +257,11 @@ const TravelandHospitality = () => {
                                 </div>
                             </div>
                         ))}
-                    </div>                  
+                    </div>
                 </div>
             </div>
         </main>
     )
 }
 
-export default TravelandHospitality;
+export default RealEstate;

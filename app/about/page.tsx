@@ -20,12 +20,15 @@ import emailjs from 'emailjs-com';
 import { useEffect, useState } from "react";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Metadata } from "next";
+
 
 
 const About = () => {
     const [formData, setFormData] = useState({        
         blog_email: ''      
     });
+  
 
     useEffect(() => {
         emailjs.init("hUUTxBactnTc1S5Xa");
@@ -63,7 +66,7 @@ const About = () => {
             });
     };
     return (
-        <main className="mb-10 overflow-hidden">
+        <main className="mb-10 overflow-hidden">          
             <div className={style.heroBgImage}>
                 <HeroSection image={AboutImage} text={"About Transcodezy "}/>
             </div>
@@ -156,3 +159,10 @@ const About = () => {
 }
 
 export default About;
+
+About.getInitialProps = async () => {
+    return {
+        title: "Home Page - Transcodezy",
+        description: "This is the Home page in Transcodezy solution."
+    };
+};

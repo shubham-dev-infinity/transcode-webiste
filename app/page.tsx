@@ -25,7 +25,8 @@ import style from "./styles.module.scss"
 import MaskgroupSlider from "@public/Assets/MaskgroupSlider.png"
 import MaskgroupSliderse from "@public/Assets/MaskgroupSliderse.png"
 import MaskgroupSliderth from "@public/Assets/MaskgroupSliderth.png"
-
+import Head from 'next/head';
+import RootLayout from "./layout";
 
 
 interface HomeProps { }
@@ -107,6 +108,10 @@ const Home: React.FC<HomeProps> = () => {
 
   return (
     <main>
+      <Head>
+        <title>Test Title</title>
+        <meta name="description" content="Test Description" />
+      </Head>
       <div className="relative mb-10 overflow-hidden">
         <Image
           src="/Assets/BgSlider.png"
@@ -416,4 +421,15 @@ const Home: React.FC<HomeProps> = () => {
   );
 }
 
+export const layout = {
+  component: RootLayout,
+  props: {
+    title: "Home Page",
+    description: "Welcome to the Home Page"
+  }
+};
+
 export default Home;
+
+
+

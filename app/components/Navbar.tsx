@@ -175,13 +175,13 @@ const Navbar = () => {
                             <ul className={`origin-top-right z-50 absolute top-full left-1/2 -translate-x-1/2 min-w-[240px] bg-white border border-slate-200 p-2 rounded-lg shadow-xl ${isOpens ? 'block' : 'hidden'}`}>
                                 <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
                                     <SlArrowRight size={10} className="ml-2" />
-                                    <Link href="/" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesSubmenuClick}>
+                                    <Link href="/healthcare" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesSubmenuClick}>
                                         Health Care
                                     </Link>
                                 </li>
                                 <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
                                     <SlArrowRight size={10} className="ml-2" />
-                                    <Link href="/" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesSubmenuClick}>
+                                    <Link href="/fintech" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesSubmenuClick}>
                                         Fintech
                                     </Link>
                                 </li>
@@ -199,13 +199,13 @@ const Navbar = () => {
                                 </li>
                                 <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
                                     <SlArrowRight size={10} className="ml-2" />
-                                    <Link href="/" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesSubmenuClick}>
+                                    <Link href="/realestate" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesSubmenuClick}>
                                         Real Estate
                                     </Link>
                                 </li>
                                 <li className="flex items-center transition-all duration-400 ease-linear hover:translate-x-4 hover:text-blue">
                                     <SlArrowRight size={10} className="ml-2" />
-                                    <Link href="/" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesSubmenuClick}>
+                                    <Link href="/beyond" className="px-4 py-2 text-sm font-semibold hover:transform hover:bg-transparent" onClick={handlesSubmenuClick}>
                                         Any Beyond
                                     </Link>
                                 </li>
@@ -382,12 +382,12 @@ const Navbar = () => {
                         >
                             <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="industryDropdownButtonMobile">
                                 <li>
-                                    <Link href="/" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesSubmenuClick}>
+                                    <Link href="/healthcare" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesSubmenuClick}>
                                         Health Care
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesSubmenuClick}>
+                                    <Link href="/fintech" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesSubmenuClick}>
                                         Fintech
                                     </Link>
                                 </li>
@@ -407,7 +407,7 @@ const Navbar = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesSubmenuClick}>
+                                    <Link href="/beyond" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray dark:hover:text-black" onClick={handlesSubmenuClick}>
                                         Any Beyond
                                     </Link>
                                 </li>

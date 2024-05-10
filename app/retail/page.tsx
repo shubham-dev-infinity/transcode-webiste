@@ -275,7 +275,6 @@ const RetailEcommerce = () => {
                             );
                         })}
                     </div> */}
-
                 </div>
             </div>
         </main>

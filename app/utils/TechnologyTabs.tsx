@@ -6,6 +6,7 @@ import PhpIcon from "@public/Assets/icon/phpIcon.png"
 import java from "@public/Assets/java.png"
 import wordpress from "@public/Assets/wordpress.png"
 import net from "@public/Assets/net.png"
+import nestjs from "@public/Assets/nestjs.png"
 
 const TechnologyTabs = () => {
     return (
@@ -88,6 +89,16 @@ const TechnologyTabs = () => {
                     <h2 className="text-xl font-semibold mb-2">Net</h2>
                 </div>
 
+                <div className="sm:mb-10 bg-gray p-4 relative rounded-3xl hover:bg-white hover:shadow-2xl" data-aos="zoom-in" data-aos-delay="100">
+                    <div className="flex justify-center h-48">
+                        <Image
+                            src={nestjs}
+                            alt="Your Name"
+                            className="absolute top-16 mx-auto z-10 max-w-32"
+                        />
+                    </div>
+                    <h2 className="text-xl font-semibold mb-2">Nest</h2>
+                </div>
             </div>
         </div>
     )

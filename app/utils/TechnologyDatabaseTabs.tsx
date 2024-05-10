@@ -1,7 +1,9 @@
 import Image from "next/image";
 import mongodb from "@public/Assets/icon/mongodb.png"
 import mysql from "@public/Assets/icon/mysql.png"
-
+import PostgreSQL from "@public/Assets/PostgreSQL (2).png"
+import dynamodb from "@public/Assets/dynamodb.png"
+import sqlite from "@public/Assets/sqlite (2).png"
 
 
 const TechnologyDatabaseTabs = () => {
@@ -27,6 +29,36 @@ const TechnologyDatabaseTabs = () => {
                         />
                     </div>
                     <h2 className="text-xl font-semibold mb-2">mysql</h2>
+                </div>
+                <div className="sm:mb-10 bg-gray p-4 relative rounded-3xl hover:bg-white hover:shadow-2xl" data-aos="zoom-in" data-aos-delay="100">
+                    <div className="flex justify-center h-48">
+                        <Image
+                            src={PostgreSQL}
+                            alt="Your Name"
+                            className="absolute top-16 mx-auto z-10 max-w-24"
+                        />
+                    </div>
+                    <h2 className="text-xl font-semibold mb-2">PostgreSQL</h2>
+                </div>
+                <div className="sm:mb-10 bg-gray p-4 relative rounded-3xl hover:bg-white hover:shadow-2xl" data-aos="zoom-in" data-aos-delay="100">
+                    <div className="flex justify-center h-48">
+                        <Image
+                            src={dynamodb}
+                            alt="Your Name"
+                            className="absolute top-16 mx-auto z-10 max-w-24"
+                        />
+                    </div>
+                    <h2 className="text-xl font-semibold mb-2">dynamodb</h2>
+                </div>
+                <div className="sm:mb-10 bg-gray p-4 relative rounded-3xl hover:bg-white hover:shadow-2xl" data-aos="zoom-in" data-aos-delay="100">
+                    <div className="flex justify-center h-48">
+                        <Image
+                            src={sqlite}
+                            alt="Your Name"
+                            className="absolute top-16 mx-auto z-10 max-w-24"
+                        />
+                    </div>
+                    <h2 className="text-xl font-semibold mb-2">Sqlite</h2>
                 </div>
             </div>
         </div>
