@@ -1,6 +1,6 @@
 export const metadata = {
-    title: "retail Page",
-    description: "this is About retail page in Transcodezy Solutions.",
+    title: "Managed Services Page",
+    description: "this is About Managed Services page in Transcodezy Solutions.",
 };
 
 
