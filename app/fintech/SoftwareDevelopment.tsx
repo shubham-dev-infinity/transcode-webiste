@@ -5,7 +5,7 @@ import integration from "@public/Assets/integration.png";
 import Ellipse from "@public/Assets/Ellipse.png";
 import innovation_im from "@public/Assets/innovation_im.png";
 import customer_retention from "@public/Assets/customer_retention.png";
-
+import search from "@public/Assets/search _1.png"
 const data = [
     {
         image: customer_retention,
@@ -30,28 +30,23 @@ const data = [
     {
         image: support_im,
         title: "Customer-Centric Approach",
-        list1: "Our Fintech Software Developers specialize in designing and developing Financial CRM software for insurance companies and credit unions. This software helps you effectively manage and organize customer information, including contact details and transaction history.",
-    },
-    {
-        image: innovation_im,
-        title: "Customer-Centric Approach",
         list1: "Exceeding Expectations through Client-Centric Focus",
     },
     {
-        image: innovation_im,
+        image: search,
         title: "Extensive Domain Expertise",
         list1: "Delivering Precision in Business Solutions",
     },
     {
-        image: innovation_im,
+        image: message,
         title: "Transparent Communication",
         list1: "Transparent Communication Throughout Your Project",
     },
     {
-        image: innovation_im,
+        image: human,
         title: "Highly Approachable Team",
         list1: "Our Team Ensures a Seamless and Productive Experience",
-    },
+    },    
 ];
 
 export default data;

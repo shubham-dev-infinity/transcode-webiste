@@ -83,7 +83,7 @@ const software = () => {
                     There are various kinds of software development, each offering different challenges and rewards.
                 </p>
                 <div className="grid grid-cols-12 gap-5 mt-6">
-                    <div className="col-span-12 lg:col-span-6 p-4" data-aos="slide-up" data-aos-delay="100">
+                    <div className="col-span-12 lg:col-span-6 p-4" data-aos="zoom-in" data-aos-delay="100">
                         <Image
                             src={commonTypes}
                             alt="email"
@@ -150,7 +150,7 @@ const software = () => {
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-6 mb-4">
                             <div className="col-span-3">
-                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden" data-aos="slide-up" data-aos-delay="100">
+                                <div className="relative w-24 h-24 rounded-full bg-gray bg-opacity-40 border-6 border-gray-300 shadow-md overflow-hidden" data-aos="slide-up" data-aos-delay="300">
                                     <div className="absolute inset-0 flex items-center justify-center">
                                         <Image
                                             src={gameController}

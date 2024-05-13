@@ -13,20 +13,16 @@ import TechnologyTabs from "./utils/TechnologyTabs";
 import TechnologyUiuxTabs from "./utils/TechnologyUiuxTabs";
 import TechnologyMobileTabs from "./utils/TechnologyMobileTabs";
 import TechnologyDatabaseTabs from "./utils/TechnologyDatabaseTabs";
-import staff from "@public/Assets/staff.png"
-import styles from "./styles.module.scss"
 import sadiaAkter from "@public/Assets/sadiaAkter.png"
 import Mizanur from "@public/Assets/Mizanur.png"
 import mahim from "@public/Assets/mahim.png"
 import Link from "next/link";
-import { title } from "process";
 import { useRouter } from 'next/navigation';
 import style from "./styles.module.scss"
 import MaskgroupSlider from "@public/Assets/MaskgroupSlider.png"
 import MaskgroupSliderse from "@public/Assets/MaskgroupSliderse.png"
 import MaskgroupSliderth from "@public/Assets/MaskgroupSliderth.png"
 import Head from 'next/head';
-import RootLayout from "./layout";
 
 
 interface HomeProps { }
@@ -107,11 +103,7 @@ const Home: React.FC<HomeProps> = () => {
   };
 
   return (
-    <main>
-      <Head>
-        <title>Test Title</title>
-        <meta name="description" content="Test Description" />
-      </Head>
+    <main>      
       <div className="relative mb-10 overflow-hidden">
         <Image
           src="/Assets/BgSlider.png"
@@ -420,14 +412,6 @@ const Home: React.FC<HomeProps> = () => {
     </main>
   );
 }
-
-export const layout = {
-  component: RootLayout,
-  props: {
-    title: "Home Page",
-    description: "Welcome to the Home Page"
-  }
-};
 
 export default Home;
 
