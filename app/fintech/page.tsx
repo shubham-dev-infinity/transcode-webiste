@@ -259,27 +259,8 @@ const Fintech = () => {
                 </div>
                 <div>
                     <h3 className="text-center text-lg sm:text-2xl font-extrabold mt-0 sm:mt-14">Why Us</h3>
-                    <h3 className="text-center text-lg sm:text-2xl text-gray">Why Clients Trust Us for Travel app/Software Development?</h3>
+                    <h3 className="text-center text-lg sm:text-2xl text-gray mt-0 sm:mt-2">Why Clients Trust Us for Travel app/Software Development?</h3>
                     <div className="grid grid-cols-6 gap-6 sm:gap-20 my-4 sm:my-10">
-                        {/* {SoftwareDevelopment.map((item, index) => (
-                            <div key={index} className={` pt-4 bg-gray rounded-3xl ${(index === SoftwareDevelopment.length - 2 || index === SoftwareDevelopment.length - 1) ? 'col-start-2 col-span-2' : ' col-span-2'
-                                } ${index === SoftwareDevelopment.length - 1 ? 'col-start-4 col-span-2' : ''
-                                }`}>
-                                <div className="flex">
-                                    <div className="col-span-6 md:col-span-3 sm:col-span-3 pl-28 sm:pl-32">
-                                        <div className="relative w-20 h-20 sm:w-32 sm:h-32 rounded-full overflow-hidden border-gray shadow-md flex items-center justify-center">
-                                            <Image src={item.image} alt={item.title} className="w-full h-full" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-span-8 sm:col-span-8 pt-3 mb-10 px-4">
-                                    <h4 className="text-center text-base sm:text-lg font-extrabold pt-1 ">{item.title}</h4>
-                                    <p className="text-center text-sm sm:text-lg">
-                                        {item.list1}
-                                    </p>
-                                </div>
-                            </div>
-                        ))} */}
                         {SoftwareDevelopment.map((item, index) => (
                             <div key={index} className={`pt-4 bg-gray rounded-3xl col-span-6 sm:col-span-2  ${(index === SoftwareDevelopment.length - 2 || index === SoftwareDevelopment.length - 1) ? 'col-start-0 col-span-6 sm:col-start-2 sm:col-span-2' : ' col-span-6 sm:col-span-2'
                                 } ${index === SoftwareDevelopment.length - 1 ? 'col-start-0 col-span-2 sm:col-start-4 sm:col-span-2' : ''
@@ -299,7 +280,6 @@ const Fintech = () => {
                                 </div>
                             </div>
                         ))}
-
                     </div>
                 </div>
                 <div className="bg-white shadow-lg rounded-lg p-6 max-w-sm">

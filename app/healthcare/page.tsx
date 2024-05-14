@@ -61,11 +61,11 @@ const HealthCare = () => {
                         </div>
                     ))}
                 </div>
-                <div className="text-center mb-1 sm:mb-4">
-                    <h3 className="text-xl sm:text-3xl font-extrabold">Our Offerings in Healthcare Software Development Services</h3>
+                <div className="text-center mb-2 sm:mb-14">
+                    <h3 className="text-xl sm:text-3xl font-extrabold mt-0 sm:mt-14">Our Offerings in Healthcare Software Development Services</h3>
                     <p className="text-sm sm:text-xl font-semibold mt-1 sm:mt-4">Transcode recognizes the distinctive hurdles healthcare software companies encounter and guides them through a seamless digital transformation journey, prioritizing exceptional customer service, regulatory adherence, and staying ahead of non-traditional competitors. Leveraging our elite digital team, we deliver cutting-edge services and solutions across the entire spectrum of medical software needs.</p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-6 p-1 sm:p-2 mb-2 sm:mb-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-6 p-1 sm:p-2 mb-2 sm:mb-14">
                     <div className="bg-gray rounded-3xl p-2 sm:p-4">
                         <h3 className="text-sm sm:text-base md:text-xl font-semibold"><span className="text-blue">Elevating Healthcare</span>  with CRM Solutions</h3>
                         <div className="w-16 sm:w-64 h-0.5 sm:h-1 bg-blue  sm:mb-6 hidden sm:block "></div>
@@ -107,7 +107,11 @@ const HealthCare = () => {
                         <p className="text-xs sm:text-base text-gray py-2 sm:pb-4">We offer extensive SAP services and solutions to help businesses build a strong foundation. Our professionals enable automated operations in critical areas: Patient/Provider Engagement, Diagnosis and Care Delivery, Billing and Compliance, and Data Integration, supporting the transition to patient-centric services and strategic workforce alignment.</p>
                     </div>
                 </div>
-                <div className="mb-10 text-center border-gray-200 dark:border-gray-700">
+                <div className="text-center mb-0 sm:mb-4">
+                    <h3 className="text-lg sm:text-2xl font-extrabold pb-2">Technologies</h3>
+                    <h3 className="text-blue text-base sm:text-xl"> Technologies & Platforms We Engage With</h3>
+                </div>
+                <div className="mb-2 text-center border-gray-200 dark:border-gray-700">
                     <ul className="mb-2 flex flex-wrap text-sm font-medium text-center justify-center" id="default-tab" role="tablist">
                         <li className="me-2" role="presentation">
                             <button
@@ -172,21 +176,24 @@ const HealthCare = () => {
                     {activeTab === 'database' && <TechnologyDatabaseTabs />}
                 </div>
                 <div className="text-center">
-                    <button className="bg-blue text-white text-sm sm:text-lg rounded-lg p-2 mb-0 sm:mb-6">Schedule a Developers Interview</button>
-                    <h3 className="text-xl sm:text-3xl font-extrabold">Our Fintech Software Development Process</h3>
+                    <button className="bg-blue text-white text-sm sm:text-lg rounded-lg p-2 mb-0 sm:mb-12">Schedule a Developers Interview</button>
+                    <h3 className="text-xl sm:text-3xl font-extrabold mb-0 sm:mb-2">Development Process</h3>
+                    <p className="text-sm sm:text-xl text-gray font-semibold">Our Process for Healthcare Software Development</p>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-20 my-4 sm:my-10">
+                <div className="grid grid-cols-6 gap-6 sm:gap-20 my-4 sm:my-10">
                     {DevelopmentProcess.map((item, index) => (
-                        <div key={index} className="pt-4 bg-gray rounded-3xl">
+                        <div key={index} className={`pt-4 bg-gray rounded-3xl col-span-6 sm:col-span-2  ${(index === DevelopmentProcess.length - 2 || index === DevelopmentProcess.length - 1) ? 'col-start-0 col-span-6 sm:col-start-2 sm:col-span-2' : ' col-span-6 sm:col-span-2'
+                            } ${index === DevelopmentProcess.length - 1 ? 'col-start-0 col-span-2 sm:col-start-4 sm:col-span-2' : ''
+                            }`}>
                             <div className="flex">
-                                <div className="pl-28 sm:pl-8 lg:pl-20 xl:pl-32">
-                                    <div className="relative w-20 h-20 sm:w-32 sm:h-32 rounded-full overflow-hidden border-gray shadow-md flex items-center justify-center">
+                                <div className="col-span-6 md:col-span-3 sm:col-span-3 pl-28 md:pl-12 lg:pl-20 xl:pl-32">
+                                    <div className="relative w-20 h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 rounded-full overflow-hidden border-gray shadow-md flex items-center justify-center">
                                         <Image src={item.image} alt={item.title} className="w-full h-full" />
                                     </div>
                                 </div>
                             </div>
                             <div className="col-span-8 sm:col-span-8 pt-3 mb-10 px-4">
-                                <h4 className="text-center text-base sm:text-lg font-extrabold py-1 text-blue">{item.title}</h4>
+                                <h4 className="text-center text-base sm:text-lg font-extrabold pt-1">{item.title}</h4>
                                 <p className="text-center text-sm sm:text-lg">
                                     {item.list1}
                                 </p>
@@ -194,7 +201,7 @@ const HealthCare = () => {
                         </div>
                     ))}
                 </div>
-                <div className="text-center">
+                <div className="text-center my-0 sm:my-12">
                     <h3 className="text-xl sm:text-3xl font-extrabold">Hiring Process - A Three-Day Journey</h3>
                     <p className="text-gray text-base sm:text-xl font-semibold my-2 sm:my-4">Develop Your Healthcare Software in 5 Simple Steps with Our Expert Developers</p>
                     <p className="text-lg sm:text-2xl font-semibold text-blue">Experience a 7-Day Trial Period for Full Satisfaction with Your Resource*.</p>
@@ -206,10 +213,10 @@ const HealthCare = () => {
                     <button className="bg-blue text-white text-sm sm:text-lg rounded-lg p-2">Discuss With Our Expert Team</button>
                 </div>
                 <div>
-                    <h3 className="text-xl sm:text-3xl text-center mt-4 sm:mt-16">Adaptable Hiring Model for Travel & Hospitality Software Development</h3>
+                    <h3 className="text-xl sm:text-3xl font-extrabold text-center mt-4 sm:mt-16 px-0 sm:px-40">Adaptable Hiring Model for Travel & Hospitality Software Development</h3>
                     <div className="grid grid-cols-12 gap-6 sm:gap-10 my-4 sm:my-10">
                         {hiringModel.map((item, index) => (
-                            <div key={index} className="col-span-12 md:col-span-3 pl-4 pt-4 bg-gray rounded-3xl">
+                            <div key={index} className="col-span-12 md:col-span-6 lg:col-span-3 pl-4 pt-4 bg-gray rounded-3xl">
                                 <div className="flex">
                                     <div className="col-span-6 md:col-span-3 sm:col-span-3">
                                         <div className="relative w-16 sm:w-20 h-16 sm:h-20 rounded-full overflow-hidden border-2 border-blue border-gray shadow-md flex items-center justify-center">
@@ -242,18 +249,20 @@ const HealthCare = () => {
                 <div>
                     <h3 className="text-center text-lg sm:text-2xl font-extrabold mt-0 sm:mt-14">Why Us</h3>
                     <h3 className="text-center text-lg sm:text-2xl text-gray">Why Clients Trust Us for Travel app/Software Development?</h3>
-                    <div className="grid grid-cols-12 gap-6 sm:gap-20 my-4 sm:my-10">
+                    <div className="grid grid-cols-6 gap-6 sm:gap-20 my-4 sm:my-10">
                         {SoftwareDevelopment.map((item, index) => (
-                            <div key={index} className="col-span-12 md:col-span-4 pt-4 bg-gray rounded-3xl">
+                            <div key={index} className={`pt-4 bg-gray rounded-3xl col-span-6 sm:col-span-2  ${(index === SoftwareDevelopment.length - 2 || index === SoftwareDevelopment.length - 1) ? 'col-start-0 col-span-6 sm:col-start-2 sm:col-span-2' : ' col-span-6 sm:col-span-2'
+                                } ${index === SoftwareDevelopment.length - 1 ? 'col-start-0 col-span-2 sm:col-start-4 sm:col-span-2' : ''
+                                }`}>
                                 <div className="flex">
-                                    <div className="col-span-6 md:col-span-3 sm:col-span-3 pl-28 sm:pl-32">
-                                        <div className="relative w-20 h-20 sm:w-32 sm:h-32 rounded-full overflow-hidden border-gray shadow-md flex items-center justify-center">
+                                    <div className="col-span-6 md:col-span-3 sm:col-span-3 pl-28 md:pl-12 lg:pl-20 xl:pl-32">
+                                        <div className="relative w-20 h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 rounded-full overflow-hidden border-gray shadow-md flex items-center justify-center">
                                             <Image src={item.image} alt={item.title} className="w-full h-full" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-span-8 sm:col-span-8 pt-3 mb-10 px-4">
-                                    <h4 className="text-center text-base sm:text-lg font-extrabold pt-1 ">{item.title}</h4>
+                                    <h4 className="text-center text-base sm:text-lg font-extrabold pt-1">{item.title}</h4>
                                     <p className="text-center text-sm sm:text-lg">
                                         {item.list1}
                                     </p>

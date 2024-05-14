@@ -44,22 +44,27 @@ const TravelandHospitality = () => {
                         <button className="bg-blue px-4 py-2 rounded-md font-bold text-white mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">Free Consultation</button>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 rounded-3xl mb-10">
-                    {TransformingData.map((step, index) => (
-                        <div key={index} className={`p-16 shadow-lg rounded-lg bg-gray ${TransformingData.length % 2 !== 0 && index === TransformingData.length - 1 ? 'md:col-start-1 md:col-span-2 lg:col-start-1 lg:col-span-2 text-center' : 'md:mx-11'}`}>
-                            <div className="mb-2">
-                                {/* Placeholder for image, add actual image path in `src` */}
-                                {/* <Image src={step.image || "path/to/default/image.png"} alt={step.title} className="w-full h-auto object-cover rounded-md" /> */}
+                <div className="grid grid-cols-4 gap-4 sm:gap-12 my-4 sm:my-10">
+                    {TransformingData.map((item, index) => (
+                        <div key={index} className={`pt-4 bg-gray rounded-3xl ${index === TransformingData.length - 1 ? 'sm:col-span-2 col-start-0 sm:col-start-2 col-span-4' : 'sm:col-span-2 col-span-4'}`}>
+                            <div className=" pl-28 sm:pl-24 md:pl-36 lg:pl-44 xl:pl-60">
+                                <div className="relative w-20 h-20 lg:w-32 lg:h-32 rounded-full overflow-hidden border-gray shadow-md flex items-center justify-center">
+                                    <Image src={item.image} alt="alt" className="w-full h-full" />
+                                </div>
                             </div>
-                            <h4 className="text-base sm:text-xl font-bold text-gray">{step.title}</h4>
-                            <p className="text-gray text-sm sm:text-lg">{step.description}</p>
+                            <div className="col-span-8 sm:col-span-8 pt-3 mb-10 px-4">
+                                <h4 className="text-center text-base lg:text-lg font-extrabold pt-1 ">{item.title}</h4>
+                                <p className="text-center text-sm lg:text-lg">
+                                    {item.description}
+                                </p>
+                            </div>
                         </div>
                     ))}
                 </div>
-                <div className="text-center">
-                    <h2 className="text-3xl font-extrabold">We Offer</h2>
-                    <p className="text-blue text-xl font-semibold">Our Commitment to Excellence in Travel App/Software Development</p>
-                    <p className="font-semibold text-xl">Our offerings are all-encompassing, designed to meet your every requirement. From travel App/Software development and rigorous testing to end-to-end support & maintenance, we&apos;ve got you covered. Additionally, we specialize in providing cloud services, crafting AI solutions, and beyond. With our comprehensive suite of services, rest assured that your needs are in expert hands.</p>
+                <div className="text-center my-4 sm:my-16">
+                    <h3 className="text-lg sm:text-3xl font-extrabold mb-2 sm:mb-4">We Offer</h3>
+                    <p className="text-sm sm:text-lg font-semibold text-blue py-1 sm:py-3">Our Commitment to Excellence in Travel App/Software Development</p>
+                    <p className="text-xs sm:text-base font-semibold">Our offerings are all-encompassing, designed to meet your every requirement. From travel App/Software development and rigorous testing to end-to-end support & maintenance, we&apos;ve got you covered. Additionally, we specialize in providing cloud services, crafting AI solutions, and beyond. With our comprehensive suite of services, rest assured that your needs are in expert hands.</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-6 p-1 sm:p-2 mb-2 sm:mb-6">
                     <div className="bg-gray rounded-3xl p-2 sm:p-4">
@@ -90,7 +95,7 @@ const TravelandHospitality = () => {
                     <h3 className="text-lg sm:text-2xl font-extrabold pb-4">Technologies</h3>
                     <h3 className="text-blue text-base sm:text-xl"> Technologies & Platforms We Engage With</h3>
                 </div>
-                <div className="mb-10 text-center border-gray-200 dark:border-gray-700">
+                <div className="mb-2 sm:mb-3 text-center border-gray-200 dark:border-gray-700">
                     <ul className="mb-2 flex flex-wrap text-sm font-medium text-center justify-center" id="default-tab" role="tablist">
                         <li className="me-2" role="presentation">
                             <button
@@ -154,17 +159,17 @@ const TravelandHospitality = () => {
                     {activeTab === 'mobiledevelopment' && <TechnologyMobileTabs />}
                     {activeTab === 'database' && <TechnologyDatabaseTabs />}
                 </div>
-                <div className="text-center">
+                <div className="text-center mb-2 sm:mb-14">
                     <button className="bg-blue text-white text-sm sm:text-lg rounded-lg p-2">Schedule a Developers Interview</button>
                 </div>
-                <div className="text-center mt-5">
-                    <h3 className="text-xl sm:text-3xl font-extrabold">Development Process</h3>
+                <div className="text-center">
+                    <h3 className="text-xl sm:text-3xl font-extrabold mb-0 sm:mb-2">Development Process</h3>
                     <p className="text-sm sm:text-lg font-semibold text-gray">The Journey of Travel App/Software Development</p>
                     <div className="grid grid-cols-12 gap-6 sm:gap-20 my-4 sm:my-10">
                         {DevelopmentProcess.map((item, index) => (
-                            <div key={index} className="col-span-12 md:col-span-4 pt-4 bg-gray rounded-3xl">
+                            <div key={index} className="col-span-12 md:col-span-6 lg:col-span-4 pt-4 bg-gray rounded-3xl">
                                 <div className="flex">
-                                    <div className="col-span-6 sm:col-span-3 md:col-span-6 pl-28 md:pl-20 xl:pl-32">
+                                    <div className="col-span-6 lg:col-span-3 md:col-span-2 pl-28 md:pl-20 xl:pl-32">
                                         <div className="relative w-20 h-20 sm:w-32 sm:h-32 rounded-full overflow-hidden border-blue shadow-md flex items-center justify-center">
                                             <Image src={item.image} alt={item.title} className="w-full h-full" />
                                         </div>
@@ -180,22 +185,22 @@ const TravelandHospitality = () => {
                         ))}
                     </div>
                 </div>
-                <div className="text-center">
-                    <h3 className="text-3xl font-extrabold">Hiring Process - A Three-Day Journey</h3>
-                    <p className="text-gray text-2xl font-semibold">Develop Your Healthcare Software in 5 Simple Steps with Our Expert Developers</p>
-                    <p className="text-2xl font-semibold">Experience a 7-Day Trial Period for Full Satisfaction with Your Resource*.</p>
+                <div className="text-center mb-0 sm:mb-10">
+                    <h3 className="text-xl sm:text-3xl font-extrabold">Hiring Process - A Three-Day Journey</h3>
+                    <p className="text-gray text-sm sm:text-xl font-semibold my-1 sm:my-6">Develop Your Healthcare Software in 5 Simple Steps with Our Expert Developers</p>
+                    <p className="text-sm sm:text-xl font-semibold text-blue">Experience a 7-Day Trial Period for Full Satisfaction with Your Resource*.</p>
                 </div>
                 <div className="flex justify-center">
-                    <Image src={HiringProcessTravel} alt="HiringProcessTravel" width={926} height={926} />                    
+                    <Image src={HiringProcessTravel} alt="HiringProcessTravel" width={926} height={926} />
                 </div>
                 <div className="text-center">
                     <button className="bg-blue text-white text-sm sm:text-lg rounded-lg p-2">Discuss With Our Expert Team</button>
                 </div>
                 <div>
-                    <h3 className="text-xl sm:text-3xl text-center">Adaptable Hiring Model for Travel & Hospitality Software Development</h3>
+                    <h3 className="text-xl sm:text-3xl text-center font-extrabold mt-4 sm:mt-20 px-0 md:px-40">Adaptable Hiring Model for Travel & Hospitality Software Development</h3>
                     <div className="grid grid-cols-12 gap-6 sm:gap-10 my-4 sm:my-10">
                         {hiringModel.map((item, index) => (
-                            <div key={index} className="col-span-12 md:col-span-3 pl-4 pt-4 bg-gray rounded-3xl">
+                            <div key={index} className="col-span-12 sm:col-span-6 lg:col-span-3 pl-4 pt-4 bg-gray rounded-3xl">
                                 <div className="flex">
                                     <div className="col-span-6 md:col-span-3 sm:col-span-3">
                                         <div className="relative w-16 sm:w-20 h-16 sm:h-20 rounded-full overflow-hidden border-2 border-blue border-gray shadow-md flex items-center justify-center">
@@ -226,27 +231,29 @@ const TravelandHospitality = () => {
                     </div>
                 </div>
                 <div>
-                    <h3 className="text-center text-lg sm:text-2xl font-extrabold">Why Us</h3>
-                    <h3 className="text-center text-lg sm:text-2xl text-gray">Why Clients Trust Us for Retail & E-commerce Software Development?</h3>
-                    <div className="grid grid-cols-12 gap-6 sm:gap-20 my-4 sm:my-10">
+                    <h3 className="text-center text-lg sm:text-2xl font-extrabold mt-0 sm:mt-14">Why Us</h3>
+                    <h3 className="text-center text-lg sm:text-2xl text-gray mt-0 sm:mt-2">Why Clients Trust Us for Retail & E-commerce Software Development?</h3>
+                    <div className="grid grid-cols-6 gap-6 sm:gap-20 my-4 sm:my-10">
                         {development.map((item, index) => (
-                            <div key={index} className="col-span-12 md:col-span-4 pt-4 bg-gray rounded-3xl">
+                            <div key={index} className={`pt-4 bg-gray rounded-3xl col-span-6 sm:col-span-2  ${(index === development.length - 2 || index === development.length - 1) ? 'col-start-0 col-span-6 sm:col-start-2 sm:col-span-2' : ' col-span-6 sm:col-span-2'
+                                } ${index === development.length - 1 ? 'col-start-0 col-span-2 sm:col-start-4 sm:col-span-2' : ''
+                                }`}>
                                 <div className="flex">
-                                    <div className="col-span-6 md:col-span-3 sm:col-span-3 pl-28 sm:pl-32">
-                                        <div className="relative w-20 h-20 sm:w-32 sm:h-32 rounded-full overflow-hidden border-gray shadow-md flex items-center justify-center">
+                                    <div className="col-span-6 md:col-span-3 sm:col-span-3 pl-28 md:pl-12 lg:pl-20 xl:pl-32">
+                                        <div className="relative w-20 h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 rounded-full overflow-hidden border-gray shadow-md flex items-center justify-center">
                                             <Image src={item.image} alt={item.title} className="w-full h-full" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-span-8 sm:col-span-8 pt-3 mb-10 px-4">
-                                    <h4 className="text-center text-base sm:text-lg font-extrabold pt-1 ">{item.title}</h4>
+                                    <h4 className="text-center text-base sm:text-lg font-extrabold pt-1">{item.title}</h4>
                                     <p className="text-center text-sm sm:text-lg">
                                         {item.list1}
                                     </p>
                                 </div>
                             </div>
                         ))}
-                    </div>                  
+                    </div>
                 </div>
             </div>
         </main>

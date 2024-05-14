@@ -233,18 +233,20 @@ const RetailEcommerce = () => {
                 <div>
                     <h3 className="text-center text-lg sm:text-2xl font-extrabold">Why Us</h3>
                     <h3 className="text-center text-lg sm:text-2xl text-gray">Why Clients Trust Us for Retail & E-commerce Software Development?</h3>
-                    <div className="grid grid-cols-12 gap-6 sm:gap-20 my-4 sm:my-10">
+                    <div className="grid grid-cols-6 gap-6 sm:gap-20 my-4 sm:my-10">
                         {development.map((item, index) => (
-                            <div key={index} className="col-span-12 md:col-span-4 pt-4 bg-gray rounded-3xl">
+                            <div key={index} className={`pt-4 bg-gray rounded-3xl col-span-6 sm:col-span-2  ${(index === development.length - 2 || index === development.length - 1) ? 'col-start-0 col-span-6 sm:col-start-2 sm:col-span-2' : ' col-span-6 sm:col-span-2'
+                                } ${index === development.length - 1 ? 'col-start-0 col-span-2 sm:col-start-4 sm:col-span-2' : ''
+                                }`}>
                                 <div className="flex">
-                                    <div className="col-span-6 md:col-span-3 sm:col-span-3 pl-32 sm:pl-36">
-                                        <div className="relative w-16 h-16 sm:w-32 sm:h-32 rounded-full overflow-hidden border-gray shadow-md flex items-center justify-center">
+                                    <div className="col-span-6 md:col-span-3 sm:col-span-3 pl-28 md:pl-12 lg:pl-20 xl:pl-32">
+                                        <div className="relative w-20 h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 rounded-full overflow-hidden border-gray shadow-md flex items-center justify-center">
                                             <Image src={item.image} alt={item.title} className="w-full h-full" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-span-8 sm:col-span-8 pt-3 mb-10 px-4">
-                                    <h4 className="text-center text-base sm:text-lg font-extrabold pt-1 ">{item.title}</h4>
+                                    <h4 className="text-center text-base sm:text-lg font-extrabold pt-1">{item.title}</h4>
                                     <p className="text-center text-sm sm:text-lg">
                                         {item.list1}
                                     </p>
@@ -252,29 +254,6 @@ const RetailEcommerce = () => {
                             </div>
                         ))}
                     </div>
-                    {/* <div className="grid grid-cols-12 gap-6 sm:gap-20 my-4 sm:my-10">
-                        {development.map((item, index) => {
-                            const isLastRow = index >= development.length - (development.length % 3) && development.length % 3 !== 0;
-                            const columnSpan = isLastRow ? 12 / (development.length % 3 || 3) : 4; // Adjusting column span for the last row
-                            return (
-                                <div key={index} className={`col-span-12 md:col-span-${columnSpan} pt-4 bg-gray rounded-3xl`}>
-                                    <div className="flex justify-center">
-                                        <div className="col-span-6 md:col-span-3 sm:col-span-3">
-                                            <div className="relative w-10 sm:w-32 h-16 sm:h-32 rounded-full overflow-hidden border-gray shadow-md flex items-center justify-center">
-                                                <Image src={item.image} alt={item.title} className="w-full h-full" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-span-8 sm:col-span-8 pt-3 mb-10">
-                                        <h4 className="text-center text-sm sm:text-lg font-extrabold pt-1 ">{item.title}</h4>
-                                        <p className="text-center sm:text-sm text-lg">
-                                            {item.list1}
-                                        </p>
-                                    </div>
-                                </div>
-                            );
-                        })}
-                    </div> */}
                 </div>
             </div>
         </main>

@@ -25,7 +25,7 @@ const Sitemap = () => {
                                 <Link href="/blog">Blog</Link>
                             </li>
                             <li>
-                                <Link href="/contact">Contact Us</Link>
+                                <Link href="/contactus">Contact Us</Link>
                             </li>
                         </ul>
                     </div>
@@ -43,7 +43,7 @@ const Sitemap = () => {
                                 <Link href="/blog">Blog</Link>
                             </li>
                             <li>
-                                <Link href="/contact">Contact Us</Link>
+                                <Link href="/contactus">Contact Us</Link>
                             </li>
                         </ul>
                     </div>

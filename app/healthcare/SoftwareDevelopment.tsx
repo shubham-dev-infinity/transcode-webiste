@@ -30,13 +30,8 @@ const data = [
     {
         image: support_im,
         title: "Customer-Centric Approach",
-        list1: "Our Fintech Software Developers specialize in designing and developing Financial CRM software for insurance companies and credit unions. This software helps you effectively manage and organize customer information, including contact details and transaction history.",
-    },
-    {
-        image: innovation_im,
-        title: "Customer-Centric Approach",
         list1: "Exceeding Expectations through Client-Centric Focus",
-    },
+    },  
     {
         image: innovation_im,
         title: "Extensive Domain Expertise",
