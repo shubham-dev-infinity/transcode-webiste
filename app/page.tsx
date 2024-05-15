@@ -325,7 +325,8 @@ const Home: React.FC<HomeProps> = () => {
                 <div className="" >
                   <Image className="absolute top-[-34%] sm:top-[-26%] lg:top-[-24%] xl:top-[-25%]" src={sadiaAkter} alt="staff" />
                 </div>
-                <p className="text-sm sm:text-lg text-gray pt-28 pb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta, veritatis vero deserunt aut error qui enim labore nihil harum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta.</p>
+                <p className="text-sm sm:text-lg text-gray pt-28 pb-8">
+                  Sadia Akter, hailing from Dhaka, shines with client testimonials, showcasing her professionalism and expertise. Her track record speaks volumes about her capabilities and commitment to excellence.</p>
                 <h3 className="text-base sm:text-xl text-blue">mst. sadia akter</h3>
                 <h6 className="text-base sm:text-base text-gray py-4">dhaka</h6>
               </div>
@@ -333,7 +334,7 @@ const Home: React.FC<HomeProps> = () => {
                 <div className="">
                   <Image className="absolute top-[-34%] sm:top-[-26%] lg:top-[-24%] xl:top-[-25%]" src={Mizanur} alt="staff" />
                 </div>
-                <p className="text-sm sm:text-lg text-gray pt-28 pb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta, veritatis vero deserunt aut error qui enim labore nihil harum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta.</p>
+                <p className="text-sm sm:text-lg text-gray pt-28 pb-8">Mizanur Islam of Khulna is your trusted partner, offering expert guidance and personalized support. With integrity and professionalism, he helps clients achieve success in their endeavors.</p>
                 <h3 className="text-base sm:text-xl text-blue">Mizanur islam</h3>
                 <h6 className="text-base sm:text-base text-gray py-4">khulna</h6>
               </div>
@@ -341,7 +342,7 @@ const Home: React.FC<HomeProps> = () => {
                 <div className="">
                   <Image className="absolute top-[-34%] sm:top-[-26%] lg:top-[-24%] xl:top-[-25%]" src={mahim} alt="staff" />
                 </div>
-                <p className="text-sm sm:text-lg text-gray pt-28 pb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta, veritatis vero deserunt aut error qui enim labore nihil harum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta.</p>
+                <p className="text-sm sm:text-lg text-gray pt-28 pb-8">Mahim Miya from Chittagong offers compelling client testimonials, showcasing satisfaction and trust. His track record reflects reliability and excellence, supported by impressive statistics.</p>
                 <h3 className="text-base sm:text-xl text-blue">md. mahim miya</h3>
                 <h6 className="text-base sm:text-base text-gray py-4">Chittagong</h6>
               </div>
@@ -381,7 +382,7 @@ const Home: React.FC<HomeProps> = () => {
                       </div>
                       <div className="px-2 sm:p-4 text-left">
                         <p className="mb-2  text-base font-normal text-gray">{blog.date}</p>
-                        <p className="mb-2 sm:mb-3 font-normal text-gray-700 dark:text-gray-400">{blog.content}</p>
+                        <p className="mb-2 text-xs sm:text-sm sm:mb-3 font-normal text-gray-700 dark:text-gray-400">{blog.content}</p>
                         <a href={blog.link} className="inline-flex items-center mb-1 sm:mb-0 px-3 py-2 text-sm font-medium text-center text-white bg-blue rounded-lg hover:bg-white hover:text-blue hover:border-blue border hover:border-solid">
                           See Full Article
                         </a>

@@ -1,8 +1,6 @@
 import Link from "next/link";
-import { FaFacebookSquare, FaPinterest, FaTwitter, FaYoutube } from "react-icons/fa";
 import Image from 'next/image';
 import logo from "@public/Assets/logo.png"
-import { MdLocationPin } from "react-icons/md";
 import Oman from "@public/Assets/Oman.png";
 import FlagOfIndia from "@public/Assets/Flag_of_India.png";
 import Facebook from "@public/Assets/Facebook.png"
@@ -27,26 +25,6 @@ const Footer = () => {
                     <div className="w-28 h-0.5 bg-white mb-2"></div>
                     <p className="text-sm leading-0 sm:leading-8">Call: +91 9879868908</p>
                     <p className="text-sm leading-0 sm:leading-8">Email: info@transcodesolution.com</p>
-                    {/* <div className="grid grid-cols-12 items-start mt-10">
-                        <Image src={FlagOfIndia} alt="Flag_of_India" width={50} height={33.34} className="col-span-2" />
-                        <div className="ml-3 col-span-10">
-                            <p className="text-sm col-span-12">
-                                301, Ambika Pinnacle, beside Lajamni Chowk, Maruti Dham Society, Mota Varachha, Surat, Gujarat 394101
-                            </p>
-                            <p className="text-sm my-2 col-span-12">Call: +91 9510249833</p>
-                            <p className="text-sm my-2 col-span-12">Email: ceo@transcodesolution.com</p>
-                        </div>
-                    </div> */}
-                    {/* <div className="grid grid-cols-12 items-start mt-10">
-                        <Image src={FlagOfIndia} alt="Flag_of_India" width={50} height={33.34} className="col-span-12 sm:col-span-2 lg:col-span-12 xl:col-span-2 mb-3 sm:mb-0 lg:pb-2 xl:pb-0" />
-                        <div className="ml-3 col-span-12 sm:col-span-10">
-                            <p className="text-sm col-span-12">
-                                301, Ambika Pinnacle, beside Lajamni Chowk, Maruti Dham Society, Mota Varachha, Surat, Gujarat 394101
-                            </p>
-                            <p className="text-sm my-2 col-span-12">Call: +91 9510249833</p>
-                            <p className="text-sm my-2 col-span-12">Email: ceo@transcodesolution.com</p>
-                        </div>
-                    </div> */}
                 </div>
                 <div>
                     <h1 className="text-base sm:text-xl font-bold">Quick Links</h1>
@@ -59,7 +37,7 @@ const Footer = () => {
                         </Link>
                         <Link href="/about" rel="noopener noreferrer">
                             <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
-                                About Transcodezy 
+                                About Transcodezy
                             </span>
                         </Link>
                         <Link href="company-linkedin" rel="noopener noreferrer">
@@ -149,16 +127,6 @@ const Footer = () => {
                             </span>
                         </Link>
                     </div>
-                    {/* <div className="grid grid-cols-12 items-start mt-10">
-                        <Image src={Oman} alt="Oman" width={60} height={30} className="col-span-12 sm:col-span-2 lg:col-span-12 xl:col-span-2 mb-3 sm:mb-0 lg:pb-2 xl:pb-0" />
-                        <div className="sm:ml-3 col-span-12 sm:col-span-10">
-                            <p className="text-sm col-span-12">
-                                P.O.Box:1890, PC:130, Ruwi, Muscat, Sultanate of Oman.
-                            </p>
-                            <p className="text-sm my-2 col-span-12">Call: +968-91945242</p>
-                            <p className="text-sm my-2 col-span-12">Email: cso@transcodesolution.com</p>
-                        </div>
-                    </div> */}
                 </div>
             </div>
             <div className="text-center text-white">
@@ -191,74 +159,7 @@ const Footer = () => {
                 </div>
             </div>
             <hr className="container mx-auto border-t border-white mt-6 mb-4" />
-            {/* <div className="container mx-auto">
-                <p className="text-white text-sm">© 2024 All Rights Reserved - transcodesolution.com</p>
-                <div className="flex gap-5 mt-2 text-white">
-                    <div className="flex ">
-                        <Link href="https://m.facebook.com/profile.php/" target="_blank" rel="noopener noreferrer">
-                            <span className="text-xl hover:text-blue-500">
-                                <FaFacebookSquare className="w-6 h-6 rounded-md" />
-                            </span>
-                        </Link>
-                    </div>
-                    <div className="flex">
-                        <Link href="dharmeshkumbhani3@gmail.com" target="_blank" rel="noopener noreferrer">
-                            <span className="text-xl hover:text-blue-500">
-                                <FaTwitter className="w-6 h-6 rounded-md" />
-                            </span>
-                        </Link>
-                    </div>
-                    <div className="flex">
-                        <Link href="https://youtube.com/@Dharmeshkumbhani2580?si=Ek-XLWVTscwtpP8p" target="_blank" rel="noopener noreferrer">
-                            <span className="text-xl hover:text-blue-500">
-                                <FaYoutube className="w-6 h-6 rounded-md" />
-                            </span>
-                        </Link>
-                    </div>
-                    <div className="flex">
-                        <Link href="https://in.pinterest.com/transcodesolution/" target="_blank" rel="noopener noreferrer">
-                            <span className="text-xl hover:text-blue-500">
-                                <FaPinterest className="w-6 h-6 rounded-md" />
-                            </span>
-                        </Link>
-                    </div>
-                </div>
-            </div> */}
-            {/* <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 items-center mb-4">
-                <p className="text-white text-sm mb-2 sm:mb-4 sm:text-left col-start-1 sm:col-start">© 2024 All Rights Reserved - transcodesolution.com</p>
-                <div className="flex justify-between sm:justify-end gap-5 mb-4 text-white col-start-1 sm:col-start-auto sm:col-end-auto">
-                    <div className="flex">
-                        <Link href="https://m.facebook.com/profile.php/" target="_blank" rel="noopener noreferrer">
-                            <span className="text-xl hover:text-blue-500">
-                                <FaFacebookSquare className="w-6 h-6 rounded-md" />
-                            </span>
-                        </Link>
-                    </div>
-                    <div className="flex">
-                        <Link href="dharmeshkumbhani3@gmail.com" target="_blank" rel="noopener noreferrer">
-                            <span className="text-xl hover:text-blue-500">
-                                <FaTwitter className="w-6 h-6 rounded-md" />
-                            </span>
-                        </Link>
-                    </div>
-                    <div className="flex">
-                        <Link href="https://youtube.com/@Dharmeshkumbhani2580?si=Ek-XLWVTscwtpP8p" target="_blank" rel="noopener noreferrer">
-                            <span className="text-xl hover:text-blue-500">
-                                <FaYoutube className="w-6 h-6 rounded-md" />
-                            </span>
-                        </Link>
-                    </div>
-                    <div className="flex">
-                        <Link href="https://in.pinterest.com/transcodesolution/" target="_blank" rel="noopener noreferrer">
-                            <span className="text-xl hover:text-blue-500">
-                                <FaPinterest className="w-6 h-6 rounded-md" />
-                            </span>
-                        </Link>
-                    </div>
-                </div>
-            </div> */}
-
-            <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 items-center mb-4">
+            <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 items-center pb-4">
                 <p className="text-white text-sm mb-2 sm:mb-4 sm:text-left col-start-1 sm:col-start px-2 sm:px-0">© 2024 All Rights Reserved - transcodesolution.com</p>
                 <div className="flex justify-start sm:justify-end px-2 sm:px-0 gap-5 mb-4 text-white col-start-1 sm:col-start-auto sm:col-end-auto">
                     <div className="flex items-center justify-center">
@@ -283,7 +184,6 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };

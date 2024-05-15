@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import { FaArrowUp } from 'react-icons/fa'; // Import the arrow up icon from react-icons/fa
-
+import { RiTriangleFill } from "react-icons/ri";
 const BackToTopButton = () => {
     const [isVisible, setIsVisible] = useState(false);
 
@@ -30,10 +30,10 @@ const BackToTopButton = () => {
 
     return (
         <div
-            className={`fixed bottom-4 right-4 bg-blue-500 text-white p-3 rounded-full cursor-pointer transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+            className={`fixed bottom-4 right-8 bg-blue-500 bg-customBlue text-white p-3 rounded-full cursor-pointer transition-opacity duration-300 shadow-custom-light ${isVisible ? 'opacity-100' : 'opacity-0'}`}
             onClick={scrollToTop}
         >
-            <FaArrowUp className="bg-blue text-white" />
+            <RiTriangleFill className=" text-white" />
         </div>
     );
 };

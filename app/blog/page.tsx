@@ -26,7 +26,7 @@ const Blog = () => {
                             </div>
                             <div className="p-5 text-left">
                                 <h5 className="mb-2 text-lg font-bold tracking-tight text-gray dark:text-gray">{blog.title}</h5>
-                                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{blog.content}</p>                              
+                                <p className="mb-3 text-sm font-normal">{blog.content}</p>                              
                                 <button onClick={() => handleShowMoreClick(blog.id)} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue rounded-lg hover:bg-white hover:text-blue hover:border-blue border hover:border-solid">
                                     See Full Article
                                 </button>

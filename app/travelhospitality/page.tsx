@@ -165,11 +165,11 @@ const TravelandHospitality = () => {
                 <div className="text-center">
                     <h3 className="text-xl sm:text-3xl font-extrabold mb-0 sm:mb-2">Development Process</h3>
                     <p className="text-sm sm:text-lg font-semibold text-gray">The Journey of Travel App/Software Development</p>
-                    <div className="grid grid-cols-12 gap-6 sm:gap-20 my-4 sm:my-10">
+                    <div className="lg:grid grid-cols-12 gap-6 sm:gap-20 my-4 sm:my-10">
                         {DevelopmentProcess.map((item, index) => (
                             <div key={index} className="col-span-12 md:col-span-6 lg:col-span-4 pt-4 bg-gray rounded-3xl">
                                 <div className="flex">
-                                    <div className="col-span-6 lg:col-span-3 md:col-span-2 pl-28 md:pl-20 xl:pl-32">
+                                    <div className="col-span-6 sm:col-span-3 md:col-span-6 pl-28 md:pl-20 xl:pl-32">
                                         <div className="relative w-20 h-20 sm:w-32 sm:h-32 rounded-full overflow-hidden border-blue shadow-md flex items-center justify-center">
                                             <Image src={item.image} alt={item.title} className="w-full h-full" />
                                         </div>
