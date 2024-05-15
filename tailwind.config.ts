@@ -29,7 +29,8 @@ const config: Config = {
         dark: "#2F404F",
         dark_gray: "D9D9D9",
         footerbackground: "#278FBC",
-        radiant: 'rgba(164, 231, 235, 0.55)'
+        radiant: 'rgba(164, 231, 235, 0.55)',
+        customBlue: 'rgb(39, 143, 188)',
       },
       textColor: {
         blue: '#278FBC',
@@ -39,8 +40,11 @@ const config: Config = {
         headertext: '#278FBC',
         white_hover: "#e3e6e8",
       },
+      // boxShadow: {
+      //   blue: '1px 1px 20px 4px #277D9B',        
+      // },
       boxShadow: {
-        blue: '1px 1px 20px 4px #277D9B',
+        'custom-light': '0px 0px 8px 1px #e4e4e4',
       },
       borderColor: {
         blue: '#278FBC',

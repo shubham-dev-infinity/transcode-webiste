@@ -127,38 +127,37 @@ const BlogData: Blog[] = [
         id:1,
         image: BlogNextCard1,
         title: 'November 20, 2023',
-        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do incididunt ut',        
+        content: 'Delve into advanced Next.js techniques and best practices for modern web development. From fundamentals to cutting-edge features, this guide empowers mastery of Next.js, enabling confident creation of sophisticated web solutions.',        
     },
     {
         id: 2,
         image: BlogNextCard2,
         title: 'November 20, 2023',
-        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do incididunt ut',        
+        content: 'Unlock the full potential of Next.js with these 10 essential tips and tricks for effortless development. From optimizing performance to streamlining workflows, this guide empowers developers with invaluable insights for seamless Next.js projects',        
     },
     {
         id: 3,
         image: BlogNextCard3,
         title: 'November 20, 2023', 
-        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do incididunt ut',        
+        content: 'Take your Next.js skills to the next level with this ultimate toolkit for advanced development. Packed with essential resources and techniques, this guide empowers developers to elevate their projects and tackle complex challenges with confidence.',        
     },
     {
         id:4,
         image: BlogNextCard4,
         title: 'November 20, 2023', 
-        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do incididunt ut',        
+        content: 'Dive into the cutting-edge features and best practices of Next.js with this comprehensive guide. Explore advanced techniques, stay updated on the latest trends, and master Next.js development to take your projects to the next level.',        
     },
     {
         id: 5,
         image: BlogNextCard5,
         title: 'November 20, 2023', 
-        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do incididunt ut',
-        
+        content: "Navigate the evolving landscape of web development with this developer's roadmap for Next.js in 2023. Discover strategies for building robust web applications, leveraging Next.js's powerful features, and staying ahead in the dynamic world of modern web development.",        
     },
     {
         id: 6,
         image: BlogNextCard6,
         title: 'November 20, 2023', 
-        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do incididunt ut',
+        content: 'Unlock the brilliance of Next.js to optimize for exceptional user experiences. This guide dives into strategies for maximizing performance, enhancing usability, and crafting seamless interactions, empowering developers to create web applications that truly shine.',
         
     },
     // {
