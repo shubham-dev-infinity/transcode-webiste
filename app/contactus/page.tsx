@@ -244,7 +244,7 @@ const ContactUs = () => {
                                 />
                                 <div className="items-center justify-center pt-4">
                                     <h4 className="text-xl">Let’s Talk</h4>
-                                    <p className="text-sm xl:text-lg">+1-123-456-7890</p>
+                                    <p className="text-sm xl:text-lg">+91 9510249833</p>
                                 </div>
                             </div>
                             <div className="col-span-4 flex gap-4 xl:gap-10 pt-4">
