@@ -10,6 +10,7 @@ import TechnologyDatabaseTabs from "@/utils/TechnologyDatabaseTabs"
 import { useState } from "react";
 import hiringModel from "./hiringModel"
 import development from "./development"
+import Maintenance from "./Maintenance"
 const Beyond = () => {
     const [activeTab, setActiveTab] = useState<string>('webdevelopment');
     const handleTabClick = (tabId: string) => {
@@ -31,7 +32,7 @@ const Beyond = () => {
             <div className="container mx-auto mt-12">
                 <div className="text-center">
                     <h3 className="text-blue text-xl sm:text-3xl font-extrabold">Custom Software Applications for Specific Business Niches</h3>
-                    <p className="text-base sm:text-xl font-semibold mt-4">Regardless of your needs or the industry you operate in, our Custom Application Software Services cater to all your requirements. Our IT experts leverage the latest technologies to power each digital solution, ensuring the final product aligns with your users&apos; needs. Our post-launch services offer ongoing maintenance and support to address any technical issues.</p>
+                    <p className="text-base sm:text-xl font-semibold my-1 sm:my-4">Regardless of your needs or the industry you operate in, our Custom Application Software Services cater to all your requirements. Our IT experts leverage the latest technologies to power each digital solution, ensuring the final product aligns with your users&apos; needs. Our post-launch services offer ongoing maintenance and support to address any technical issues.</p>
                     <button className="bg-blue px-4 py-2 rounded-md font-bold text-white mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">Free Consultation</button>
                 </div>
                 {/* <div className="grid grid-cols-12 gap-6 sm:gap-20 my-4 sm:my-10">
@@ -71,13 +72,13 @@ const Beyond = () => {
                             </div>
                         </div>
                     ))}
-                </div> 
+                </div>
                 <div className="text-center my-4 sm:my-16">
                     <h3 className="text-lg sm:text-3xl font-extrabold mb-2 sm:mb-4">We Offer</h3>
                     <p className="text-sm sm:text-lg font-semibold text-blue py-1 sm:py-3">Our Commitment to Excellence in Travel App/Software Development</p>
                     <p className="text-xs sm:text-base font-semibold">Our offerings are all-encompassing, designed to meet your every requirement. From travel App/Software development and rigorous testing to end-to-end support & maintenance, we&apos;ve got you covered. Additionally, we specialize in providing cloud services, crafting AI solutions, and beyond. With our comprehensive suite of services, rest assured that your needs are in expert hands.</p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-6 p-1 sm:p-2 mb-2 sm:mb-6">
+                {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-6 p-1 sm:p-2 mb-2 sm:mb-6">
                     <div className="bg-gray rounded-3xl p-2 sm:p-4">
                         <h3 className="text-sm sm:text-base md:text-xl font-semibold"><span className="text-blue">Services</span> We Provide for Our Clients</h3>
                         <div className="w-16 sm:w-64 h-0.5 sm:h-1 bg-blue  sm:mb-6 hidden sm:block "></div>
@@ -124,14 +125,33 @@ const Beyond = () => {
                         <p className="text-xs sm:text-base text-gray py-2 sm:pb-4">Artificial Intelligence and Machine Learning technologies offer immense potential for solving industry challenges and providing innovative solutions that exceed human capabilities. We specialize in:</p>
                         <ul className="list-none text-xs sm:text-sm text-gray">
                             <li>- API and system integration</li>
-                            <li>- Upgrade planning, assessment, and testing</li>                           
+                            <li>- Upgrade planning, assessment, and testing</li>
                         </ul>
-                    </div>                    
-                </div>    
-                <div className="text-center pt-4">
-                    <button className="bg-blue px-4 py-2 rounded-md font-bold text-white mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">Consult Transcode</button>
-                </div>      
+                    </div>
+                </div> */}
+                <div className="grid grid-cols-4 gap-4 xl:gap-12 my-3 sm:my-10">
+                    {Maintenance.map((item, index) => (
+                        <div key={index} className={`pt-4 bg-gray rounded-3xl ${index === Maintenance.length - 1 ? 'sm:col-span-2 col-start-0 sm:col-start-2 col-span-4' : 'sm:col-span-2 col-span-4'}`}>
+                            <div className="col-span-8 sm:col-span-8 pt-3 px-4 bg-gray rounded-3xl p-2 sm:p-4">
+                                <h3 className="text-sm sm:text-base md:text-xl font-semibold pt-1 "><span className="text-blue">{item.title}</span>{item.title1}</h3>
+                                <div className="w-16 sm:w-64 h-0.5 sm:h-1 bg-blue  sm:mb-6 hidden sm:block"></div>
+                                <p className="text-xs sm:text-base text-gray py-2 sm:pb-4">
+                                    {item.list1}
+                                </p>
+                                <ul className="list-none text-xs sm:text-sm text-gray">
+                                    <li>{item.link1}</li>
+                                    <li>{item.link2}</li>
+                                    <li>{item.link3}</li>
+                                </ul>
+                                <p className="text-xs sm:text-base text-gray py-2 sm:pb-4">{item.data}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
                 <div className="text-center">
+                    <button className="bg-blue px-4 py-2 rounded-md font-bold text-white mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">Consult Transcode</button>
+                </div>
+                <div className="text-center mt-4 sm:mt-14">
                     <h3 className="text-lg sm:text-2xl font-extrabold pb-4">Technologies</h3>
                     <h3 className="text-blue text-base sm:text-xl"> Technologies & Platforms We Engage With</h3>
                 </div>
@@ -198,14 +218,14 @@ const Beyond = () => {
                     {activeTab === 'UI/UX Design' && <TechnologyUiuxTabs />}
                     {activeTab === 'mobiledevelopment' && <TechnologyMobileTabs />}
                     {activeTab === 'database' && <TechnologyDatabaseTabs />}
-                </div>  
+                </div>
                 <div className="text-center">
-                    <button className="bg-blue text-white text-sm sm:text-lg rounded-lg p-2 mb-0 sm:mb-6">Schedule a Developers Interview</button>
+                    <button className="bg-blue text-white text-sm sm:text-lg rounded-lg p-2 mb-2 sm:mb-12">Schedule a Developers Interview</button>
                     <h3 className="text-xl sm:text-3xl font-extrabold">Adaptable Hiring Model for Beyond</h3>
                 </div>
-                <div className="grid grid-cols-12 gap-6 sm:gap-10 my-4 sm:my-10">
+                <div className="grid grid-cols-12 gap-6 sm:gap-10 mt-4 sm:mt-10 mb-4 sm:mb-14">
                     {hiringModel.map((item, index) => (
-                        <div key={index} className="col-span-12 md:col-span-3 pl-4 pt-4 bg-gray rounded-3xl">
+                        <div key={index} className="col-span-12 sm:col-span-6 lg:col-span-3 pl-4 pt-4 bg-gray rounded-3xl">
                             <div className="flex">
                                 <div className="col-span-6 md:col-span-3 sm:col-span-3">
                                     <div className="relative w-16 sm:w-20 h-16 sm:h-20 rounded-full overflow-hidden border-2 border-blue border-gray shadow-md flex items-center justify-center">
@@ -235,9 +255,9 @@ const Beyond = () => {
                     ))}
                 </div>
                 <div>
-                    <h3 className="text-center text-lg sm:text-2xl font-extrabold">Why Us</h3>
-                    <h3 className="text-center text-lg sm:text-2xl text-gray">Why Clients Trust Us for Travel app/Software Development?</h3>
-                    <div className="grid grid-cols-12 gap-6 sm:gap-20 my-4 sm:my-10">
+                    <h3 className="text-center text-lg sm:text-2xl font-extrabold ">Why Us</h3>
+                    <h3 className="text-center text-lg sm:text-2xl text-gray mt-0 sm:mt-3">Why Clients Trust Us for Travel app/Software Development?</h3>
+                    {/* <div className="grid grid-cols-12 gap-6 xl:gap-20 my-4 sm:my-6">
                         {development.map((item, index) => (
                             <div key={index} className="col-span-12 md:col-span-4 pt-4 bg-gray rounded-3xl">
                                 <div className="flex">
@@ -255,7 +275,28 @@ const Beyond = () => {
                                 </div>
                             </div>
                         ))}
-                    </div>                  
+                    </div> */}
+                    <div className="grid grid-cols-6 gap-6 xl:gap-20 my-4 sm:my-10">
+                        {development.map((item, index) => (
+                            <div key={index} className={`pt-4 bg-gray rounded-3xl col-span-6 sm:col-span-2  ${(index === development.length - 2 || index === development.length - 1) ? 'col-start-0 col-span-6 sm:col-start-2 sm:col-span-2' : ' col-span-6 sm:col-span-2'
+                                } ${index === development.length - 1 ? 'col-start-0 col-span-2 sm:col-start-4 sm:col-span-2' : ''
+                                }`}>
+                                <div className="flex">
+                                    <div className="col-span-6 md:col-span-3 sm:col-span-3 pl-28 md:pl-[72px] lg:pl-20 xl:pl-32">
+                                        <div className="relative w-20 h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 rounded-full overflow-hidden border-gray shadow-md flex items-center justify-center">
+                                            <Image src={item.image} alt={item.title} className="w-full h-full" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-span-8 sm:col-span-8 pt-3 mb-10 px-4">
+                                    <h4 className="text-center text-base sm:text-lg font-extrabold pt-1">{item.title}</h4>
+                                    <p className="text-center text-sm sm:text-lg">
+                                        {item.list1}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </main>

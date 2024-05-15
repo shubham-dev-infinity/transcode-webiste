@@ -14,7 +14,7 @@ import DevelopmentProcess from "./DevelopmentProcess"
 import HiringProcessTravel from "@public/Assets/HiringProcessTravel.png"
 import hiringModel from "./hiringModel"
 import SoftwareDevelopment from "./SoftwareDevelopment"
-
+import Maintenance from "./Maintenance"
 const RealEstate = () => {
     const [activeTab, setActiveTab] = useState<string>('webdevelopment');
     const handleTabClick = (tabId: string) => {
@@ -43,7 +43,7 @@ const RealEstate = () => {
                     <p className="font-semibold text-sm sm:text-lg my-1 sm:my-6">Our software adheres to industry regulations, ensuring your data remains safe and secure. With ongoing support, you can count on us to provide assistance whenever you need it.</p>
                     <button className="bg-blue px-4 py-2 rounded-md font-bold text-white lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">Free Consultation</button>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-20 my-4 sm:my-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-20 my-4 sm:my-10">
                     {development.map((item, index) => (
                         <div key={index} className="pt-4 bg-gray rounded-3xl">
                             <div className="flex">
@@ -70,32 +70,18 @@ const RealEstate = () => {
                     <h6 className="text-sm sm:text-base text-blue font-semibold">The Value We Provide in the Real Estate Industry</h6>
                     <h6 className="text-sm sm:text-base font-semibold my-2 sm:my-4">From real estate software development to seamless functionality, continuous support, secure cloud storage, and AI solutions, we offer a comprehensive range of real estate services tailored to meet all your needs.</h6>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-6 p-1 sm:p-2 mb-2 sm:mb-6">
-                    <div className="bg-gray rounded-3xl p-2 sm:p-4">
-                        <h3 className="text-sm sm:text-base md:text-xl font-semibold">Custom Real Estate Software Development</h3>
-                        <div className="w-16 sm:w-64 h-0.5 sm:h-1 bg-blue  sm:mb-6 hidden sm:block "></div>
-                        <p className="text-xs sm:text-base text-gray py-2 sm:pb-4">We design scalable, future-ready software solutions customized to your specific business needs, industry trends, and changing user demands. Our solutions are engineered for efficiency and scalability, optimizing your real estate processes.</p>
-                    </div>
-                    <div className="bg-gray rounded-3xl p-2 sm:p-4">
-                        <h3 className="text-sm sm:text-base md:text-xl font-semibold">Support and Maintenance Services</h3>
-                        <div className="w-16 sm:w-64 h-0.5 sm:h-1 bg-blue  sm:mb-6 hidden sm:block "></div>
-                        <p className="text-xs sm:text-base text-gray py-2 sm:pb-4">After launch, we offer essential support, including modifications, glitch-free operations, and performance enhancements, to keep your software or app running at peak efficiency.</p>
-                    </div>
-                    <div className="bg-gray rounded-3xl p-2 sm:p-4">
-                        <h3 className="text-sm sm:text-base md:text-xl font-semibold"><span className="text-blue">Teleradiology</span> Solutions</h3>
-                        <div className="w-16 sm:w-64 h-0.5 sm:h-1 bg-blue  sm:mb-6 hidden sm:block "></div>
-                        <p className="text-sm sm:text-base text-gray py-2 sm:pb-4">Transcode Solution provides advanced Picture Archiving and Communication Systems (PACS) and Digital Imaging and Communications in Medicine (DICOM) viewer networks. These solutions facilitate effortless sharing and storage of medical imaging, clips, and reports, fostering real-time collaboration between patients and physicians for agile care delivery.</p>
-                    </div>
-                    <div className="bg-gray rounded-3xl p-2 sm:p-4">
-                        <h3 className="text-sm sm:text-base md:text-xl font-semibold text-blue">AI and ML-Powered Solutions</h3>
-                        <div className="w-16 sm:w-64 h-0.5 sm:h-1 bg-blue  sm:mb-6 hidden sm:block "></div>
-                        <p className="text-xs sm:text-base text-gray py-2 sm:pb-4">Leverage AI & ML for Enhanced Real Estate Operations with Analytics, Predictive Insights, and More</p>
-                    </div>
-                    <div className="bg-gray rounded-3xl p-2 sm:p-4">
-                        <h3 className="text-sm sm:text-base md:text-xl font-semibold text-blue">Integration and Upgrades</h3>
-                        <div className="w-16 sm:w-64 h-0.5 sm:h-1 bg-blue m:mb-4 hidden sm:block"></div>
-                        <p className="text-xs sm:text-base text-gray py-2 sm:pb-4">For existing solutions, we integrate APIs, develop extensible modules, and perform smooth upgrades, guaranteeing efficiency while avoiding unnecessary complexity.</p>
-                    </div>
+                <div className="grid grid-cols-4 gap-4 lg:gap-12 my-4 sm:my-10">
+                    {Maintenance.map((item, index) => (
+                        <div key={index} className={`pt-4 bg-gray rounded-3xl ${index === Maintenance.length - 1 ? 'sm:col-span-2 col-start-0 sm:col-start-2 col-span-4' : 'sm:col-span-2 col-span-4'}`}>
+                            <div className="col-span-8 sm:col-span-8 pt-3 mb-10 px-4 bg-gray rounded-3xl p-2 sm:p-4">
+                                <h3 className="text-sm sm:text-base md:text-xl font-semibold pt-1 ">{item.title}</h3>
+                                <div className="w-16 sm:w-64 h-0.5 sm:h-1 bg-blue  sm:mb-6 hidden sm:block"></div>
+                                <p className="text-xs sm:text-base text-gray py-2 sm:pb-4">
+                                    {item.list1}
+                                </p>
+                            </div>
+                        </div>
+                    ))}
                 </div>
                 <div className="text-center	py-1 sm:pb-4">
                     <button className="bg-blue px-4 py-2 rounded-md font-bold text-white mb-2 lg:mb-0 hover:bg-white hover:text-blue hover:shadow-2xl">Consult Transcode</button>
@@ -172,12 +158,12 @@ const RealEstate = () => {
                     <h3 className="text-xl sm:text-3xl font-extrabold">Development Process</h3>
                     <p className="text-sm sm:text-xl text-gray">Our Real Estate Software Development Approach</p>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-20 my-4 sm:my-10">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-20 my-4 sm:my-10">
                     {DevelopmentProcess.map((item, index) => (
                         <div key={index} className="pt-4 bg-gray rounded-3xl">
                             <div className="flex">
-                                <div className="pl-28 sm:pl-8 lg:pl-20 xl:pl-32">
-                                    <div className="relative w-20 h-20 sm:w-32 sm:h-32 rounded-full overflow-hidden border-gray shadow-md flex items-center justify-center">
+                                <div className="pl-28 sm:pl-20 xl:pl-32">
+                                    <div className="relative w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32 rounded-full overflow-hidden border-gray shadow-md flex items-center justify-center">
                                         <Image src={item.image} alt={item.title} className="w-full h-full" />
                                     </div>
                                 </div>
@@ -206,7 +192,7 @@ const RealEstate = () => {
                     <h3 className="text-xl sm:text-3xl text-center mt-4 sm:mt-16">Business-Friendly Engagement Models We Offer</h3>
                     <div className="grid grid-cols-12 gap-6 sm:gap-10 my-4 sm:my-10">
                         {hiringModel.map((item, index) => (
-                            <div key={index} className="col-span-12 md:col-span-3 pl-4 pt-4 bg-gray rounded-3xl">
+                            <div key={index} className="col-span-12 md:col-span-6 lg:col-span-3 pl-4 pt-4 bg-gray rounded-3xl">
                                 <div className="flex">
                                     <div className="col-span-6 md:col-span-3 sm:col-span-3">
                                         <div className="relative w-16 sm:w-20 h-16 sm:h-20 rounded-full overflow-hidden border-2 border-blue border-gray shadow-md flex items-center justify-center">
@@ -239,19 +225,19 @@ const RealEstate = () => {
                 <div>
                     <h3 className="text-center text-lg sm:text-2xl font-extrabold mt-0 sm:mt-14">Why Us</h3>
                     <h3 className="text-center text-lg sm:text-2xl text-gray">Why Clients Trust Us for Travel app/Software Development?</h3>
-                    <div className="grid grid-cols-12 gap-6 sm:gap-20 my-4 sm:my-10">
+                    <div className="grid grid-cols-12 gap-6 lg:gap-20 my-4 sm:my-10">
                         {SoftwareDevelopment.map((item, index) => (
                             <div key={index} className="col-span-12 md:col-span-4 pt-4 bg-gray rounded-3xl">
                                 <div className="flex">
-                                    <div className="col-span-6 md:col-span-3 sm:col-span-3 pl-28 sm:pl-32">
-                                        <div className="relative w-20 h-20 sm:w-32 sm:h-32 rounded-full overflow-hidden border-gray shadow-md flex items-center justify-center">
+                                    <div className="col-span-6 md:col-span-3 sm:col-span-3 pl-28 sm:pl-20 xl:pl-32">
+                                        <div className="relative w-20 h-20 lg:w-32 lg:h-32 rounded-full overflow-hidden border-gray shadow-md flex items-center justify-center">
                                             <Image src={item.image} alt={item.title} className="w-full h-full" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-span-8 sm:col-span-8 pt-3 mb-10 px-4">
-                                    <h4 className="text-center text-base sm:text-lg font-extrabold pt-1 ">{item.title}</h4>
-                                    <p className="text-center text-sm sm:text-lg">
+                                    <h4 className="text-center text-base md:text-lg font-extrabold pt-1 ">{item.title}</h4>
+                                    <p className="text-center text-sm sm:text-base lg:text-lg">
                                         {item.list1}
                                     </p>
                                 </div>
