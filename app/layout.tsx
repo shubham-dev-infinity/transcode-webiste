@@ -46,6 +46,18 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children}) => {
           {children}
         <Footer />
         <BackToTopButton />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-3MKRRY6798"
+          strategy="afterInteractive"
+        />
+        <Script id="ga-script">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-3MKRRY6798');
+          `}
+        </Script>
         {/* <Script src="/Assets/vender/aos/js/aos.js"></Script>*/}
         <Script
           src="/Assets/vender/aos/js/aos.js"
