@@ -298,6 +298,24 @@ const Beyond = () => {
                         ))}
                     </div>
                 </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-24 p-6 rounded-3xl shadow-md pb-4 mb-10">
+                    <div>
+                        <h2 className="text-xl font-bold">Meet Our Expert</h2>
+                        <p className="mt-2 text-lg font-semibold">Arpit N.</p>
+                        <p className="text-lg">Company Owner</p>
+                        <p className="mt-4 text-lg">
+                            We always strive to deliver the most impactful business solutions to achieve the greatest value for sellers and customers. Talk to us, and let&apos;s create your eCommerce platforms together to boost your offline & online sales.
+                        </p>
+                    </div>
+                    <div className="bg-gray rounded-3xl flex items-center justify-center">
+                        {/* Placeholder for image or additional content */}
+                        {/* <Image
+                            src={Converted}
+                            alt="email"
+                            className="rounded-full"
+                        /> */}
+                    </div>
+                </div>
             </div>
         </main>
     )

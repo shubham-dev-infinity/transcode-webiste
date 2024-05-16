@@ -8,7 +8,7 @@ import TechnologyMobileTabs from "@/utils/TechnologyMobileTabs"
 import TechnologyDatabaseTabs from "@/utils/TechnologyDatabaseTabs"
 import { useState } from "react"
 import DevelopmentProcess from "./DevelopmentProcess"
-import HiringProcessTravel from "@public/Assets/HiringProcessTravel.png"
+import fintech from "@public/Assets/fintech.png"
 import hiringModel from "./hiringModel"
 import SoftwareDevelopment from "./SoftwareDevelopment"
 
@@ -218,7 +218,7 @@ const Fintech = () => {
                     <p className="text-lg sm:text-2xl font-semibold text-blue mt-0 sm:mt-10">Experience a 7-Day Trial Period for Full Satisfaction with Your Resource*.</p>
                 </div>
                 <div className="flex justify-center sm:mt-16">
-                    <Image src={HiringProcessTravel} alt="HiringProcessTravel" width={926} height={926} />
+                    <Image src={fintech} alt="fintech" width={926} height={926} />
                 </div>
                 <div className="text-center">
                     <button className="bg-blue text-white text-sm sm:text-lg rounded-lg p-2">Discuss With Our Expert Team</button>
@@ -282,16 +282,23 @@ const Fintech = () => {
                         ))}
                     </div>
                 </div>
-                <div className="bg-white shadow-lg rounded-lg p-6 max-w-sm">
-                    <h2 className="text-lg font-semibold">Meet Our Expert</h2>
-                    <h3 className="text-lg mt-4">Arpit N.</h3>
-                    <p className="text-sm font-medium">Company Owner</p>
-                    <p className="text-sm mt-4">
-                        We always strive to deliver the most impactful business solutions
-                        to achieve the greatest value for sellers and customers. Talk to us,
-                        and let&apos;s create your ecommerce platforms together to boost your
-                        offline & online sales.
-                    </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-24 p-6 rounded-3xl shadow-md pb-4 mb-10">
+                    <div>
+                        <h2 className="text-xl font-bold">Meet Our Expert</h2>
+                        <p className="mt-2 text-lg font-semibold">Arpit N.</p>
+                        <p className="text-lg">Company Owner</p>
+                        <p className="mt-4 text-lg">
+                            We always strive to deliver the most impactful business solutions to achieve the greatest value for sellers and customers. Talk to us, and let&apos;s create your eCommerce platforms together to boost your offline & online sales.
+                        </p>
+                    </div>
+                    <div className="bg-gray rounded-3xl flex items-center justify-center">
+                        {/* Placeholder for image or additional content */}
+                        {/* <Image
+                            src={Converted}
+                            alt="email"
+                            className="rounded-full"
+                        /> */}
+                    </div>
                 </div>
             </div>
         </main>
