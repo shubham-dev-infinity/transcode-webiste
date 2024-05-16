@@ -11,7 +11,7 @@ import TechnologyMobileTabs from "@/utils/TechnologyMobileTabs";
 import TechnologyDatabaseTabs from "@/utils/TechnologyDatabaseTabs";
 import { useState } from "react";
 import DevelopmentProcess from "./DevelopmentProcess"
-import HiringProcessTravel from "@public/Assets/HiringProcessTravel.png"
+import real_estate from "@public/Assets/real_estate.png"
 import hiringModel from "./hiringModel"
 import SoftwareDevelopment from "./SoftwareDevelopment"
 import Maintenance from "./Maintenance"
@@ -183,7 +183,7 @@ const RealEstate = () => {
                     <p className="text-lg sm:text-2xl font-semibold text-blue">Experience a 7-Day Trial Period for Full Satisfaction with Your Resource*.</p>
                 </div>
                 <div className="flex justify-center">
-                    <Image src={HiringProcessTravel} alt="HiringProcessTravel" width={926} height={926} />
+                    <Image src={real_estate} alt="real_estate" width={926} height={926} />
                 </div>
                 <div className="text-center">
                     <button className="bg-blue text-white text-sm sm:text-lg rounded-lg p-2">Discuss With Our Expert Team</button>
@@ -243,6 +243,24 @@ const RealEstate = () => {
                                 </div>
                             </div>
                         ))}
+                    </div>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-24 p-6 rounded-3xl shadow-md pb-4 mb-10">
+                    <div>
+                        <h2 className="text-xl font-bold">Meet Our Expert</h2>
+                        <p className="mt-2 text-lg font-semibold">Arpit N.</p>
+                        <p className="text-lg">Company Owner</p>
+                        <p className="mt-4 text-lg">
+                            We always strive to deliver the most impactful business solutions to achieve the greatest value for sellers and customers. Talk to us, and let&apos;s create your eCommerce platforms together to boost your offline & online sales.
+                        </p>
+                    </div>
+                    <div className="bg-gray rounded-3xl flex items-center justify-center">
+                        {/* Placeholder for image or additional content */}
+                        {/* <Image
+                            src={Converted}
+                            alt="email"
+                            className="rounded-full"
+                        /> */}
                     </div>
                 </div>
             </div>
