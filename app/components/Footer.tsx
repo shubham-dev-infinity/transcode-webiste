@@ -126,6 +126,11 @@ const Footer = () => {
                                 Site Map
                             </span>
                         </Link>
+                        <Link href="/faqs" rel="noopener noreferrer">
+                            <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
+                                FAQS
+                            </span>
+                        </Link>
                     </div>
                 </div>
             </div>
