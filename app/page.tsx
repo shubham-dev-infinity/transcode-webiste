@@ -23,6 +23,7 @@ import MaskgroupSlider from "@public/Assets/MaskgroupSlider.png"
 import MaskgroupSliderse from "@public/Assets/MaskgroupSliderse.png"
 import MaskgroupSliderth from "@public/Assets/MaskgroupSliderth.png"
 import Head from 'next/head';
+import BlogDetailPage from "./blogarticle/page";
 
 
 interface HomeProps { }
@@ -367,7 +368,7 @@ const Home: React.FC<HomeProps> = () => {
               <h3 className="text-xl sm:text-3xl font-extrabold mb-4 pt-6"><span className="text-blue">Our</span> Blog</h3>
               <p className="text-base sm:text-xl font-semibold text-center text-gray mb-4 p-1 sm:p-0">Trending Custom Software Development Blog</p>
               <div className="container mx-auto pl-3 pr-2 sm:pl-0 sm:pr-0">
-                <div className="grid max-w-4xl lg:max-w-6xl grid-cols-1 mx-auto mt-2 text-center gap-y-4 sm:gap-x-8 sm:grid-cols-2 lg:grid-cols-3 sm:mt-4 2xl:mt-8 sm:text-left">
+                {/* <div className="grid max-w-4xl lg:max-w-6xl grid-cols-1 mx-auto mt-2 text-center gap-y-4 sm:gap-x-8 sm:grid-cols-2 lg:grid-cols-3 sm:mt-4 2xl:mt-8 sm:text-left">
                   {blogItems.map((blog, index) => (
                     <div
                       key={index}
@@ -376,20 +377,21 @@ const Home: React.FC<HomeProps> = () => {
                       data-aos-delay={(index + 1) * 100}
                     >
                       <div className="p-2">
-                        <a href={blog.link} className="custom-hover">
+                        <Link href={blog.link} className="custom-hover">
                           <Image src={blog.image} alt="" className="rounded-t-lg" width={500} height={300} />
-                        </a>
+                        </Link>
                       </div>
                       <div className="px-2 sm:p-4 text-left">
                         <p className="mb-2  text-base font-normal text-gray">{blog.date}</p>
                         <p className="mb-2 text-xs sm:text-sm sm:mb-3 font-normal text-gray-700 dark:text-gray-400">{blog.content}</p>
-                        <a href={blog.link} className="inline-flex items-center mb-1 sm:mb-0 px-3 py-2 text-sm font-medium text-center text-white bg-blue rounded-lg hover:bg-white hover:text-blue hover:border-blue border hover:border-solid">
+                        <Link href={blog.link} className="inline-flex items-center mb-1 sm:mb-0 px-3 py-2 text-sm font-medium text-center text-white bg-blue rounded-lg hover:bg-white hover:text-blue hover:border-blue border hover:border-solid">
                           See Full Article
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   ))}
-                </div>
+                </div> */}
+                <BlogDetailPage/>
                 <div className="col-span-3 py-6 sm:py-0 sm:mt-10">
                   <button onClick={handleShowMoreClick} className="bg-blue hover:bg-blue-700 text-white font-bold px-2 py-1 sm:py-2 sm:px-4 rounded hover:bg-white hover:text-blue transition duration-300 hover:shadow-xl">
                     Show Blog
