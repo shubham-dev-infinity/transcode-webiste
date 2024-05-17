@@ -15,6 +15,7 @@ import real_estate from "@public/Assets/real_estate.png"
 import hiringModel from "./hiringModel"
 import SoftwareDevelopment from "./SoftwareDevelopment"
 import Maintenance from "./Maintenance"
+import Card from "@/components/Card";
 const RealEstate = () => {
     const [activeTab, setActiveTab] = useState<string>('webdevelopment');
     const handleTabClick = (tabId: string) => {
@@ -223,21 +224,31 @@ const RealEstate = () => {
                     </div>
                 </div>
                 <div>
+                    <h3 className="text-center font-extrabold text-xl sm:text-3xl mb-2 sm:mb-10 mt-0 sm:mt-5">Case Studies</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-20">
+                        <Card title="VoestAPPen App" />
+                        <Card title="Quadmaps" />
+                        <Card title="Ready Freddy" />
+                    </div>
+                </div>
+                <div>
                     <h3 className="text-center text-lg sm:text-2xl font-extrabold mt-0 sm:mt-14">Why Us</h3>
-                    <h3 className="text-center text-lg sm:text-2xl text-gray">Why Clients Trust Us for Travel app/Software Development?</h3>
-                    <div className="grid grid-cols-12 gap-6 lg:gap-20 my-4 sm:my-10">
+                    <h3 className="text-center text-lg sm:text-2xl text-gray">Why Clients Trust Us for Travel app/Software Development?</h3>                    
+                    <div className="grid grid-cols-6 gap-6 sm:gap-20 my-4 sm:my-10">
                         {SoftwareDevelopment.map((item, index) => (
-                            <div key={index} className="col-span-12 md:col-span-4 pt-4 bg-gray rounded-3xl">
+                            <div key={index} className={`pt-4 bg-gray rounded-3xl col-span-6 sm:col-span-2  ${(index === SoftwareDevelopment.length - 2 || index === SoftwareDevelopment.length - 1) ? 'col-start-0 col-span-6 sm:col-start-2 sm:col-span-2' : ' col-span-6 sm:col-span-2'
+                                } ${index === SoftwareDevelopment.length - 1 ? 'col-start-0 col-span-2 sm:col-start-4 sm:col-span-2' : ''
+                                }`}>
                                 <div className="flex">
-                                    <div className="col-span-6 md:col-span-3 sm:col-span-3 pl-28 sm:pl-20 xl:pl-32">
-                                        <div className="relative w-20 h-20 lg:w-32 lg:h-32 rounded-full overflow-hidden border-gray shadow-md flex items-center justify-center">
+                                    <div className="col-span-6 md:col-span-3 sm:col-span-3 pl-28 md:pl-12 lg:pl-20 xl:pl-32">
+                                        <div className="relative w-20 h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 rounded-full overflow-hidden border-gray shadow-md flex items-center justify-center">
                                             <Image src={item.image} alt={item.title} className="w-full h-full" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-span-8 sm:col-span-8 pt-3 mb-10 px-4">
-                                    <h4 className="text-center text-base md:text-lg font-extrabold pt-1 ">{item.title}</h4>
-                                    <p className="text-center text-sm sm:text-base lg:text-lg">
+                                    <h4 className="text-center text-base sm:text-lg font-extrabold pt-1">{item.title}</h4>
+                                    <p className="text-center text-sm sm:text-lg">
                                         {item.list1}
                                     </p>
                                 </div>
@@ -247,9 +258,9 @@ const RealEstate = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-24 p-6 rounded-3xl shadow-md pb-4 mb-10">
                     <div>
-                        <h2 className="text-xl font-bold">Meet Our Expert</h2>
-                        <p className="mt-2 text-lg font-semibold">Arpit N.</p>
-                        <p className="text-lg">Company Owner</p>
+                        <h2 className="text-xl font-extrabold">Meet Our Expert</h2>
+                        <p className="mt-2 text-lg font-extrabold">Arpit N.</p>
+                        <p className="text-lg font-medium">Company Owner</p>
                         <p className="mt-4 text-lg">
                             We always strive to deliver the most impactful business solutions to achieve the greatest value for sellers and customers. Talk to us, and let&apos;s create your eCommerce platforms together to boost your offline & online sales.
                         </p>

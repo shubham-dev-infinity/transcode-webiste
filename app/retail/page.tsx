@@ -9,12 +9,16 @@ import FrontEndTable from "@/utils/FrontEndTable";
 import Image from "next/image";
 import development from "./development";
 import retail_ecommerce from "@public/Assets/retail_ecommerce.png"
+import Card from "@/components/Card";
+import TechnologyTabs from "@/utils/TechnologyTabs";
+import TechnologyUiuxTabs from "@/utils/TechnologyUiuxTabs";
+import TechnologyMobileTabs from "@/utils/TechnologyMobileTabs";
+import TechnologyDatabaseTabs from "@/utils/TechnologyDatabaseTabs";
 
-const RetailEcommerce = () => {
-    const [selectedTab, setSelectedTab] = useState<string>('front_End');
-
-    const handleTabClick = (tab: string) => {
-        setSelectedTab(tab);
+const RetailEcommerce = () => {   
+    const [activeTab, setActiveTab] = useState<string>('webdevelopment');
+    const handleTabClick = (tabId: string) => {
+        setActiveTab(tabId);
     };
     return (
         <main>
@@ -91,59 +95,70 @@ const RetailEcommerce = () => {
                 <div className="text-center">
                     <h3 className="text-lg sm:text-2xl font-extrabold pb-4">Technologies</h3>
                     <h3 className="text-blue text-base sm:text-xl"> Technologies & Platforms We Engage With</h3>
-                </div>
-                <div className="text-sm font-medium text-center text-gray-500 mb-10">
-                    <ul className="flex justify-center flex-wrap mt-6 mb-3">
-                        <li className="me-2">
-                            <div
-                                className={`inline-block px-2 sm:px-8 py-1 sm:py-4  border-b-2 text-base sm:text-xl border-transparent rounded-t-lg hover:text-blue hover:border-b-4 hover:border-blue dark:hover:text-gray-300 cursor-pointer ${selectedTab === 'front_End' ? 'text-blue border-gray dark:text-gray-300 dark:border-gray-300' : ''
-                                    }`}
-                                onClick={() => handleTabClick('front_End')}
+                </div>               
+                <div className="mb-10 text-center border-gray-200 dark:border-gray-700">
+                    <ul className="mb-2 flex flex-wrap text-sm font-medium text-center justify-center" id="default-tab" role="tablist">
+                        <li className="me-2" role="presentation">
+                            <button
+                                className={`inline-block p-2 sm:p-4 border-b-2 rounded-t-lg text-lg sm:text-xl hover:text-blue hover:border-b-4 hover:border-blue ${activeTab === 'webdevelopment' ? 'border-b-4 border-blue' : 'border-transparent'}`}
+                                id="webdevelopment-tab"
+                                data-tabs-target="#webdevelopment"
+                                type="button"
+                                role="tab"
+                                aria-controls="webdevelopment-content" // Updated ID to match corresponding content
+                                aria-selected={activeTab === 'webdevelopment' ? 'true' : 'false'} // Converted to string value
+                                onClick={() => handleTabClick('webdevelopment')}
                             >
-                                Front End
-                            </div>
+                                Web Development
+                            </button>
                         </li>
-                        <li className="me-2">
-                            <div
-                                className={`inline-block px-2 sm:px-8 py-1 sm:py-4  border-b-2 text-base sm:text-xl border-transparent rounded-t-lg hover:text-blue hover:border-b-4 hover:border-blue dark:hover:text-gray-300 cursor-pointer ${selectedTab === 'back_End' ? 'text-blue border-gray dark:text-gray-300 dark:border-gray-300' : ''
-                                    }`}
-                                onClick={() => handleTabClick('back_End')}
+                        <li className="me-2" role="presentation">
+                            <button
+                                className={`inline-block p-2 sm:p-4 border-b-2 rounded-t-lg text-lg sm:text-xl hover:text-blue hover:border-b-4 hover:border-blue ${activeTab === 'mobiledevelopment' ? 'border-b-4 border-blue' : 'border-transparent'}`}
+                                id="mobiledevelopment-tab"
+                                data-tabs-target="#mobiledevelopment"
+                                type="button"
+                                role="tab"
+                                aria-controls="mobiledevelopment"
+                                aria-selected={activeTab === 'mobiledevelopment'}
+                                onClick={() => handleTabClick('mobiledevelopment')}
                             >
-                                Back End
-                            </div>
+                                Mobile Development
+                            </button>
                         </li>
-                        <li className="me-2">
-                            <div
-                                className={`inline-block px-2 sm:px-8 py-1 sm:py-4  border-b-2 text-base sm:text-xl border-transparent rounded-t-lg hover:text-blue hover:border-b-4 hover:border-blue dark:hover:text-gray-300 cursor-pointer ${selectedTab === 'Mobile' ? 'text-blue border-blue dark:text-gray-300 dark:border-gray-300' : ''
-                                    }`}
-                                onClick={() => handleTabClick('Mobile')}
-                            >
-                                Mobilen
-                            </div>
-                        </li>
-                        <li className="me-2">
-                            <div
-                                className={`inline-block px-2 sm:px-8 py-1 sm:py-4  border-b-2 text-base sm:text-xl border-transparent rounded-t-lg hover:text-blue hover:border-b-4 hover:border-blue dark:hover:text-gray-300 cursor-pointer ${selectedTab === 'CMS' ? 'text-blue border-blue dark:text-gray-300 dark:border-gray-300' : ''
-                                    }`}
-                                onClick={() => handleTabClick('CMS')}
-                            >
-                                CMS
-                            </div>
-                        </li>
-                        <li className="me-2">
-                            <div
-                                className={`inline-block px-2 sm:px-8 py-1 sm:py-4 border-b-2 text-base sm:text-xl border-transparent rounded-t-lg hover:text-blue hover:border-b-4 hover:border-blue dark:hover:text-gray-300 cursor-pointer ${selectedTab === 'Database' ? 'text-blue border-blue dark:text-gray-300 dark:border-gray-300' : ''
-                                    }`}
-                                onClick={() => handleTabClick('Database')}
+                        <li className="me-2" role="presentation">
+                            <button
+                                className={`inline-block p-2 sm:p-4 border-b-2 rounded-t-lg text-lg sm:text-xl hover:text-blue hover:border-b-4 hover:border-blue ${activeTab === 'database' ? 'border-b-4 border-blue' : 'border-transparent'}`}
+                                id="database-tab"
+                                data-tabs-target="#database"
+                                type="button"
+                                role="tab"
+                                aria-controls="Database"
+                                aria-selected={activeTab === 'database'}
+                                onClick={() => handleTabClick('database')}
                             >
                                 Database
-                            </div>
+                            </button>
+                        </li>
+                        <li role="presentation">
+                            <button
+                                className={`inline-block p-2 sm:p-4 border-b-2 rounded-t-lg text-lg sm:text-xl hover:text-blue hover:border-b-4 hover:border-blue ${activeTab === 'UI/UX Design' ? 'border-b-4 border-blue' : 'border-transparent'}`}
+                                id="UI/UX Design-tab"
+                                data-tabs-target="#UI/UX Design"
+                                type="button"
+                                role="tab"
+                                aria-controls="UI/UX Design"
+                                aria-selected={activeTab === 'UI/UX Design'}
+                                onClick={() => handleTabClick('UI/UX Design')}
+                            >
+                                UI/UX Design
+                            </button>
                         </li>
                     </ul>
-                    {selectedTab === 'front_End' && <FrontEndTable />}
-                    {/* {selectedTab === 'mobile_AppDesign' && <MobileAppDesign />}
-                    {selectedTab === 'web_design' && <WebDesignPortfolio />} */}
-                    {/* Render other PortfolioTemplates based on other tabs */}
+                    {activeTab === 'webdevelopment' && <TechnologyTabs />}
+                    {activeTab === 'UI/UX Design' && <TechnologyUiuxTabs />}
+                    {activeTab === 'mobiledevelopment' && <TechnologyMobileTabs />}
+                    {activeTab === 'database' && <TechnologyDatabaseTabs />}
                 </div>
                 <div className="text-center">
                     <button className=" bg-blue text-white text-sm sm:text-lg rounded-lg p-2 mt-4">Schedule a Developers Interview</button>
@@ -231,7 +246,15 @@ const RetailEcommerce = () => {
                     </div>
                 </div>
                 <div>
-                    <h3 className="text-center text-lg sm:text-2xl font-extrabold">Why Us</h3>
+                    <h3 className="text-center font-extrabold text-xl sm:text-3xl mb-2 sm:mb-10 mt-0 sm:mt-5">Case Studies</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-20">
+                        <Card title="VoestAPPen App" />
+                        <Card title="Quadmaps" />
+                        <Card title="Ready Freddy" />
+                    </div>
+                </div>
+                <div>
+                    <h3 className="text-center text-lg sm:text-2xl font-extrabold mt-0 sm:mt-14">Why Us</h3>
                     <h3 className="text-center text-lg sm:text-2xl text-gray">Why Clients Trust Us for Retail & E-commerce Software Development?</h3>
                     <div className="grid grid-cols-6 gap-6 sm:gap-20 my-4 sm:my-10">
                         {development.map((item, index) => (
@@ -257,9 +280,9 @@ const RetailEcommerce = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-24 p-6 rounded-3xl shadow-md pb-4 mb-10">
                     <div>
-                        <h2 className="text-xl font-bold">Meet Our Expert</h2>
-                        <p className="mt-2 text-lg font-semibold">Arpit N.</p>
-                        <p className="text-lg">Company Owner</p>
+                        <h2 className="text-xl font-extrabold">Meet Our Expert</h2>
+                        <p className="mt-2 text-lg font-extrabold">Arpit N.</p>
+                        <p className="text-lg font-medium">Company Owner</p>
                         <p className="mt-4 text-lg">
                             We always strive to deliver the most impactful business solutions to achieve the greatest value for sellers and customers. Talk to us, and let&apos;s create your eCommerce platforms together to boost your offline & online sales.
                         </p>
