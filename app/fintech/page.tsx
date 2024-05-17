@@ -11,6 +11,7 @@ import DevelopmentProcess from "./DevelopmentProcess"
 import fintech from "@public/Assets/fintech.png"
 import hiringModel from "./hiringModel"
 import SoftwareDevelopment from "./SoftwareDevelopment"
+import Card from "@/components/Card"
 
 
 const Fintech = () => {
@@ -258,6 +259,14 @@ const Fintech = () => {
                     </div>
                 </div>
                 <div>
+                    <h3 className="text-center font-extrabold text-xl sm:text-3xl mb-2 sm:mb-10 mt-0 sm:mt-5">Case Studies</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-20">
+                        <Card title="VoestAPPen App" />
+                        <Card title="Quadmaps" />
+                        <Card title="Ready Freddy" />
+                    </div>
+                </div>
+                <div>
                     <h3 className="text-center text-lg sm:text-2xl font-extrabold mt-0 sm:mt-14">Why Us</h3>
                     <h3 className="text-center text-lg sm:text-2xl text-gray mt-0 sm:mt-2">Why Clients Trust Us for Travel app/Software Development?</h3>
                     <div className="grid grid-cols-6 gap-6 sm:gap-20 my-4 sm:my-10">
@@ -284,9 +293,9 @@ const Fintech = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-24 p-6 rounded-3xl shadow-md pb-4 mb-10">
                     <div>
-                        <h2 className="text-xl font-bold">Meet Our Expert</h2>
-                        <p className="mt-2 text-lg font-semibold">Arpit N.</p>
-                        <p className="text-lg">Company Owner</p>
+                        <h2 className="text-xl font-extrabold">Meet Our Expert</h2>
+                        <p className="mt-2 text-lg font-extrabold">Arpit N.</p>
+                        <p className="text-lg font-medium">Company Owner</p>
                         <p className="mt-4 text-lg">
                             We always strive to deliver the most impactful business solutions to achieve the greatest value for sellers and customers. Talk to us, and let&apos;s create your eCommerce platforms together to boost your offline & online sales.
                         </p>

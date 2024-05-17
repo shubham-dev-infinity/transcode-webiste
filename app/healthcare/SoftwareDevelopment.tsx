@@ -5,6 +5,7 @@ import integration from "@public/Assets/integration.png";
 import Ellipse from "@public/Assets/Ellipse.png";
 import innovation_im from "@public/Assets/innovation_im.png";
 import customer_retention from "@public/Assets/customer_retention.png";
+import search from "@public/Assets/search _1.png"
 
 const data = [
     {
@@ -33,17 +34,17 @@ const data = [
         list1: "Exceeding Expectations through Client-Centric Focus",
     },  
     {
-        image: innovation_im,
+        image: search,
         title: "Extensive Domain Expertise",
         list1: "Delivering Precision in Business Solutions",
     },
     {
-        image: innovation_im,
+        image: message,
         title: "Transparent Communication",
         list1: "Transparent Communication Throughout Your Project",
     },
     {
-        image: innovation_im,
+        image: human,
         title: "Highly Approachable Team",
         list1: "Our Team Ensures a Seamless and Productive Experience",
     },
