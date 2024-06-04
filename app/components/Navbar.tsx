@@ -211,12 +211,12 @@ const Navbar = () => {
                                 </li>
                                 {/* Add more list items here */}
                             </ul>
-                        </div>                     
+                        </div>
                         <div
                             onMouseEnter={() => setIsOpenPortfolio(true)} onMouseLeave={() => setIsOpenPortfolio(false)}
                             className="relative"
                         >
-                            <Link href="/portfolio"
+                            <Link href="/"
                                 aria-expanded={isOpenPortfolio} onClick={togglePortfolioMenu}
                                 id="portfolioDropdownButton"
                                 className="hover:text-blue hover:border-b-4 px-3.5  hover:border-blue font-bold text-lg"
