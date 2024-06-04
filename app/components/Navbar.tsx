@@ -219,7 +219,7 @@ const Navbar = () => {
                             <Link href="/"
                                 aria-expanded={isOpenPortfolio} onClick={togglePortfolioMenu}
                                 id="portfolioDropdownButton"
-                                className="hover:text-blue hover:border-b-4 px-3.5  hover:border-blue font-bold text-lg"
+                                className="hover:text-blue hover:border-b-4 px-3.5  hover:border-blue font-bold text-lg "
                                 type="button"
                             >
                                 PORTFOLIO
