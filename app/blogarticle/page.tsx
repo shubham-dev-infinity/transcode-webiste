@@ -1,3 +1,5 @@
+'use client'
+
 import blogItems from "./BlogCard";
 import Image from "next/image";
 import Link from "next/link";
