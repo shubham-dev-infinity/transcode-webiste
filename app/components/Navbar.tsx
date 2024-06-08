@@ -447,10 +447,7 @@ const Navbar = () => {
                     <div
                         onMouseEnter={toggleMobileMenu}
                         onMouseLeave={toggleMobileMenu}
-                        className="relative">
-                        {/* <Link href="/portfolio" >
-                            <span className="block py-2 px-4 text-blue hover:bg-blue hover:text-white font-semibold">PORTFOLIO</span>
-                        </Link> */}
+                        className="relative">                       
                         <Link href="/blog" >
                             <span className="block py-2 px-4 text-blue hover:bg-blue hover:text-white font-semibold">BLOG</span>
                         </Link>
