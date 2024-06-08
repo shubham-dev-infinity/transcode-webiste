@@ -216,7 +216,7 @@ const Navbar = () => {
                             onMouseEnter={() => setIsOpenPortfolio(true)} onMouseLeave={() => setIsOpenPortfolio(false)}
                             className="relative"
                         >
-                            <Link href="/portfolio"
+                            <Link href=""
                                 aria-expanded={isOpenPortfolio} onClick={togglePortfolioMenu}
                                 id="portfolioDropdownButton"
                                 className="hover:text-blue hover:border-b-4 px-3.5  hover:border-blue font-bold text-lg"
@@ -418,7 +418,7 @@ const Navbar = () => {
                         onMouseEnter={handlePortFolioDropdownsClick}
                         onMouseLeave={handlePortFolioDropdownsClick}
                         className="relative">
-                        <Link href="/portfolio"
+                        <Link href=""
                             id="portfolioDropdownButtonMobile"
                             className="block py-2 px-4 text-blue hover:bg-blue hover:text-white w-full text-left font-semibold"
                             aria-expanded={isOpenPortfolio} onClick={togglePortfolioMenu}
@@ -447,10 +447,7 @@ const Navbar = () => {
                     <div
                         onMouseEnter={toggleMobileMenu}
                         onMouseLeave={toggleMobileMenu}
-                        className="relative">
-                        {/* <Link href="/portfolio" >
-                            <span className="block py-2 px-4 text-blue hover:bg-blue hover:text-white font-semibold">PORTFOLIO</span>
-                        </Link> */}
+                        className="relative">                       
                         <Link href="/blog" >
                             <span className="block py-2 px-4 text-blue hover:bg-blue hover:text-white font-semibold">BLOG</span>
                         </Link>
