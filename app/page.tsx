@@ -51,8 +51,8 @@ const Home: React.FC<HomeProps> = () => {
       title4: " Innovation",
       description: "Our team offers expert design, development, and strategy services customized to your specific requirements.",
       buttonText: "Discover More",
-      href: "/services/software",
-      href1: "/contactus",
+      href: "/services/software-development-",
+      href1: "/contact-us",
       buttonText1: "Contact Us",
       img: MaskgroupSlider
     },
@@ -64,8 +64,8 @@ const Home: React.FC<HomeProps> = () => {
       title4: " User Experience",
       description: "Goals include cost reduction, security enhancement,and improved user experience",
       buttonText: "Explore Now",
-      href: "/services/software",
-      href1: "/contactus",
+      href: "/services/software-development",
+      href1: "/contact-us",
       buttonText1: "Contact Us",
       img: MaskgroupSliderth
     },
@@ -77,8 +77,8 @@ const Home: React.FC<HomeProps> = () => {
       title4: " Business ",
       description: "Goals include cost reduction, security enhancement,and improved user experience",
       buttonText: "Discover More",
-      href: "/services/software",
-      href1: "/contactus",
+      href: "/services/software-development",
+      href1: "/contact-us",
       buttonText1: "Contact Us",
       img: MaskgroupSliderse
     }
@@ -104,7 +104,7 @@ const Home: React.FC<HomeProps> = () => {
   };
 
   return (
-    <main>      
+    <main>
       <div className="relative mb-10 overflow-hidden">
         <Image
           src="/Assets/BgSlider.png"
@@ -175,7 +175,7 @@ const Home: React.FC<HomeProps> = () => {
             <h3 className="sm:leading-10 font-bold text-sm sm:text-xl pb-1 sm:pb-5 lg:text-2xl">MORE THAN 10+ YEARS PROVIDING IT SOLUTIONS</h3>
             <p className="pb-1 sm:pb-5 text-sm sm:text-lg lg:text-sm xl:text-lg lg:pb-7">Our focus is primarily on software development, crafting custom solutions that align with our client&apos;s unique requirements.</p>
             <p className="pb-2 sm:pb-5 text-sm sm:text-lg lg:text-sm xl:text-lg lg:pb-7">Our team of experienced developers works closely with each client to understand their business goals and objectives.</p>
-            <Link href="/contactus" className="bg-blue sm:leading-7 text-lg rounded-md font-semibold text-white p-1 sm:p-2 hover:bg-white hover:text-blue hover:shadow-2xl">Our Services</Link>
+            <Link href="/contact-us" className="bg-blue sm:leading-7 text-lg rounded-md font-semibold text-white p-1 sm:p-2 hover:bg-white hover:text-blue hover:shadow-2xl">Our Services</Link>
           </div>
           <div className="flex-1 lg:order-3 lg:h-700 lg:w-470 bg-gray py-6 px-6 2xl:h-[652.33px] 2xl:py-7 xl:py-3 xl:h-[568px] lg:h-[443px] ">
             <h2 className="text-lg sm:text-xl lg:text-3xl">ABOUT <span className="text-blue">TRANSCODE</span></h2>
@@ -391,7 +391,7 @@ const Home: React.FC<HomeProps> = () => {
                     </div>
                   ))}
                 </div> */}
-                <BlogDetailPage/>
+                <BlogDetailPage />
                 <div className="col-span-3 py-6 sm:py-0 sm:mt-10">
                   <button onClick={handleShowMoreClick} className="bg-blue hover:bg-blue-700 text-white font-bold px-2 py-1 sm:py-2 sm:px-4 rounded hover:bg-white hover:text-blue transition duration-300 hover:shadow-xl">
                     Show Blog
@@ -407,7 +407,7 @@ const Home: React.FC<HomeProps> = () => {
           <h3 className="font-extrabold text-lg sm:text-2xl lg:text-3xl">Get IN TOUCH</h3>
           <p className="text-center text-sm sm:text-xl lg:text-2xl sm:px-40 xl:px-80 my-2 sm:my-6">Let’s collaborate and work something amazing together. Let’s discuss
             and build something unforgettable together.</p>
-          <Link href="/contactus">
+          <Link href="/contact-us">
             <button className="bg-blue px-2 sm:px-4 py-1 sm:py-2 rounded-md font-semibold text-white text-sm sm:text-lg border-2 border-white hover:bg-white hover:text-blue hover:shadow-xl">Start Conversation</button>
           </Link>
         </div>

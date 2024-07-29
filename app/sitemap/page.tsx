@@ -1,6 +1,6 @@
 import Link from "next/link";
 import HeroSection from "@/components/HeroSection";
-import style from "../components/styles.module.scss"; 
+import style from "../components/styles.module.scss";
 import sitemap from "@public/Assets/sitemap.png";
 
 const Sitemap = () => {
@@ -25,7 +25,7 @@ const Sitemap = () => {
                                 <Link href="/blog">Blog</Link>
                             </li>
                             <li>
-                                <Link href="/contactus">Contact Us</Link>
+                                <Link href="/contact-us">Contact Us</Link>
                             </li>
                         </ul>
                     </div>
@@ -43,7 +43,7 @@ const Sitemap = () => {
                                 <Link href="/blog">Blog</Link>
                             </li>
                             <li>
-                                <Link href="/contactus">Contact Us</Link>
+                                <Link href="/contact-us">Contact Us</Link>
                             </li>
                         </ul>
                     </div>

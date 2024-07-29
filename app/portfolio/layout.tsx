@@ -1,6 +1,6 @@
 export const metadata = {
-    title: "Portfolio Page",
-    description: "this is About Portfolio page in Transcodezy Solutions.",
+    title: "Our Portfolio | Transcodezy IT Solutions",
+    description: "Explore Transcodezy IT Solutions' diverse portfolio, showcasing our expertise in web design, mobile app development, branding, and more. Discover our successful projects and innovative solutions tailored to meet various industry needs. See how we can transform your digital presence with our professional services. Contact us today to start your project!",
 };
 
 

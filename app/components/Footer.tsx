@@ -55,7 +55,7 @@ const Footer = () => {
                                 Client Portfolio
                             </span>
                         </Link>
-                        <Link href="/contactus" rel="noopener noreferrer">
+                        <Link href="/contact-us" rel="noopener noreferrer">
                             <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
                                 Contact
                             </span>
@@ -66,32 +66,32 @@ const Footer = () => {
                     <h2 className="text-base sm:text-xl font-bold">Services</h2>
                     <div className="w-28 h-0.5 bg-white mb-1 sm:mb-4"></div>
                     <div className="flex flex-col leading-0 sm:leading-8">
-                        <Link href="/services/software" rel="noopener noreferrer">
+                        <Link href="/services/software-development" rel="noopener noreferrer">
                             <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
                                 Software Development
                             </span>
                         </Link>
-                        <Link href="/services/consulting" rel="noopener noreferrer">
+                        <Link href="/services/consulting-advisory" rel="noopener noreferrer">
                             <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
-                                IT Consulting & Advisory
+                                IT consulting-advisory
                             </span>
                         </Link>
-                        <Link href="/services/integration" rel="noopener noreferrer">
+                        <Link href="/services/system-integration" rel="noopener noreferrer">
                             <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
-                                System Integration Services
+                                System-integration Services
                             </span>
                         </Link>
-                        <Link href="/services/managedservices" rel="noopener noreferrer">
+                        <Link href="/services/manage-it-services" rel="noopener noreferrer">
                             <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
                                 Manage IT Services
                             </span>
                         </Link>
-                        <Link href="/services/training" rel="noopener noreferrer">
+                        <Link href="/services/training-and-education" rel="noopener noreferrer">
                             <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
                                 Training & Education
                             </span>
                         </Link>
-                        <Link href="/services/quality" rel="noopener noreferrer">
+                        <Link href="/services/quality-testing" rel="noopener noreferrer">
                             <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
                                 Quality Assurance & Testing
                             </span>
@@ -111,12 +111,12 @@ const Footer = () => {
                                 Careers
                             </span>
                         </Link>
-                        <Link href="/workculture" rel="noopener noreferrer">
+                        <Link href="/work-culture" rel="noopener noreferrer">
                             <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
                                 Our Work Culture
                             </span>
                         </Link>
-                        <Link href="/missionstory" rel="noopener noreferrer">
+                        <Link href="/our-mission-story" rel="noopener noreferrer">
                             <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
                                 Our Mission Story
                             </span>
