@@ -35,7 +35,7 @@ const Footer = () => {
                                 Home
                             </span>
                         </Link>
-                        <Link href="/about" rel="noopener noreferrer">
+                        <Link href="https://casestudy.transcodesolution.com/" rel="noopener noreferrer">
                             <span className="text-sm hover:text-white_hover pb-0 sm:pb-3">
                                 About Transcodezy
                             </span>
