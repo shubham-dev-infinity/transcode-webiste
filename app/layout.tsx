@@ -13,15 +13,15 @@ import NavSocialMedia from './components/NavSocialMedia';
 import BackToTopButton from './components/BackToTopButton';
 declare global {
   interface Window {
-    AOS: any; 
+    AOS: any;
   }
 }
 const inter = Inter({ subsets: ['latin'] });
 interface RootLayoutProps {
-  children: React.ReactNode;  
+  children: React.ReactNode;
 }
 
-const RootLayout: React.FC<RootLayoutProps> = ({ children}) => { 
+const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
   useEffect(() => {
     // Check if AOS is available on window, then initialize
     if (window.AOS) {
@@ -33,17 +33,17 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children}) => {
       });
     }
   }, []);
-  
+
 
 
   return (
-    <html lang="en">      
+    <html lang="en">
       <body className={inter.className}>
-        <NavSocialMedia/>
+        <NavSocialMedia />
         <header className='sticky top-0 bg-white z-50'>
           <Navbar />
         </header>
-          {children}
+        {children}
         <Footer />
         <BackToTopButton />
         <Script
@@ -65,9 +65,27 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children}) => {
             // Dispatch custom event once AOS script is loaded
             document.dispatchEvent(new Event('AOSLoaded'));
           }}
-        /> 
-        <Script src="https://cdn.emailjs.com/dist/email.min.js"/>
-        <Script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"/>          
+        />
+        <Script src="https://cdn.emailjs.com/dist/email.min.js" />
+        <Script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" />
+
+        <Script id="metricool-script" strategy="afterInteractive">
+          {`
+            function loadScript(a){
+              var b=document.getElementsByTagName("head")[0],
+                  c=document.createElement("script");
+              c.type="text/javascript";
+              c.src="https://tracker.metricool.com/resources/be.js";
+              c.onreadystatechange=a;
+              c.onload=a;
+              b.appendChild(c);
+            }
+            loadScript(function(){
+              beTracker.t({hash:"7778e1652859ec3406ae0696f45efbf9"});
+            });
+          `}
+        </Script>
+
       </body>
     </html>
   );
